@@ -1,0 +1,228 @@
+@font-face {
+  font-family: Lato-Light;
+  src: url('../fonts/Lato/Lato-Light.ttf');
+}
+@font-face {
+  font-family: Lato-Hairline;
+  src: url('../fonts/Lato/Lato-Hairline.ttf');
+}
+@font-face {
+  font-family: Lato-LightItalic;
+  src: url('../fonts/Lato/Lato-LightItalic.ttf');
+}
+@font-face {
+  font-family: Lato-Regular;
+  src: url('../fonts/Lato/Lato-Regular.ttf');
+}
+
+
+body {
+    font-family: 'Lato-Regular';
+    background-color: snow;
+    padding-bottom: 100px; /*to avoid footer overlay*/
+}
+
+.navbar {
+    min-height: 90px;
+    border-radius: 0;
+    border: 0;
+    background-color: #333;
+    margin-bottom: 0;
+}
+
+.navbar .container {
+    width: auto;
+}
+
+.navbar .navbar-nav {
+    display: inline-block;
+    float: none;
+}
+
+.navbar .navbar-collapse {
+    margin-top: 13px;
+}
+
+.navbar-default .navbar-nav>li>a {
+    font-family: "Lato-Light";
+    color: snow;
+    font-size: 22px;
+}
+
+.navbar-default .navbar-nav>li>a:hover {
+    color: #aaa;
+}
+
+.navbar-default .navbar-nav>.active>a {
+    background-color: transparent;
+    border-bottom: 1px solid snow;
+    color: snow;
+}
+
+.navbar-default .navbar-nav>.active>a:hover {
+    background-color: transparent;
+    color: snow;
+}
+
+.navbar-brand {
+    float: none;
+}
+
+.logo-title {
+    position: relative;
+    top: 20px;
+    font-size: 30px;
+    color: snow;
+    font-family: "Lato-Light";
+}
+
+.navbar-default .navbar-toggle {
+    top: 20px;
+}
+
+.userbox {
+    width: 250px;
+    /* height: 90px; */
+    /* border: 1px solid red; */
+    float: right;
+    position: relative;
+    color: snow;
+    margin-top: 35px;
+}
+
+.login, .loggedin, .logout, .signup {
+    display: inline;
+}
+.log {
+    /*height: 45px;*/
+ }
+
+.signup {
+    padding-left: 20px;
+}
+.logout {
+    padding-left: 6px;
+}
+
+ .loginuser .glyphicon {
+    /* float: right;
+    padding-left: 20px; */
+    /* padding-top: 40px; */
+    cursor: pointer;
+    color: snow ;
+    /* font-size: 20px; */
+    font-size: 12px;
+ }
+ .loginuser .glyphicon:hover {
+    color: #4575b7;
+ }
+
+ .loginuser {
+    margin-top: 15px;
+ }
+
+.loginuser a{
+    color: snow;
+ }
+
+ .loginuser p {
+    float: left;
+    font-family: "Lato-Light";
+    position: relative;
+    top: 25px;
+ }
+ .loginuser img {
+   /* border-radius: 15px;*/
+   float: right;
+ }
+ .loginuser p span {
+    font-family: "Lato-LightItalic";
+    font-size: 15px;
+    cursor: pointer;
+ }
+
+.breadcrumb {
+    background-color: transparent;
+    border-radius: 0px;
+    border-top: #999;
+}
+
+.title {
+    border-bottom: 1px solid #4575b7;
+    margin-bottom: 50px;
+    font-family: "Lato-Light";
+}
+
+.list-group-item:last-child {
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+}
+.list-group-item:first-child {
+    border-top-right-radius: 0px;
+    border-top-left-radius: 0px;
+}
+
+.footer {
+    background-color: #333;
+    min-height: 90px;
+    color: snow;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+
+
+
+/* ==========================================================================
+   MEDIAS QUERIES
+   ========================================================================== */
+
+
+
+/* Large desktop */
+@media (min-width: 1200px) {}
+
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) {
+     .wrap {
+        width: 970px;
+        margin: auto;
+    }
+
+    .navbar .navbar-nav {
+        position: relative;
+        top: 30px;
+        /*right: 100px;*/
+    }
+
+    .navbar .navbar-collapse {
+        text-align: center;
+        margin-top: 0px;
+    }
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) {
+
+    .loginuser p {
+        float: left;
+        font-family: "Lato-Light";
+        position: relative;
+        top: 0;
+    }
+    .loginuser .glyphicon {
+        float: right;
+        padding-left: 20px;
+        padding-top: 15px;
+        cursor: pointer;
+        color: snow;
+        font-size: 20px;
+    }
+}
+
+/* Landscape phones and down */
+@media (max-width: 480px) {}
+
+
