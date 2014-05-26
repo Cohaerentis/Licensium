@@ -37,6 +37,18 @@ return array(
 
     // application components
     'components'    => array(
+        'mail' => array(
+            'class'         => 'application.extensions.mail.EMailer',
+            'savePath'      => dirname(__FILE__) . DIRECTORY_SEPARATOR . '..' . DIRECTORY_SEPARATOR . '..' .
+                               DIRECTORY_SEPARATOR . 'logs' . DIRECTORY_SEPARATOR . 'emails',
+            'CharSet'       => 'utf-8',
+            'Host'          => 'localhost',
+//            'Username'      => 'test@yourdomain.com',
+//            'Password'      => 'test',
+            'Mailer'        => 'smtp',
+//            'Port'          => 26,
+//            'SMTPAuth'      => true,
+        ),
         'clientScript' => array(
             'coreScriptPosition'        => 2,
             'defaultScriptFilePosition' => 2,
@@ -51,6 +63,7 @@ return array(
             // enable cookie-based authentication
             'allowAutoLogin'            =>true,
             'loginRequiredAjaxResponse' => '<div class="redirect"><div class="url">/user/login</div></div>',
+            'loginUrl'                  => array('/user/login'),
         ),
         // uncomment the following to enable URLs in path-format
         /* */
@@ -112,6 +125,8 @@ return array(
     // using Yii::app()->params['paramName']
     'params'        => array(
         'contactEmail' => 'info@yourdomain.com',
+        'noReplyEmail' => 'noreply@yourdomain.com',
+        'noReplyName'  => 'Licensium',
         'passwordSalt' => 'your-64-character-long-salt-for-hashing-passwords-xxxxxxxxxxxxxx',
     ),
 );
