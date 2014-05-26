@@ -33,12 +33,4 @@ class PasswordForm extends CFormModel {
         );
     }
 
-    /**
-     * Change user password
-     * @return boolean whether login is successful
-     */
-    public function change($user, $code) {
-        // TODO : Change user password using the code
-        return true;
-    }
 }

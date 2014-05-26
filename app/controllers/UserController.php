@@ -222,7 +222,7 @@ class UserController extends Controller {
         if (Yii::app()->user->isGuest) {
             $user = User::getById($id, true);
 
-            if (empty($model)) {
+            if (empty($user)) {
                 throw new CHttpException(404, Yii::t('app', 'User does not exist.'));
             }
 
