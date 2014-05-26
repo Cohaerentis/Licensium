@@ -15,23 +15,30 @@
         'enableAjaxValidation' => false,
     ));
     ?>
-      <fieldset class="row">
-        <div class="col-md-12 field">
-          <?php echo $form->labelEx($model, 'email'); ?>
-          <?php echo $form->textField($model, 'email', array('class' => 'type-text', 'maxlength' => 100)); ?>
-          <?php echo $form->error($model, 'email'); ?>
+    <div class="row">        
+        <div class="col-lg-12 col-md-12 col-xs-12 page-title">
+            <h2>Login</h2>
         </div>
-        <div class="col-md-12 field">
-          <?php echo $form->labelEx($model, 'password'); ?>
-          <?php echo $form->passwordField($model, 'password', array('class' => 'type-text', 'maxlength' => 100)); ?>
-          <?php echo $form->error($model, 'password'); ?>
+        <div class="col-lg-12 col-md-12 col-xs-12">
+          <fieldset class="row">
+            <div class="col-lg-12 col-md-12 col-xs-12 field input-group input-group-md">
+              <?php echo $form->labelEx($model, 'email', array('class' => 'col-xs-6 input-group-addon')); ?>
+              <?php echo $form->textField($model, 'email', array('class' => 'type-text form-control', 'maxlength' => 100, 'placeholder' => 'email')); ?>
+              <?php echo $form->error($model, 'email'); ?>
+            </div>
+            <div class="col-lg-12 col-md-12 col-xs-12 field input-group input-group-md">
+              <?php echo $form->labelEx($model, 'password', array('class' => 'col-xs-6 input-group-addon')); ?>
+              <?php echo $form->passwordField($model, 'password', array('class' => 'type-text form-control', 'maxlength' => 100, 'placeholder' => 'password')); ?>
+              <?php echo $form->error($model, 'password'); ?>
+            </div>
+          </fieldset>
+          <fieldset class="row submit">
+            <?php echo CHtml::submitButton(Yii::t('app', 'Login'),
+                array('class'       => 'btn btn-success')); ?>
+            <?php echo CHtml::link(Yii::t('app', 'Remember password'), '/user/remember',
+                array('class'       => 'btn btn-link remember')); ?>
+          </fieldset>
         </div>
-      </fieldset>
-      <fieldset class="row submit">
-        <?php echo CHtml::submitButton(Yii::t('app', 'Login'),
-            array('class'       => 'btn')); ?>
-        <?php echo CHtml::link(Yii::t('app', 'Remember password'), '/user/remember',
-            array('class'       => 'btn btn-link')); ?>
-      </fieldset>
+    </div>
     <?php $this->endWidget(); ?>
   </article>
