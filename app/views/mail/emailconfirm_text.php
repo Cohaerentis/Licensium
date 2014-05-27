@@ -4,9 +4,14 @@
 /* @var $secret Secret string generated  */
 
 ?>
-This is the email confirmation (TEXT). Extraños caracteres.
-TODO : Generate confirmation link and write a compresive instructions
+<?php echo Yii::t('app', 'Hi');?>, <?php echo e($model->fullName()); ?>.
 
-SECRET : <?php echo e($secret) . "\n"; ?>
-NAME   : <?php echo e($model->fullName()) . "\n"; ?>
-LINK   : <?php echo $this->createAbsoluteUrl('user/confirm', array('id' => $model->id, 'code' => e($secret))) . "\n"; ?>
+<?php echo Yii::t('app', 'You have just created a new account at Licensium.');?>
+<?php echo Yii::t('app', 'To confirm this and activate it, go to the following web address:');?>
+
+<?php echo $this->createAbsoluteUrl('user/confirm', array('id' => $model->id, 'code' => e($secret))); ?>
+
+<?php echo Yii::t('app', 'In most mail programs, this should appear as a blue link which you can just click on.  If that does not work,
+then cut and paste the address into the address line at the top of your web browser window.');?>
+
+<?php echo Yii::t('app', 'If you need help, please contact the site administrator');?>.

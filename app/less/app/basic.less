@@ -18,7 +18,7 @@
     @media (min-width: @screen-xs-min) {}
     @media (min-width: @screen-sm-min) {}
     @media (min-width: @screen-md-min) {}
-    @media (min-width: @screen-lg-min) {        
+    @media (min-width: @screen-lg-min) {
         width: 970px;
         margin: auto;
     }
@@ -369,7 +369,15 @@ article {
     .confirm {
         p {
             font-style: 'Lato-Regular';
-            font-size: 18px;
+            font-size: 16px;
+            width: 100%;
+            @media (min-width: @screen-xs-min) {}
+            @media (min-width: @screen-sm-min) {
+                width: 700px;
+                font-size: 18px;
+            }
+            @media (min-width: @screen-md-min) {}
+            @media (min-width: @screen-lg-min) {}
         }
     }
     .glyphicon {
