@@ -51,6 +51,121 @@ article {
 }
 
 /* ==========================================================================
+   HEADER
+   ========================================================================== */
+.log_class {
+    margin-top: 12px!important;
+}
+
+.navbar {
+    min-height: 90px;
+    border-radius: 0;
+    border: 0;
+    background-color: #333;
+    margin-bottom: 0;
+    .container {
+        width: auto;
+    }
+    .navbar-nav {
+        display: inline-block;
+        float: none;
+    }
+    .navbar-collapse {
+        margin-top: 13px;
+    }
+}
+
+.navbar-default {
+    .navbar-nav>li>a {
+        font-family: "Lato-Light";
+        color: snow;
+        font-size: 22px;
+    }
+
+    .navbar-nav>li>a:hover {
+        color: #aaa;
+    }
+
+    .navbar-nav>.active>a {
+        background-color: transparent;
+        border-bottom: 1px solid snow;
+        color: snow;
+    }
+
+    .navbar-nav>.active>a:hover {
+        background-color: transparent;
+        color: snow;
+    }
+    .navbar-toggle {
+        top: 20px;
+    }
+}
+
+.navbar-brand {
+    float: none;
+}
+
+.logo-title {
+    position: relative;
+    top: 20px;
+    font-size: 30px;
+    color: snow;
+    font-family: "Lato-Light";
+}
+
+.userbox {
+    width: 250px;
+    /* height: 90px; */
+    /* border: 1px solid red; */
+    float: right;
+    position: relative;
+    color: snow;
+    margin-top: 35px;
+}
+
+.login, .loggedin, .logout, .signup {
+    display: inline;
+}
+
+.signup {
+    padding-left: 20px;
+}
+.logout {
+    padding-left: 6px;
+}
+
+.loginuser {
+    margin-top: -7px;
+    .glyphicon {
+        cursor: pointer;
+        color: snow ;
+        &:hover {
+            color: #4575b7;
+        }
+    }
+
+    a{
+        color: snow;
+    }
+    p {
+        float: left;
+        font-family: "Lato-Light";
+        position: relative;
+        top: 25px;
+        span {
+            font-family: "Lato-LightItalic";
+            font-size: 15px;
+            cursor: pointer;
+        }
+    }
+    img {
+     float: right;
+    }
+}
+
+
+
+/* ==========================================================================
    HOME
    ========================================================================== */
 .home-wrapper {
