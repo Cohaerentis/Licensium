@@ -23,9 +23,11 @@
   $name = '';
   $login = array();
   $signup = array();
+  $log_class = '';
   if (Yii::app()->user->isGuest) {
     $login = array('class' => 'login', 'label' => Yii::t('app', 'Login'), 'url' => 'user/login');
     $signup = array('class' => 'signup', 'label' => Yii::t('app', 'Signup'), 'url' => 'user/signup');
+    $log_class = 'log_class';
   } else {
     $name = Yii::app()->user->firstname . ' ' . Yii::app()->user->lastname;
     $login = array('class' => 'loggedin', 'label' => $name, 'url' => 'user');
@@ -86,7 +88,7 @@
             <?php endforeach ?>
           </ul>
           <div class="row userbox">
-            <div class="col-lg-12 col-md-12 col-xs-12 log loginuser">
+            <div class="col-lg-12 col-md-12 col-xs-12 log loginuser <?php echo $log_class;?>">
               <div class="<?php echo $login['class']; ?>">
                 <a href="<?php echo baseUrl($login['url']); ?>">
                   <?php echo $login['label']; ?>
