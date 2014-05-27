@@ -15,17 +15,24 @@
         'enableAjaxValidation' => false,
     ));
     ?>
-      <fieldset class="row">
-        <div class="col-md-12 field">
-          <?php echo $form->labelEx($model, 'email'); ?>
-          <?php echo $form->textField($model, 'email', array('class' => 'type-text', 'maxlength' => 100)); ?>
-          <?php echo $form->error($model, 'email'); ?>
+    <div class="row">
+        <div class="col-lg-12 col-md-12 col-xs-12 page-title">
+            <h2>Forgot your password  <i class="glyphicon glyphicon-question-sign"></i></h2>
         </div>
-      </fieldset>
-      <fieldset class="row submit">
-        <?php echo CHtml::submitButton(Yii::t('app', 'Remember'),
-            array('class'       => 'btn'));
-        ?>
-      </fieldset>
+        <div class="col-lg-12 col-md-12 col-xs-12">
+            <fieldset class="row">
+                <div class="col-lg-12 col-md-12 col-xs-12 field input-group input-group-md">
+                  <?php echo $form->labelEx($model, 'email', array('class' => 'col-xs-6 input-group-addon')); ?>
+                  <?php echo $form->textField($model, 'email', array('class' => 'type-text form-control', 'maxlength' => 100, 'placeholder' => 'email')); ?>
+                  <?php echo $form->error($model, 'email'); ?>
+                </div>
+            </fieldset>
+            <fieldset class="row submit">
+                <?php echo CHtml::submitButton(Yii::t('app', 'Remember'),
+                    array('class'       => 'btn btn-success'));
+                ?>
+            </fieldset>
+        </div>
+      </div>
     <?php $this->endWidget(); ?>
   </article>

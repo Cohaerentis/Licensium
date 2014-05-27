@@ -23,7 +23,7 @@
           <fieldset class="row">
             <div class="col-lg-12 col-md-12 col-xs-12 field input-group input-group-md">
               <?php echo $form->labelEx($model, 'email', array('class' => 'col-xs-6 input-group-addon')); ?>
-              <?php echo $form->textField($model, 'email', array('class' => 'type-text form-control', 'maxlength' => 100, 'placeholder' => 'email')); ?>
+              <?php echo $form->textField($model, 'email', array('class'=> 'type-text form-control', 'maxlength' => 100, 'placeholder' => 'email')); ?>
               <?php echo $form->error($model, 'email'); ?>
             </div>
             <div class="col-lg-12 col-md-12 col-xs-12 field input-group input-group-md">

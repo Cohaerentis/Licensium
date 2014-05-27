@@ -15,31 +15,37 @@
         'enableAjaxValidation' => false,
     ));
     ?>
-      <fieldset class="row">
-        <div class="col-md-12 field">
-          <?php echo $form->labelEx($model, 'email'); ?>
-          <?php echo $form->textField($model, 'email', array('class' => 'type-text', 'maxlength' => 100)); ?>
-          <?php echo $form->error($model, 'email'); ?>
+    <div class="row">
+        <div class="col-lg-12 col-md-12 col-xs-12 page-title">
+            <h2>Update my profile</h2>
         </div>
-        <div class="col-md-12 field">
-          <?php echo $form->labelEx($model, 'firstname'); ?>
-          <?php echo $form->textField($model, 'firstname', array('class' => 'type-text', 'maxlength' => 100)); ?>
-          <?php echo $form->error($model, 'firstname'); ?>
+        <div class="col-lg-12 col-md-12 col-xs-12">
+              <fieldset class="row">
+                <div class="col-lg-12 col-md-12 col-xs-12 field input-group input-group-md">
+                  <?php echo $form->labelEx($model, 'email', array('class' => 'col-xs-6 input-group-addon')); ?>
+                  <?php echo $form->textField($model, 'email', array('class' => 'type-text form-control', 'maxlength' => 100)); ?>
+                  <?php echo $form->error($model, 'email'); ?>
+                </div>
+                <div class="col-lg-12 col-md-12 col-xs-12 field input-group input-group-md">
+                  <?php echo $form->labelEx($model, 'firstname', array('class' => 'col-xs-6 input-group-addon')); ?>
+                  <?php echo $form->textField($model, 'firstname', array('class' => 'type-text form-control', 'maxlength' => 100)); ?>
+                  <?php echo $form->error($model, 'firstname'); ?>
+                </div>
+                <div class="col-lg-12 col-md-12 col-xs-12 field input-group input-group-md">
+                  <?php echo $form->labelEx($model, 'lastname', array('class' => 'col-xs-6 input-group-addon')); ?>
+                  <?php echo $form->textField($model, 'lastname', array('class' => 'type-text form-control', 'maxlength' => 100)); ?>
+                  <?php echo $form->error($model, 'lastname'); ?>
+                </div>
+                <div class="col-lg-12 col-md-12 col-xs-12 field input-group input-group-md">
+                  <?php echo $form->labelEx($model, 'company', array('class' => 'col-xs-6 input-group-addon')); ?>
+                  <?php echo $form->textField($model, 'company', array('class' => 'type-text form-control', 'maxlength' => 100)); ?>
+                  <?php echo $form->error($model, 'company'); ?>
+                </div>
+              </fieldset>
+              <fieldset class="row submit">
+                <?php echo CHtml::submitButton(Yii::t('app', 'Update'),
+                    array('class'       => 'btn btn-success')); ?>
+              </fieldset>
         </div>
-        <div class="col-md-12 field">
-          <?php echo $form->labelEx($model, 'lastname'); ?>
-          <?php echo $form->textField($model, 'lastname', array('class' => 'type-text', 'maxlength' => 100)); ?>
-          <?php echo $form->error($model, 'lastname'); ?>
-        </div>
-        <div class="col-md-12 field">
-          <?php echo $form->labelEx($model, 'company'); ?>
-          <?php echo $form->textField($model, 'company', array('class' => 'type-text', 'maxlength' => 100)); ?>
-          <?php echo $form->error($model, 'company'); ?>
-        </div>
-      </fieldset>
-      <fieldset class="row submit">
-        <?php echo CHtml::submitButton(Yii::t('app', 'Update'),
-            array('class'       => 'btn')); ?>
-      </fieldset>
     <?php $this->endWidget(); ?>
   </article>
