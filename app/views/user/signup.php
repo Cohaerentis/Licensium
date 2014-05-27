@@ -17,7 +17,7 @@
     ?>
     <div class="row">
         <div class="col-lg-12 col-md-12 col-xs-12 page-title">
-            <h2>Registry Form</h2>
+            <h2><?php echo Yii::t('app', 'Registry Form');?></h2>
         </div>
         <div class="col-lg-12 col-md-12 col-xs-12">
           <fieldset class="row">
