@@ -1,7 +1,7 @@
 <article class="user-wrapper">
     <div class="row">
         <div class="col-lg-12 col-md-12 col-xs-12 page-title">
-            <h2>My profile</h2>
+            <h2><?php echo Yii::t('app', 'My profile');?></h2>
         </div>
         <div class="col-lg-12 col-md-12 col-xs-12">
                 <div class="col-lg-12 col-md-12 col-xs-12 field input-group input-group-md">
