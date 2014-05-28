@@ -104,8 +104,10 @@ function t($category, $message, $params = array(), $source = null, $language = n
 function baseUrl($url = '')
 {
     static $baseUrl;
-    if (!isset($baseUrl))
-        $baseUrl = Yii::app()->request->baseUrl;
+    if (!isset($baseUrl)) $baseUrl = Yii::app()->request->baseUrl;
+    // If URL is already absolute, then return without modified
+    if (preg_match('#^(http|https|ftp)://#', $url)) return $url;
+
     return $baseUrl . '/' . ltrim($url, '/');
 }
 
