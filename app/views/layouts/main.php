@@ -10,10 +10,17 @@
   $flashMessages = Yii::app()->user->getFlashes(true);
 
   $section = array('label' => 'Home');
-  $menuitems = array(
+  $menuitems_login = array(
     // array('label' => Yii::t('app', 'Profile'),    'url' => 'user'),
     array('label' => Yii::t('app', 'Projects'),   'url' => 'project'),
   );
+  $menuitems_logout = array(
+    array('label' => Yii::t('app', 'About Us'),    'url' => '/site/page/view/about'),
+    array('label' => Yii::t('app', 'Target'),      'url' => '/site/page/view/target'),
+    array('label' => Yii::t('app', 'Contact'),     'url' => 'http://www.cohaerentis.com/datos-de-contacto'),
+
+  );
+  $main_menu = array();
   $currentaction = Yii::app()->urlManager->parseUrl(Yii::app()->request);
   $parts = explode('/', $currentaction);
   $currentitem = '';
@@ -28,10 +35,18 @@
     $login = array('class' => 'login', 'label' => Yii::t('app', 'Login'), 'url' => 'user/login');
     $signup = array('class' => 'signup', 'label' => Yii::t('app', 'Signup'), 'url' => 'user/signup');
     $log_class = 'log_class';
+    $main_menu = $menuitems_logout;
+    $footer_col = 'col-lg-6 col-md-8 col-sm-6 col-xs-12';
+    $footer_left = 'col-lg-6 col-md-4 col-sm-6 col-xs-12';
+    $footer_logo = 'footer-logo-logout';
   } else {
     $name = Yii::app()->user->firstname . ' ' . Yii::app()->user->lastname;
     $login = array('class' => 'loggedin', 'label' => $name, 'url' => 'user');
     $signup = array('class' => 'logout', 'label' => '<i class="glyphicon glyphicon-off "></i>', 'url' => 'user/logout');
+    $main_menu = $menuitems_login;
+    $footer_col = 'col-lg-4 col-md-4 col-sm-4 col-xs-6';
+    $footer_left = 'col-lg-4 col-md-4 col-sm-4 col-xs-12';
+    $footer_logo = 'footer-logo-login';
   }
 
   $languages = array(
@@ -79,7 +94,7 @@
         </div>
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav">
-            <?php foreach ($menuitems as $item): ?>
+            <?php foreach ($main_menu as $item): ?>
               <li <?php if ($currentitem == $item['url']) echo 'class="active"'; ?>>
                 <a href="<?php echo baseUrl($item['url']); ?>">
                   <?php echo $item['label']; ?>
@@ -88,6 +103,10 @@
             <?php endforeach ?>
           </ul>
           <div class="row userbox">
+            <div class="col-lg-12 col-md-12 col-xs-12 language">
+            <a href="#"><div class="single-language">es</div></a>
+            <a href="#"><div class="single-language current">en</div></a>
+            </div>
             <div class="col-lg-12 col-md-12 col-xs-12 log loginuser <?php echo $log_class;?>">
               <div class="<?php echo $login['class']; ?>">
                 <a href="<?php echo baseUrl($login['url']); ?>">
@@ -129,8 +148,40 @@
   </main>
 
   <footer>
-    <div class="footer">
-      <p>&copy; Opencodex 2014</p>
+    <div class="row footer">
+        <div class="<?php echo $footer_left; ?>">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 footer-left">
+                    <a target="_blank" href ='https://github.com/Teachnova/Licensium/blob/master/LICENSE'><p><?php echo Yii::t('app', 'License'); ?></p>
+                    <i class="glyphicon glyphicon-bookmark"></i></a>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 footer-left">
+                    <a target="_blank" href ='https://github.com/Teachnova/Licensium/'><p><?php echo Yii::t('app', 'Source Code'); ?></p>
+                    <i class="glyphicon glyphicon-link"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="<?php echo $footer_col; echo ' '.$footer_logo; ?>">
+            <a href="http://www.cohaerentis.com"><img src ="/img/cohaerentis.png"/></a>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-6">
+            <?php if (Yii::app()->user->isGuest) :?>
+            <?php else :?>
+                <ul class="nav navbar-nav footer-links">
+                    <?php foreach ($menuitems_logout as $item): ?>
+                        <li <?php if ($currentitem == $item['url']) echo 'class="active"'; ?>>
+                            <a href="<?php echo baseUrl($item['url']); ?>">
+                                <?php echo $item['label']; ?>
+                            </a>
+                        </li>
+                    <?php endforeach ?>
+                </ul>
+            <?php endif; ?>
+        </div>
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 footer-bottom">
+            <p><?php echo Yii::t('app', 'Licensium is a Cohaerentis Consultores product, strategic business consulting for open business models. &copy; 2014')  ?></p>
+        </div>
+      
     </div>
   </footer>
 

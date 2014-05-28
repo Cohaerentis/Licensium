@@ -8,13 +8,21 @@
     <div class="row">
         <div class="col-lg-12 col-md-12 col-xs-12 home">
             <h1>Licensium</h1>
-            <p class="home-text"><?php echo Yii::t('app', 'Licensium es una herramienta para la elaboración de inventarios de licencias de software libre, 
-            con el objetivo de controlar su compatibilidad y sus requisitos.');?></p>
-            <p class="home-text"><?php echo Yii::t('app', 'A través de licensium podrás:');?></p>
+            <p class="home-text"><?php echo Yii::t('app', 'Licensium  is a tool for preparing inventories of open source licenses, 
+            in order to control their compatibility and their requirements.');?></p>
+            <p class="home-text"><?php echo Yii::t('app', 'With Licensium you will be able to:');?></p>
             <div class="row items">
-                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 item"><i class="glyphicon glyphicon-chevron-right"></i><?php echo Yii::t('app', 'Llevar un control de las licencias que estás empleando en tu código');?></div>
-                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 item"><i class="glyphicon glyphicon-chevron-right"></i><?php echo Yii::t('app', 'Identificar la compatibilidad de las licencias');?></div>
-                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 item"><i class="glyphicon glyphicon-chevron-right"></i><?php echo Yii::t('app', 'Dar un acceso a otros profesionales a dicho inventario');?></div>
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 item"><i class="glyphicon glyphicon-chevron-right"></i><?php echo Yii::t('app', 'Keep track of the licenses being used in your code');?></div>
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 item"><i class="glyphicon glyphicon-chevron-right"></i><?php echo Yii::t('app', 'Identify compatibility of licenses');?></div>
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 item"><i class="glyphicon glyphicon-chevron-right"></i><?php echo Yii::t('app', 'Give access to other professionals to that inventory');?></div>
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 home-buttons">
+                    <?php echo CHtml::Button(Yii::t('app', 'Login'),
+                        array('class'       => 'btn btn-success', 'submit' => array('/user/login')));
+                    ?>
+                    <?php echo CHtml::Button(Yii::t('app', 'Signup'),
+                        array('class'       => 'btn btn-success', 'submit' => array('/user/signup')));
+                    ?>
+                </div>
             </div>
         </div>
       </div>
