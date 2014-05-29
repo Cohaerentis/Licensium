@@ -38,13 +38,13 @@ html, body {
 
 article {
     margin-left: 30px;
-    margin-right: 30px;    
+    margin-right: 30px;
     @media (min-width: @screen-xs-min) {}
     @media (min-width: @screen-sm-min) {}
-    @media (min-width: @screen-md-min) {        
+    @media (min-width: @screen-md-min) {}
+    @media (min-width: @screen-lg-min) {
         margin-left: 0px;
     }
-    @media (min-width: @screen-lg-min) {}
 }
 
 .page-title {
@@ -97,6 +97,7 @@ article {
     font-family: 'Lato-Light';
     font-size: 20px;
     margin-right: 0;
+    margin-left: 0;
     padding-top: 30px;
     padding-bottom: 20px;
     a {
@@ -457,7 +458,8 @@ article {
 .user-wrapper, 
 .password-wrapper,
 .about-wrapper,
-.target-wrapper {    
+.target-wrapper,
+.general-form {    
     font-family: 'Lato-Light';
     .field {
         margin-bottom: 10px;
@@ -512,6 +514,11 @@ article {
                 border: 1px solid @in-font;
             }
         }
+    }
+    .cancel {
+        padding-top: 25px;
+        font-family: 'Lato-LightItalic';
+        font-size: 16px;
     }
 }
 
@@ -615,6 +622,237 @@ article {
             outline: 0;
             -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,0.0), 0 0 8px rgba(102, 175, 233, 0.0);
             box-shadow: inset 0 1px 1px rgba(0,0,0,0.0), 0 0 8px rgba(102, 175, 233, 0);
+        }
+    }
+}
+
+/* ==========================================================================
+   PROJECTS
+   ========================================================================== */
+
+/* ======== - INDEX - ========= */
+
+.project-index-wrapper {
+    .page-title {
+        min-width: 100%;
+    }
+    .crud {
+        .crud-row {
+            min-height: 100px;
+        }
+    }
+    ul {
+        list-style: none;
+    }
+    .main-button-options {
+        ul {
+            padding-left: 0;
+        }
+    }
+    .btn-success {
+        color: @in-font;
+        background-color: @global-color;
+        border-color: #777;
+        border-radius: 0px;
+        text-transform: uppercase;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        padding-right: 20px;
+        padding-left: 20px;
+        &:hover {
+            background-color: #ccc;
+            color: @global-color;
+            border: 1px solid @in-font;
+        }
+    }
+    .crud-btn-create {
+        width: 100%;
+        @media (min-width: @screen-xs-min) {}
+        @media (min-width: @screen-sm-min) {
+            width: 100px;
+        }
+        @media (min-width: @screen-md-min) {}
+        @media (min-width: @screen-lg-min) {}
+    }
+    .content-wrapper {
+        li {
+            padding-top: 5px;
+            padding-bottom: 5px;
+            margin-bottom: 30px;
+            background-color: rgba(238,238,238, .7);
+            &:last-child {
+                margin-bottom: 0px;
+            }
+        }
+        .item-selected {
+            background-color: @global-color;
+            color: snow;
+            .crud-item {
+                &:before {
+                    background-image: url('/img/project-icon-in.png');
+                }
+            }
+        }
+
+        .crud-item:hover {
+            &:before {
+                background-image: url('/img/project-icon-in.png');
+            }
+        }
+        .crud-item {
+            font-family: 'Lato-Regular';
+            font-size: 18px;
+            display: block;
+            cursor: pointer;
+            &:before {
+                background-image: url('/img/project-icon-out.png');
+                background-position: center;
+                background-repeat: no-repeat;
+                padding: 40px;
+                padding-bottom: 10px;
+                padding-top: 20px;
+                padding-right: 10px;
+                content: "\00a0";
+                border: 2px solid rgba(238,238,238, .7);
+                border-radius: 50px;
+                margin-bottom: 30px;
+                position: relative;
+                left: -16px;
+                top: 5px;
+                background-color: snow;
+            }
+        }
+    }
+    .crud-container {
+        top: -35px;
+        position: relative;
+    }
+    .general-form {    
+        font-family: 'Lato-Light';
+        .field {
+            margin-bottom: 10px;
+            .input-group-addon {
+                font-family: 'Lato-Regular';
+                width: 150px;
+                text-align: left;
+                color: @global-color;
+                background-color: transparent;
+                border: 0px;
+                border-radius: 0px;
+                text-transform: uppercase;
+                margin-bottom: 0;
+                @media (min-width: @screen-xs-min) {}
+                @media (min-width: @screen-sm-min) {
+                    font-family: 'Lato-Light';
+                    padding-top: 10px;
+                    padding-bottom: 10px;
+                    color: @in-font;
+                    background-color: @global-color;
+                    text-align: center;
+                    margin-bottom: 10px;
+                }
+                @media (min-width: @screen-md-min) {}
+                @media (min-width: @screen-lg-min) {}
+            }
+            .form-control {
+                border-radius: 0px;
+                font-family: 'Lato-LightItalic';
+                @media (min-width: @screen-xs-min) {}
+                @media (min-width: @screen-sm-min) {
+                     width: 460px;
+                }
+                @media (min-width: @screen-md-min) {}
+                @media (min-width: @screen-lg-min) {}
+            }
+        }
+
+       .submit {
+            .btn-success {
+                color: @in-font;
+                background-color: @global-color;
+                border-color: #777;
+                border-radius: 0px;
+                text-transform: uppercase;
+                margin-top: 20px;
+                padding-right: 20px;
+                padding-left: 20px;
+                &:hover {
+                    background-color: #ccc;
+                    color: @global-color;
+                    border: 1px solid @in-font;
+                }
+            }
+            .btn-create {
+                float: right;
+            }
+            .btn-cancel {
+                float: right;
+                padding-top: 25px;
+                font-family: 'Lato-LightItalic';
+                font-size: 16px;
+            }
+        }
+    }
+    .mobile-submenu {
+        .navbar-nav {
+            margin-left: 10px;
+            margin-right: 10px;
+            margin-top: 15px;
+            .dropdown, .open {
+                background-color: transparent;
+            }
+        }
+        .dropdown-toggle {
+            background-color: #eee;
+            font-family: 'Lato-Regular';
+            font-size: 20px;
+        }
+        .dropdown-menu {
+            margin-top: 15px;
+        }
+    }
+    .edit-form {
+        margin-top: 30px;
+        @media (min-width: @screen-xs-min) {}
+        @media (min-width: @screen-sm-min) {
+            margin-top: 0;
+        }
+        @media (min-width: @screen-md-min) {
+            padding-left: 35px;
+        }
+        @media (min-width: @screen-lg-min) {}
+        .crud-container {
+            top: 0px;
+            .label {
+                font-family: 'Lato-Light';
+                font-size: 18px; 
+                color: #777;
+                text-align: left;
+            }
+            .value {
+                padding: 5px 5px 8px 25px;
+                margin-bottom: 10px;
+                margin-left: 10px;
+                font-family: 'Lato-LightItalic';
+                font-size: 16px;
+            }
+        }
+    }
+    .edition-buttons {
+        top: 10px;
+        position: relative;
+        button {
+            color: #fffafa;
+            background-color: #4575b7;
+            border-radius: 0px;
+            text-transform: uppercase;
+            width: 100px;
+            margin-left: 20px;
+            padding: 10px 20px 10px 20px;
+            &:hover {
+                background-color: #ccc;
+                color: @global-color;
+            }
         }
     }
 }
