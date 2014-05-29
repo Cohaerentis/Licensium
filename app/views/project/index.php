@@ -25,7 +25,7 @@ if (!empty($projects)) {
       <div class="main-button-options">
         <ul>
           <li>
-            <button data-action="new" data-target="/project/create">
+            <button class="crud-btn crud-btn-create" data-action="new" data-target="/project/create">
               <?php echo Yii::t('app', 'Create'); ?>
             </button>
           </li>
@@ -36,12 +36,12 @@ if (!empty($projects)) {
       <div class="main-button-options">
         <ul>
           <li>
-            <button class="<?php echo $hide; ?>" data-action="edit" data-target="/project/update">
+            <button class="<?php echo $hide; ?> crud-btn crud-btn-edit" data-action="edit" data-target="/project/update">
               <?php echo Yii::t('app', 'Edit'); ?>
             </button>
           </li>
           <li>
-            <button class="<?php echo $hide; ?>" data-action="confirm" data-target="/project/confirm"
+            <button class="<?php echo $hide; ?> crud-btn crud-btn-edit" data-action="confirm" data-target="/project/confirm"
               data-confirm-action="delete" data-confirm-target="/project/delete"
               data-confirm-title="<?php echo Yii::t('app', 'Delete confirmation'); ?>"
               data-confirm-heading="<?php echo Yii::t('app', 'Are you sure you want delete this project?'); ?>">

@@ -43,24 +43,22 @@ if (typeof jQuery === "undefined") {
 
   Crud.prototype.buttonsHide = function (type) {
     if (type === 'edit') {
-      this.$element.find('[data-action=edit]').addClass('hide');
-      this.$element.find('[data-action=confirm]').addClass('hide');
+      this.$element.find('.crud-btn-edit').addClass('hide');
     } else {
-      this.$element.find('[data-action=new]').addClass('hide');
+      this.$element.find('.crud-btn-create').addClass('hide');
     }
   };
 
   Crud.prototype.buttonsShow = function (type) {
     if (type === 'edit') {
-      this.$element.find('[data-action=edit]').removeClass('hide');
-      this.$element.find('[data-action=confirm]').removeClass('hide');
+      this.$element.find('.crud-btn-edit').removeClass('hide');
     } else {
-      this.$element.find('[data-action=new]').removeClass('hide');
+      this.$element.find('.crud-btn-create').removeClass('hide');
     }
   };
 
   Crud.prototype.allButtonsEnable = function () {
-    this.$element.find('.btn-crud').each(function (){
+    this.$element.find('.crud-btn').each(function (){
       var $this     = $(this);
       var container = $this.attr('data-container');
       if (!container) {
