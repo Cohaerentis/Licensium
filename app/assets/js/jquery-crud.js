@@ -92,7 +92,7 @@ if (typeof jQuery === "undefined") {
     } else {
       html = $data.text();
     }
-    this[procesor](html);
+    this[processor](html);
 /*    switch(processor) {
       case 'view': this.processView(html); break;
       case 'new': this.processNew(html); break;
@@ -117,7 +117,7 @@ if (typeof jQuery === "undefined") {
     element.loading();
     element.buttonDisable(button);
     $.get(target, null).done(function (data) {
-        element.processResponse(data, 'new');
+        element.processResponse(data, 'processNew');
       }).fail(function (data) {
         element.processError(data);
     });
@@ -129,7 +129,7 @@ if (typeof jQuery === "undefined") {
     form.ajaxSubmit({
       url : target,
       success : function (data, status, xhr, form) {
-        element.processResponse(data, 'new');
+        element.processResponse(data, 'processNew');
       },
       error : function (xhr, status, error, form) {
         element.processError(xhr);
@@ -152,7 +152,7 @@ if (typeof jQuery === "undefined") {
       element.allButtonsEnable();
     }
     $.get(target, null).done(function (data) {
-        element.processResponse(data, 'view');
+        element.processResponse(data, 'processView');
       }).fail(function (data) {
         element.processError(data);
     });
@@ -164,7 +164,7 @@ if (typeof jQuery === "undefined") {
     form.ajaxSubmit({
       url : target,
       success : function (data, status, xhr, form) {
-        element.processResponse(data, 'view');
+        element.processResponse(data, 'processView');
       },
       error : function (xhr, status, error, form) {
         element.processError(xhr);
@@ -187,7 +187,7 @@ if (typeof jQuery === "undefined") {
     element.$modalInfo.addClass('loading');
     element.$modal.modal('show');
     $.get(target, null).done(function (data) {
-        element.processResponse(data, 'confirm');
+        element.processResponse(data, 'processConfirm');
       }).fail(function (data) {
         element.processError(data);
     });
