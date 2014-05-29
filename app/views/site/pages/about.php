@@ -6,7 +6,31 @@ $this->breadcrumbs=array(
     'About',
 );
 ?>
-<h1>About</h1>
-
-<p>This is a "static" page. You may change the content of this page
-by updating the file <code><?php echo __FILE__; ?></code>.</p>
+<article class="about-wrapper">
+    <div class="row">
+        <div class="col-lg-12 col-md-12 col-xs-12 page-title">
+            <h2><?php echo Yii::t('app', 'About Us');?> <i class="glyphicon glyphicon-info-sign"></i></h2>
+        </div>
+        <div class="col-lg-12 col-md-12 col-xs-12 about-text">
+            <p>
+                <?php
+                    echo Yii::t(
+                        'app',
+                        'Licensium has been developed by Cohaerentis, strategic consultanting based in information technologies,
+                        thanks to the collaborative effort between legal area and the business technology projects management.'
+                    );
+                ?>
+            </p>
+            <p>
+                <?php
+                    echo Yii::t(
+                        'app',
+                        'The application comes up from the need for lawyers to be able to access the list of licenses
+                        whose code has been integrated into a project development, in order to make an opinion on the licenses
+                        compatibility and whether these are in line with business or private interests or our customers.'
+                    );
+                ?>
+            </p>
+        </div>
+    </div>
+</article>

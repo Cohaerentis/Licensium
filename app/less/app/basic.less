@@ -65,6 +65,10 @@ article {
         @media (min-width: @screen-lg-min) {
         }
     }
+    .glyphicon {
+        color: @global-color;
+        float: right;
+    }
 }
 
 .errorMessage {
@@ -443,7 +447,13 @@ article {
 
 /* ======== - SIGN UP / LOGIN / REMEMBER / UPDATE / PASSWORD - ========= */
 
-.signup-wrapper, .login-wrapper, .remember-wrapper, .update-wrapper, .user-wrapper, .password-wrapper {    
+.signup-wrapper, 
+.login-wrapper, 
+.remember-wrapper, 
+.update-wrapper, 
+.user-wrapper, 
+.password-wrapper,
+.about-wrapper {    
     font-family: 'Lato-Light';
     .field {
         margin-bottom: 10px;
@@ -530,8 +540,8 @@ article {
 
 /* ======== - CONFIRM SENT - ========= */
 
-.confirm-wrapper, .remember-wrapper {
-    .confirm {
+.confirm-wrapper, .remember-wrapper, .about-wrapper {
+    .confirm, .about-text {
         p {
             font-style: 'Lato-Regular';
             font-size: 16px;
