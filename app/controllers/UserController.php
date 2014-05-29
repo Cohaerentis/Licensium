@@ -19,7 +19,7 @@ class UserController extends Controller {
         $model = User::getById(Yii::app()->user->id);
         if (empty($model->confirmed)) {
             $resendlink = CHtml::link(Yii::t('app', 'Resend'),
-                Yii::app()->createUrl('user/resend', array('id' => $model->id)) );
+                Yii::app()->createUrl('user/resend', array('id' => e($model->id) )) );
             Yii::app()->user->setFlash('warning',
                 Yii::t('app', 'Your email is not confirmed yet! {resend} email confirmation',
                     array('{resend}' => $resendlink)));
@@ -58,13 +58,12 @@ class UserController extends Controller {
 
         // collect user input data
         if (isset($_POST['User'])) {
-            $model->attributesClear($_POST['User'], 'create');
             // Read plain password and hash it
             $plainpass = '';
             if (isset($_POST['User']['password'])) {
                 $plainpass = $_POST['User']['password'];
-                unset($_POST['User']['password']);
             }
+            $model->attributesClear($_POST['User'], 'create');
             $model->attributes = $_POST['User'];
             $model->passwordChange($plainpass);
             $secret = $model->secretSet();
@@ -128,7 +127,7 @@ class UserController extends Controller {
         );
         if (!$result) {
             $resendlink = CHtml::link(Yii::t('app', 'Resend'),
-                Yii::app()->createUrl('user/resend', array('id' => $model->id)) );
+                Yii::app()->createUrl('user/resend', array('id' => e($model->id) )) );
             Yii::app()->user->setFlash('danger',
                 Yii::t('app', 'An error ({error}) occurs when sending confirmation email! {resend} email confirmation',
                     array('{resend}' => $resendlink,
@@ -208,7 +207,7 @@ class UserController extends Controller {
         if (!$result) {
             Yii::app()->user->setFlash('danger',
                 Yii::t('app', 'An error ({error}) occurs when sending remember password email!',
-                    array('{error}'  => Yii::app()->mail->ErrorInfo)));
+                    array('{error}'  => e(Yii::app()->mail->ErrorInfo) )));
         }
 
         return $result;
@@ -268,7 +267,7 @@ class UserController extends Controller {
 
         // collect user input data
         if (isset($_POST['User'])) {
-            $model->attributesClear($_POST['User']);
+            $model->attributesClear($_POST['User'], 'update');
             $emailold = $model->email;
 
             $model->attributes = $_POST['User'];

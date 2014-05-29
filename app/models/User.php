@@ -65,7 +65,7 @@ class User extends CActiveRecord {
         );
     }
 
-    public function attributesClear(&$attributes, $context = 'create') {
+    public function attributesClear(&$attributes, $context = '') {
         unset($attributes['id']);
         unset($attributes['emailold']);
         unset($attributes['secret']);
@@ -77,7 +77,7 @@ class User extends CActiveRecord {
         unset($attributes['deleted']);
         unset($attributes['confirmed']);
 
-        if ($context != 'create') unset($attributes['password']);
+        unset($attributes['password']);
     }
 
     /**
