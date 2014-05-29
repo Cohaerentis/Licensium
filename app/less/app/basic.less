@@ -453,7 +453,8 @@ article {
 .update-wrapper, 
 .user-wrapper, 
 .password-wrapper,
-.about-wrapper {    
+.about-wrapper,
+.target-wrapper {    
     font-family: 'Lato-Light';
     .field {
         margin-bottom: 10px;
@@ -538,17 +539,18 @@ article {
     font-family: 'Lato-LightItalic';
 }
 
-/* ======== - CONFIRM SENT - ========= */
+/* ======== - CONFIRM SENT & TEXT - ========= */
 
-.confirm-wrapper, .remember-wrapper, .about-wrapper {
-    .confirm, .about-text {
+.confirm-wrapper, 
+.remember-wrapper, .about-wrapper, .target-wrapper {
+    .confirm, .about-text, .target-text {
         p {
             font-style: 'Lato-Regular';
             font-size: 16px;
             width: 100%;
             @media (min-width: @screen-xs-min) {}
             @media (min-width: @screen-sm-min) {
-                width: 700px;
+                width: 650px;
                 font-size: 18px;
             }
             @media (min-width: @screen-md-min) {}
@@ -558,6 +560,17 @@ article {
     .glyphicon {
         color: @global-color;
         float: right;
+    }
+}
+.target-wrapper {
+    min-height: 900px;
+    .target-text {
+        .glyphicon {
+            color: @global-color;
+            float: left;
+            top: 4px;
+            padding-right: 10px;
+        }
     }
 }
 
