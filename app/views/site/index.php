@@ -24,6 +24,12 @@
                             array('class'       => 'btn btn-success', 'submit' => array('/user/signup')));
                         ?>
                     </div>
+                <?php else:?>
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 home-buttons">
+                        <?php echo CHtml::Button(Yii::t('app', 'View My Projects'),
+                            array('class'       => 'btn btn-success btn-myprojects', 'submit' => array('/project/')));
+                        ?>
+                    </div>
                 <?php endif;?>
             </div>
         </div>
