@@ -9,7 +9,7 @@ $this->breadcrumbs=array(
 <article class="target-wrapper">
     <div class="row">
         <div class="col-lg-12 col-md-12 col-xs-12 page-title">
-            <h2><?php echo Yii::t('app', 'Target');?> <i class="glyphicon "></i></h2>
+            <h2><?php echo Yii::t('app', 'Goal');?> <i class="glyphicon "></i></h2>
         </div>
         <div class="col-lg-12 col-md-12 col-xs-12 target-text">
             <p>
@@ -36,7 +36,7 @@ $this->breadcrumbs=array(
                         'app',
                         'While this is a task that can be performed easily with the most popular office tools, we wanted to go one 
                         step foward and developed a tool that make this work to programmers easier, adding value to the inventory. 
-                        Licensium has as targets the following functionalities:'
+                        Licensium has the following features:'
                     );
                 ?>
             </p>
@@ -55,7 +55,7 @@ $this->breadcrumbs=array(
                 <?php
                     echo Yii::t(
                         'app',
-                        'Register a private developer account'
+                        'Project and licenses editing'
                     );
                 ?>
             </p>
@@ -64,7 +64,7 @@ $this->breadcrumbs=array(
                 <?php
                     echo Yii::t(
                         'app',
-                        'Registry and project editing'
+                        'Share projects with other consultants'
                     );
                 ?>
             </p>
@@ -73,25 +73,7 @@ $this->breadcrumbs=array(
                 <?php
                     echo Yii::t(
                         'app',
-                        'Registry and project licenses editing'
-                    );
-                ?>
-            </p>
-            <p>
-                <i class="glyphicon glyphicon-arrow-right"></i>
-                <?php
-                    echo Yii::t(
-                        'app',
-                        'Access to other consultants'
-                    );
-                ?>
-            </p>
-            <p>
-                <i class="glyphicon glyphicon-arrow-right"></i>
-                <?php
-                    echo Yii::t(
-                        'app',
-                        'Attach files that contain such licenses'
+                        'Add licenses as attached files'
                     );
                 ?>
             </p>
@@ -118,7 +100,7 @@ $this->breadcrumbs=array(
                 <?php
                     echo Yii::t(
                         'app',
-                        'Provide a development license choice tool through three criteria: licenses compatibilty, ceographical scope and commercial interests.'
+                        'Provide a development license choice tool through three criteria: licenses compatibilty, geographical scope and commercial interests.'
                     );
                 ?>
             </p>
