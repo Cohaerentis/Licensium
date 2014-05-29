@@ -25,25 +25,21 @@
                   <?php echo $form->labelEx($model, 'email', array('class' => 'col-xs-6 input-group-addon')); ?>
                   <?php echo $form->textField($model, 'email', array('class' => 'type-text form-control', 'maxlength' => 100)); ?>
                   <?php echo $form->error($model, 'email'); ?>
-                  <i class="glyphicon glyphicon-edit "></i>
                 </div>
                 <div class="col-lg-12 col-md-12 col-xs-12 field input-group input-group-md">
                   <?php echo $form->labelEx($model, 'firstname', array('class' => 'col-xs-6 input-group-addon')); ?>
                   <?php echo $form->textField($model, 'firstname', array('class' => 'type-text form-control', 'maxlength' => 100)); ?>
                   <?php echo $form->error($model, 'firstname'); ?>
-                  <i class="glyphicon glyphicon-edit "></i>
                 </div>
                 <div class="col-lg-12 col-md-12 col-xs-12 field input-group input-group-md">
                   <?php echo $form->labelEx($model, 'lastname', array('class' => 'col-xs-6 input-group-addon')); ?>
                   <?php echo $form->textField($model, 'lastname', array('class' => 'type-text form-control', 'maxlength' => 100)); ?>
                   <?php echo $form->error($model, 'lastname'); ?>
-                  <i class="glyphicon glyphicon-edit "></i>
                 </div>
                 <div class="col-lg-12 col-md-12 col-xs-12 field input-group input-group-md">
                   <?php echo $form->labelEx($model, 'company', array('class' => 'col-xs-6 input-group-addon')); ?>
                   <?php echo $form->textField($model, 'company', array('class' => 'type-text form-control', 'maxlength' => 100)); ?>
                   <?php echo $form->error($model, 'company'); ?>
-                  <i class="glyphicon glyphicon-edit "></i>
                 </div>
               </fieldset>
               <fieldset class="row submit">
