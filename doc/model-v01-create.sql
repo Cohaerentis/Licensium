@@ -59,7 +59,8 @@ CREATE TABLE IF NOT EXISTS `compatible` (
     `status`        varchar(1)      COLLATE utf8_unicode_ci NOT NULL,
 -- Keys and indexes
     PRIMARY KEY (`id`),
-    KEY `compatible_license_id`     (`left_id`, `right_id`)
+    KEY `compatible_license`        (`left_id`, `right_id`, `typeleft`, `typeright`),
+    KEY `compatible_licenses`       (`left_id`, `typeleft`, `status`)
 ) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=1;
 
 --
