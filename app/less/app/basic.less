@@ -21,14 +21,14 @@ html, body {
 }
 .wrap {
     width: 100%;
-    min-height: 100%;
-    min-height: 100%;
+    min-height: 200px;
     height: auto !important;
-    height: 100%;
     margin: 0 auto 0px; /* the bottom margin is the negative value of the footer's height */
+    margin-bottom: 100px;
     @media (min-width: @screen-xs-min) {}
     @media (min-width: @screen-sm-min) {
         margin: 0 auto -120px;
+        margin-bottom: 100px;
     }
     @media (min-width: @screen-md-min) {}
     @media (min-width: @screen-lg-min) {
@@ -73,7 +73,7 @@ article {
 
 .errorMessage {
     display: inline-block;
-    min-width: 235px;
+    min-width: 270px;
     background-color: #f2dede;
     border: 1px solid #ebccd1;
     color: #a94442;
@@ -563,7 +563,6 @@ article {
     }
 }
 .target-wrapper {
-    min-height: 900px;
     .target-text {
         .glyphicon {
             color: @global-color;
