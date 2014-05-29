@@ -45,6 +45,8 @@
               <fieldset class="row submit">
                 <?php echo CHtml::submitButton(Yii::t('app', 'Update'),
                     array('class'       => 'btn btn-success')); ?>
+                <?php echo CHtml::link(Yii::t('app', 'Cancel'), '/user',
+                    array('class'       => 'btn btn-link cancel')); ?>
               </fieldset>
         </div>
     <?php $this->endWidget(); ?>
