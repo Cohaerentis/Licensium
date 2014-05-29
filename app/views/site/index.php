@@ -15,14 +15,16 @@
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 item"><i class="glyphicon glyphicon-chevron-right"></i><?php echo Yii::t('app', 'Keep track of the licenses being used in your code');?></div>
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 item"><i class="glyphicon glyphicon-chevron-right"></i><?php echo Yii::t('app', 'Identify compatibility of licenses');?></div>
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 item"><i class="glyphicon glyphicon-chevron-right"></i><?php echo Yii::t('app', 'Give access to other professionals to that inventory');?></div>
-                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 home-buttons">
-                    <?php echo CHtml::Button(Yii::t('app', 'Login'),
-                        array('class'       => 'btn btn-success', 'submit' => array('/user/login')));
-                    ?>
-                    <?php echo CHtml::Button(Yii::t('app', 'Signup'),
-                        array('class'       => 'btn btn-success', 'submit' => array('/user/signup')));
-                    ?>
-                </div>
+                <?php if (Yii::app()->user->isGuest): ?>
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 home-buttons">
+                        <?php echo CHtml::Button(Yii::t('app', 'Login'),
+                            array('class'       => 'btn btn-success', 'submit' => array('/user/login')));
+                        ?>
+                        <?php echo CHtml::Button(Yii::t('app', 'Signup'),
+                            array('class'       => 'btn btn-success', 'submit' => array('/user/signup')));
+                        ?>
+                    </div>
+                <?php endif;?>
             </div>
         </div>
       </div>
