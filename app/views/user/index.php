@@ -1,3 +1,8 @@
+<?php
+/* @var $this UserController */
+/* @var $model User */
+
+?>
 <article class="user-wrapper">
     <div class="row">
         <div class="col-lg-12 col-md-12 col-xs-12 page-title">
@@ -35,10 +40,10 @@
                     </div>
                 </div>
                 <div class="col-lg-12 col-md-12 col-xs-12 field control-btn">
-                    <?php echo CHtml::button(Yii::t('app', 'Edit my profile'), 
+                    <?php echo CHtml::button(Yii::t('app', 'Edit my profile'),
                         array('class'  => 'btn btn-success', 'submit' => array('/user/update')));
                     ?>
-                    <?php echo CHtml::button(Yii::t('app', 'Change password'), 
+                    <?php echo CHtml::button(Yii::t('app', 'Change password'),
                         array('class'  => 'btn btn-success', 'submit' => array('/user/password')));
                     ?>
                 </div>
