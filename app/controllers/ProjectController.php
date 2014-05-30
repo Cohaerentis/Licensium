@@ -71,6 +71,7 @@ class ProjectController extends Controller {
             $model->attributesClear($_POST['Project'], 'create');
             $model->attributes = $_POST['Project'];
             $model->user_id = Yii::app()->user->id;
+            $model->createdate = time();
             if ($model->save()) {
                 Yii::app()->user->setFlash('success', Yii::t('app', 'Project "{name}" created', array('{name}' => e($model->name))));
                 $this->renderAjaxRedirect($this->createUrl('/project/view',
