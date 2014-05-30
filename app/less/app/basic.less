@@ -21,18 +21,23 @@ html, body {
 }
 .wrap {
     width: 100%;
-    min-height: 200px;
+    min-height: 407px;
     height: auto !important;
     margin: 0 auto 0px; /* the bottom margin is the negative value of the footer's height */
     margin-bottom: 100px;
-    @media (min-width: @screen-xs-min) {}
+    @media (min-width: @screen-xs-min) {
+    }
     @media (min-width: @screen-sm-min) {
         margin: 0 auto -120px;
         margin-bottom: 100px;
+        min-height: 509px;
     }
-    @media (min-width: @screen-md-min) {}
+    @media (min-width: @screen-md-min) {
+        min-height: 517px;
+    }
     @media (min-width: @screen-lg-min) {
         width: 970px;
+        min-height: 536px;
     }
 }
 
