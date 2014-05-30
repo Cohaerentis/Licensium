@@ -1,0 +1,12 @@
+Label,Name,Description,Url
+gpl3,GPL 3,"GNU General Public License v3, 29 June 2007",http://www.gnu.org/licenses/gpl.html
+gpl2p,GPL 2 +,GNU General Public License v2 or later,http://www.gnu.org/licenses/gpl-2.0.html
+gpl2,GPL 2,"GNU General Public License v2, June 1991",http://www.gnu.org/licenses/gpl-2.0.html
+lgpl3p,LGPL 3 +,GNU Lesser General Public License v3 or later,https://www.gnu.org/licenses/lgpl.html
+lgpl21p,LGPL 2.1 +,GNU Lesser General Public License v2.1 or later,https://www.gnu.org/licenses/lgpl-2.1.html
+agpl3,AGPL 3,"GNU Affero General Public License v3, 19 November 2007",https://www.gnu.org/licenses/agpl.html
+bsd3,BSD 3c,"BSD 3-Clause License, BSD New or BSD Simplified",http://opensource.org/licenses/BSD-3-Clause
+bsd4,BSD 4c,"BSD 4-Clause License, BSD Old or BSD Original, rescinded by the author on 22 July 1999.",https://spdx.org/licenses/BSD-4-Clause
+mit,MIT,MIT License,http://opensource.org/licenses/MIT
+mpl,MPL,Mozilla Public License,http://www.mozilla.org/MPL/
+public,PUBLIC,Public Domain,
