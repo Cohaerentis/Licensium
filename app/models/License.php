@@ -8,6 +8,7 @@
  * @property string $label
  * @property string $name
  * @property string $url
+ * @property string $description
  */
 class License extends CActiveRecord {
     /**
@@ -25,12 +26,15 @@ class License extends CActiveRecord {
         // will receive user inputs.
         return array(
             array('label', 'required'),
+            array('label', 'unique'),
             array('label', 'length', 'max'=>10),
             array('name', 'length', 'max'=>100),
             array('url', 'length', 'max'=>256),
+            array('url', 'url'),
+            array('description', 'length', 'max'=>512),
             // The following rule is used by search().
             // @todo Please remove those attributes that should not be searched.
-            array('id, label, name, url', 'safe', 'on'=>'search'),
+            array('id, label, name, url, description', 'safe', 'on'=>'search'),
         );
     }
 
@@ -49,10 +53,11 @@ class License extends CActiveRecord {
      */
     public function attributeLabels() {
         return array(
-            'id'    => Yii::t('app', 'ID'),
-            'label' => Yii::t('app', 'Label'),
-            'name'  => Yii::t('app', 'Name'),
-            'url'   => Yii::t('app', 'Url'),
+            'id'            => Yii::t('app', 'ID'),
+            'label'         => Yii::t('app', 'Label'),
+            'name'          => Yii::t('app', 'Name'),
+            'url'           => Yii::t('app', 'Url'),
+            'description'   => Yii::t('app', 'Description'),
         );
     }
 
@@ -77,6 +82,7 @@ class License extends CActiveRecord {
         $criteria->compare('label',$this->label,true);
         $criteria->compare('name',$this->name,true);
         $criteria->compare('url',$this->url,true);
+        $criteria->compare('description',$this->description,true);
 
         return new CActiveDataProvider($this, array(
             'criteria'=>$criteria,
