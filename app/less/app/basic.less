@@ -499,7 +499,7 @@ article {
                 padding-bottom: 10px;
                 color: @in-font;
                 background-color: @global-color;
-                text-align: center;
+                text-align: left;
                 margin-bottom: 10px;
             }
             @media (min-width: @screen-md-min) {}
@@ -697,6 +697,7 @@ article {
                 background-color: rgba(238, 238, 238, 0.7);
                 position: relative;
                 height: 35px;
+                width: 310px;
                 .crud-item {
                     font-family: 'Lato-Regular';
                     font-size: 18px;
@@ -705,6 +706,7 @@ article {
                     padding-left: 50px;
                     position: absolute;
                     top: 4px;
+                    width: 100%;
                 }
             }
         }
@@ -790,7 +792,7 @@ article {
             }
         }
         .item-selected {
-            background-color: @global-color;
+            background-color: @global-color!important;
             color: snow;
             .cog {
                 color: @global-color;
@@ -804,6 +806,7 @@ article {
             padding-left: 50px;
             position: absolute;
             top: 4px;
+            width: 100%;
         }
     }
     .crud-container {
@@ -813,7 +816,13 @@ article {
     .general-form {    
         font-family: 'Lato-Light';
         position: relative;
-        top: -45px;
+        top: -10px;
+        @media (min-width: @screen-xs-min) {}
+        @media (min-width: @screen-sm-min) {
+            top: -45px;
+        }
+        @media (min-width: @screen-md-min) {}
+        @media (min-width: @screen-lg-min) {}
         .field {
             margin-bottom: 10px;
             .input-group-addon {
@@ -830,8 +839,11 @@ article {
                 @media (min-width: @screen-sm-min) {
                     padding-top: 10px;
                     padding-bottom: 10px;
-                    text-align: center;
+                    text-align: left;
                     margin-bottom: 10px;
+                    position: relative;
+                    top: 15px;
+                    left: -10px;
                 }
                 @media (min-width: @screen-md-min) {}
                 @media (min-width: @screen-lg-min) {}
@@ -841,9 +853,11 @@ article {
                 font-family: 'Lato-LightItalic';
                 @media (min-width: @screen-xs-min) {}
                 @media (min-width: @screen-sm-min) {
-                     width: 460px;
+                     width: 400px;
                 }
-                @media (min-width: @screen-md-min) {}
+                @media (min-width: @screen-md-min) {
+                    width: 460px;
+                }
                 @media (min-width: @screen-lg-min) {}
             }
         }
@@ -875,60 +889,6 @@ article {
             }
         }
     }
-    /*.mobile-submenu {
-        .navbar-nav {
-            margin-left: 10px;
-            margin-right: 10px;
-            margin-top: 15px;
-            .dropdown, .open {
-                background-color: transparent;
-            }
-            .open .dropdown-menu {
-                position: static;
-                float: left;
-                width: auto;
-                margin-top: 20px;
-                background-color: transparent;
-                border: 0;
-                box-shadow: none;
-                min-width: 340px;
-            }
-        }
-        .dropdown-toggle {
-            background-color: #eee;
-            font-family: 'Lato-Regular';
-            font-size: 20px;
-            &:after {
-                font-family: 'Glyphicons Halflings';
-                content: '\e080';
-                color: @global-color;
-                float: right;
-                transform:rotate(90deg);
-                -ms-transform:rotate(90deg);
-                -webkit-transform:rotate(90deg);
-            }
-        }
-        .dropdown-menu {
-            margin-top: 15px;
-            li {
-                padding-top: 5px;
-                padding-bottom: 5px;
-                margin-bottom: 20px;
-                background-color: rgba(238, 238, 238, 0.7);
-                position: relative;
-                height: 35px;
-                .crud-item {
-                    font-family: 'Lato-Regular';
-                    font-size: 18px;
-                    display: block;
-                    cursor: pointer;
-                    padding-left: 50px;
-                    position: absolute;
-                    top: 4px;
-                }
-            }
-        }
-    }*/
     .edit-form {
         margin-top: 30px;
         @media (min-width: @screen-xs-min) {}
@@ -967,7 +927,7 @@ article {
             text-transform: uppercase;
             width: 100px;
             margin-left: 20px;
-            padding: 10px 20px 10px 20px;
+            padding: 10px 20px 9px 20px;
             &:hover {
                 background-color: #ccc;
                 color: @global-color;
