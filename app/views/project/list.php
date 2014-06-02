@@ -1,7 +1,7 @@
 <?php if (!empty($projects)) : ?>
   <ul <?php if (!empty($class)) : echo 'class="' . $class . '"'; endif; ?>>
     <?php foreach ($projects as $item) : ?>
-      <li <?php if (!empty($selected) && ($item->id == $selected)) : $current = $item; ?>class="selected"<?php endif; ?>>
+      <li <?php if (!empty($selected) && ($item->id == $selected)) : $current = $item; ?>class="item-selected"<?php endif; ?>>
         <i class="glyphicon glyphicon-cog cog"  ></i>
         <span class="crud-item"
         data-action="view" data-id="<?php echo e($item->id); ?>" data-target="/project/view">

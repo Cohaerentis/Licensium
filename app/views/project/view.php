@@ -25,7 +25,7 @@
     <div class="col-md-12">
         <div class="row">
             <div class="label col-lg-12 col-md-6"><?php echo e($model->getAttributeLabel('createdate')); ?></div>
-            <div class="value col-lg-12 col-md-6"><?php echo e($model->createdate); ?></div>
+            <div class="value col-lg-12 col-md-6"><?php echo e($model->createDatePrint()); ?></div>
         </div>
     </div>
 </div>

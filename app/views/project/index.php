@@ -5,7 +5,6 @@
 // If selected not defined, define to none
 if (empty($selected)) $selected = 0;
 
-$hide = !empty($selected) ? '' : 'hide';
 
 // Search for selected item
 $current = null;
@@ -17,6 +16,9 @@ if (!empty($projects)) {
     }
   }
 }
+
+$hide = !empty($current) ? '' : 'hide';
+
 ?>
 <article class="project-index-wrapper">
     <div class="row">
@@ -98,6 +100,6 @@ if (!empty($projects)) {
               <?php $this->widget('application.widgets.ConfirmModal'); ?>
             </div>
         </div>
-    </div>    
+    </div>
 </article>
 

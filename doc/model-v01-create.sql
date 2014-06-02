@@ -39,6 +39,7 @@ CREATE TABLE IF NOT EXISTS `license` (
 -- Metadata
     `name`          varchar(100)    COLLATE utf8_unicode_ci DEFAULT NULL,
     `url`           varchar(256)    COLLATE utf8_unicode_ci DEFAULT NULL,
+    `description`   varchar(512)    COLLATE utf8_unicode_ci DEFAULT NULL,
 -- Keys and indexes
     PRIMARY KEY (`id`),
     KEY `license_label`             (`label`)
@@ -56,7 +57,7 @@ CREATE TABLE IF NOT EXISTS `compatible` (
 -- Compatibility
     `typeleft`      varchar(1)      COLLATE utf8_unicode_ci NOT NULL,
     `typeright`     varchar(1)      COLLATE utf8_unicode_ci NOT NULL,
-    `status`        varchar(1)      COLLATE utf8_unicode_ci NOT NULL,
+    `status`        tinyint(1)      NOT NULL DEFAULT '0',
 -- Keys and indexes
     PRIMARY KEY (`id`),
     KEY `compatible_license`        (`left_id`, `right_id`, `typeleft`, `typeright`),
