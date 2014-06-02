@@ -23,10 +23,25 @@ if (!empty($projects)) {
         <div class="col-lg-12 col-md-12 col-xs-12 page-title">
             <h2 class="section-title"><?php echo Yii::t('app', 'My projects'); ?></h2>
         </div>
+        <div class="col-md-6 col-sm-6 edit-form">
+                    <div class="crud-container">
+                      <?php if (!empty($selected) && !empty($current))
+                        $this->renderPartial('view', array('model' => $current));
+                      ?>
+                    </div>
+                  </div>
+                  <div class="visible-xs mobile-submenu">
+                    <ul class="nav navbar-nav">
+                      <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"><?php echo Yii::t('app', 'My projects'); ?></a>
+                        <?php $this->renderPartial('list', array('projects' => $projects, 'class' => 'dropdown-menu', 'selected' => $selected)); ?>
+                      </li>
+                    </ul>
+                  </div>
         <div class="col-lg-12 col-md-12 col-xs-12">
             <div class="crud" <?php if (!empty($selected)) : ?> data-current="<?php echo e($selected); ?>" <?php endif; ?>>
               <div class="row crud-row">
-                <div class="col-md-6 col-sm-6 col-xs-absolute">
+                <div class="col-md-6 col-sm-6 col-xs-4">
                   <div class="main-button-options">
                     <ul>
                       <li>
@@ -37,8 +52,8 @@ if (!empty($projects)) {
                     </ul>
                   </div>
                 </div>
-                <div class="col-md-6 col-sm-6">
-                  <div class="main-button-options edition-buttons">
+                <div class="col-md-6 col-sm-6 col-xs-8">
+                  <div class="row main-button-options edition-buttons">
                     <ul>
                       <li>
                         <button class="<?php echo $hide; ?> crud-btn crud-btn-edit col-xs-6 input-group-addon" data-action="edit" data-target="/project/update">
