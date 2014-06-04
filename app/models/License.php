@@ -11,6 +11,9 @@
  * @property string $description
  */
 class License extends CActiveRecord {
+    const CACHE_PREFIX = 'license';
+    const CACHE_EXPIRATION = 86400; // seconds
+
     /**
      * @return string the associated database table name
      */
@@ -59,6 +62,46 @@ class License extends CActiveRecord {
             'url'           => Yii::t('app', 'Url'),
             'description'   => Yii::t('app', 'Description'),
         );
+    }
+
+    protected function afterSave() {
+        $this->cacheUpdate();
+    }
+
+    protected function afterDelete() {
+        $this->cacheUpdate(true);
+    }
+
+    protected function cacheUpdate($deleted = false) {
+        // Write cache with saved object
+        // - For getById
+        $key = self::CACHE_PREFIX . ':id:' . $this->id;
+        if (!$deleted) Yii::app()->cache->set($key, $this, self::CACHE_EXPIRATION);
+        else           Yii::app()->cache->delete($key);
+
+        // - For getAll
+        $key = self::CACHE_PREFIX . ':all';
+        Yii::app()->cache->delete($key);
+    }
+
+    public static function getById($id, $nocache = false) {
+        // Read Cache
+        $key = self::CACHE_PREFIX . ':id:' . $id;
+        if ( $nocache || ($value = Yii::app()->cache->get($key)) === false ) {
+            $value = self::model()->find('id = :id', array('id' => $id));
+            Yii::app()->cache->set($key, $value, self::CACHE_EXPIRATION);
+        }
+        return $value;
+    }
+
+    public static function getAll($nocache = false) {
+        // Read Cache
+        $key = self::CACHE_PREFIX . ':all';
+        if ( $nocache || ($all = Yii::app()->cache->get($key)) === false ) {
+            $all = self::model()->findAll();
+            Yii::app()->cache->set($key, $all, self::CACHE_EXPIRATION);
+        }
+        return $all;
     }
 
     /**
