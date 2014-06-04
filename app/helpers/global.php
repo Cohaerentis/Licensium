@@ -307,3 +307,39 @@ function randomString($length = 10, $alphabet = null) {
     }
     return $rand;
 }
+
+function dayList() {
+    $list = array();
+    for ($number = 1; $number <= 31; $number++) {
+        $item = new stdClass();
+        $item->id = $number;
+        $item->name = $number;
+        $list[] = $item;
+    }
+    return $list;
+}
+
+function monthList() {
+    $locale = Yii::app()->getLocale();
+    $months = $locale->getMonthNames();
+    $list = array();
+    foreach ($months as $number => $month) {
+        $item = new stdClass();
+        $item->id = $number;
+        $item->name = mb_convert_case($month, MB_CASE_TITLE, "UTF-8");
+        $list[] = $item;
+    }
+    return $list;
+}
+
+function yearList($from = 1970, $until = null) {
+    if (!empty($until) || ($from >= $until)) $until = date('Y');
+    $list = array();
+    for ($number = $from; $number <= $until; $number++) {
+        $item = new stdClass();
+        $item->id = $number;
+        $item->name = $number;
+        $list[] = $item;
+    }
+    return $list;
+}

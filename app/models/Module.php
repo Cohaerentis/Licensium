@@ -20,6 +20,40 @@
  * @property string $priority
  */
 class Module extends CActiveRecord {
+    const CACHE_PREFIX = 'module';
+    const CACHE_EXPIRATION = 86400; // seconds
+
+    const RELATION_LIBRARY      = 'LIB';
+    const RELATION_MODULE       = 'MOD';
+    const RELATION_FRAMEWORK    = 'FWK';
+    const RELATION_DESIGN       = 'DSN';
+    const RELATION_CONTENT      = 'CON';
+    const RELATION_INDEPENDENT  = 'IND';
+
+    const TYPE_STATIC           = 'S';
+    const TYPE_DINAMIC          = 'D';
+
+    private static $available = array();
+
+    private static function availableInit() {
+        if (empty(self::$available)) {
+            self::$available = array(
+                'relations' => array(
+                    self::RELATION_LIBRARY      => Yii::t('app', 'Library'),
+                    self::RELATION_MODULE       => Yii::t('app', 'Module'),
+                    self::RELATION_FRAMEWORK    => Yii::t('app', 'Framework'),
+                    self::RELATION_DESIGN       => Yii::t('app', 'Design'),
+                    self::RELATION_CONTENT      => Yii::t('app', 'Content'),
+                    self::RELATION_INDEPENDENT  => Yii::t('app', 'Independent application'),
+                ),
+                'types' => array(
+                    self::TYPE_STATIC           => Yii::t('app', 'Static'),
+                    self::TYPE_DINAMIC          => Yii::t('app', 'Dinamic'),
+                ),
+            );
+        }
+    }
+
     /**
      * @return string the associated database table name
      */
@@ -46,6 +80,8 @@ class Module extends CActiveRecord {
             // The following rule is used by search().
             // @todo Please remove those attributes that should not be searched.
             array('id, project_id, name, license_id, licenseother, website, repo, relation, type, day, month, year, createdate, priority', 'safe', 'on'=>'search'),
+            array('year', 'ESeparatedDateValidator', 'limit' => 0,
+                  'allowEmpty' => array('day' => true, 'month' => true, 'year' => false)),
         );
     }
 
@@ -57,6 +93,7 @@ class Module extends CActiveRecord {
         // class name for the relations automatically generated below.
         return array(
             'license' => array(self::BELONGS_TO, 'License', 'license_id', 'together' => false),
+            'project' => array(self::BELONGS_TO, 'Project', 'project_id', 'together' => false),
         );
     }
 
@@ -69,7 +106,7 @@ class Module extends CActiveRecord {
             'project_id'    => Yii::t('app', 'Project'),
             'name'          => Yii::t('app', 'Name'),
             'license_id'    => Yii::t('app', 'License'),
-            'licenseother'  => Yii::t('app', 'Licenseother'),
+            'licenseother'  => Yii::t('app', 'Other'),
             'website'       => Yii::t('app', 'Website'),
             'repo'          => Yii::t('app', 'Repo'),
             'relation'      => Yii::t('app', 'Relation'),
@@ -77,9 +114,111 @@ class Module extends CActiveRecord {
             'day'           => Yii::t('app', 'Day'),
             'month'         => Yii::t('app', 'Month'),
             'year'          => Yii::t('app', 'Year'),
+            'integrationdate' => Yii::t('app', 'Integration date'),
             'createdate'    => Yii::t('app', 'Createdate'),
             'priority'      => Yii::t('app', 'Priority'),
         );
+    }
+
+    public function attributesClear(&$attributes, $context = '') {
+        unset($attributes['id']);
+        unset($attributes['project_id']);
+        unset($attributes['createdate']);
+        unset($attributes['priority']);
+    }
+
+    public function fullLicense() {
+        if (!empty($this->license)) {
+            return CHtml::link(e($this->license->name), e($this->license->url));
+        } else if (!empty($this->licenseother)) {
+            return CHtml::link(Yii::t('app', 'Other'), e($this->licenseother));
+        } else {
+            return Yii::t('app', 'No license defined');
+        }
+    }
+
+    public function fullRelation() {
+        self::availableInit();
+        $relation = strtoupper($this->relation);
+        if (!empty(self::$available['relations'][$relation])) return self::$available['relations'][$relation];
+        return $this->relation;
+    }
+
+    public function fullType() {
+        self::availableInit();
+        $type = strtoupper($this->type);
+        if (!empty(self::$available['types'][$type])) return self::$available['types'][$type];
+        return $this->type;
+    }
+
+    public function fullIntegrationDate() {
+        $format = '';
+        $day   = !empty($this->day) ? $this->day : 1;
+        $month = !empty($this->month) ? $this->month : 1;
+        $year  = !empty($this->year) ? $this->year : date('Y');
+        $timestamp = mktime(0, 0, 0, $month, $day, $year);
+
+        $dateFormatter = Yii::app()->getDateFormatter();
+        $format = 'yyyy';
+        if (!empty($this->month)) $format = 'MMMM yyyy';
+        if (!empty($this->day)) $format = '';
+
+        if (!empty($format)) return mb_convert_case($dateFormatter->format($format, $timestamp), MB_CASE_TITLE, "UTF-8");
+        else return $dateFormatter->formatDateTime($timestamp, 'medium', null);
+    }
+
+    protected function afterSave() {
+        $this->cacheUpdate();
+    }
+
+    protected function afterDelete() {
+        $this->cacheUpdate(true);
+    }
+
+    protected function cacheUpdate($deleted = false) {
+        // Write cache with saved object
+        // - For getById
+        $key = self::CACHE_PREFIX . ':id:' . $this->id;
+        if (!$deleted) Yii::app()->cache->set($key, $this, self::CACHE_EXPIRATION);
+        else           Yii::app()->cache->delete($key);
+
+        // - For getByUser
+        $key = self::CACHE_PREFIX . ':projectid:' . $this->project_id;
+        Yii::app()->cache->delete($key);
+
+        // - For getAll
+        $key = self::CACHE_PREFIX . ':all';
+        Yii::app()->cache->delete($key);
+    }
+
+    public static function getById($id, $nocache = false) {
+        // Read Cache
+        $key = self::CACHE_PREFIX . ':id:' . $id;
+        if ( $nocache || ($value = Yii::app()->cache->get($key)) === false ) {
+            $value = self::model()->find('id = :id', array('id' => $id));
+            Yii::app()->cache->set($key, $value, self::CACHE_EXPIRATION);
+        }
+        return $value;
+    }
+
+    public static function getByProject($projectid, $nocache = false) {
+        // Read Cache
+        $key = self::CACHE_PREFIX . ':projectid:' . $projectid;
+        if ( $nocache || ($value = Yii::app()->cache->get($key)) === false ) {
+            $value = self::model()->findAll('project_id = :projectid', array('projectid' => $projectid));
+            Yii::app()->cache->set($key, $value, self::CACHE_EXPIRATION);
+        }
+        return $value;
+    }
+
+    public static function getAll($nocache = false) {
+        // Read Cache
+        $key = self::CACHE_PREFIX . ':all';
+        if ( $nocache || ($all = Yii::app()->cache->get($key)) === false ) {
+            $all = self::model()->findAll();
+            Yii::app()->cache->set($key, $all, self::CACHE_EXPIRATION);
+        }
+        return $all;
     }
 
     /**
@@ -128,4 +267,19 @@ class Module extends CActiveRecord {
     public static function model($className=__CLASS__) {
         return parent::model($className);
     }
+
+    public static function getList($type, $exclude = array()) {
+        $items = array();
+        self::availableInit();
+        foreach(self::$available[$type] as $code => $name) {
+            if (in_array($code, $exclude)) continue;
+            $item = new stdClass();
+            $item->code = $code;
+            $item->name = $name;
+            $items[$item->code] = $item;
+        }
+        return $items;
+    }
+
+
 }
