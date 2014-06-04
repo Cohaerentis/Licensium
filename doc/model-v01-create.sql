@@ -94,6 +94,7 @@ CREATE TABLE IF NOT EXISTS `project` (
 -- relation : Relation with project
 --  LIB : Library
 --  MOD : Module
+--  FWK : Framework
 --  DSN : Design
 --  CON : Content
 --  IND : Indepedent application
