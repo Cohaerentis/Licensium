@@ -13,13 +13,13 @@ $compatible = 1;
         data-action="view" data-id="<?php echo e($item->id); ?>" data-target="/module/view/projectid/<?php echo e($projectid); ?>">
           <?php echo e($item->name); ?>
         </span>
-        <?php if($aux == $total): ?>
+        <?php if(($aux == $total)  && ($total > 1)): ?>
             <i class="glyphicon glyphicon-chevron-up move-arrow" alt="<?php Yii::t('app', 'Move up'); ?>" ></i>
         <?php endif; ?>
-        <?php if($aux == 1): ?>
+        <?php if(($aux == 1) && ($total > 1)): ?>
             <i class="glyphicon glyphicon-chevron-down move-arrow " title="<?php Yii::t('app', 'Move down'); ?>" ></i>
         <?php endif; ?>
-        <?php if(($aux != 1) && ($aux != $total)): ?>
+        <?php if(($total > 1) && ($aux != 1) && ($aux != $total)): ?>
             <i class="glyphicon glyphicon-chevron-up move-arrow" title="<?php Yii::t('app', 'Move up'); ?>" ></i>
             <i class="glyphicon glyphicon-chevron-down move-arrow" title="<?php Yii::t('app', 'Move down'); ?>" ></i>
         <?php endif; ?>
