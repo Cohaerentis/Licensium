@@ -16,7 +16,7 @@
   );
   $menuitems_logout = array(
     array('label' => Yii::t('app', 'About Us'),    'url' => '/site/page/view/about'),
-    array('label' => Yii::t('app', 'Target'),      'url' => '/site/page/view/target'),
+    array('label' => Yii::t('app', 'Goal'),      'url' => '/site/page/view/target'),
     array('label' => Yii::t('app', 'Contact'),     'url' => 'http://www.cohaerentis.com/datos-de-contacto'),
 
   );

@@ -22,10 +22,10 @@ if (!empty($modules)) {
 $hide = !empty($current) ? '' : 'hide';
 
 ?>
-<article class="module-index-wrapper">
+<article class="module-index-wrapper common-index-wrapper">
     <div class="row">
         <div class="col-lg-12 col-md-12 col-xs-12 page-title">
-            <h2 class="section-title"><?php echo Yii::t('app', 'Modules integrated in: ') . e($project->name); ?></h2>
+            <h2 class="section-title"><?php echo Yii::t('app', 'Modules integrated in ') . e($project->name); ?></h2>
         </div>
         <div class="col-lg-12 col-md-12 col-xs-12">
             <div class="crud" <?php if (!empty($selected)) : ?> data-current="<?php echo e($selected); ?>" <?php endif; ?>>
@@ -33,8 +33,8 @@ $hide = !empty($current) ? '' : 'hide';
                 <ul class="nav navbar-nav">
                   <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown"><?php echo Yii::t('app', 'Project modules'); ?></a>
-                    <?php $this->renderPartial('list', array('modules' => $modules, 'class' => 'dropdown-menu',
-                                                             'selected' => $selected, 'projectid' => $project->id)); ?>
+                    <?php $this->renderPartial('list', array('modules' => $modules,
+                                                             'class' => 'modules-menu', 'selected' => $selected, 'projectid' => $project->id)); ?>
                   </li>
                 </ul>
               </div>

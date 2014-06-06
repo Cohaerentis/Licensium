@@ -46,4 +46,8 @@
             <div class="value col-lg-12 col-md-6"><?php echo e($model->fullIntegrationDate()); ?></div>
         </div>
     </div>
+
+    <div>
+        <h2>zona de incompatibilidades</h2>
+    </div>
 </div>

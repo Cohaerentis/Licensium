@@ -34,9 +34,13 @@
             <div class="value col-lg-12 col-md-6"><?php echo e($model->createDatePrint()); ?></div>
         </div>
     </div>
+    <div>
+        <h2>zona de incompatibilidades</h2>
+    </div>
     <div class="col-md-12">
-        <a href="/module/index/projectid/<?php echo e($model->id); ?>" class="btn">
+        <a href="/module/index/projectid/<?php echo e($model->id); ?>" class="btn-success btn-modules">
             <?php echo Yii::t('app', 'Project modules'); ?>
         </a>
     </div>
+
 </div>

@@ -651,7 +651,7 @@ article {
 
 /* ======== - INDEX - ========= */
 
-.project-index-wrapper {
+.common-index-wrapper {
     .page-title {
         min-width: 100%;
     }
@@ -688,7 +688,7 @@ article {
                 -webkit-transform:rotate(90deg);
             }
         }
-        .dropdown-menu {
+        .dropdown-menu, .modules-menu {
             margin-top: 15px;
             li {
                 padding-top: 5px;
@@ -720,7 +720,7 @@ article {
     ul {
         list-style: none;
     }
-    .projects-list {
+    .projects-list, .modules-list {
         padding-left: 10px;
         li {
 
@@ -796,6 +796,9 @@ article {
             color: snow;
             .cog {
                 color: @global-color;
+            }
+            .move-arrow {
+                color: snow;
             }
         }
         .crud-item {
@@ -934,4 +937,59 @@ article {
             }
         }
     }
+    .btn-modules {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        float: right;
+        &:hover {
+            text-decoration: none;
+        }
+    }
+}
+
+/* ==========================================================================
+   MODULES
+   ========================================================================== */
+.module-index-wrapper {
+       .dropdown-toggle {
+        &:after {
+            content: ''!important;
+        }
+    }
+}
+.move-arrow {
+    float: right;
+    top: 5px;
+    right: 10px;
+    font-size: 18px;
+    color: @global-color;
+    cursor: pointer;
+}
+.commom-dropdpown {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    text-indent: 1px;
+    text-overflow: '';
+    top: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background: transparent;
+    border-color: #cccccc;
+    overflow: hidden;
+    background-image: url('/img/drop.png');
+    background-position: right center;
+    background-position-x:270px; 
+    background-position-y: 10px;
+    background-repeat: no-repeat;
+    width: 310px;
+    font-size: 18px;
+    font-family: 'Lato-LightItalic';
+}
+
+.compatible {
+    background-color: lightgreen!important;
+}
+
+.uncompatible {
+    background-color: lightcoral!important;
 }

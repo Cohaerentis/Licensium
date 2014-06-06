@@ -20,7 +20,7 @@ if (!empty($projects)) {
 $hide = !empty($current) ? '' : 'hide';
 
 ?>
-<article class="project-index-wrapper">
+<article class="project-index-wrapper common-index-wrapper">
     <div class="row">
         <div class="col-lg-12 col-md-12 col-xs-12 page-title">
             <h2 class="section-title"><?php echo Yii::t('app', 'My projects'); ?></h2>
@@ -31,7 +31,8 @@ $hide = !empty($current) ? '' : 'hide';
                 <ul class="nav navbar-nav">
                   <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown"><?php echo Yii::t('app', 'My projects'); ?></a>
-                    <?php $this->renderPartial('list', array('projects' => $projects, 'class' => 'dropdown-menu', 'selected' => $selected)); ?>
+                    <?php $this->renderPartial('list', array('projects' => $projects, 
+                                               'class' => 'dropdown-menu', 'selected' => $selected)); ?>
                   </li>
                 </ul>
               </div>
