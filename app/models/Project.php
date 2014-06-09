@@ -206,7 +206,7 @@ class Project extends CActiveRecord {
                 if ($result['status'] != Compatible::STATUS_COMPATIBLE) {
                     // Get worst compatibility status
                     if (($global == Compatible::STATUS_COMPATIBLE) ||
-                        ($result['status'] == Compatible::STATUS_UNKNOWN)) {
+                        ($result['status'] == Compatible::STATUS_INCOMPATIBLE)) {
                         $global = $result['status'];
                     }
                     $compatibility['conflicts'][$module->id] = $module;

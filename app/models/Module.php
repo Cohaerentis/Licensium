@@ -363,7 +363,7 @@ class Module extends CActiveRecord {
                 if ($status != Compatible::STATUS_COMPATIBLE) {
                     // Get worst compatibility status
                     if (($global == Compatible::STATUS_COMPATIBLE) ||
-                        ($status == Compatible::STATUS_UNKNOWN)) {
+                        ($status == Compatible::STATUS_INCOMPATIBLE)) {
                         $global = $status;
                     }
                     $compatibility['conflicts'][$module->id] = array(

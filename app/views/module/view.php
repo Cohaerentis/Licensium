@@ -1,6 +1,8 @@
 <?php
 /* @var $this ModuleController */
 /* @var $model Module */
+
+$compatibility = $model->compatibility();
 ?>
 
 <div class="row">
@@ -49,5 +51,16 @@
 
     <div>
         <h2>zona de incompatibilidades</h2>
+        <pre>
+        Global : <?php echo Compatible::statusPrint($compatibility['status']); ?>
+        </pre>
+        <?php if ($compatibility['status'] != Compatible::STATUS_COMPATIBLE) : foreach ($compatibility['conflicts'] as $id => $conflict): ?>
+            <?php if (!empty($conflict['versus']->license)) : ?>
+                - (<?php echo Compatible::statusPrint($conflict['status']); ?>/<?php echo e($conflict['versus']->license->name); ?>)
+            <?php else : ?>
+                - (<?php echo Compatible::statusPrint($conflict['status']); ?>)
+            <?php endif; ?>
+            <?php echo e($conflict['versus']->name); ?><br>
+        <?php endforeach; endif; ?>
     </div>
 </div>
