@@ -37,6 +37,7 @@ class Project extends CActiveRecord {
             array('name, uuid', 'length', 'max'=>100),
             array('website, repo, licenseother', 'length', 'max'=>256),
             array('createdate', 'length', 'max'=>11),
+            array('licenseother, website, repo', 'url'),
             // The following rule is used by search().
             // @todo Please remove those attributes that should not be searched.
             array('id, user_id, name, website, repo, license_id, licenseother, createdate, uuid', 'safe', 'on'=>'search'),

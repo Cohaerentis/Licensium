@@ -77,6 +77,7 @@ class Module extends CActiveRecord {
             array('day, month', 'length', 'max'=>2),
             array('year', 'length', 'max'=>4),
             array('createdate', 'length', 'max'=>11),
+            array('licenseother, website, repo', 'url'),
             // The following rule is used by search().
             // @todo Please remove those attributes that should not be searched.
             array('id, project_id, name, license_id, licenseother, website, repo, relation, type, day, month, year, createdate, priority', 'safe', 'on'=>'search'),
