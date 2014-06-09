@@ -192,4 +192,29 @@ class Project extends CActiveRecord {
     public static function model($className=__CLASS__) {
         return parent::model($className);
     }
+
+    public function compatibility() {
+        $global = Compatible::STATUS_COMPATIBLE;
+        $compatibility = array(
+            'status'    => Compatible::STATUS_COMPATIBLE,
+            'conflicts' => array(),
+        );
+        if (!empty($this->modules)) {
+            $found = false;
+            foreach ($this->modules as $module) {
+                $result = $module->compatibility();
+                if ($result['status'] != Compatible::STATUS_COMPATIBLE) {
+                    // Get worst compatibility status
+                    if (($global == Compatible::STATUS_COMPATIBLE) ||
+                        ($result['status'] == Compatible::STATUS_UNKNOWN)) {
+                        $global = $result['status'];
+                    }
+                    $compatibility['conflicts'][$module->id] = $module;
+                }
+            }
+            $compatibility['status'] = $global;
+        }
+        return $compatibility;
+    }
+
 }

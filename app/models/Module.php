@@ -333,5 +333,46 @@ class Module extends CActiveRecord {
         return $items;
     }
 
+    public function isCompatible($versus) {
+        if (empty($versus)) return Compatible::STATUS_UNKNOWN;
+        return Compatible::isCompatible(
+            array('licenseid' => $this->license_id,
+                  'type'      => $this->type),
+            array('licenseid' => $versus->license_id,
+                  'type'      => $versus->type));
+    }
 
+    public function compatibility() {
+        $global = Compatible::STATUS_COMPATIBLE;
+        $compatibility = array(
+            'status'    => Compatible::STATUS_COMPATIBLE,
+            'conflicts' => array(),
+        );
+        if (!empty($this->project)) {
+            $found = false;
+            foreach ($this->project->modules as $module) {
+                // First ignore any module until find me
+                if (!$found && ($module->id != $this->id)) continue;
+                if ($module->id == $this->id) {
+                    $found = true;
+                    continue;
+                }
+
+                // Check compatibility
+                $status = $this->isCompatible($module);
+                if ($status != Compatible::STATUS_COMPATIBLE) {
+                    // Get worst compatibility status
+                    if (($global == Compatible::STATUS_COMPATIBLE) ||
+                        ($status == Compatible::STATUS_UNKNOWN)) {
+                        $global = $status;
+                    }
+                    $compatibility['conflicts'][$module->id] = array(
+                        'versus' => $module,
+                        'status' => $status);
+                }
+            }
+            $compatibility['status'] = $global;
+        }
+        return $compatibility;
+    }
 }
