@@ -30,6 +30,7 @@ $hide = !empty($current) ? '' : 'hide';
     <div class="row">
         <div class="col-lg-12 col-md-12 col-xs-12 page-title">
             <h2 class="section-title"><?php echo Yii::t('app', 'Modules integrated in ') . e($project->name); ?></h2>
+            TODO : Show a project compatibility resume
         </div>
         <div class="col-lg-12 col-md-12 col-xs-12">
             <div class="crud" <?php if (!empty($selected)) : ?> data-current="<?php echo e($selected); ?>" <?php endif; ?>>
@@ -52,6 +53,11 @@ $hide = !empty($current) ? '' : 'hide';
                         <button class="btn btn-success crud-btn crud-btn-create" data-action="new" data-target="/module/create/projectid/<?php echo e($project->id); ?>">
                           <?php echo Yii::t('app', 'Create'); ?>
                         </button>
+                      </li>
+                      <li>
+                          <a href="/project/report/id/<?php echo e($project->id); ?>/code/<?php echo e($project->uuid); ?>" class="btn-success">
+                            <?php echo Yii::t('app', 'Report'); ?>
+                        </a>
                       </li>
                     </ul>
                   </div>

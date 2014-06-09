@@ -51,8 +51,9 @@ $compatibility = $model->compatibility();
 
     <div>
         <h2>zona de incompatibilidades</h2>
+        TODO : Poner una ? que enlace a una página estática que explica cómo se calcula la compatibilidad de módulos, y cómo afecta el cambio de prioridad de un módulo
         <pre>
-        Global : <?php echo Compatible::statusPrint($compatibility['status']); ?>
+        Status : <?php echo Compatible::statusPrint($compatibility['status']); ?>
         </pre>
         <?php if ($compatibility['status'] != Compatible::STATUS_COMPATIBLE) : foreach ($compatibility['conflicts'] as $id => $conflict): ?>
             <?php if (!empty($conflict['versus']->license)) : ?>
