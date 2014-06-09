@@ -24,7 +24,7 @@ $license_url = $model->fullLicenseUrl();
                 <?php if (!empty($license_url)) : ?>
                 <a href="<?php echo e($license_url); ?>" target="_blank">
                 <?php endif; ?>
-                    <?php echo e($model->website); ?>
+                    <?php echo e($license_name); ?>
                 <?php if (!empty($license_url)) : ?>
                 </a>
                 <?php endif; ?>
