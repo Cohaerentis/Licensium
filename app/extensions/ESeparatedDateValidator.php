@@ -29,21 +29,24 @@ class ESeparatedDateValidator extends CValidator {
         $day       = $object->$attrDay;
         $month     = $object->$attrMonth;
         $year      = $object->$attrYear;
-        if ($this->isEmpty($day)) {
+        // if ($this->isEmpty($day)) {
+        if (empty($day)) {
             $day = 1;
             if (!$this->allowEmpty['day']) {
                 $msg = Yii::t('app', 'Day can not be empty.');
                 $this->addError($object, $attribute, $msg);
             }
         }
-        if ($this->isEmpty($month)) {
+        // if ($this->isEmpty($month)) {
+        if (empty($month)) {
             $month = 1;
             if (!$this->allowEmpty['month']) {
                 $msg = Yii::t('app', 'Month can not be empty.');
                 $this->addError($object, $attribute, $msg);
             }
         }
-        if ($this->isEmpty($year)) {
+        // if ($this->isEmpty($year)) {
+        if (empty($year)) {
             $year = (int) date('Y');
             if (!$this->allowEmpty['year']) {
                 $msg = Yii::t('app', 'Year can not be empty.');
