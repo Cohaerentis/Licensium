@@ -3,39 +3,48 @@
 /* @var $model Project */
 
 $compatibility = $model->compatibility();
+$createdate = $model->createDatePrint();
 ?>
 
 <div class="row">
+    <?php /*
     <div class="col-md-12">
         <div class="row">
             <div class="label col-lg-12 col-md-6"><?php echo e($model->getAttributeLabel('id')); ?></div>
             <div class="value col-lg-12 col-md-6"><?php echo e($model->id); ?></div>
         </div>
     </div>
+    */ ?>
     <div class="col-md-12">
         <div class="row">
             <div class="label col-lg-12 col-md-6"><?php echo e($model->getAttributeLabel('name')); ?></div>
             <div class="value col-lg-12 col-md-6"><?php echo e($model->name); ?></div>
         </div>
     </div>
-    <div class="col-md-12">
-        <div class="row">
-            <div class="label col-lg-12 col-md-6"><?php echo e($model->getAttributeLabel('website')); ?></div>
-            <div class="value col-lg-12 col-md-6"><?php echo e($model->website); ?></div>
+    <?php if (!empty($model->website)) : ?>
+        <div class="col-md-12">
+            <div class="row">
+                <div class="label col-lg-12 col-md-6"><?php echo e($model->getAttributeLabel('website')); ?></div>
+                <div class="value col-lg-12 col-md-6"><a href="<?php echo e($model->website); ?>" target="_blank"><?php echo e($model->website); ?></a></div>
+            </div>
         </div>
-    </div>
-    <div class="col-md-12">
-        <div class="row">
-            <div class="label col-lg-12 col-md-6"><?php echo e($model->getAttributeLabel('repo')); ?></div>
-            <div class="value col-lg-12 col-md-6"><?php echo e($model->repo); ?></div>
+    <?php endif; ?>
+    <?php if (!empty($model->repo)) : ?>
+        <div class="col-md-12">
+            <div class="row">
+                <div class="label col-lg-12 col-md-6"><?php echo e($model->getAttributeLabel('repo')); ?></div>
+                <div class="value col-lg-12 col-md-6"><a href="<?php echo e($model->repo); ?>" target="_blank"><?php echo e($model->repo); ?></a></div>
+            </div>
         </div>
-    </div>
-    <div class="col-md-12">
-        <div class="row">
-            <div class="label col-lg-12 col-md-6"><?php echo e($model->getAttributeLabel('createdate')); ?></div>
-            <div class="value col-lg-12 col-md-6"><?php echo e($model->createDatePrint()); ?></div>
+    <?php endif; ?>
+    <?php if (!empty($createdate)) : ?>
+        <div class="col-md-12">
+            <div class="row">
+                <div class="label col-lg-12 col-md-6"><?php echo e($model->getAttributeLabel('createdate')); ?></div>
+                <div class="value col-lg-12 col-md-6"><?php echo e($createdate); ?></div>
+            </div>
         </div>
-    </div>
+    <?php endif; ?>
     <div>
         <h2>Zona de compatibilidad</h2>
         <h3>Licencia del proyecto</h3>

@@ -3,6 +3,9 @@
 /* @var $model Module */
 
 $compatibility = $model->compatibility();
+$relation = $model->fullRelation();
+$type = $model->fullType();
+$integrationdate = $model->fullIntegrationDate();
 ?>
 
 <div class="row">
@@ -18,36 +21,46 @@ $compatibility = $model->compatibility();
             <div class="value col-lg-12 col-md-6"><?php echo $model->fullLicense(); ?></div>
         </div>
     </div>
-    <div class="col-md-12">
-        <div class="row">
-            <div class="label col-lg-12 col-md-6"><?php echo e($model->getAttributeLabel('website')); ?></div>
-            <div class="value col-lg-12 col-md-6"><?php echo e($model->website); ?></div>
+    <?php if (!empty($model->website)) : ?>
+        <div class="col-md-12">
+            <div class="row">
+                <div class="label col-lg-12 col-md-6"><?php echo e($model->getAttributeLabel('website')); ?></div>
+                <div class="value col-lg-12 col-md-6"><a href="<?php echo e($model->website); ?>" target="_blank"><?php echo e($model->website); ?></a></div>
+            </div>
         </div>
-    </div>
-    <div class="col-md-12">
-        <div class="row">
-            <div class="label col-lg-12 col-md-6"><?php echo e($model->getAttributeLabel('repo')); ?></div>
-            <div class="value col-lg-12 col-md-6"><?php echo e($model->repo); ?></div>
+    <?php endif; ?>
+    <?php if (!empty($model->repo)) : ?>
+        <div class="col-md-12">
+            <div class="row">
+                <div class="label col-lg-12 col-md-6"><?php echo e($model->getAttributeLabel('repo')); ?></div>
+                <div class="value col-lg-12 col-md-6"><a href="<?php echo e($model->repo); ?>" target="_blank"><?php echo e($model->repo); ?></a></div>
+            </div>
         </div>
-    </div>
+    <?php endif; ?>
+    <?php if (!empty($relation)) : ?>
     <div class="col-md-12">
         <div class="row">
             <div class="label col-lg-12 col-md-6"><?php echo e($model->getAttributeLabel('relation')); ?></div>
-            <div class="value col-lg-12 col-md-6"><?php echo e($model->fullRelation()); ?></div>
+            <div class="value col-lg-12 col-md-6"><?php echo e($relation); ?></div>
         </div>
     </div>
+    <?php endif; ?>
+    <?php if (!empty($type)) : ?>
     <div class="col-md-12">
         <div class="row">
             <div class="label col-lg-12 col-md-6"><?php echo e($model->getAttributeLabel('type')); ?></div>
-            <div class="value col-lg-12 col-md-6"><?php echo e($model->fullType()); ?></div>
+            <div class="value col-lg-12 col-md-6"><?php echo e($type); ?></div>
         </div>
     </div>
+    <?php endif; ?>
+    <?php if (!empty($integrationdate)) : ?>
     <div class="col-md-12">
         <div class="row">
             <div class="label col-lg-12 col-md-6"><?php echo e($model->getAttributeLabel('integrationdate')); ?></div>
-            <div class="value col-lg-12 col-md-6"><?php echo e($model->fullIntegrationDate()); ?></div>
+            <div class="value col-lg-12 col-md-6"><?php echo e($integrationdate); ?></div>
         </div>
     </div>
+    <?php endif; ?>
 
     <div>
         <h2>zona de incompatibilidades</h2>
