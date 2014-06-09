@@ -42,7 +42,7 @@ class ProjectController extends Controller {
     public function actionPublic($id, $code) {
         $model = Project::getById($id);
         if (!empty($model) && ($model->uuid == $code)) {
-            $this->renderAjaxHtml('public', array('model' => $model));
+            $this->render('public', array('model' => $model));
         } else {
             throw new CHttpException(404, Yii::t('app', 'Project does not exist.'));
         }
@@ -72,6 +72,7 @@ class ProjectController extends Controller {
             $model->attributes = $_POST['Project'];
             $model->user_id = Yii::app()->user->id;
             $model->createdate = time();
+            $model->uuid = UUIDv4::create()->string;
             if ($model->save()) {
                 Yii::app()->user->setFlash('success', Yii::t('app', 'Project "{name}" created', array('{name}' => e($model->name))));
                 $this->renderAjaxRedirect($this->createUrl('/project/view',

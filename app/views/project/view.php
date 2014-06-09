@@ -37,7 +37,12 @@
     <div>
         <h2>zona de incompatibilidades</h2>
     </div>
-    <div class="col-md-12">
+    <div class="col-md-6">
+        <a href="/project/public/id/<?php echo e($model->id); ?>/code/<?php echo e($model->uuid); ?>" class="btn-success btn-modules">
+            <?php echo Yii::t('app', 'Public link'); ?>
+        </a>
+    </div>
+    <div class="col-md-6">
         <a href="/module/index/projectid/<?php echo e($model->id); ?>" class="btn-success btn-modules">
             <?php echo Yii::t('app', 'Project modules'); ?>
         </a>
