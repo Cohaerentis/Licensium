@@ -5,6 +5,11 @@
 // If selected not defined, define to none
 if (empty($selected)) $selected = 0;
 
+/*
+$this->breadcrumbs = array(
+  Yii::t('app', 'Home')       => '/',
+);
+*/
 
 // Search for selected item
 $current = null;
@@ -31,7 +36,7 @@ $hide = !empty($current) ? '' : 'hide';
                 <ul class="nav navbar-nav">
                   <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown"><?php echo Yii::t('app', 'My projects'); ?></a>
-                    <?php $this->renderPartial('list', array('projects' => $projects, 
+                    <?php $this->renderPartial('list', array('projects' => $projects,
                                                'class' => 'dropdown-menu', 'selected' => $selected)); ?>
                   </li>
                 </ul>

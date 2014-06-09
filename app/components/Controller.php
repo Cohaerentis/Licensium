@@ -25,7 +25,7 @@ class Controller extends CController {
      * be assigned to {@link CBreadcrumbs::links}. Please refer to {@link CBreadcrumbs::links}
      * for more details on how to specify this property.
      */
-    public $breadcrumbs=array();
+    public $breadcrumbs = array();
 
     public static function paginationNormalize($page, $pagesize) {
         $page = (is_numeric($page)) ? (int) $page : self::PAGE_DEFAULT;

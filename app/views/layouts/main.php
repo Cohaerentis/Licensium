@@ -127,10 +127,16 @@
     </nav>
   </header>
 
+  <?php $this->widget('application.widgets.Breadcrumbs', array(
+    'links' => $this->breadcrumbs,
+  ));
+  /*
   <ol class="breadcrumb">
       <li><a href="<?php echo baseUrl(); ?>">Home</a></li>
       <li class="active">Proyectos</li>
   </ol>
+  */ ?><!-- breadcrumbs -->
+
 
   <?php if ($flashMessages) : ?>
   <div class="container">
@@ -181,7 +187,7 @@
         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 footer-bottom">
             <p><?php echo Yii::t('app', 'Licensium is a Cohaerentis Consultores product, strategic business consulting for open business models. &copy; 2014')  ?></p>
         </div>
-      
+
     </div>
   </footer>
 
