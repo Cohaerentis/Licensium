@@ -89,7 +89,7 @@ class ModuleController extends Controller {
             $model->createdate = time();
             $model->priority   = $project->lastPriority() + 1;
             if ($model->save()) {
-                Yii::app()->user->setFlash('success', Yii::t('app', 'Module "{name}" created', array('{name}' => e($model->name))));
+                Yii::app()->user->setFlash('success', Yii::t('app', 'Module "{name}" created. TODO : Tell user, this module has now last priority', array('{name}' => e($model->name))));
                 $this->renderAjaxRedirect($this->createUrl('/module/view',
                                                            array('id'        => $model->id,
                                                                  'projectid' => $model->project_id)));

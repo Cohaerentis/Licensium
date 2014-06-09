@@ -37,22 +37,29 @@ $compatibility = $model->compatibility();
         </div>
     </div>
     <div>
-        <h2>zona de incompatibilidades</h2>
-        DEBUG DEVEL INFO:<br>
-        Last Priority = <?php echo $model->lastPriority(); ?><br>
-        Compatibility = <?php echo Compatible::statusPrint($compatibility['status']); ?><br>
-        <?php if (!empty($compatibility['conflicts'])) : foreach ($compatibility['conflicts'] as $module): ?>
-        - <?php echo $module->name; ?><br>
-        <?php endforeach; endif; ?>
+        <h2>Zona de compatibilidad</h2>
+        <h3>Licencia del proyecto</h3>
+        <?php if (!empty($model->license)) : ?>
+            TODO : Show compatibility status of project license
+        <?php else : ?>
+            TODO : Show all available licenses, compatible with project modules
+        <?php endif; ?>
+        <h3>Módulos del proyecto</h3>
+        <?php if ($compatibility['status'] != Compatible::STATUS_COMPATIBLE) : ?>
+            There are some modules with licenses incompatibility issues:<br>
+            <?php if (!empty($compatibility['conflicts'])) : foreach ($compatibility['conflicts'] as $module): ?>
+            - <?php echo $module->name; ?><br>
+            <?php endforeach; endif; ?>
+        <?php endif; ?>
     </div>
     <div class="col-md-6">
-        <a href="/project/public/id/<?php echo e($model->id); ?>/code/<?php echo e($model->uuid); ?>" class="btn-success btn-modules">
-            <?php echo Yii::t('app', 'Public link'); ?>
+        <a href="/project/report/id/<?php echo e($model->id); ?>/code/<?php echo e($model->uuid); ?>" class="btn-success btn-modules">
+            <?php echo Yii::t('app', 'Report'); ?>
         </a>
     </div>
     <div class="col-md-6">
         <a href="/module/index/projectid/<?php echo e($model->id); ?>" class="btn-success btn-modules">
-            <?php echo Yii::t('app', 'Project modules'); ?>
+            <?php echo Yii::t('app', 'Manage modules'); ?>
         </a>
     </div>
 
