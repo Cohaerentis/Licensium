@@ -128,6 +128,26 @@ class Module extends CActiveRecord {
         unset($attributes['priority']);
     }
 
+    public function fullLicenseName() {
+        if (!empty($this->license)) {
+            return $this->license->name;
+        } else if (!empty($this->licenseother)) {
+            return Yii::t('app', 'Other');
+        } else {
+            return Yii::t('app', 'No license defined');
+        }
+    }
+
+    public function fullLicenseUrl() {
+        if (!empty($this->license)) {
+            return $this->license->url;
+        } else if (!empty($this->licenseother)) {
+            return $this->licenseother;
+        } else {
+            return '';
+        }
+    }
+
     public function fullLicense() {
         if (!empty($this->license)) {
             return CHtml::link(e($this->license->name), e($this->license->url));

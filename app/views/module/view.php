@@ -6,6 +6,8 @@ $compatibility = $model->compatibility();
 $relation = $model->fullRelation();
 $type = $model->fullType();
 $integrationdate = $model->fullIntegrationDate();
+$license_name = $model->fullLicenseName();
+$license_url = $model->fullLicenseUrl();
 ?>
 
 <div class="row">
@@ -18,7 +20,15 @@ $integrationdate = $model->fullIntegrationDate();
     <div class="col-md-12">
         <div class="row">
             <div class="label col-lg-12 col-md-6"><?php echo e($model->getAttributeLabel('license_id')); ?></div>
-            <div class="value col-lg-12 col-md-6"><?php echo $model->fullLicense(); ?></div>
+            <div class="value col-lg-12 col-md-6">
+                <?php if (!empty($license_url)) : ?>
+                <a href="<?php echo e($license_url); ?>" target="_blank">
+                <?php endif; ?>
+                    <?php echo e($model->website); ?>
+                <?php if (!empty($license_url)) : ?>
+                </a>
+                <?php endif; ?>
+            </div>
         </div>
     </div>
     <?php if (!empty($model->website)) : ?>
