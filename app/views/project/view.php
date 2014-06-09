@@ -1,6 +1,8 @@
 <?php
 /* @var $this ProjectController */
 /* @var $model Project */
+
+$compatibility = $model->compatibility();
 ?>
 
 <div class="row">
@@ -36,6 +38,12 @@
     </div>
     <div>
         <h2>zona de incompatibilidades</h2>
+        DEBUG DEVEL INFO:<br>
+        Last Priority = <?php echo $model->lastPriority(); ?><br>
+        Compatibility = <?php echo Compatible::statusPrint($compatibility['status']); ?><br>
+        <?php if (!empty($compatibility['conflicts'])) : foreach ($compatibility['conflicts'] as $module): ?>
+        - <?php echo $module->name; ?><br>
+        <?php endforeach; endif; ?>
     </div>
     <div class="col-md-6">
         <a href="/project/public/id/<?php echo e($model->id); ?>/code/<?php echo e($model->uuid); ?>" class="btn-success btn-modules">
