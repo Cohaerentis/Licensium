@@ -2,6 +2,8 @@
 
 class ModuleController extends Controller {
 
+    protected $project = null;
+
     /**
      * @return array action filters
      */
@@ -51,6 +53,26 @@ class ModuleController extends Controller {
                                                'projectid' => $projectid));
     }
 
+    protected function priorityChange($change, $projectid, $id) {
+        $model = $this->loadModel($id, $projectid);
+        if (!$model->priorityChange($change, $this->project)) {
+            $msg = Yii::t('app', 'Error while changing module priority.');
+            throw new CHttpException(500, $msg);
+        }
+
+
+    }
+
+    public function actionUp($projectid, $id) {
+        $this->priorityChange('up', $projectid, $id);
+        $this->redirect("/module/view/projectid/$projectid/id/$id");
+    }
+
+    public function actionDown($projectid, $id) {
+        $this->priorityChange('down', $projectid, $id);
+        $this->redirect("/module/view/projectid/$projectid/id/$id");
+    }
+
     /**
      * Creates a new project.
      * If creation is successful, the browser will be redirected to the 'view' page.
@@ -65,6 +87,7 @@ class ModuleController extends Controller {
             $model->attributes = $_POST['Module'];
             $model->project_id = $projectid;
             $model->createdate = time();
+            $model->priority   = $project->lastPriority() + 1;
             if ($model->save()) {
                 Yii::app()->user->setFlash('success', Yii::t('app', 'Module "{name}" created', array('{name}' => e($model->name))));
                 $this->renderAjaxRedirect($this->createUrl('/module/view',
@@ -144,6 +167,9 @@ class ModuleController extends Controller {
     }
 
     public function loadProject($projectid) {
+        // Static cache
+        if (!empty($this->project) && ($this->project->id == $projectid)) return $this->project;
+
         $project = Project::getById($projectid);
 
         if (empty($project)) {
@@ -156,6 +182,7 @@ class ModuleController extends Controller {
             if (Yii::app()->request->getIsAjaxRequest()) $this->renderAjaxError($msg);
             else                                         throw new CHttpException(401, $msg);
         }
+        $this->project = $project;
         return $project;
     }
 }

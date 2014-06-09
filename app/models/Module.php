@@ -205,7 +205,11 @@ class Module extends CActiveRecord {
         // Read Cache
         $key = self::CACHE_PREFIX . ':projectid:' . $projectid;
         if ( $nocache || ($value = Yii::app()->cache->get($key)) === false ) {
-            $value = self::model()->findAll('project_id = :projectid', array('projectid' => $projectid));
+            $criteria = new CDbCriteria();
+            $criteria->compare('project_id', $projectid);
+            $criteria->order = 'priority DESC';
+            $value = self::model()->findAll($criteria);
+            // $value = self::model()->findAll('project_id = :projectid', array('projectid' => $projectid));
             Yii::app()->cache->set($key, $value, self::CACHE_EXPIRATION);
         }
         return $value;
@@ -219,6 +223,54 @@ class Module extends CActiveRecord {
             Yii::app()->cache->set($key, $all, self::CACHE_EXPIRATION);
         }
         return $all;
+    }
+
+    public function priorityChange($change, $project) {
+        if (!empty($project) && ($project->id == $this->project_id)) {
+            $change = strtolower($change);
+            $maxpriority = count($project->modules);
+            $order = array();
+            $priority = $maxpriority;
+            $current = 0;   // Element to up or down
+            $target = 0;    // Element affected, to be exchanged with current
+
+            // Prepare current priority list
+            foreach($project->modules as $module) {
+                $order[$priority] = $module;
+                if ($module->id == $this->id) $current = $priority;
+                $priority--;
+            }
+            // This module was found
+            if (!empty($current)) {
+                if (($change == 'up') && ($current < $maxpriority)) {
+                    $target = $current + 1;
+                }
+                if (($change == 'down') && ($current > 1)) {
+                    $target = $current - 1;
+                }
+            }
+
+            // Target module was found, exchange them
+            if (!empty($target)) {
+                $temp = $order[$target];
+                $order[$target] = $order[$current];
+                $order[$current] = $temp;
+
+                $status = true;
+
+                // Now re-assign priorities to all modules, if neceesary
+                foreach($order as $priority => $module) {
+                    if ($module->priority != $priority) {
+                        $module->priority = $priority;
+                        if (!$module->save()) {
+                            $status = false;
+                        }
+                    }
+                }
+                return $status;
+            }
+        }
+        return false;
     }
 
     /**

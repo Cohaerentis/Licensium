@@ -52,6 +52,7 @@ class Project extends CActiveRecord {
         return array(
             'license' => array(self::BELONGS_TO, 'License', 'license_id', 'together' => false),
             'user' => array(self::BELONGS_TO, 'User', 'user_id', 'together' => false),
+            'modules' => array(self::HAS_MANY, 'Module', 'project_id', 'order' => 'priority DESC', 'together' => false),
         );
     }
 
@@ -86,6 +87,14 @@ class Project extends CActiveRecord {
 
     public function publicURL() {
         return "/project/public/id/{$this->id}/code/{$this->uuid}";
+    }
+
+    public function lastPriority() {
+        $priority = 0;
+        if (!empty($this->modules)) {
+            $priority = $this->modules[0]->priority;
+        }
+        return $priority;
     }
 
     protected function afterSave() {
