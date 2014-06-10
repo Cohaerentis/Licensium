@@ -45,31 +45,46 @@ $createdate = $model->createDatePrint();
             </div>
         </div>
     <?php endif; ?>
-    <div>
-        <h2>Zona de compatibilidad</h2>
-        <h3>Licencia del proyecto</h3>
-        <?php if (!empty($model->license)) : ?>
-            TODO : Show compatibility status of project license
-        <?php else : ?>
-            TODO : Show all available licenses, compatible with project modules
-        <?php endif; ?>
-        <h3>Módulos del proyecto</h3>
-        <?php if ($compatibility['status'] != Compatible::STATUS_COMPATIBLE) : ?>
-            There are some modules with licenses incompatibility issues:<br>
-            <?php if (!empty($compatibility['conflicts'])) : foreach ($compatibility['conflicts'] as $module): ?>
-            - <?php echo $module->name; ?><br>
-            <?php endforeach; endif; ?>
-        <?php endif; ?>
-    </div>
-    <div class="col-md-6">
-        <a href="/project/report/id/<?php echo e($model->id); ?>/code/<?php echo e($model->uuid); ?>" class="btn-success btn-modules">
-            <?php echo Yii::t('app', 'Report'); ?>
-        </a>
-    </div>
-    <div class="col-md-6">
+
+    <div class="col-md-12 col-xs-12">
         <a href="/module/index/projectid/<?php echo e($model->id); ?>" class="btn-success btn-modules">
             <?php echo Yii::t('app', 'Manage modules'); ?>
         </a>
     </div>
-
+    <div class="col-md-12 col-xs-12 info-project">
+        <ul class="nav nav-tabs">
+          <li class="active"><a href="#licenses" data-toggle="tab">Project Licenses</a></li>
+          <li><a href="#modules" data-toggle="tab">Project Modules</a></li>
+        </ul>
+        <div id="content" class="tab-content">
+            <div id="licenses" class="tab-pane active">
+                <h3>Licencia del proyecto</h3>
+                <?php if (!empty($model->license)) : ?>
+                    TODO : Show compatibility status of project license
+                <?php else : ?>
+                    TODO : Show all available licenses, compatible with project modules
+                <?php endif; ?>
+                <div class="col-md-12 col-xs-12">
+                    <a href="/project/report/id/<?php echo e($model->id); ?>/code/<?php echo e($model->uuid); ?>" class="btn-success btn-modules">
+                        <?php echo Yii::t('app', 'Report'); ?>
+                    </a>
+                </div>
+            </div>
+            <div id="modules" class="tab-pane">
+                <?php if ($compatibility['status'] != Compatible::STATUS_COMPATIBLE) : ?>
+                    <?php if (!empty($compatibility['conflicts'])) : foreach ($compatibility['conflicts'] as $module): ?>
+                        <div class="bs-callout bs-callout-danger">
+                        There are some modules with licenses incompatibility issues:<br>
+                            <i class="glyphicon glyphicon-thumbs-down" ></i><?php echo $module->name; ?><br>
+                        </div>
+                    <?php endforeach; endif; ?>
+                    <?php else: ?>
+                    <div class="bs-callout bs-callout-ok">
+                        Well done!! Your project has no compatibilities problems.
+                        <i class="glyphicon glyphicon-thumbs-up" ></i><br>
+                    </div>
+                <?php endif; ?>
+            </div>
+        </div>
+    </div>
 </div>
