@@ -63,8 +63,8 @@ class Assets extends CApplicationComponent {
             $scripts['bootstrap/modal'] = CClientScript::POS_END;
             // $scripts['bootstrap/popover'] = CClientScript::POS_END;
             // $scripts['bootstrap/scrollspy'] = CClientScript::POS_END;
-            // $scripts['bootstrap/tab'] = CClientScript::POS_END;
-            // $scripts['bootstrap/tooltip'] = CClientScript::POS_END;
+            $scripts['bootstrap/tab'] = CClientScript::POS_END;
+            $scripts['bootstrap/tooltip'] = CClientScript::POS_END;
             $scripts['bootstrap/transition'] = CClientScript::POS_END;
             $scripts['jquery-crud'] = CClientScript::POS_END;
             $scripts['jquery-selectchange'] = CClientScript::POS_END;
