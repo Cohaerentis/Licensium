@@ -72,19 +72,53 @@ $license_url = $model->fullLicenseUrl();
     </div>
     <?php endif; ?>
 
-    <div>
-        <h2>zona de incompatibilidades</h2>
-        TODO : Poner una ? que enlace a una página estática que explica cómo se calcula la compatibilidad de módulos, y cómo afecta el cambio de prioridad de un módulo
-        <pre>
-        Status : <?php echo Compatible::statusPrint($compatibility['status']); ?>
-        </pre>
-        <?php if ($compatibility['status'] != Compatible::STATUS_COMPATIBLE) : foreach ($compatibility['conflicts'] as $id => $conflict): ?>
-            <?php if (!empty($conflict['versus']->license)) : ?>
-                - (<?php echo Compatible::statusPrint($conflict['status']); ?>/<?php echo e($conflict['versus']->license->name); ?>)
-            <?php else : ?>
-                - (<?php echo Compatible::statusPrint($conflict['status']); ?>)
-            <?php endif; ?>
-            <?php echo e($conflict['versus']->name); ?><br>
-        <?php endforeach; endif; ?>
+    <div class="col-md-12 col-xs-12 module-status">
+        <div class="col-lg-12 col-md-12 col-xs-12 page-title">
+            <h2 class="section-title"><?php echo Yii::t('app', 'Module Status ');?>
+                <a href="/site/page/view/how-do-we">
+                    <i class="glyphicon glyphicon-question-sign how-to-info" data-toggle="tooltip"
+                       data-original-title="<?php echo Yii::t('app', 'How do we calcute compatibility'); ?>"></i>
+                </a>
+            </h2>
+        </div>
+        <?php if ($compatibility['status'] != Compatible::STATUS_COMPATIBLE) :?>
+            <div class="col-lg-12 col-md-12 col-xs-12 bs-callout bs-callout-danger">
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-xs-12 conflict-status">
+                        <span class="status">Status :</span> <span class="status-result"><?php echo Compatible::statusPrint($compatibility['status']); ?></span>
+                    </div>
+                </div>
+                <table class="table">
+                    <thead>
+                        <tr class="table-conflict">
+                            <th class="col-lg-4 col-md-4 col-xs-4">Module</th>
+                            <th class="col-lg-4 col-md-4 col-xs-4">Type</th>
+                            <th class="col-lg-4 col-md-4 col-xs-4">Result</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <?php foreach ($compatibility['conflicts'] as $id => $conflict): ?>
+                        <tr>
+                        
+                            <div class="col-lg-12 col-md-12 col-xs-12 conflict-list">
+                                <td><?php echo e($conflict['versus']->name); ?></td>
+                                <?php if (!empty($conflict['versus']->license)) : ?>
+                                    <td><?php echo e($conflict['versus']->license->name); ?></td>
+                                    <td><?php echo Compatible::statusPrint($conflict['status']); ?></td>
+                                <?php else : ?>
+                                    <td><?php echo Yii::t('app', 'Unkwon'); ?></td>
+                                    <td><?php echo Compatible::statusPrint($conflict['status']); ?></td>
+                                <?php endif; ?>
+                            </div>
+                        </tr>
+                        <?php endforeach; ?>
+                    </tbody>
+                </table>
+            </div>
+        <?php else: ?>
+            <div class="col-lg-12 col-md-12 col-xs-12 bs-callout bs-callout-ok">
+                <span class="status">Status :</span> <span class="status-result"><?php echo Compatible::statusPrint($compatibility['status']); ?></span>
+            </div>
+        <?php endif; ?>
     </div>
 </div>
