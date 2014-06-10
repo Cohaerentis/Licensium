@@ -10,6 +10,14 @@
 @global-color: #4575b7;
 @in-font: snow;
 
+
+.left {
+    float: left;
+}
+.right {
+    float: right;
+}
+
 /* ==========================================================================
    Common
    ========================================================================== */
@@ -197,6 +205,26 @@ article {
         }
         @media (min-width: @screen-lg-min) {}
     }
+}
+
+.bs-callout {
+    margin: 20px 0;
+    padding: 20px;
+    border-left: 3px solid #eee;
+    font-family: 'Lato-LightItalic';
+    font-size: 16px;
+    .glyphicon {
+        top: 3px;
+        padding-right: 10px;
+    }
+}
+.bs-callout-danger {
+    background-color: rgb(255, 230, 234);
+    border-left-color: red!important;
+}
+.bs-callout-ok {
+    background-color: #C2DCFF;
+    border-left-color: @global-color;
 }
 
 /* ==========================================================================
@@ -690,6 +718,7 @@ article {
         }
         .dropdown-menu, .modules-menu {
             margin-top: 15px;
+            padding-left: 10px;
             li {
                 padding-top: 5px;
                 padding-bottom: 5px;
@@ -923,7 +952,7 @@ article {
     .edition-buttons {
         top: 20px;
         position: relative;
-        button {
+        button {position: relative;
             color: #fffafa;
             background-color: #4575b7;
             border-radius: 0px;
@@ -943,7 +972,41 @@ article {
         float: right;
         &:hover {
             text-decoration: none;
+            border: none;
+        }position: relative;
+    }
+}
+.info-project {
+    min-height: 250px;
+    margin-top: 30px;
+    padding-left: 0;
+    ul {
+        border-color: @global-color;
+        li {
+            background-color: transparent!important;
+            border-color: @global-color;
+            &:active > a{
+                border-color: @global-color;
+            }
+            a {
+                font-family: 'Lato-Regular';
+                font-size: 18px;
+                border-radius: 0;
+                &:hover {
+                    background-color: @global-color!important;
+                    opacity: .7;
+                    color: snow;
+                    border-radius: 0;
+                }
+                &:focus {
+                   background-color: @global-color!important;
+                   color: snow;
+                }
+            }
         }
+    }
+    .nav-tabs > li.active > a:hover {
+        color: snow!important;
     }
 }
 
@@ -993,3 +1056,76 @@ article {
 .uncompatible {
     background-color: lightcoral!important;
 }
+.module-status {
+    margin-top: 30px;
+    padding-left: 0;
+    .page-title {
+        margin-bottom: 0px;
+    }
+    .bs-callout {
+        text-align: center;
+    }
+    .status {
+        font-size: 22px;
+        font-family: 'Lato-Regular';
+    }
+    .status-result {
+        font-size: 25px;
+        font-family: 'Lato-LightItalic';
+        padding-left: 10px;
+    }
+    .conflict-status {
+        margin-bottom: 20px;
+    }
+    .conflict-list {
+        text-align: left;
+        font-size: 18px;
+        .module-item {
+            font-family: 'Lato-Regular';
+        }
+    }
+    .table-conflict {
+        th {
+            text-align: center;
+        }
+    }
+}
+
+/* ==========================================================================
+   ON / OFF  SWITCHER
+   ========================================================================== */
+ .modules-list {
+    li {
+        width: 90%;
+    }
+ }
+ .switcher-on {
+    top: 10px;
+    right: -30px;
+    padding-left: 5px;
+    padding-right: 5px;
+    color: green;
+    position: absolute;
+    font-size: 18px;
+    cursor: pointer;
+ }
+  .switcher-off {
+    top: 10px;
+    right: -30px;
+    padding-left: 5px;
+    padding-right: 5px;
+    color: red;
+    position: absolute;
+    font-size: 18px;
+    cursor: pointer;
+ }
+
+ .off-element {
+    pointer-events: none;
+    opacity: .3;
+    -webkit-filter: grayscale(1);
+ }
+ .on-element {
+    pointer-events: auto;
+   /* -webkit-filter: grayscale(0);*/
+ }
