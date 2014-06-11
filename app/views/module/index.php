@@ -5,6 +5,7 @@
 /* @var $selected Module ID selected */
 
 // If selected not defined, define to none
+$compatibility = $project->compatibility();
 if (empty($selected)) $selected = 0;
 
 $this->breadcrumbs = array(
@@ -32,11 +33,19 @@ $hide = !empty($current) ? '' : 'hide';
             <h2 class="section-title"><?php echo Yii::t('app', 'Modules integrated in ') . e($project->name); ?></h2>
         </div>
         <div class="col-lg-12 col-md-12 col-xs-12">
-                <p>TODO : Show a project compatibility resume</p>
-                <a href="#" class=" btn btn-success right print">
-                    <i class="glyphicon glyphicon-print set-right" data-toggle="tooltip"
-                       data-original-title="<?php echo Yii::t('app', 'PRINT REPORT'); ?>"></i>
-                </a>
+            <?php if ($compatibility['status'] != Compatible::STATUS_COMPATIBLE) : ?>
+                <?php if (!empty($compatibility['conflicts'])) : foreach ($compatibility['conflicts'] as $module): ?>
+                    <div class="alert alert-danger">
+                        There are some modules with licenses incompatibility issues:<br>
+                        <i class="glyphicon glyphicon-thumbs-down" ></i><?php echo $module->name; ?><br>
+                    </div>
+                <?php endforeach; endif; ?>
+            <?php else: ?>
+                <div class="alert alert-success">
+                    Well done!! Your project has no compatibility problems.
+                    <i class="glyphicon glyphicon-thumbs-up" ></i><br>
+                </div>
+            <?php endif; ?>
                 <a href="/project/report/id/<?php echo e($project->id); ?>/code/<?php echo e($project->uuid); ?>" class=" btn btn-success right">
                     <?php echo Yii::t('app', 'Report'); ?>
                 </a>
