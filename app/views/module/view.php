@@ -92,7 +92,7 @@ $license_url = $model->fullLicenseUrl();
                     <thead>
                         <tr class="table-conflict">
                             <th class="col-lg-4 col-md-4 col-xs-4">Module</th>
-                            <th class="col-lg-4 col-md-4 col-xs-4">Type</th>
+                            <th class="col-lg-4 col-md-4 col-xs-4">License</th>
                             <th class="col-lg-4 col-md-4 col-xs-4">Result</th>
                         </tr>
                     </thead>
