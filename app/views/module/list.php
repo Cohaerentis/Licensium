@@ -13,11 +13,11 @@ $compclasses = array(
     <?php foreach ($modules as $item) :
       $compatibility = $item->compatibility();
     ?>
-      <li <?php if (!empty($selected) && ($item->id == $selected)) : $current = $item; ?>class="item-selected"<?php endif; ?>>
+      <li class="item <?php if (!empty($selected) && ($item->id == $selected)) : $current = $item; ?><?php echo ' item-selected'?><?php endif; ?>">
         <i class="glyphicon glyphicon-cog cog <?php echo $compclasses[$compatibility['status']]; ?>" ></i>
         <span class="crud-item"
         data-action="view" data-id="<?php echo e($item->id); ?>" data-target="/module/view/projectid/<?php echo e($projectid); ?>">
-          <?php echo e($item->name); ?>
+          <?php echo truncate(e($item->name)); ?>
         </span>
 
 
@@ -44,7 +44,7 @@ $compclasses = array(
                data-original-title="<?php echo Yii::t('app', 'Set a higher priority'); ?>"></i>
           </a>
         <?php endif; ?>
-        <i class="glyphicon glyphicon-off switcher switcher-on"></i>
+        <div class="switcher switcher-on"></div>
       </li>
     <?php $aux ++; endforeach; ?>
   </ul>
