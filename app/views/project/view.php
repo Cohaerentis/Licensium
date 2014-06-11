@@ -46,9 +46,12 @@ $createdate = $model->createDatePrint();
         </div>
     <?php endif; ?>
 
-    <div class="col-md-12 col-xs-12">
-        <a href="/module/index/projectid/<?php echo e($model->id); ?>" class="btn-success btn-modules">
-            <?php echo Yii::t('app', 'Manage modules'); ?>
+    <div class="col-md-12 col-xs-12 alt-buttons">
+        <a href="/project/report/id/<?php echo e($model->id); ?>/code/<?php echo e($model->uuid); ?>" class="btn-success btn-modules report">
+            <?php echo Yii::t('app', 'Report'); ?>
+        </a>
+        <a href="/module/index/projectid/<?php echo e($model->id); ?>" class="btn-success btn-modules report">
+            <?php echo Yii::t('app', 'Modules'); ?>
         </a>
     </div>
     <div class="col-md-12 col-xs-12 info-project">
@@ -64,11 +67,6 @@ $createdate = $model->createDatePrint();
                 <?php else : ?>
                     TODO : Show all available licenses, compatible with project modules
                 <?php endif; ?>
-                <div class="col-md-12 col-xs-12">
-                    <a href="/project/report/id/<?php echo e($model->id); ?>/code/<?php echo e($model->uuid); ?>" class="btn-success btn-modules">
-                        <?php echo Yii::t('app', 'Report'); ?>
-                    </a>
-                </div>
             </div>
             <div id="modules" class="tab-pane">
                 <?php if ($compatibility['status'] != Compatible::STATUS_COMPATIBLE) : ?>
