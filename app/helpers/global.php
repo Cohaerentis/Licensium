@@ -141,6 +141,23 @@ function e($text)
     return CHtml::encode($text);
 }
 
+/**
+ * Sets a max length for the string returned but does not cut the string if the limit is reached in the middle of a word.
+ * @param $text
+ * @return string
+ */
+function truncate($text,$length=30,$append="&hellip;") {
+  $text = trim($text);
+
+  if(strlen($text) > $length) {
+    $text = wordwrap($text, $length);
+    $text = explode("\n",$text);
+    $text = array_shift($text) . $append;
+  }
+
+  return $text;
+}
+
 function money($amount, $currency, $precision = 2) {
     $str = '';
     switch (strtoupper($currency)) {
