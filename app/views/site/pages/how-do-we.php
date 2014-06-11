@@ -14,12 +14,13 @@ $this->breadcrumbs=array(
         <div class="col-lg-12 col-md-12 col-xs-12 about-text">
             <p><pre>
                 <?php
-                    echo Yii::t(
-                        'app',
-                        'Explicacion de como ' .
-                        'calculamos las compatibilidades'
+                echo Yii::t(
+                    'app',
+                    'Explicacion de como ' .
+                    'calculamos las compatibilidades'
                     );
-                ?>
-            </pre></p>
+                    ?>
+                </pre>
+            </p>
     </div>
 </article>
