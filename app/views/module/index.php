@@ -34,12 +34,14 @@ $hide = !empty($current) ? '' : 'hide';
         </div>
         <div class="col-lg-12 col-md-12 col-xs-12">
             <?php if ($compatibility['status'] != Compatible::STATUS_COMPATIBLE) : ?>
-                <?php if (!empty($compatibility['conflicts'])) : foreach ($compatibility['conflicts'] as $module): ?>
+                <?php if (!empty($compatibility['conflicts'])): ?>
                     <div class="alert alert-danger">
-                        There are some modules with licenses incompatibility issues:<br>
-                        <i class="glyphicon glyphicon-thumbs-down" ></i><?php echo $module->name; ?><br>
+                        <p>There are some modules with licenses incompatibility issues:</p>
+                        <?php foreach ($compatibility['conflicts'] as $module): ?>
+                            <i class="glyphicon glyphicon-thumbs-down thumbs" ></i><?php echo $module->name; ?><br>
+                        <?php endforeach;?>
                     </div>
-                <?php endforeach; endif; ?>
+                <?php endif; ?>
             <?php else: ?>
                 <div class="alert alert-success">
                     Well done!! Your project has no compatibility problems.

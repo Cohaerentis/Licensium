@@ -70,16 +70,16 @@ $createdate = $model->createDatePrint();
             </div>
             <div id="modules" class="tab-pane">
                 <?php if ($compatibility['status'] != Compatible::STATUS_COMPATIBLE) : ?>
-                    <?php if (!empty($compatibility['conflicts'])) : foreach ($compatibility['conflicts'] as $module): ?>
                         <div class="bs-callout bs-callout-danger">
-                        There are some modules with licenses incompatibility issues:<br>
-                            <i class="glyphicon glyphicon-thumbs-down" ></i><?php echo $module->name; ?><br>
-                        </div>
+                        <p>There are some modules with licenses incompatibility issues:</p>
+                    <?php if (!empty($compatibility['conflicts'])) : foreach ($compatibility['conflicts'] as $module): ?>
+                            <i class="glyphicon glyphicon-thumbs-down thumbs" ></i><?php echo $module->name; ?><br>
                     <?php endforeach; endif; ?>
+                        </div>
                     <?php else: ?>
                     <div class="bs-callout bs-callout-ok">
                         Well done!! Your project has no compatibility problems.
-                        <i class="glyphicon glyphicon-thumbs-up" ></i><br>
+                        <i class="glyphicon glyphicon-thumbs-up thumbs" ></i><br>
                     </div>
                 <?php endif; ?>
             </div>
