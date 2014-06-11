@@ -11,10 +11,10 @@ $compclasses = array(
       $compatibility = $item->compatibility();
     ?>
       <li <?php if (!empty($selected) && ($item->id == $selected)) : $current = $item; ?>class="item-selected"<?php endif; ?>>
-        <i class="glyphicon glyphicon-cog cog <?php echo $compclasses[$compatibility['status']]; ?>"  ></i>
+        <i class="glyphicon glyphicon-tasks cog <?php echo $compclasses[$compatibility['status']]; ?>"  ></i>
         <span class="crud-item"
         data-action="view" data-id="<?php echo e($item->id); ?>" data-target="/project/view">
-          <?php echo e($item->name); ?>
+          <?php echo truncate(e($item->name)); ?>
         </span>
       </li>
     <?php endforeach; ?>
