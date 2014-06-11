@@ -33,6 +33,10 @@ $hide = !empty($current) ? '' : 'hide';
         </div>
         <div class="col-lg-12 col-md-12 col-xs-12">
                 <p>TODO : Show a project compatibility resume</p>
+                <a href="#" class=" btn btn-success right print">
+                    <i class="glyphicon glyphicon-print set-right" data-toggle="tooltip"
+                       data-original-title="<?php echo Yii::t('app', 'PRINT REPORT'); ?>"></i>
+                </a>
                 <a href="/project/report/id/<?php echo e($project->id); ?>/code/<?php echo e($project->uuid); ?>" class=" btn btn-success right">
                     <?php echo Yii::t('app', 'Report'); ?>
                 </a>

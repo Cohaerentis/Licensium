@@ -80,7 +80,7 @@ $createdate = $model->createDatePrint();
                     <?php endforeach; endif; ?>
                     <?php else: ?>
                     <div class="bs-callout bs-callout-ok">
-                        Well done!! Your project has no compatibilities problems.
+                        Well done!! Your project has no compatibility problems.
                         <i class="glyphicon glyphicon-thumbs-up" ></i><br>
                     </div>
                 <?php endif; ?>

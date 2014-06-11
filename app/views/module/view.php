@@ -76,7 +76,7 @@ $license_url = $model->fullLicenseUrl();
         <div class="col-lg-12 col-md-12 col-xs-12 page-title">
             <h2 class="section-title"><?php echo Yii::t('app', 'Module Status ');?>
                 <a href="/site/page/view/how-do-we">
-                    <i class="glyphicon glyphicon-question-sign how-to-info" data-toggle="tooltip"
+                    <i class="glyphicon glyphicon-question-sign set-right" data-toggle="tooltip"
                        data-original-title="<?php echo Yii::t('app', 'How do we calcute compatibility'); ?>"></i>
                 </a>
             </h2>
