@@ -15,7 +15,7 @@
         'enableAjaxValidation' => false,
     ));
     ?>
-    <div class="row">        
+    <div class="row">
         <div class="col-lg-12 col-md-12 col-xs-12 page-title">
             <h2><?php echo Yii::t('app', 'Login');?></h2>
         </div>
@@ -35,8 +35,9 @@
           <fieldset class="row submit">
             <?php echo CHtml::submitButton(Yii::t('app', 'Login'),
                 array('class'       => 'btn btn-success')); ?>
-            <?php echo CHtml::link(Yii::t('app', 'Remember password'), '/user/remember',
-                array('class'       => 'btn btn-link remember')); ?>
+            <?php echo CHtml::linkButton(Yii::t('app', 'Remember password'),
+                array('class'       => 'btn btn-link remember',
+                      'href'        => '/user/remember')); ?>
           </fieldset>
         </div>
     </div>

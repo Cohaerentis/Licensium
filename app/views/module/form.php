@@ -95,11 +95,11 @@
   <fieldset class="row submit">
     <div class="col-md-9 col-sm-6">
       <?php if ($model->isNewRecord) {
-          echo CHtml::submitButton('Cancel',
+          echo CHtml::linkButton('Cancel',
             array('class'       => 'btn btn-link btn-cancel',
                   'data-action' => 'clear'));
       } else {
-          echo CHtml::submitButton('Cancel',
+          echo CHtml::linkButton('Cancel',
             array('class'       => 'btn btn-link btn-cancel',
                   'data-action' => 'view',
                   'data-target' => '/module/view/projectid/' . $projectid,
