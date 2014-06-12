@@ -203,6 +203,7 @@ class Project extends CActiveRecord {
         if (!empty($this->modules)) {
             $found = false;
             foreach ($this->modules as $module) {
+                if (empty($module->enabled)) continue;
                 $result = $module->compatibility();
                 if ($result['status'] != Compatible::STATUS_COMPATIBLE) {
                     // Get worst compatibility status

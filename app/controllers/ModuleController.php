@@ -142,6 +142,18 @@ class ModuleController extends Controller {
         $this->renderAjaxError(Yii::t('app', 'While deleteting module "{name}"', array('{name}' => e($name) )));
     }
 
+    public function actionEnable($projectid, $id) {
+        $model = $this->loadModel($id, $projectid, true);
+        $model->enable();
+        $this->redirect("/module/view/projectid/$projectid/id/$id");
+    }
+
+    public function actionDisable($projectid, $id) {
+        $model = $this->loadModel($id, $projectid, true);
+        $model->disable();
+        $this->redirect("/module/index/projectid/$projectid");
+    }
+
     /**
      * Returns the data model based on the primary key given in the GET variable.
      * If the data model is not found, an HTTP exception will be raised.

@@ -18,6 +18,7 @@ class Compatible extends CActiveRecord {
     const STATUS_INCOMPATIBLE   = 0;
     const STATUS_COMPATIBLE     = 1;
     const STATUS_UNKNOWN        = 2;
+    const STATUS_DISABLED       = 100;
 
     /**
      * @return string the associated database table name

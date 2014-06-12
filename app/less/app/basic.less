@@ -96,7 +96,7 @@ article {
 
     font-family: 'Lato-Regular';
     &:before  {
-        /*background-image: url('/img/skull.png');*/        
+        /*background-image: url('/img/skull.png');*/
         font-family: 'Glyphicons Halflings';
         font-size: 20px;
         background-position: left center;
@@ -503,15 +503,15 @@ article {
 
 /* ======== - SIGN UP / LOGIN / REMEMBER / UPDATE / PASSWORD - ========= */
 
-.signup-wrapper, 
-.login-wrapper, 
-.remember-wrapper, 
-.update-wrapper, 
-.user-wrapper, 
+.signup-wrapper,
+.login-wrapper,
+.remember-wrapper,
+.update-wrapper,
+.user-wrapper,
 .password-wrapper,
 .about-wrapper,
 .target-wrapper,
-.general-form {    
+.general-form {
     font-family: 'Lato-Light';
     .field {
         margin-bottom: 10px;
@@ -603,7 +603,7 @@ article {
 
 /* ======== - CONFIRM SENT & TEXT - ========= */
 
-.confirm-wrapper, 
+.confirm-wrapper,
 .remember-wrapper, .about-wrapper, .target-wrapper {
     .confirm, .about-text, .target-text {
         p {
@@ -849,7 +849,7 @@ article {
         top: -35px;
         position: relative;
     }
-    .general-form {    
+    .general-form {
         font-family: 'Lato-Light';
         position: relative;
         top: -10px;
@@ -940,7 +940,7 @@ article {
             top: 0px;
             .label {
                 font-family: 'Lato-LightItalic';
-                font-size: 14px; 
+                font-size: 14px;
                 color: @global-color;
                 text-align: left;
             }
@@ -1057,7 +1057,7 @@ article {
     overflow: hidden;
     background-image: url('/img/drop.png');
     background-position: right center;
-    background-position-x:270px; 
+    background-position-x:270px;
     background-position-y: 10px;
     background-repeat: no-repeat;
     width: 310px;
@@ -1065,12 +1065,32 @@ article {
     font-family: 'Lato-LightItalic';
 }
 
-.compatible {
-    background-color: rgb(68, 178, 22)!important;/* green */
-}
+.item {
+    .compatible {
+        // background-color: rgb(68, 178, 22)!important;/* green */
+        background-color: @alert-success-bg;
+        border: 1px solid @alert-success-border;
+        color: @alert-success-text;
+    }
 
-.uncompatible {
-    background-color: rgb(219, 10, 10)!important; /* red */
+    .incompatible {
+        // background-color: rgb(219, 10, 10)!important; /* red */
+        background-color: @alert-danger-bg;
+        border: 1px solid @alert-danger-border;
+        color: @alert-danger-text;
+    }
+    .unknown {
+        // background-color: rgb(219, 10, 10)!important; /* red */
+        background-color: @alert-warning-bg;
+        border: 1px solid @alert-warning-border;
+        color: @alert-warning-text;
+    }
+    .disabled {
+        // background-color: rgb(219, 10, 10)!important; /* red */
+        background-color: white;
+        border: 1px solid #bbb;
+        color: grey;
+    }
 }
 .module-status {
     margin-top: 30px;
@@ -1170,10 +1190,12 @@ article {
     }
 }
 .off-element { /* Disables all event */
-    pointer-events: none;
+    // pointer-events: none;
     opacity: .3;
-    -webkit-filter: grayscale(1);
+    // filter: gray;
+    // -webkit-filter: grayscale(1);
+    // filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale"); /* Firefox 10+, Firefox on Android */
  }
 .on-element { /* Enable events */
-    pointer-events: auto;
+    // pointer-events: auto;
  }

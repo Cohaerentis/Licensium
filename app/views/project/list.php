@@ -9,8 +9,14 @@ $compclasses = array(
   <ul <?php if (!empty($class)) : echo 'class="' . $class . '"'; endif; ?>>
     <?php foreach ($projects as $item) :
       $compatibility = $item->compatibility();
+      $itemclasses = array('item');
+      if (!empty($selected) && ($item->id == $selected)) {
+        $current = $item;
+        $itemclasses[] = 'item-selected';
+      }
+
     ?>
-      <li <?php if (!empty($selected) && ($item->id == $selected)) : $current = $item; ?>class="item-selected"<?php endif; ?>>
+      <li class="<?php echo implode(' ', $itemclasses); ?>">
         <i class="glyphicon glyphicon-tasks cog <?php echo $compclasses[$compatibility['status']]; ?>"  ></i>
         <span class="crud-item"
         data-action="view" data-id="<?php echo e($item->id); ?>" data-target="/project/view">
