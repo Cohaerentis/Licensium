@@ -2,9 +2,10 @@
 $aux = 1;
 $total = count($modules);
 $compclasses = array(
-  Compatible::STATUS_INCOMPATIBLE => 'uncompatible',
+  Compatible::STATUS_INCOMPATIBLE => 'incompatible',
   Compatible::STATUS_COMPATIBLE   => 'compatible',
   Compatible::STATUS_UNKNOWN      => 'unknown',
+  Compatible::STATUS_DISABLED     => 'disabled',
 );
 
 ?>
@@ -12,8 +13,24 @@ $compclasses = array(
   <ul <?php if (!empty($class)) : echo 'class="' . $class . '"'; endif; ?>>
     <?php foreach ($modules as $item) :
       $compatibility = $item->compatibility();
+      $itemclasses = array('item');
+      $switchclasses = array('switcher');
+      $switchurl = '';
+      if (!empty($selected) && ($item->id == $selected)) {
+        $current = $item;
+        $itemclasses[] = 'item-selected';
+      }
+      if (empty($item->enabled)) {
+        $itemclasses[] = 'off-element';
+        $switchclasses[] = 'on-element switcher-off';
+        $switchurl = "/module/enable/projectid/{$projectid}/id/{$item->id}";
+      } else {
+        $switchclasses[] = 'switcher-on';
+        $switchurl = "/module/disable/projectid/{$projectid}/id/{$item->id}";
+      }
+
     ?>
-      <li class="item <?php if (!empty($selected) && ($item->id == $selected)) : $current = $item; ?><?php echo ' item-selected'?><?php endif; ?>">
+      <li class="<?php echo implode(' ', $itemclasses); ?>">
         <i class="glyphicon glyphicon-cog cog <?php echo $compclasses[$compatibility['status']]; ?>" ></i>
         <span class="crud-item"
         data-action="view" data-id="<?php echo e($item->id); ?>" data-target="/module/view/projectid/<?php echo e($projectid); ?>">
@@ -44,7 +61,7 @@ $compclasses = array(
                data-original-title="<?php echo Yii::t('app', 'Set a higher priority'); ?>"></i>
           </a>
         <?php endif; ?>
-        <div class="switcher switcher-on"></div>
+        <a href="<?php echo $switchurl; ?>" class="<?php echo implode(' ', $switchclasses); ?>"></a>
       </li>
     <?php $aux ++; endforeach; ?>
   </ul>
