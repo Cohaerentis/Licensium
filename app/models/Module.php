@@ -18,6 +18,7 @@
  * @property string $year
  * @property string $createdate
  * @property string $priority
+ * @property string $enabled
  */
 class Module extends CActiveRecord {
     const CACHE_PREFIX = 'module';
@@ -73,14 +74,14 @@ class Module extends CActiveRecord {
             array('name', 'length', 'max'=>100),
             array('licenseother, website, repo', 'length', 'max'=>256),
             array('relation, priority', 'length', 'max'=>3),
-            array('type', 'length', 'max'=>1),
+            array('type, enabled', 'length', 'max'=>1),
             array('day, month', 'length', 'max'=>2),
             array('year', 'length', 'max'=>4),
             array('createdate', 'length', 'max'=>11),
             array('licenseother, website, repo', 'url'),
             // The following rule is used by search().
             // @todo Please remove those attributes that should not be searched.
-            array('id, project_id, name, license_id, licenseother, website, repo, relation, type, day, month, year, createdate, priority', 'safe', 'on'=>'search'),
+            array('id, project_id, name, license_id, licenseother, website, repo, relation, type, enabled, day, month, year, createdate, priority', 'safe', 'on'=>'search'),
             array('year', 'ESeparatedDateValidator', 'limit' => 0,
                   'allowEmpty' => array('day' => true, 'month' => true, 'year' => false)),
         );
@@ -118,6 +119,7 @@ class Module extends CActiveRecord {
             'integrationdate' => Yii::t('app', 'Integration date'),
             'createdate'    => Yii::t('app', 'Createdate'),
             'priority'      => Yii::t('app', 'Priority'),
+            'enabled'       => Yii::t('app', 'Enabled'),
         );
     }
 
@@ -126,6 +128,7 @@ class Module extends CActiveRecord {
         unset($attributes['project_id']);
         unset($attributes['createdate']);
         unset($attributes['priority']);
+        unset($attributes['enabled']);
     }
 
     public function fullLicenseName() {
@@ -246,6 +249,25 @@ class Module extends CActiveRecord {
         return $all;
     }
 
+    protected function enabledChange($enabled) {
+        $this->enabled = empty($enabled) ? 0 : 1;
+        return $this->save();
+    }
+
+    public function enable() {
+        if (empty($this->enabled)) {
+            return $this->enabledChange(1);
+        }
+        return true;
+    }
+
+    public function disable() {
+        if (!empty($this->enabled)) {
+            return $this->enabledChange(0);
+        }
+        return true;
+    }
+
     public function priorityChange($change, $project) {
         if (!empty($project) && ($project->id == $this->project_id)) {
             $change = strtolower($change);
@@ -356,6 +378,7 @@ class Module extends CActiveRecord {
 
     public function isCompatible($versus) {
         if (empty($versus)) return Compatible::STATUS_UNKNOWN;
+        if (empty($this->enabled) || empty($versus->enabled)) return Compatible::STATUS_COMPATIBLE;
         return Compatible::isCompatible(
             array('licenseid' => $this->license_id,
                   'type'      => $this->type),
@@ -369,7 +392,10 @@ class Module extends CActiveRecord {
             'status'    => Compatible::STATUS_COMPATIBLE,
             'conflicts' => array(),
         );
-        if (!empty($this->project)) {
+        if (empty($this->enabled)) {
+            $global = Compatible::STATUS_DISABLED;
+
+        } else if (!empty($this->project)) {
             $found = false;
             foreach ($this->project->modules as $module) {
                 // First ignore any module until find me
@@ -381,6 +407,7 @@ class Module extends CActiveRecord {
 
                 // Check compatibility
                 $status = $this->isCompatible($module);
+wrlog("Module::compatibility: '$this->name' vs '$module->name' = $status");
                 if ($status != Compatible::STATUS_COMPATIBLE) {
                     // Get worst compatibility status
                     if (($global == Compatible::STATUS_COMPATIBLE) ||
@@ -392,8 +419,8 @@ class Module extends CActiveRecord {
                         'status' => $status);
                 }
             }
-            $compatibility['status'] = $global;
         }
+        $compatibility['status'] = $global;
         return $compatibility;
     }
 }

@@ -31,7 +31,7 @@
       <?php echo $form->textField($model, 'repo', array('class' => 'type-text form-control', 'maxlength' => 256)); ?>
       <?php echo $form->error($model, 'repo'); ?>
     </div>
-    <?php if(!$model->isNewRecord):?>
+    <?php /* AEA - Disabled in first version if (!$model->isNewRecord): ?>
     <div class="col-lg-12 col-md-12 col-xs-12 field input-group input-group-md drop">
       <?php echo $form->labelEx($model,'license_id', array('class' => 'col-md-6 col-xs-12 input-group-addon')); ?>
       <?php echo $form->dropDownList($model,'license_id',
@@ -46,16 +46,16 @@
       <?php echo $form->textField($model, 'licenseother', array('class' => 'type-text form-control', 'maxlength' => 256)); ?>
       <?php echo $form->error($model, 'licenseother'); ?>
     </div>
-    <?php endif;?>
+    <?php endif; */ ?>
   </fieldset>
   <fieldset class="row submit">
     <div class="col-md-9 col-sm-6">
       <?php if ($model->isNewRecord) {
-          echo CHtml::submitButton('Cancel',
+          echo CHtml::linkButton('Cancel',
             array('class'       => 'btn btn-link btn-cancel',
                   'data-action' => 'clear'));
       } else {
-          echo CHtml::submitButton('Cancel',
+          echo CHtml::linkButton('Cancel',
             array('class'       => 'btn btn-link btn-cancel',
                   'data-action' => 'view',
                   'data-target' => '/project/view',

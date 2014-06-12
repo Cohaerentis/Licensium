@@ -117,6 +117,7 @@ CREATE TABLE IF NOT EXISTS `module` (
     `year`          bigint(4)       NULL DEFAULT NULL,
 -- Temporal behaviour
     `createdate`    bigint(11)      NULL DEFAULT NULL,
+    `enabled`       tinyint(1)      NOT NULL DEFAULT '1',
 -- Sort order
     `priority`      bigint(3)       NULL DEFAULT NULL,
 -- Keys and indexes
