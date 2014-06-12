@@ -2,7 +2,7 @@
 $aux = 1;
 $total = count($modules);
 $compclasses = array(
-  Compatible::STATUS_INCOMPATIBLE => 'uncompatible',
+  Compatible::STATUS_INCOMPATIBLE => 'incompatible',
   Compatible::STATUS_COMPATIBLE   => 'compatible',
   Compatible::STATUS_UNKNOWN      => 'unknown',
 );

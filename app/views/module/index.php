@@ -27,7 +27,7 @@ if (!empty($modules)) {
 $hide = !empty($current) ? '' : 'hide';
 
 ?>
-<article class="module-index-wrapper common-index-wrapper">
+<div class="module-index-wrapper common-index-wrapper">
     <div class="row">
         <div class="col-lg-12 col-md-12 col-xs-12 page-title">
             <h2 class="section-title"><?php echo Yii::t('app', 'Modules integrated in ') . e($project->name); ?></h2>
@@ -116,5 +116,5 @@ $hide = !empty($current) ? '' : 'hide';
             </div>
         </div>
     </div>
-</article>
+</div>
 

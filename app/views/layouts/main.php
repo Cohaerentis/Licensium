@@ -138,22 +138,21 @@
   */ ?><!-- breadcrumbs -->
 
 
-  <?php if ($flashMessages) : ?>
-  <div class="container">
-      <?php foreach($flashMessages as $key => $message) : ?>
-          <div class="alert alert-<?php echo $key; ?> alert-dismissable">
-            <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
-            <?php echo $message; ?>
-          </div>
-      <?php endforeach; ?>
-  </div>
-  <?php endif; ?>
+<main class="container">
+    <article>
+        <?php if ($flashMessages) : ?>
+            <?php foreach($flashMessages as $key => $message) : ?>
+                <div class="alert alert-<?php echo $key; ?> alert-dismissable">
+                    <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+                    <?php echo $message; ?>
+                </div>
+            <?php endforeach; ?>
+        <?php endif; ?>
+        <?php echo $content; ?>
+    </article>
+</main>
 
-  <main class="wrap">
-    <?php echo $content; ?>
-  </main>
-
-  <footer>
+<footer>
     <div class="row footer">
         <div class="<?php echo $footer_left; ?>">
             <div class="row">
@@ -189,7 +188,7 @@
         </div>
 
     </div>
-  </footer>
+</footer>
     <script>
     <?php /* -Both Tooltip and Popover must be fired from here- */ ?>
         $(document).ready(function(){

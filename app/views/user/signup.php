@@ -51,6 +51,10 @@
             <?php echo CHtml::submitButton(Yii::t('app', 'Signup'),
                 array('class'       => 'btn btn-success'));
             ?>
+            <div class="privacy">
+                <input type="checkbox" id="check" name="check">
+                <a href="/site/page/view/policy"><label for="check"><?php echo Yii::t('app', 'Privacy policy'); ?></label></a>
+            </div>
           </fieldset>
       </div>
     <?php $this->endWidget(); ?>

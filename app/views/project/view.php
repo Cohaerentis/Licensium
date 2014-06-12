@@ -46,6 +46,13 @@ $createdate = $model->createDatePrint();
         </div>
     <?php endif; ?>
 
+    <div class="col-lg-12 col-md-12 col-xs-12"><hr /></div>
+    <div class="col-lg-12 col-md-12 col-xs-12 page-title">
+        <h2 class="section-title"><?php echo Yii::t('app', 'License Issues');?>
+            <i class="glyphicon glyphicon-exclamation-sign set-right"></i>
+        </h2>
+    </div>
+
     <div class="col-md-12 col-xs-12 alt-buttons">
         <a href="/project/report/id/<?php echo e($model->id); ?>/code/<?php echo e($model->uuid); ?>" class="btn-success btn-modules report">
             <?php echo Yii::t('app', 'Report'); ?>
@@ -56,8 +63,8 @@ $createdate = $model->createDatePrint();
     </div>
     <div class="col-md-12 col-xs-12 info-project">
         <ul class="nav nav-tabs">
-          <li class="active"><a href="#licenses" data-toggle="tab">Project Licenses</a></li>
-          <li><a href="#modules" data-toggle="tab">Project Modules</a></li>
+          <li class="active"><a href="#licenses" data-toggle="tab">Licenses</a></li>
+          <li><a href="#modules" data-toggle="tab">Modules</a></li>
         </ul>
         <div id="content" class="tab-content">
             <div id="licenses" class="tab-pane active">
