@@ -56,8 +56,8 @@ $createdate = $model->createDatePrint();
     </div>
     <div class="col-md-12 col-xs-12 info-project">
         <ul class="nav nav-tabs">
-          <li class="active"><a href="#licenses" data-toggle="tab">Project Licenses</a></li>
-          <li><a href="#modules" data-toggle="tab">Project Modules</a></li>
+          <li class="active"><a href="#licenses" data-toggle="tab"><?php echo Yii::t('app', 'Project'); ?></a></li>
+          <li><a href="#modules" data-toggle="tab"><?php echo Yii::t('app', 'Modules'); ?></a></li>
         </ul>
         <div id="content" class="tab-content">
             <div id="licenses" class="tab-pane active">
