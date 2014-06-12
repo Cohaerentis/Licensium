@@ -32,9 +32,9 @@ $compclasses = array(
     ?>
       <li class="<?php echo implode(' ', $itemclasses); ?>">
         <i class="glyphicon glyphicon-cog cog <?php echo $compclasses[$compatibility['status']]; ?>" ></i>
-        <span class="crud-item"
+       <span class="crud-item"
         data-action="view" data-id="<?php echo e($item->id); ?>" data-target="/module/view/projectid/<?php echo e($projectid); ?>">
-          <?php echo truncate(e($item->name)); ?>
+          <?php echo e($item->name); ?>
         </span>
 
 
@@ -59,10 +59,10 @@ $compclasses = array(
             <i class="glyphicon glyphicon-chevron-down move-arrow" data-toggle="tooltip"
                data-placement="right"
                data-original-title="<?php echo Yii::t('app', 'Set a higher priority'); ?>"></i>
-          </a>
+      </a>
         <?php endif; ?>
         <a href="<?php echo $switchurl; ?>" class="<?php echo implode(' ', $switchclasses); ?>"></a>
-      </li>
+      </li></a>
     <?php $aux ++; endforeach; ?>
   </ul>
 <?php else : ?>

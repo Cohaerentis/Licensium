@@ -83,7 +83,7 @@ $license_url = $model->fullLicenseUrl();
                 </h2>
             </div>
             <?php if ($compatibility['status'] != Compatible::STATUS_COMPATIBLE) :?>
-                <div class="col-lg-12 col-md-12 col-xs-12 bs-callout bs-callout-danger">
+                <div class="col-lg-12 col-md-12 col-xs-12 alert alert-danger">
                     <div class="row">
                         <div class="col-lg-12 col-md-12 col-xs-12 conflict-status">
                             <span class="status">Status :</span> <span class="status-result"><?php echo Compatible::statusPrint($compatibility['status']); ?></span>

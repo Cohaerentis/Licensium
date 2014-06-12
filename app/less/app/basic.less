@@ -27,25 +27,13 @@
 html, body {
     height: 100%;
 }
-.wrap {
+.container {
     width: 100%;
-    /*min-height: 407px;*/
-    height: auto !important;
-    margin: 0 auto 0px; /* the bottom margin is the negative value of the footer's height */
-    margin-bottom: 100px;
-    @media (min-width: @screen-xs-min) {
-    }
-    @media (min-width: @screen-sm-min) {
-        margin: 0 auto -120px;
-        margin-bottom: 100px;
-        min-height: 509px;
-    }
-    @media (min-width: @screen-md-min) {
-        /*min-height: 517px;*/
-    }
+    @media (min-width: @screen-xs-min) {}
+    @media (min-width: @screen-sm-min) {}
+    @media (min-width: @screen-md-min) {}
     @media (min-width: @screen-lg-min) {
         width: 970px;
-       /* min-height: 535px;*/
     }
 }
 
@@ -237,6 +225,9 @@ article {
 .alert {
     margin-right: -15px;
     margin-left: -15px;
+}
+.item {
+    width: 90%;
 }
 
 /* ==========================================================================
@@ -452,6 +443,7 @@ article {
             @media (min-width: @screen-lg-min) {}
             .item {
                 margin-bottom: 5px;
+                width: 90%;
             }
             .glyphicon {
                 color: @global-color;
@@ -486,6 +478,9 @@ article {
                         color: @global-color;
                         border: 1px solid @in-font;
                     }
+                }
+                .btn-myprojects {
+                    width: 180px;
                 }
             }
         }
@@ -830,6 +825,19 @@ article {
         z-index: 10;
         color: snow;
     }
+
+    .mobile-submenu {
+        .item-selected {
+            background-color: @global-color!important;
+            color: snow;
+            .cog {
+                /*color: @global-color;*/
+            }
+            .move-arrow {
+                color: snow;
+            }
+        }
+    }
     .content-wrapper {
         li {
             padding-top: 5px;
@@ -1113,11 +1121,15 @@ article {
 .module-status {
     margin-top: 30px;
     padding-left: 0;
+    padding-right: 0;
     .page-title {
         margin-bottom: 0px;
     }
-    .bs-callout {
+    .alert {
         text-align: center;
+        margin-left: 0;
+        margin-right: 0;
+        margin-top: 20px;
     }
     .status {
         font-size: 22px;
@@ -1138,9 +1150,15 @@ article {
             font-family: 'Lato-Regular';
         }
     }
-    .table-conflict {
-        th {
-            text-align: center;
+    .table {
+        .table-conflict {
+            th {
+                text-align: center;
+                max-width: 33%;
+            }
+        }
+        td {
+            max-width: 33%;
         }
     }
 }

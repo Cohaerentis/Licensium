@@ -103,7 +103,7 @@ $hide = !empty($current) ? '' : 'hide';
                     <?php $this->renderPartial('list', array('class' => 'modules-list', 'modules' => $modules,
                                                              'selected' => $selected, 'projectid' => $project->id)); ?>
                   </div>
-                  <div class="col-md-6 col-sm-6 edit-form">
+                  <div class="col-md-6 col-sm-6 edit-form"  id="crud-anchor">
                     <div class="crud-container">
                       <?php if (!empty($selected) && !empty($current))
                         $this->renderPartial('view', array('model' => $current, 'projectid' => $project->id));
