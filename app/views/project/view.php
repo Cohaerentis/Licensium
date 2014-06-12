@@ -60,7 +60,7 @@ $createdate = $model->createDatePrint();
           <li><a href="#licenses" data-toggle="tab"><?php echo Yii::t('app', 'Project'); ?></a></li>
         </ul>
         <div id="content" class="tab-content">
-            <div id="modules" class="tab-pane">
+            <div id="modules" class="tab-pane active">
                 <?php if ($compatibility['status'] != Compatible::STATUS_COMPATIBLE) : ?>
                         <div class="bs-callout bs-callout-danger">
                         <p>There are some modules with licenses incompatibility issues:</p>
@@ -75,7 +75,7 @@ $createdate = $model->createDatePrint();
                     </div>
                 <?php endif; ?>
             </div>
-            <div id="licenses" class="tab-pane active">
+            <div id="licenses" class="tab-pane">
                 <h3>Licencia del proyecto</h3>
                 <?php if (!empty($model->license)) : ?>
                     TODO : Show compatibility status of project license
