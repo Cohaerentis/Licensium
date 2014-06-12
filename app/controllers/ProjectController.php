@@ -8,7 +8,7 @@ class ProjectController extends Controller {
     public function filters() {
         return array(
             'ajaxOnly + confirm, create, update, delete',
-            array('EPrivilegesControlFilter - public', 'privileges' => self::PRIVILEGE_USER),
+            array('EPrivilegesControlFilter - report', 'privileges' => self::PRIVILEGE_USER),
         );
     }
 

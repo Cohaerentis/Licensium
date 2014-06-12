@@ -79,8 +79,45 @@ $createdate = $model->createDatePrint();
                 <h3>Licencia del proyecto</h3>
                 <?php if (!empty($model->license)) : ?>
                     TODO : Show compatibility status of project license
-                <?php else : ?>
-                    TODO : Show all available licenses, compatible with project modules
+                <?php else :
+                    $available = $model->availableLicenses();
+                ?>
+                    <h4><?php echo Yii::t('app', 'Static build'); ?></h4>
+                    <?php if (!empty($available['static'])) : ?>
+                        <ul>
+                        <?php foreach ($available['static'] as $license): ?>
+                            <li>
+                                <?php if (!empty($license->url)) : ?>
+                                    <a href="<?php echo $license->url; ?>" target="_blank">
+                                <?php endif; ?>
+                                <?php echo $license->name; ?>
+                                <?php if (!empty($license->url)) : ?>
+                                    </a>
+                                <?php endif; ?>
+                            </li>
+                        <?php endforeach ?>
+                        </ul>
+                    <?php else : ?>
+                        No license is compatible with project modules
+                    <?php endif; ?>
+                    <h4><?php echo Yii::t('app', 'Dinamic build'); ?></h4>
+                    <?php if (!empty($available['dinamic'])) : ?>
+                        <ul>
+                        <?php foreach ($available['dinamic'] as $license): ?>
+                            <li>
+                                <?php if (!empty($license->url)) : ?>
+                                    <a href="<?php echo $license->url; ?>" target="_blank">
+                                <?php endif; ?>
+                                <?php echo $license->name; ?>
+                                <?php if (!empty($license->url)) : ?>
+                                    </a>
+                                <?php endif; ?>
+                            </li>
+                        <?php endforeach ?>
+                        </ul>
+                    <?php else : ?>
+                        No license is compatible with project modules
+                    <?php endif; ?>
                 <?php endif; ?>
             </div>
         </div>
