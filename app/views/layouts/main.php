@@ -15,8 +15,8 @@
     array('label' => Yii::t('app', 'Projects'),   'url' => 'project'),
   );
   $menuitems_logout = array(
-    array('label' => Yii::t('app', 'About Us'),    'url' => '/site/page/view/about'),
-    array('label' => Yii::t('app', 'Goal'),      'url' => '/site/page/view/target'),
+    array('label' => Yii::t('app', 'About us'),    'url' => '/site/page/view/about'),
+    array('label' => Yii::t('app', 'Goal'),        'url' => '/site/page/view/goal'),
     array('label' => Yii::t('app', 'Contact'),     'url' => 'http://www.cohaerentis.com/datos-de-contacto'),
 
   );
@@ -49,11 +49,7 @@
     $footer_logo = 'footer-logo-login';
   }
 
-  $languages = array(
-    'es' => array('label' => 'Español', 'url' => '?lang=es'),
-    'en' => array('label' => 'English', 'url' => '?lang=en'),
-  );
-  $currentlang = 'es';
+  $languages = !empty(Yii::app()->params['languages']) ? Yii::app()->params['languages'] : array();
 
 ?>
 <!DOCTYPE html>
@@ -104,8 +100,18 @@
           </ul>
           <div class="row userbox">
             <div class="col-lg-12 col-md-12 col-xs-12 language">
-            <a href="#"><div class="single-language">es</div></a>
-            <a href="#"><div class="single-language current">en</div></a>
+              <?php foreach ($languages as $code => $language):
+                $langclass = array('single-language');
+                if (Yii::app()->language == $code) {
+                  $langclass[] = 'current';
+                }
+              ?>
+                <a href="<?php echo $language['url']; ?>">
+                  <div class="<?php echo implode(' ', $langclass); ?>">
+                    <?php echo $language['label']; ?>
+                  </div>
+                </a>
+              <?php endforeach; ?>
             </div>
             <div class="col-lg-12 col-md-12 col-xs-12 log loginuser <?php echo $log_class;?>">
               <div class="<?php echo $login['class']; ?>">
@@ -162,7 +168,7 @@
                     <i class="glyphicon glyphicon-bookmark"></i></a>
                 </div>
                 <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 footer-left">
-                    <a target="_blank" href ='https://github.com/Teachnova/Licensium/'><p><?php echo Yii::t('app', 'Source Code'); ?></p>
+                    <a target="_blank" href ='https://github.com/Teachnova/Licensium/'><p><?php echo Yii::t('app', 'Source code'); ?></p>
                     <i class="glyphicon glyphicon-link"></i></a>
                 </div>
             </div>

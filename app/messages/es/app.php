@@ -18,4 +18,12 @@
  */
 return array (
     'Label in english' => 'Etiqueta en Español',
+    'Login' => 'Acceder',
+    'Signup' => 'Registrarse',
+    'Remember password' => 'Recordar contraseña',
+    'About us' => 'Quiénes somos',
+    'Goal' => 'Objetivos',
+    'Contact' => 'Contacto',
+    'License' => 'Licencia',
+    'Source code' => 'Código fuente',
 );

@@ -27,6 +27,43 @@ class Controller extends CController {
      */
     public $breadcrumbs = array();
 
+    public function __construct($id, $module = null) {
+        parent::__construct($id, $module);
+
+        // Language detect
+        Yii::app()->language = $this->langDetect();
+    }
+
+    public function langDetect() {
+        $app = Yii::app();
+        $lang = $app->language;
+        $req =& $app->request;
+        $restParams = $req->getRestParams();
+
+        // 1. First check GET
+        if (!empty($_GET['lang'])) $lang = $_GET['lang'];
+        // 2. Then check POST
+        else if (!empty($_POST['lang'])) $lang = $_POST['lang'];
+        // 3. Check session
+        else if (!empty($app->session['lang'])) $lang = $app->session['lang'];
+        // 4. Check browser preferred language
+        else $lang = $this->langBrowserDetect();
+
+        // Save language selection in session
+        $app->session['lang'] = $lang;
+
+        return $lang;
+    }
+
+    public function langBrowserDetect() {
+        $candidate = Yii::app()->request->getPreferredLanguage();
+        $candidate = substr($candidate, 0, 2);
+        if ( !empty(Yii::app()->params['languages']) &&
+             array_key_exists(strtolower($candidate), Yii::app()->params['languages']) )
+            return $candidate;
+        return Yii::app()->language;
+    }
+
     public static function paginationNormalize($page, $pagesize) {
         $page = (is_numeric($page)) ? (int) $page : self::PAGE_DEFAULT;
         $page = ($page >= 1) ? $page : self::PAGE_DEFAULT;
