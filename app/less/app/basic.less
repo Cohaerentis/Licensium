@@ -4,7 +4,7 @@
 @media (min-width: @screen-lg-min) {}
 
 /* ==========================================================================
-   Variables
+   Variables and classes
    ========================================================================== */
 
 @global-color: #4575b7;
@@ -16,6 +16,12 @@
 }
 .right {
     float: right;
+}
+
+.ellipsis {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
 }
 
 /* ==========================================================================
@@ -228,6 +234,12 @@ article {
 }
 .item {
     width: 90%;
+    @media (min-width: @screen-xs-min) {
+        width: 94%;
+    }
+    @media (min-width: @screen-sm-min) {}
+    @media (min-width: @screen-md-min) {}
+    @media (min-width: @screen-lg-min) {}
 }
 
 /* ==========================================================================
@@ -753,7 +765,10 @@ article {
                     padding-left: 50px;
                     position: absolute;
                     top: 4px;
-                    width: 100%;
+                    width: 80%;
+                    text-overflow: ellipsis;
+                    overflow: hidden;
+                    white-space: nowrap;
                 }
             }
         }
@@ -800,10 +815,12 @@ article {
         }
     }
     .crud-btn-create {
-        width: 100px;
+        width: 100%; /*before 100px*/
+        margin-bottom: 5px;
         @media (min-width: @screen-xs-min) {}
         @media (min-width: @screen-sm-min) {
             width: 100px;
+            margin-bottom: 20px;
         }
         @media (min-width: @screen-md-min) {}
         @media (min-width: @screen-lg-min) {}
@@ -868,7 +885,10 @@ article {
             padding-left: 50px;
             position: absolute;
             top: 4px;
-            width: 100%;
+            width: 80%;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            white-space: nowrap;
         }
     }
     .crud-container {
@@ -980,20 +1000,55 @@ article {
         }
     }
     .edition-buttons {
-        top: 20px;
         position: relative;
-        button {position: relative;
+        left: -20px;
+        @media (min-width: @screen-xs-min) {}
+        @media (min-width: @screen-sm-min) {
+            top: 20px;
+            left: 0;
+        }
+        @media (min-width: @screen-md-min) {}
+        @media (min-width: @screen-lg-min) {}
+        button {
+            position: relative;
             color: #fffafa;
             background-color: #4575b7;
             border-radius: 0px;
             text-transform: uppercase;
-            width: 100px;
+            width: 100%; /*before 100px*/
             margin-left: 20px;
             padding: 10px 20px 9px 20px;
+            margin-bottom: 5px;
+            @media (min-width: @screen-xs-min) {}
+            @media (min-width: @screen-sm-min) {
+                width: 100px;
+            }
+            @media (min-width: @screen-md-min) {}
+            @media (min-width: @screen-lg-min) {}
             &:hover {
                 background-color: #ccc;
                 color: @global-color;
             }
+        }
+        .edit {
+            float: none;
+            @media (min-width: @screen-xs-min) {}
+            @media (min-width: @screen-sm-min) {
+                float: right;
+            }
+            @media (min-width: @screen-md-min) {}
+            @media (min-width: @screen-lg-min) {}
+
+        }
+        .delete {
+            float: none;
+            @media (min-width: @screen-xs-min) {}
+            @media (min-width: @screen-sm-min) {
+                float: left;
+            }
+            @media (min-width: @screen-md-min) {}
+            @media (min-width: @screen-lg-min) {}
+
         }
     }
     .btn-modules {
@@ -1029,14 +1084,32 @@ article {
                     border-radius: 0;
                 }
                 &:focus {
-                   background-color: @global-color!important;
-                   color: snow;
+                   background-color: snow!important;
+                }
+                &.active {
+                    &:hover {
+                        color: snow!important;
+                        background-color: @global-color!important;
+                        opacity: .7;
+                    }
                 }
             }
         }
     }
     .nav-tabs > li.active > a:hover {
         color: snow!important;
+        background-color: @global-color!important;
+        opacity: .7;
+    }
+    .nav-tabs > li.focus > a:hover {
+        color: rgb(85, 85, 85)!important;
+    }
+    .tab-content {
+        .alert {
+            margin-left: 0;
+            margin-right: 0;
+            margin-top: 20px;
+        }
     }
 }
 .alt-buttons {
@@ -1158,7 +1231,12 @@ article {
             }
         }
         td {
-            max-width: 33%;
+            max-width: 0px;
+            p {
+                text-overflow: ellipsis;
+                overflow: hidden;
+                white-space: nowrap;
+            }
         }
     }
 }

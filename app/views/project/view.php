@@ -25,7 +25,7 @@ $createdate = $model->createDatePrint();
         <div class="col-md-12">
             <div class="row">
                 <div class="label col-lg-12 col-md-6"><?php echo e($model->getAttributeLabel('website')); ?></div>
-                <div class="value col-lg-12 col-md-6"><a href="<?php echo e($model->website); ?>" target="_blank"><?php echo e($model->website); ?></a></div>
+                <div class="value col-lg-12 col-md-6 ellipsis"><a href="<?php echo e($model->website); ?>" target="_blank"><?php echo e($model->website); ?></a></div>
             </div>
         </div>
     <?php endif; ?>
@@ -33,7 +33,7 @@ $createdate = $model->createDatePrint();
         <div class="col-md-12">
             <div class="row">
                 <div class="label col-lg-12 col-md-6"><?php echo e($model->getAttributeLabel('repo')); ?></div>
-                <div class="value col-lg-12 col-md-6"><a href="<?php echo e($model->repo); ?>" target="_blank"><?php echo e($model->repo); ?></a></div>
+                <div class="value col-lg-12 col-md-6 ellipsis"><a href="<?php echo e($model->repo); ?>" target="_blank"><?php echo e($model->repo); ?></a></div>
             </div>
         </div>
     <?php endif; ?>
@@ -77,14 +77,14 @@ $createdate = $model->createDatePrint();
             </div>
             <div id="modules" class="tab-pane active">
                 <?php if ($compatibility['status'] != Compatible::STATUS_COMPATIBLE) : ?>
-                        <div class="bs-callout bs-callout-danger">
+                        <div class="col-lg-12 col-md-12 col-xs-12 alert alert-danger">
                         <p>There are some modules with licenses incompatibility issues:</p>
                     <?php if (!empty($compatibility['conflicts'])) : foreach ($compatibility['conflicts'] as $module): ?>
                             <i class="glyphicon glyphicon-thumbs-down thumbs" ></i><?php echo $module->name; ?><br>
                     <?php endforeach; endif; ?>
                         </div>
                     <?php else: ?>
-                    <div class="bs-callout bs-callout-ok">
+                    <div class="col-lg-12 col-md-12 col-xs-12 alert alert-success">
                         Well done!! Your project has no compatibility problems.
                         <i class="glyphicon glyphicon-thumbs-up thumbs" ></i><br>
                     </div>

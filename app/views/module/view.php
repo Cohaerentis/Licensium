@@ -102,13 +102,13 @@ $license_url = $model->fullLicenseUrl();
                             <tr>
 
                                 <div class="col-lg-12 col-md-12 col-xs-12 conflict-list">
-                                    <td><?php echo e($conflict['versus']->name); ?></td>
+                                    <td><p><?php echo e($conflict['versus']->name); ?></p></td>
                                     <?php if (!empty($conflict['versus']->license)) : ?>
                                         <td><?php echo e($conflict['versus']->license->name); ?></td>
-                                        <td><?php echo Compatible::statusPrint($conflict['status']); ?></td>
+                                        <td><p><?php echo Compatible::statusPrint($conflict['status']); ?></p></td>
                                     <?php else : ?>
                                         <td><?php echo Yii::t('app', 'Unkwon'); ?></td>
-                                        <td><?php echo Compatible::statusPrint($conflict['status']); ?></td>
+                                        <td><p><?php echo Compatible::statusPrint($conflict['status']); ?></p></td>
                                     <?php endif; ?>
                                 </div>
                             </tr>
@@ -117,7 +117,7 @@ $license_url = $model->fullLicenseUrl();
                     </table>
                 </div>
             <?php else: ?>
-                <div class="col-lg-12 col-md-12 col-xs-12 bs-callout bs-callout-ok">
+                <div class="col-lg-12 col-md-12 col-xs-12 alert alert-success">
                     <span class="status">Status :</span> <span class="status-result"><?php echo Compatible::statusPrint($compatibility['status']); ?></span>
                 </div>
             <?php endif; ?>

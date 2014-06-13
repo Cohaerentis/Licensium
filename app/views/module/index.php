@@ -66,34 +66,28 @@ $hide = !empty($current) ? '' : 'hide';
                 </ul>
               </div>
               <div class="row crud-row">
-                <div class="col-md-6 col-sm-6 col-xs-4">
+                <div class="col-md-6 col-sm-6 col-xs-12">
                   <div class="main-button-options">
-                    <ul>
-                      <li>
                         <button class="btn btn-success crud-btn crud-btn-create" data-action="new" data-target="/module/create/projectid/<?php echo e($project->id); ?>">
                           <?php echo Yii::t('app', 'Create'); ?>
                         </button>
-                      </li>
-                    </ul>
                   </div>
                 </div>
-                <div class="col-md-6 col-sm-6 col-xs-8">
+                <div class="col-md-6 col-sm-6 col-xs-12">
                   <div class="row main-button-options edition-buttons">
-                    <ul>
-                      <li>
-                        <button class="<?php echo $hide; ?> crud-btn crud-btn-edit col-xs-6 input-group-addon" data-action="edit" data-target="/module/update/projectid/<?php echo e($project->id); ?>">
+                    <div class="col-sm-6 col-xs-12">
+                        <button class="<?php echo $hide; ?>crud-btn crud-btn-edit edit input-group-addon" data-action="edit" data-target="/module/update/projectid/<?php echo e($project->id); ?>">
                           <?php echo Yii::t('app', 'Edit'); ?>
                         </button>
-                      </li>
-                      <li>
-                        <button class="<?php echo $hide; ?> crud-btn crud-btn-edit col-xs-6 input-group-addon" data-action="confirm" data-target="/module/confirm/projectid/<?php echo e($project->id); ?>"
+                    </div>
+                    <div class="col-sm-6 col-xs-12">
+                        <button class="<?php echo $hide; ?>crud-btn crud-btn-edit delete input-group-addon" data-action="confirm" data-target="/module/confirm/projectid/<?php echo e($project->id); ?>"
                           data-confirm-action="delete" data-confirm-target="/module/delete/projectid/<?php echo e($project->id); ?>"
                           data-confirm-title="<?php echo Yii::t('app', 'Delete confirmation'); ?>"
                           data-confirm-heading="<?php echo Yii::t('app', 'Are you sure you want delete this module?'); ?>">
                           <?php echo Yii::t('app', 'Delete'); ?>
                         </button>
-                      </li>
-                    </ul>
+                    </div>
                   </div>
                 </div>
               </div>
