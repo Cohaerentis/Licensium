@@ -3,7 +3,7 @@
 /* @var $model User */
 
 ?>
-<article class="user-wrapper">
+<div class="user-wrapper">
     <div class="row">
         <div class="col-lg-12 col-md-12 col-xs-12 page-title">
             <h2><?php echo Yii::t('app', 'My profile');?></h2>
@@ -49,4 +49,4 @@
                 </div>
         </div>
     </div>
-</article>
+</div>
