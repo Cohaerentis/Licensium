@@ -152,7 +152,8 @@ class Compatible extends CActiveRecord {
                     array('lid' => $lid, 'rid' => $rid,
                           'ltype' => $ltype, 'rtype' => $rtype));
                 if ($record !== null) {
-                    Yii::app()->cache->set($key, $record->status, self::CACHE_EXPIRATION);
+                    $value = $record->status;
+                    Yii::app()->cache->set($key, $value, self::CACHE_EXPIRATION);
                 }
             }
         }
