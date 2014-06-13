@@ -4,7 +4,7 @@
     // TODO : Nothing to show by now ;)
 
 ?>
-<article class="home-wrapper">
+<div class="home-wrapper">
     <div class="row">
         <div class="col-lg-12 col-md-12 col-xs-12 home">
             <h1>Licensium</h1>
@@ -34,4 +34,4 @@
             </div>
         </div>
       </div>
-  </article>
+  </div>
