@@ -4,7 +4,7 @@
 /* @var $form CActiveForm  */
 
 ?>
-  <article class="signup-wrapper">
+  <div class="signup-wrapper">
     <?php $form = $this->beginWidget('CActiveForm', array(
         'id' => 'signup-form',
         'htmlOptions' => array('class' => 'general-form'),
@@ -58,4 +58,4 @@
           </fieldset>
       </div>
     <?php $this->endWidget(); ?>
-  </article>
+  </div>
