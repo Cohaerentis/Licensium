@@ -16,6 +16,15 @@
             $(this).toggleClass("switcher-off");
         });
         */
+            $(".set-right").tooltip({
+                placement: 'right'
+            });
+            $(".move-arrow").tooltip({
+                placement: 'left'
+            });
+            $(".how-to-info").tooltip({
+                placement: 'top'
+            });
 
     });
 

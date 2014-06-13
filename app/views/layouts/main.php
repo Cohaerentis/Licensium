@@ -198,15 +198,6 @@
     <script>
     <?php /* -Both Tooltip and Popover must be fired from here- */ ?>
         $(document).ready(function(){
-            $(".set-right").tooltip({
-                placement: 'right'
-            });
-            $(".move-arrow").tooltip({
-                placement: 'left'
-            });
-            $(".how-to-info").tooltip({
-                placement: 'top'
-            });
         });
     </script>
   </body>

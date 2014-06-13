@@ -16,8 +16,10 @@
     ));
     ?>
     <div class="row">
-        <div class="col-lg-12 col-md-12 col-xs-12 page-title">
-            <h2><?php echo Yii::t('app', 'Login');?></h2>
+        <div class="col-lg-12 col-md-12 col-xs-12">
+            <div class="page-title">
+              <h2><?php echo Yii::t('app', 'Login');?></h2>
+            </div>
         </div>
         <div class="col-lg-12 col-md-12 col-xs-12">
           <fieldset class="row">
