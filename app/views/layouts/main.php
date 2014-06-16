@@ -38,14 +38,16 @@
     $main_menu = $menuitems_logout;
     $footer_col = 'col-lg-6 col-md-8 col-sm-6 col-xs-12';
     $footer_left = 'col-lg-6 col-md-4 col-sm-6 col-xs-12';
+    $footer_left_down = 'col-lg-12 col-md-12 col-sm-12 col-xs-12';
     $footer_logo = 'footer-logo-logout';
   } else {
     $name = Yii::app()->user->firstname . ' ' . Yii::app()->user->lastname;
     $login = array('class' => 'loggedin', 'label' => $name, 'url' => 'user');
     $signup = array('class' => 'logout', 'label' => '<i class="glyphicon glyphicon-off "></i>', 'url' => 'user/logout');
     $main_menu = $menuitems_login;
-    $footer_col = 'col-lg-4 col-md-4 col-sm-4 col-xs-6';
-    $footer_left = 'col-lg-4 col-md-4 col-sm-4 col-xs-12';
+    $footer_col = 'col-lg-12 col-md-12 col-sm-12 col-xs-12';
+    $footer_left = 'col-lg-12 col-md-12 col-sm-12 col-xs-12';
+    $footer_left_down = 'col-lg-6 col-md-6 col-sm-12 col-xs-12';
     $footer_logo = 'footer-logo-login';
   }
 
@@ -98,36 +100,42 @@
               </li>
             <?php endforeach ?>
           </ul>
-          <div class="row userbox">
-            <div class="col-lg-12 col-md-12 col-xs-12 language">
-              <?php foreach ($languages as $code => $language):
-                $langclass = array('single-language');
-                if (Yii::app()->language == $code) {
-                  $langclass[] = 'current';
-                }
-              ?>
-                <a href="<?php echo $language['url']; ?>">
-                  <div class="<?php echo implode(' ', $langclass); ?>">
-                    <?php echo $language['label']; ?>
-                  </div>
-                </a>
-              <?php endforeach; ?>
-            </div>
-            <div class="col-lg-12 col-md-12 col-xs-12 log loginuser <?php echo $log_class;?>">
-              <div class="<?php echo $login['class']; ?>">
-                <a href="<?php echo baseUrl($login['url']); ?>">
-                  <?php echo $login['label']; ?>
-                </a>
-              </div>
-              <?php if (!empty($signup)) : ?>
-                <div class="<?php echo $signup['class']; ?>">
-                  <a href="<?php echo baseUrl($signup['url']); ?>">
-                    <?php echo $signup['label']; ?>
-                  </a>
+        <div class="userbox">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-xs-12">
+                    <div class="language">
+                      <?php foreach ($languages as $code => $language):
+                        $langclass = array('single-language');
+                        if (Yii::app()->language == $code) {
+                          $langclass[] = 'current';
+                        }
+                      ?>
+                        <a href="<?php echo $language['url']; ?>">
+                          <div class="<?php echo implode(' ', $langclass); ?>">
+                            <?php echo $language['label']; ?>
+                          </div>
+                        </a>
+                      <?php endforeach; ?>
+                    </div>
                 </div>
-              <?php endif; ?>
+                <div class="col-lg-12 col-md-12 col-xs-12">
+                    <div class=" log loginuser <?php echo $log_class;?>">
+                        <div class="<?php echo $login['class']; ?>">
+                            <a href="<?php echo baseUrl($login['url']); ?>">
+                              <?php echo $login['label']; ?>
+                            </a>
+                        </div>
+                        <?php if (!empty($signup)) : ?>
+                        <div class="<?php echo $signup['class']; ?>">
+                            <a href="<?php echo baseUrl($signup['url']); ?>">
+                                <?php echo $signup['label']; ?>
+                            </a>
+                        </div>
+                        <?php endif; ?>
+                    </div>
+                </div>
             </div>
-          </div><!-- /.login-->
+        </div><!-- /.login-->
         </div><!-- /.navbar-collapse -->
       </div><!-- /.container-fluid -->
     </nav>
@@ -144,8 +152,7 @@
   */ ?><!-- breadcrumbs -->
 
 
-<main class="container">
-    <article>
+    <main class="container main-container">
         <?php if ($flashMessages) : ?>
             <?php foreach($flashMessages as $key => $message) : ?>
                 <div class="alert alert-<?php echo $key; ?> alert-dismissable">
@@ -155,51 +162,60 @@
             <?php endforeach; ?>
         <?php endif; ?>
         <?php echo $content; ?>
-    </article>
-</main>
+    </main>
 
-<footer>
-    <div class="row footer">
-        <div class="<?php echo $footer_left; ?>">
-            <div class="row">
-                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 footer-left">
-                    <a target="_blank" href ='https://github.com/Teachnova/Licensium/blob/master/LICENSE'><p><?php echo Yii::t('app', 'License'); ?></p>
-                    <i class="glyphicon glyphicon-bookmark"></i></a>
-                </div>
-                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 footer-left">
-                    <a target="_blank" href ='https://github.com/Teachnova/Licensium/'><p><?php echo Yii::t('app', 'Source code'); ?></p>
-                    <i class="glyphicon glyphicon-link"></i></a>
+    <footer>
+        <div class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="<?php echo $footer_left; ?>">
+                        <div class="row">
+                            <div class="<?php echo $footer_left_down; ?>">
+                                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                                    <div class="footer-left">
+                                        <a target="_blank" href ='https://github.com/Teachnova/Licensium/blob/master/LICENSE'><p><?php echo Yii::t('app', 'License'); ?></p>
+                                        <i class="glyphicon glyphicon-bookmark"></i></a>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                                    <div class="footer-left">
+                                        <a target="_blank" href ='https://github.com/Teachnova/Licensium/'><p><?php echo Yii::t('app', 'Source code'); ?></p>
+                                        <i class="glyphicon glyphicon-link"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="<?php echo $footer_left_down; ?>">
+                                <?php if (Yii::app()->user->isGuest) :?>
+                                <?php else :?>
+                                    <div class="row">
+                                        <div class="footer-links">
+                                            <?php foreach ($menuitems_logout as $item): ?>
+                                                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                                                    <a href="<?php echo baseUrl($item['url']); ?>">
+                                                        <?php echo $item['label']; ?>
+                                                    </a>
+                                                </div>
+                                            <?php endforeach ?>
+                                        </div>
+                                    </div>
+                                <?php endif; ?>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="<?php echo $footer_col;?>">
+                        <div class="<?php echo $footer_logo; ?>">
+                            <a href="http://www.cohaerentis.com"><img src ="/img/cohaerentis.png"/></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <div class="footer-bottom">
+                            <p><?php echo Yii::t('app', 'Licensium is a Cohaerentis Consultores product, strategic business consulting for open business models. &copy; 2014')  ?></p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="<?php echo $footer_col; echo ' '.$footer_logo; ?>">
-            <a href="http://www.cohaerentis.com"><img src ="/img/cohaerentis.png"/></a>
-        </div>
-        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-6">
-            <?php if (Yii::app()->user->isGuest) :?>
-            <?php else :?>
-                <ul class="nav navbar-nav footer-links">
-                    <?php foreach ($menuitems_logout as $item): ?>
-                        <li <?php if ($currentitem == $item['url']) echo 'class="active"'; ?>>
-                            <a href="<?php echo baseUrl($item['url']); ?>">
-                                <?php echo $item['label']; ?>
-                            </a>
-                        </li>
-                    <?php endforeach ?>
-                </ul>
-            <?php endif; ?>
-        </div>
-        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 footer-bottom">
-            <p><?php echo Yii::t('app', 'Licensium is a Cohaerentis Consultores product, strategic business consulting for open business models. &copy; 2014')  ?></p>
-        </div>
-
-    </div>
-</footer>
-    <script>
-    <?php /* -Both Tooltip and Popover must be fired from here- */ ?>
-        $(document).ready(function(){
-        });
-    </script>
+    </footer>
   </body>
 </html>
 

@@ -4,7 +4,7 @@
 /* @var $form CActiveForm  */
 
 ?>
-  <article class="remember-wrapper">
+  <div class="remember-wrapper">
     <?php $form = $this->beginWidget('CActiveForm', array(
         'id' => 'remember-form',
         'htmlOptions' => array('class' => 'general-form'),
@@ -16,23 +16,39 @@
     ));
     ?>
     <div class="row">
-        <div class="col-lg-12 col-md-12 col-xs-12 page-title">
-            <h2><?php echo Yii::t('app', 'Forgot your password');?> <i class="glyphicon glyphicon-question-sign"></i></h2>
+        <div class="col-lg-12 col-md-12 col-xs-12">
+            <div class="page-title">
+                <h2><?php echo Yii::t('app', 'Forgot your password');?> <i class="glyphicon glyphicon-question-sign"></i></h2>
+            </div>
         </div>
         <div class="col-lg-12 col-md-12 col-xs-12">
-            <fieldset class="row">
-                <div class="col-lg-12 col-md-12 col-xs-12 field input-group input-group-md">
-                  <?php echo $form->labelEx($model, 'email', array('class' => 'col-xs-6 input-group-addon')); ?>
-                  <?php echo $form->textField($model, 'email', array('class' => 'type-text form-control', 'maxlength' => 100, 'placeholder' => 'email')); ?>
-                  <?php echo $form->error($model, 'email'); ?>
+            <fieldset>
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-xs-12">
+                        <div class="field input-group input-group-md">
+                            <div class="row">
+                                <div class="col-lg-12 col-md-12 col-xs-12">
+                                    <?php echo $form->labelEx($model, 'email', array('class' => 'input-group-addon')); ?>
+                                    <?php echo $form->textField($model, 'email', array('class' => 'type-text form-control', 'maxlength' => 100, 'placeholder' => 'email')); ?>
+                                    <?php echo $form->error($model, 'email'); ?>
+                                 </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </fieldset>
-            <fieldset class="row submit">
-                <?php echo CHtml::submitButton(Yii::t('app', 'Remember'),
-                    array('class'       => 'btn btn-success'));
-                ?>
+            <fieldset >
+                <div class="row">
+                    <div class="col-lg-12 col-ms-12 col-sm-12 col-xs-12">
+                        <div class="submit">
+                            <?php echo CHtml::submitButton(Yii::t('app', 'Remember'),
+                                array('class'       => 'btn btn-success'));
+                            ?>
+                        </div>
+                    </div>
+                </div>
             </fieldset>
         </div>
       </div>
     <?php $this->endWidget(); ?>
-  </article>
+  </div>

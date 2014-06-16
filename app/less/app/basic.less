@@ -43,6 +43,13 @@ html, body {
     }
 }
 
+.main-container {
+    min-height: 656px;
+}
+.footer .container {
+    width: 100%;
+}
+
 /*
 article {
     margin-left: 15px;
@@ -55,6 +62,16 @@ article {
     }
 }
 */
+.login-wrapper, 
+.remember-wrapper,
+.update-wrapper,
+.password-wrapper,
+.signup-wrapper {
+    .form-control,
+    .errorMessage {
+        max-width: 710px;
+    }
+}
 
 .page-title {
     font-family: 'Lato-Light';
@@ -63,6 +80,9 @@ article {
     margin-bottom: 20px;
     background-color: #eee;
     max-width: 710px;
+    padding-left: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
     h2 {
         margin-top: 10px;
         font-size: 25px;
@@ -77,12 +97,14 @@ article {
     .glyphicon {
         color: @global-color;
         float: right;
+        padding-right: 10px;
     }
 }
 
 .errorMessage {
     display: inline-block;
     min-width: 270px;
+    width: 100%;
     background-color: #f2dede;
     border: 1px solid #ebccd1;
     color: #a94442;
@@ -125,28 +147,25 @@ article {
     a {
         color: snow;
         &:hover {
-            color: snow;
+            color: @in-font;
             text-decoration: none;
         }
     }
     .footer-links {
-        list-style: none;
-        text-align: right;
-        @media (min-width: @screen-xs-min) {
-            text-align: center;
-        }
-        @media (min-width: @screen-sm-min) {
-            float: right;
-        }
+        float: left;
+        margin: auto;
+        width: 100%;
+        text-align: center;
+        margin-top: 20px;
+        @media (min-width: @screen-xs-min) {}
+        @media (min-width: @screen-sm-min) {}
         @media (min-width: @screen-md-min) {}
         @media (min-width: @screen-lg-min) {}
-        li {
-            margin-right: 10px;
-            a {
-                &:hover {
-                    background-color: transparent;
-                    color: @global-color;
-                }
+        a {
+            text-transform: uppercase;
+            &:hover {
+                background-color: transparent;
+                color: @global-color;
             }
         }
     }
@@ -161,18 +180,16 @@ article {
     }
     .footer-logo-login {
         img {
-            width: 180px;
-            margin-top: 50px;
-            margin-left: 20px;
+            width: 250px;
+            margin-top: 30px;
+            margin-bottom: 30px;
             @media (min-width: @screen-xs-min) {}
             @media (min-width: @screen-sm-min) {
-                margin-left: 0px;
-                margin-top: 0px;
+                margin-bottom: 0px;
             }
             @media (min-width: @screen-md-min) {}
             @media (min-width: @screen-lg-min) {
-                width: 250px;
-                margin-top: 0px;
+                margin-top: 30px;
             }
         }
     }
@@ -231,8 +248,8 @@ article {
     top: 3px;
 }
 .alert {
-    margin-right: -15px;
-    margin-left: -15px;
+    /*margin-right: -15px;
+    margin-left: -15px;*/
 }
 .item {
     width: 90%;
@@ -243,7 +260,6 @@ article {
     @media (min-width: @screen-md-min) {}
     @media (min-width: @screen-lg-min) {}
 }
-
 /* ==========================================================================
    HEADER
    ========================================================================== */
@@ -477,6 +493,7 @@ article {
             .home-buttons {
                 margin-top: 20px;
                 text-align: center;
+                margin-bottom: 20px;
                 .btn-success {
                     width: 100px;
                     margin-left: 10px;
@@ -533,6 +550,7 @@ article {
     font-family: 'Lato-Light';
     .field {
         margin-bottom: 10px;
+        width: 100%;
         .input-group-addon {
             font-family: 'Lato-Regular';
             width: 150px;
@@ -550,7 +568,7 @@ article {
                 padding-bottom: 10px;
                 color: @in-font;
                 background-color: @global-color;
-                text-align: left;
+                text-align: center;
                 margin-bottom: 10px;
             }
             @media (min-width: @screen-md-min) {}
@@ -560,9 +578,7 @@ article {
             border-radius: 0px;
             font-family: 'Lato-LightItalic';
             @media (min-width: @screen-xs-min) {}
-            @media (min-width: @screen-sm-min) {
-                 width: 560px;
-            }
+            @media (min-width: @screen-sm-min) {}
             @media (min-width: @screen-md-min) {}
             @media (min-width: @screen-lg-min) {}
         }
@@ -723,6 +739,8 @@ article {
             margin-top: 15px;*/
             .dropdown, .open {
                 background-color: transparent;
+                padding-left: 15px;
+                padding-right: 15px;
             }
             .open .dropdown-menu {
                 position: static;
@@ -859,7 +877,7 @@ article {
             }
         }
     }
-    .content-wrapper {
+    .wrapper-list {
         li {
             padding-top: 5px;
             padding-bottom: 5px;
@@ -905,12 +923,13 @@ article {
         top: -10px;
         @media (min-width: @screen-xs-min) {}
         @media (min-width: @screen-sm-min) {
-            top: -45px;
+            /*top: -45px;*/
         }
         @media (min-width: @screen-md-min) {}
         @media (min-width: @screen-lg-min) {}
         .field {
             margin-bottom: 10px;
+            width: 100%;
             .input-group-addon {
                 font-family: 'Lato-Regular';
                 width: 150px;
@@ -926,10 +945,10 @@ article {
                     padding-top: 10px;
                     padding-bottom: 10px;
                     text-align: left;
-                    margin-bottom: 10px;
+                    /*margin-bottom: 10px;*/
                     position: relative;
-                    top: 15px;
-                    left: -10px;
+                    /*top: 15px;
+                    left: -10px;*/
                 }
                 @media (min-width: @screen-md-min) {}
                 @media (min-width: @screen-lg-min) {}
@@ -938,12 +957,8 @@ article {
                 border-radius: 0px;
                 font-family: 'Lato-LightItalic';
                 @media (min-width: @screen-xs-min) {}
-                @media (min-width: @screen-sm-min) {
-                     width: 400px;
-                }
-                @media (min-width: @screen-md-min) {
-                    width: 460px;
-                }
+                @media (min-width: @screen-sm-min) {}
+                @media (min-width: @screen-md-min) {}
                 @media (min-width: @screen-lg-min) {}
             }
         }
@@ -1069,8 +1084,16 @@ article {
     min-height: 250px;
     margin-top: 30px;
     padding-left: 0;
+    .nav-tabs {
+        .list-tab {
+            top: 4px;
+        }
+        /*ctive {
+            top: 5px;
+        }*/
+    }
     ul {
-        border-color: @global-color;
+        border-color: #dddddd;
         li {
             background-color: transparent!important;
             border-color: @global-color;
@@ -1109,10 +1132,56 @@ article {
         color: rgb(85, 85, 85)!important;
     }
     .tab-content {
+        .active {
+            border-left: 1px solid #dddddd;
+            border-right: 1px solid #dddddd;
+            border-bottom: 1px solid #dddddd;
+            padding-right: 5px;
+            padding-left: 5px;
+            padding-bottom: 5px;
+            margin-bottom: 30px;
+            h3 {
+                margin-top: 0;
+                padding-top: 20px;
+            }
+        }
         .alert {
             margin-left: 0;
             margin-right: 0;
             margin-top: 20px;
+        }
+    }
+    .tab-pane {
+        .comp-title {
+            text-align: center;
+            font-family: 'Lato-LightItalic';
+            color: @global-color;
+        }
+        .list-title {
+            text-align:center;
+            font-family:'Lato-Light';
+            text-transform: uppercase;
+        }
+        .static-list, .dinamic-list {
+            text-align: center;
+            ul {
+                padding-left: 0;
+            }
+            li {
+                background-color: #EEEEEE!important;
+                &:hover {
+                    background-color: #C7D1E5!important;
+                    a {
+                        color: #555555!important;
+                    }
+                }
+                a {
+                    text-decoration: none;
+                    &:hover {
+                        background-color: transparent!important;
+                    }
+                }
+            }
         }
     }
 }
@@ -1127,6 +1196,22 @@ article {
         float: left;
         margin-right: 20px;
     }
+}
+
+.icom-project-selected {
+    top: 2px;
+    margin-right: 10px;
+    color: @alert-danger-text;
+}
+.com-project-selected {
+    top: 2px;
+    margin-right: 10px;
+    color: @alert-success-text;
+}
+.unk-project-selected {
+    top: 2px;
+    margin-right: 10px;
+    color: @alert-warning-text;
 }
 
 /* ==========================================================================
@@ -1152,7 +1237,6 @@ article {
     -moz-appearance: none;
     text-indent: 1px;
     text-overflow: '';
-    top: 10px;
     padding-top: 5px;
     padding-bottom: 5px;
     background: transparent;
@@ -1160,12 +1244,18 @@ article {
     overflow: hidden;
     background-image: url('/img/drop.png');
     background-position: right center;
-    background-position-x:270px;
-    background-position-y: 10px;
+    background-position: 98% 12px;
     background-repeat: no-repeat;
-    width: 310px;
+    /*width: 310px;*/
     font-size: 18px;
     font-family: 'Lato-LightItalic';
+    @media (min-width: @screen-xs-min) {}
+    @media (min-width: @screen-sm-min) {
+        width: 310px;
+        background-position-x:270px;
+    }
+    @media (min-width: @screen-md-min) {}
+    @media (min-width: @screen-lg-min) {}
 }
 
 .item {
@@ -1244,6 +1334,20 @@ article {
         }
     }
 }
+.span-question {
+    width: 20px;
+    height: 10px;
+    border-radius: 50px;
+    border: 1px solid @global-color;
+    padding-left: 5px;
+    padding-right: 6px;
+    margin-left: 10px;
+    a{
+        &:hover {
+            text-decoration:none;
+        }
+    }
+}
 
 /* ==========================================================================
    REPORT
@@ -1251,8 +1355,6 @@ article {
 
 .print {
     width: 100px;
-    margin-left: 10px;
-    margin-right: 30px;
     color: @in-font;
     background-color: @global-color;
     border-color: #777;
@@ -1286,6 +1388,9 @@ article {
     cursor: pointer;
     height: 35px;
     width: 35px;
+    &:hover {
+        text-decoration: none;
+    }
 }
 .item-selected .switcher { /* The box changes its color when selected */
     background: @global-color!important;

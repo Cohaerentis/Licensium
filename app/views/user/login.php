@@ -4,7 +4,7 @@
 /* @var $form CActiveForm  */
 
 ?>
-  <article class="login-wrapper">
+  <div class="login-wrapper">
     <?php $form = $this->beginWidget('CActiveForm', array(
         'id' => 'login-form',
         'htmlOptions' => array('class' => 'general-form'),
@@ -22,26 +22,46 @@
             </div>
         </div>
         <div class="col-lg-12 col-md-12 col-xs-12">
-          <fieldset class="row">
-            <div class="col-lg-12 col-md-12 col-xs-12 field input-group input-group-md">
-              <?php echo $form->labelEx($model, 'email', array('class' => 'col-xs-6 input-group-addon')); ?>
-              <?php echo $form->textField($model, 'email', array('class' => 'type-text form-control', 'maxlength' => 100, 'placeholder' => 'email')); ?>
-              <?php echo $form->error($model, 'email'); ?>
-            </div>
-            <div class="col-lg-12 col-md-12 col-xs-12 field input-group input-group-md">
-              <?php echo $form->labelEx($model, 'password', array('class' => 'col-xs-6 input-group-addon')); ?>
-              <?php echo $form->passwordField($model, 'password', array('class' => 'type-text form-control', 'maxlength' => 100, 'placeholder' => 'password')); ?>
-              <?php echo $form->error($model, 'password'); ?>
-            </div>
-          </fieldset>
-          <fieldset class="row submit">
-            <?php echo CHtml::submitButton(Yii::t('app', 'Login'),
-                array('class'       => 'btn btn-success')); ?>
-            <?php echo CHtml::linkButton(Yii::t('app', 'Remember password'),
-                array('class'       => 'btn btn-link remember',
-                      'href'        => '/user/remember')); ?>
-          </fieldset>
+            <fieldset>
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-xs-12">
+                        <div class="field input-group input-group-md">
+                            <div class="row">
+                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                    <?php echo $form->labelEx($model, 'email', array('class' => 'input-group-addon')); ?>
+                                    <?php echo $form->textField($model, 'email', array('class' => 'type-text form-control', 'maxlength' => 100, 'placeholder' => 'email')); ?>
+                                    <?php echo $form->error($model, 'email'); ?>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-12 col-md-12 col-xs-12">
+                        <div class="field input-group input-group-md">
+                            <div class="row">
+                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                    <?php echo $form->labelEx($model, 'password', array('class' => 'input-group-addon')); ?>
+                                    <?php echo $form->passwordField($model, 'password', array('class' => 'type-text form-control', 'maxlength' => 100, 'placeholder' => 'password')); ?>
+                                    <?php echo $form->error($model, 'password'); ?>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </fieldset>
+            <fieldset>
+                <div class="row">
+                    <div class="submit">
+                        <div class="col-lg-12 col-md-12 col-xs-12">
+                            <?php echo CHtml::submitButton(Yii::t('app', 'Login'),
+                                array('class'       => 'btn btn-success')); ?>
+                            <?php echo CHtml::linkButton(Yii::t('app', 'Remember password'),
+                                array('class'       => 'btn btn-link remember',
+                                      'href'        => '/user/remember')); ?>
+                        </div>
+                    </div>
+                </div>
+            </fieldset>
         </div>
     </div>
     <?php $this->endWidget(); ?>
-  </article>
+  </div>

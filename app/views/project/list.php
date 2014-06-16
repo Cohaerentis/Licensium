@@ -18,8 +18,9 @@ $compclasses = array(
     ?>
       <li class="<?php echo implode(' ', $itemclasses); ?>">
         <i class="glyphicon glyphicon-tasks cog <?php echo $compclasses[$compatibility['status']]; ?>"  ></i>
-        <span class="crud-item"
-        data-action="view" data-id="<?php echo e($item->id); ?>" data-target="/project/view">
+        <span class="crud-item" data-name="<?php echo e($item->name); ?>"
+              data-status="<?php echo $compclasses[$compatibility['status']]; ?>"
+              data-action="view" data-id="<?php echo e($item->id); ?>" data-target="/project/view">
           <?php echo truncate(e($item->name)); ?>
         </span>
       </li>
