@@ -18,8 +18,10 @@
  */
 return array (
     'Label in english' => 'Etiqueta en Español',
+    /*- HOME -*/
     'Login' => 'Acceder',
     'Signup' => 'Registrarse',
+    'View my Projects' => 'Ver mis proyectos',
     'Remember password' => 'Recordar contraseña',
     'About us' => 'Quiénes somos',
     'Goal' => 'Objetivos',
