@@ -87,8 +87,8 @@ $hide = !empty($current) ? '' : 'hide';
                                 <div class="col-sm-6 col-xs-6">
                                     <button class="<?php echo $hide; ?>crud-btn crud-btn-edit delete input-group-addon" data-action="confirm" data-target="/module/confirm/projectid/<?php echo e($project->id); ?>"
                                       data-confirm-action="delete" data-confirm-target="/module/delete/projectid/<?php echo e($project->id); ?>"
-                                      data-confirm-title="<?php echo Yii::t('app', 'Delete confirmation'); ?>"
-                                      data-confirm-heading="<?php echo Yii::t('app', 'Are you sure you want delete this module?'); ?>">
+                                      data-confirm-title="<?php echo Yii::t('app', 'You are about to delete forever one of your modules'); ?>"
+                                      data-confirm-heading="<?php echo Yii::t('app', "You've been warned but even so you want to delete it, go ahead!"); ?>">
                                       <?php echo Yii::t('app', 'Delete'); ?>
                                     </button>
                                 </div>
