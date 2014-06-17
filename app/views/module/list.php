@@ -32,10 +32,10 @@ $compclasses = array(
     ?>
       <li class="<?php echo implode(' ', $itemclasses); ?>">
         <i class="glyphicon glyphicon-cog cog <?php echo $compclasses[$compatibility['status']]; ?>" ></i>
-            <a href="#anchor"><span class="crud-item"
-            data-action="view" data-id="<?php echo e($item->id); ?>" data-target="/module/view/projectid/<?php echo e($projectid); ?>">
+            <span class="crud-item"
+            data-action="view" data-scroll="anchor" data-id="<?php echo e($item->id); ?>" data-target="/module/view/projectid/<?php echo e($projectid); ?>">
               <?php echo e($item->name); ?>
-            </span></a>
+            </span>
 
         <?php if(($aux == $total)  && ($total > 1)): ?>
           <a href="/module/up/projectid/<?php echo e($projectid); ?>/id/<?php echo e($item->id); ?>">
