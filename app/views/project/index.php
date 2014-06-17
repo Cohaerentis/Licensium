@@ -33,12 +33,19 @@ $hide = !empty($current) ? '' : 'hide';
             </div>
         </div>
         <div class="col-lg-12 col-md-12 col-xs-12">
-            <div class="crud" <?php if (!empty($selected)) : ?> data-current="<?php echo e($selected); ?>" <?php endif; ?>>
+            <div class="crud" <?php if (!empty($current)) : ?> data-current="<?php echo e($current->id); ?>" <?php endif; ?>>
               <div class="visible-xs mobile-submenu">
                 <ul class="nav navbar-nav">
                   <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                        <span class="project-selected"><?php echo Yii::t('app', 'Select a project'); ?></span>
+                        <span class="project-selected">
+                          <?php if (!empty($current)): ?>
+                            <i class="glyphicon glyphicon-tasks project-selected <?php echo Compatible::statusClass($current->compatibility()['status']); ?>"></i>
+                              <?php echo truncate(e($item->name)); ?>
+                          <?php else : ?>
+                            <?php echo Yii::t('app', 'Select a project'); ?>
+                          <?php endif; ?>
+                        </span>
                     </a>
                     <?php $this->renderPartial('list', array('projects' => $projects,
                                                'class' => 'dropdown-menu', 'selected' => $selected)); ?>
