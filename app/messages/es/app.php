@@ -21,7 +21,7 @@ return array (
     /*- HOME -*/
     'Login' => 'Acceder',
     'Signup' => 'Registrarse',
-    'View my Projects' => 'Ver mis proyectos',
+    'View My Projects' => 'Ver mis proyectos',
     'Remember password' => 'Recordar contraseña',
     'About us' => 'Quiénes somos',
     'Goal' => 'Objetivos',
