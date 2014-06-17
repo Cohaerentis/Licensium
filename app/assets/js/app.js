@@ -27,13 +27,17 @@
             });
 
             $(".crud-item").click(function(){
-                name      = $(this).attr('data-name');
-                status    = $(this).attr('data-status');
+                var name      = $(this).attr('data-name'),
+                    status    = $(this).attr('data-status');
+/*
                 var com   = 'compatible';
                 var incom = 'incompatible';
                 var unk   = 'unknown';
-
-                $('.project-selected').html(name);
+*/
+//                $('.project-selected').html(name);
+                $('.project-selected').html(
+                    '<i class="glyphicon glyphicon-tasks project-selected ' + status + '"></i>' + name);
+/*
                 if(status == incom) {
                     $('.project-selected').prepend(
                         '<i class="glyphicon glyphicon-tasks icom-project-selected"></i>');
@@ -46,6 +50,7 @@
                     $('.project-selected').prepend(
                         '<i class="glyphicon glyphicon-tasks unk-project-selected"></i>');
                 }
+*/
             });
     });
 })( jQuery );
