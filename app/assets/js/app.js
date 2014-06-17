@@ -25,10 +25,19 @@
             $(".how-to-info").tooltip({
                 placement: 'top'
             });
-
             $(".crud-btn[data-action='new']").click(function(){
                 $('.project-selected').html('Select a project');
             });
+
+            
+
+            $('a[href*=#]').click(function(){
+                $('html, body').animate({
+                    scrollTop: $( $.attr(this, 'href') ).offset().top
+                }, 500);
+                return false;
+            });
+
 
             $(".crud-item").click(function(){
                 var name      = $(this).attr('data-name'),

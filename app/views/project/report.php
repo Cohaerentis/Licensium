@@ -122,7 +122,7 @@ $compatibility = $model->compatibility();
                 </p>
                 <p class='report-link ellipsis'>
                   <i class="glyphicon glyphicon-link report-link-icon"></i>
-                  <?php echo $url.'/project/report/id/'.$id.'/code/'.$uuid; ?>
+                  <a href="<?php echo $url.'/project/report/id/'.$id.'/code/'.$uuid; ?>"><?php echo $url.'/project/report/id/'.$id.'/code/'.$uuid; ?></a>
                 </p>
                 <p>
                     <strong>
