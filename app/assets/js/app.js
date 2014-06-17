@@ -29,13 +29,13 @@
                 $('.project-selected').html('Select a project');
             });
 
-            
 
-            $('a[href*=#]').click(function(){
+
+            $('[data-scroll]').click(function(){
+                var anchor = $(this).attr('data-scroll');
                 $('html, body').animate({
-                    scrollTop: $( $.attr(this, 'href') ).offset().top
+                    scrollTop: $('#' + anchor).offset().top
                 }, 500);
-                return false;
             });
 
 
