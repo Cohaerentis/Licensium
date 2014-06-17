@@ -169,4 +169,13 @@ class Compatible extends CActiveRecord {
             default:                        return Yii::t('app', 'Unknown');
         }
     }
+
+    public static function statusClass($status) {
+        switch ($status) {
+            case self::STATUS_INCOMPATIBLE: return 'incompatible';
+            case self::STATUS_COMPATIBLE:   return 'compatible';
+            case self::STATUS_UNKNOWN:
+            default:                        return 'unknown';
+
+    }
 }
