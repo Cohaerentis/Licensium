@@ -23,6 +23,31 @@
     overflow: hidden;
     white-space: nowrap;
 }
+.compatible {
+        // background-color: rgb(68, 178, 22)!important;/* green */
+        background-color: @alert-success-bg;
+        border: 1px solid @alert-success-border;
+        color: @alert-success-text;
+    }
+
+.incompatible {
+    // background-color: rgb(219, 10, 10)!important; /* red */
+    background-color: @alert-danger-bg;
+    border: 1px solid @alert-danger-border;
+    color: @alert-danger-text;
+}
+.unknown {
+    // background-color: rgb(219, 10, 10)!important; /* red */
+    background-color: @alert-warning-bg;
+    border: 1px solid @alert-warning-border;
+    color: @alert-warning-text;
+}
+.disabled {
+    // background-color: rgb(219, 10, 10)!important; /* red */
+    background-color: white;
+    border: 1px solid #bbb;
+    color: grey;
+}
 
 /* ==========================================================================
    Common
@@ -156,23 +181,33 @@ article {
         margin: auto;
         width: 100%;
         text-align: center;
-        margin-top: 20px;
+        margin-top: 30px;
         padding-right: 20px;
+        font-size: 16px;
         @media (min-width: @screen-xs-min) {}
-        @media (min-width: @screen-sm-min) {}
+        @media (min-width: @screen-sm-min) {
+            font-size:18px;
+            margin-top: 10px;
+        }
         @media (min-width: @screen-md-min) {}
         @media (min-width: @screen-lg-min) {}
         a {
             text-transform: uppercase;
+            display: block;
             &:hover {
                 background-color: transparent;
-                color: @global-color;
+                .glyphicon {
+                    color: @global-color;
+                }
             }
         }
     }
     .footer-left {
         margin-top: 10px;
         text-transform: uppercase;
+        a {
+            display: block;
+        }
         &:hover {
             .glyphicon {
                 color: @global-color;
@@ -1198,20 +1233,9 @@ article {
     }
 }
 
-.icom-project-selected {
+.project-selected {
     top: 2px;
     margin-right: 10px;
-    color: @alert-danger-text;
-}
-.com-project-selected {
-    top: 2px;
-    margin-right: 10px;
-    color: @alert-success-text;
-}
-.unk-project-selected {
-    top: 2px;
-    margin-right: 10px;
-    color: @alert-warning-text;
 }
 
 /* ==========================================================================
