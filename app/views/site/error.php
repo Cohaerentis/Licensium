@@ -14,6 +14,9 @@ if($code==404) {
 if($code==401) {
     $msg = Yii::t('app', 'Oh, dude!! That´s not the way. But you can keep trying.');
 }
+if($code==400) {
+    $msg = Yii::t('app', 'Pay attention, please!! Check the URL you have just enter. Is it right ? I bet it is not.');
+}
 
 ?>
 
