@@ -157,6 +157,7 @@ article {
         width: 100%;
         text-align: center;
         margin-top: 20px;
+        padding-right: 20px;
         @media (min-width: @screen-xs-min) {}
         @media (min-width: @screen-sm-min) {}
         @media (min-width: @screen-md-min) {}
@@ -1421,3 +1422,151 @@ article {
 .on-element { /* Enable events */
     // pointer-events: auto;
  }
+
+/* ==========================================================================
+   REPORT
+   ========================================================================== */
+.report-content {
+    margin-bottom: 50px;
+    .report-link {
+        font-size: 18px;
+        padding: 5px;
+        text-align: center;
+        .report-link-icon {
+            position: relative;
+            top: 3px;
+            padding-left: 5px;
+        }
+    }
+    .project-info {
+        .label {
+            font-size: 16px;
+            color: #606060;
+            text-align: left;
+            display: block;
+            padding: 5px;
+            border-bottom: 1px solid;
+            border-color: #eee;
+        }
+        .value {
+            padding: 5px 5px 8px 25px;
+            margin-bottom: 10px;
+            margin-left: 10px;
+            font-family: 'Lato-Light';
+            font-size: 18px;
+        }
+    }
+}
+
+
+/* ==========================================================================
+   ERROR PAGES & MODAL BOXES
+   ========================================================================== */
+.center-error {
+    min-height: 300px;
+    text-align: center;
+    font-family: 'Lato-Light';
+    font-size: 20px;
+    .error-title h2 {
+        font-family: 'Lato-LightItalic';
+        font-size: 25px;
+        font-weight: bold;
+        color: @global-color;
+        @media (min-width: @screen-xs-min) {}
+        @media (min-width: @screen-sm-min) {
+            font-size: 35px;
+        }
+        @media (min-width: @screen-md-min) {}
+        @media (min-width: @screen-lg-min) {}
+    }
+    .back {
+        position: relative;
+        padding: 15px 30px;
+        margin: 0;
+        color: #555;
+        background: #dddddd;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        border-radius: 10px;
+        width: 100%;
+        @media (min-width: @screen-xs-min) {}
+        @media (min-width: @screen-sm-min) {
+            width: 60%;
+            max-width: 400px;
+            margin-left: 100px;
+        }
+        @media (min-width: @screen-md-min) {}
+        @media (min-width: @screen-lg-min) {}
+
+    }
+    .back:after {
+        content: "";
+        position: relative;
+        bottom: -50px;
+        left: 50px;
+        border-width: 0 20px 50px 0px;
+        border-style: solid;
+        border-color: transparent #ddd;
+        display: block;
+        width: 0;
+        @media (min-width: @screen-xs-min) {
+            left: 150px;
+        }
+        @media (min-width: @screen-sm-min) {
+            left: 200px;
+        }
+        @media (min-width: @screen-md-min) {}
+        @media (min-width: @screen-lg-min) {}
+    }
+    #monster {
+        margin-top: 20px;
+    }
+    #monster img {
+        width: 30%;
+        max-width: 30%;
+    }
+}
+
+.modal-dialog {
+    .modal-content {
+        border-radius: 0px;
+        .modal-header {
+                background-color: @alert-danger-bg;
+                border: 1px solid @alert-danger-border;
+            .custom-modal-title {
+                font-family: 'Lato-LightItalic';
+                font-size: 24px;
+                font-weight: bold;
+                color: @alert-danger-text;
+            }
+        }
+        .modal-body {
+            .message-title {
+                font-family: 'Lato-Light';
+                font-size: 18px;
+            }
+            .crud-modalInfo {
+                .value {
+                    font-family: 'Lato-Regular';
+                    font-size: 18px;
+                    &:before {
+                        font-family: 'Glyphicons Halflings';
+                        content: '\e019';
+                        position: relative;
+                        top: 3px;
+                        left: -5px;
+                    }
+                }
+            }
+        }
+        .modal-footer {
+            .btn-success {
+                margin-bottom: 0;
+                border: 0;
+                &:hover {
+                    border: 0;
+                }
+            }
+        }
+    }
+}
