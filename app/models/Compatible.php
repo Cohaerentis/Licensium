@@ -176,6 +176,7 @@ class Compatible extends CActiveRecord {
             case self::STATUS_COMPATIBLE:   return 'compatible';
             case self::STATUS_UNKNOWN:
             default:                        return 'unknown';
+        }
 
     }
 }
