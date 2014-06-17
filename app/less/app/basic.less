@@ -157,6 +157,7 @@ article {
         width: 100%;
         text-align: center;
         margin-top: 20px;
+        padding-right: 20px;
         @media (min-width: @screen-xs-min) {}
         @media (min-width: @screen-sm-min) {}
         @media (min-width: @screen-md-min) {}
@@ -1421,3 +1422,72 @@ article {
 .on-element { /* Enable events */
     // pointer-events: auto;
  }
+
+
+/* ==========================================================================
+   ERROR PAGES
+   ========================================================================== */
+.center-error {
+    min-height: 300px;
+    text-align: center;
+    font-family: 'Lato-Light';
+    font-size: 20px;
+    .error-title h2 {
+        font-family: 'Lato-LightItalic';
+        font-size: 25px;
+        font-weight: bold;
+        color: @global-color;
+        @media (min-width: @screen-xs-min) {}
+        @media (min-width: @screen-sm-min) {
+            font-size: 35px;
+        }
+        @media (min-width: @screen-md-min) {}
+        @media (min-width: @screen-lg-min) {}
+    }
+    .back {
+        position: relative;
+        padding: 15px 30px;
+        margin: 0;
+        color: #555;
+        background: #dddddd;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        border-radius: 10px;
+        width: 100%;
+        @media (min-width: @screen-xs-min) {}
+        @media (min-width: @screen-sm-min) {
+            width: 60%;
+            max-width: 400px;
+            margin-left: 100px;
+        }
+        @media (min-width: @screen-md-min) {}
+        @media (min-width: @screen-lg-min) {}
+
+    }
+    .back:after {
+        content: "";
+        position: relative;
+        bottom: -50px;
+        left: 100px;
+        border-width: 0 20px 50px 0px;
+        border-style: solid;
+        border-color: transparent #ddd;
+        display: block;
+        width: 0;
+        @media (min-width: @screen-xs-min) {
+            left: 150px;
+        }
+        @media (min-width: @screen-sm-min) {
+            left: 200px;
+        }
+        @media (min-width: @screen-md-min) {}
+        @media (min-width: @screen-lg-min) {}
+    }
+    #monster {
+        margin-top: 20px;
+    }
+    #monster img {
+        width: 30%;
+        max-width: 30%;
+    }
+}
