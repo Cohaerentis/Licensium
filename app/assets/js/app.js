@@ -39,6 +39,10 @@
             });
 
 
+            $('.crud-btn[data-action="new"]').click(function(){
+                $('.project-selected').html('Select a project');
+
+            });
             $(".crud-item").click(function(){
                 var name      = $(this).attr('data-name'),
                     status    = $(this).attr('data-status');

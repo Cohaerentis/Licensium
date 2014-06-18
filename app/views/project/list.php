@@ -1,14 +1,6 @@
-<?php
-$compclasses = array(
-  Compatible::STATUS_INCOMPATIBLE => 'incompatible',
-  Compatible::STATUS_COMPATIBLE   => 'compatible',
-  Compatible::STATUS_UNKNOWN      => 'unknown',
-);
-?>
 <?php if (!empty($projects)) : ?>
   <ul <?php if (!empty($class)) : echo 'class="' . $class . '"'; endif; ?>>
     <?php foreach ($projects as $item) :
-      $compatibility = $item->compatibility();
       $itemclasses = array('item');
       if (!empty($selected) && ($item->id == $selected)) {
         $current = $item;
@@ -17,9 +9,9 @@ $compclasses = array(
 
     ?>
       <li class="<?php echo implode(' ', $itemclasses); ?>">
-        <i class="glyphicon glyphicon-tasks cog <?php echo $compclasses[$compatibility['status']]; ?>"  ></i>
+        <i class="glyphicon glyphicon-tasks cog <?php echo Compatible::statusClass($item->compatibility()['status']); ?>"  ></i>
         <span class="crud-item" data-name="<?php echo e($item->name); ?>"
-              data-status="<?php echo $compclasses[$compatibility['status']]; ?>"
+              data-status="<?php echo Compatible::statusClass($item->compatibility()['status']); ?>"
               data-action="view" data-id="<?php echo e($item->id); ?>" data-target="/project/view">
           <?php echo truncate(e($item->name)); ?>
         </span>
