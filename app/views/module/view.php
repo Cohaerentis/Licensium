@@ -29,7 +29,7 @@ $license_url = $model->fullLicenseUrl();
         <div class="row">
             <div class="col-lg-12 col-md-6">
                 <div class="label">
-                    <?php echo e($model->getAttributeLabel('license_id')); ?><span class="span-question"><a href="#">?</a></span>
+                    <?php echo e($model->getAttributeLabel('license_id')); ?><a href="/site/page/view/faq-user"><span class="span-question">?</span></a>
                 </div>
             </div>
             <div class="col-lg-12 col-md-6">
@@ -86,7 +86,7 @@ $license_url = $model->fullLicenseUrl();
         <div class="row">
             <div class="col-lg-12 col-md-6">
                 <div class="label">
-                    <?php echo e($model->getAttributeLabel('relation')); ?><span class="span-question"><a href="#">?</a></span>
+                    <?php echo e($model->getAttributeLabel('relation')); ?><a href="/site/page/view/faq-user"><span class="span-question">?</span></a>
                 </div>
             </div>
             <div class="col-lg-12 col-md-6">
@@ -102,7 +102,7 @@ $license_url = $model->fullLicenseUrl();
         <div class="row">
             <div class="col-lg-12 col-md-6">
                 <div class="label">
-                    <?php echo e($model->getAttributeLabel('type')); ?><span class="span-question"><a href="#">?</a></span>
+                    <?php echo e($model->getAttributeLabel('type')); ?><a href="/site/page/view/faq-user"><span class="span-question">?</span></a>
                 </div>
             </div>
             <div class="col-lg-12 col-md-6">
