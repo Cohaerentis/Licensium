@@ -6,11 +6,11 @@ $this->breadcrumbs=array(
     'About',
 );
 ?>
-<article class="about-wrapper">
+<article class="policy-wrapper">
     <div class="row">
         <div class="col-lg-12 col-md-12 col-xs-12">
             <div class="page-title">
-                <h2><?php echo Yii::t('app', 'About Us');?> <i class="glyphicon glyphicon-info-sign"></i></h2>
+                <h2><?php echo Yii::t('app', 'Privacy policy');?> <i class="glyphicon glyphicon-info-sign"></i></h2>
             </div>
         </div>
         <div class="col-lg-12 col-md-12 col-xs-12">
@@ -19,18 +19,8 @@ $this->breadcrumbs=array(
                     <?php
                         echo Yii::t(
                             'app',
-                            'Licensium has been developed by Cohaerentis, strategic consultanting based in information technologies, ' .
-                            'thanks to the collaborative effort between legal area and the business technology projects management.'
-                        );
-                    ?>
-                </p>
-                <p>
-                    <?php
-                        echo Yii::t(
-                            'app',
-                            'The application comes up from the need for lawyers to be able to access the list of licenses ' .
-                            'whose code has been integrated into a project development, in order to make an opinion on the licenses ' .
-                            'compatibility and whether these are in line with business or private interests of our customers.'
+                            'Write here your Privacy Policy. ' .
+                            'No other thing but your policy.'
                         );
                     ?>
                 </p>
