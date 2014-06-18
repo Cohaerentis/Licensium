@@ -90,7 +90,7 @@
                             ?>
                             <div class="privacy">
                                 <input type="checkbox" id="check" name="check">
-                                <a href="/site/page/view/policy"><label for="check"><?php echo Yii::t('app', 'Privacy policy'); ?></label></a>
+                                <a href="/site/page/view/policy"><?php echo Yii::t('app', 'Privacy policy'); ?></a>
                             </div>
                         </div>
                     </div>
