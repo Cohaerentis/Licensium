@@ -50,7 +50,10 @@
 }
 .font-faq {
     font-family: 'Lato-Light';
-    color: #777;
+    color: #333;
+    font-size: 16px;
+    padding-left: 20px;
+    padding-bottom: 10px;
 }
 
 /* ==========================================================================
@@ -261,6 +264,15 @@ article {
         }
         @media (min-width: @screen-lg-min) {}
     }
+    .legal {
+        font-size: 12px;
+        font-family: 'Lato-LightItalic';
+        a {
+            &:hover {
+                color: @global-color;
+            }
+        }
+    }
 }
 
 .bs-callout {
@@ -302,7 +314,7 @@ article {
 }
 
 .loading {
-    background-image: url('/img/loading.gif');
+    background: url('/img/loading.GIF')no-repeat center center;
 }
 /* ==========================================================================
    HEADER
@@ -956,6 +968,7 @@ article {
     .crud-container {
         top: -35px;
         position: relative;
+        min-height: 100px;
     }
     .general-form {
         font-family: 'Lato-Light';
@@ -1373,25 +1386,6 @@ article {
     margin-left: 10px;
 }
 
-/* ==========================================================================
-   REPORT
-   ========================================================================== */
-
-.print {
-    width: 100px;
-    color: @in-font;
-    background-color: @global-color;
-    border-color: #777;
-    border-radius: 0px;
-    text-transform: uppercase;
-    padding-right: 20px;
-    padding-left: 20px;
-    &:hover {
-        background-color: #ccc;
-        color: @global-color;
-        border: 1px solid @in-font;
-    }
-}
 
 /* ==========================================================================
    ON / OFF  SWITCHER
@@ -1450,8 +1444,28 @@ article {
 /* ==========================================================================
    REPORT
    ========================================================================== */
+.print {
+    width: 100px;
+    color: @in-font;
+    background-color: @global-color;
+    border-color: #777;
+    border-radius: 0px;
+    text-transform: uppercase;
+    padding-right: 20px;
+    padding-left: 20px;
+    cursor: pointer;
+    &:hover {
+        background-color: #ccc;
+        color: @global-color;
+        border: 1px solid @in-font;
+    }
+}
 .report-content {
     margin-bottom: 50px;
+    .list-title h4 {
+        font-family: 'Lato-Regular';
+        font-weight: bold;
+    }
     .report-link {
         font-size: 18px;
         padding: 5px;
@@ -1462,7 +1476,7 @@ article {
             padding-left: 5px;
         }
     }
-    .project-info {
+    .project-info, .project-modules {
         .label {
             font-size: 16px;
             color: #606060;
@@ -1478,6 +1492,30 @@ article {
             margin-left: 10px;
             font-family: 'Lato-Light';
             font-size: 18px;
+        }
+    }
+    .project-licenses {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .project-modules {
+        border-left: 1px solid;
+        border-right: 1px solid;
+        border-bottom: 1px solid;
+        border-color: #eee;
+        margin-bottom: 10px;
+        padding-left: 10px;
+        padding-right: 10px;
+        margin-left: 10px;
+        margin-right: 10px;
+        .module-title {
+            padding-left: 0;
+            font-size: 25px;
+            font-weight: bold;
+        }
+        .glyphicon {
+            position: relative;
+            top: 3px;
         }
     }
 }
