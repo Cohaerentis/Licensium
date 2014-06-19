@@ -214,7 +214,13 @@ $languages = !empty(Yii::app()->params['languages']) ? Yii::app()->params['langu
           </div>
           <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
             <div class="footer-bottom">
-              <p><?php echo Yii::t('app', 'Licensium is a Cohaerentis Consultores product, strategic business consulting for open business models. &copy; 2014')  ?></p>
+              <p><?php echo Yii::t('app', 'Licensium is a Cohaerentis Consultores product, strategic business consulting for open 
+              business models. &copy; 2014')  ?></p>
+              <div class="legal">
+                  <a href="/site/page/view/legal"><?php echo Yii::t('app', 'Legal Notice & Conditions of Use');?></a>
+                  &nbsp;&nbsp;|&nbsp;&nbsp;
+                  <a href="/site/page/view/policy"><?php echo Yii::t('app', 'Privacy Policy');?></a>
+              </div>
             </div>
           </div>
         </div>
