@@ -139,7 +139,7 @@ $license_url = $model->fullLicenseUrl();
                         <h2 class="section-title"><?php echo Yii::t('app', 'Module Status ');?>
                             <a href="/site/page/view/how-do-we">
                                 <i class="glyphicon glyphicon-question-sign set-right" data-toggle="tooltip"
-                                   data-original-title="<?php echo Yii::t('app', 'How do we calcute compatibility'); ?>"></i>
+                                   data-original-title="<?php echo Yii::t('app', 'How do we calculate compatibility'); ?>"></i>
                             </a>
                         </h2>
                     </div>
@@ -157,9 +157,9 @@ $license_url = $model->fullLicenseUrl();
                                 <table class="table">
                                     <thead>
                                         <tr class="table-conflict">
-                                            <th class="col-lg-4 col-md-4 col-xs-4">Module</th>
-                                            <th class="col-lg-4 col-md-4 col-xs-4">License</th>
-                                            <th class="col-lg-4 col-md-4 col-xs-4">Result</th>
+                                            <th class="col-lg-4 col-md-4 col-xs-4"><?php echo Yii::t('app','Module');?></th>
+                                            <th class="col-lg-4 col-md-4 col-xs-4"><?php echo Yii::t('app','License');?></th>
+                                            <th class="col-lg-4 col-md-4 col-xs-4"><?php echo Yii::t('app','Result');?></th>
                                         </tr>
                                     </thead>
                                     <tbody>
@@ -173,7 +173,7 @@ $license_url = $model->fullLicenseUrl();
                                                         <td><?php echo e($conflict['versus']->license->name); ?></td>
                                                         <td><p><?php echo Compatible::statusPrint($conflict['status']); ?></p></td>
                                                     <?php else : ?>
-                                                        <td><?php echo Yii::t('app', 'Unkwon'); ?></td>
+                                                        <td><?php echo Yii::t('app', 'Unknown'); ?></td>
                                                         <td><p><?php echo Compatible::statusPrint($conflict['status']); ?></p></td>
                                                     <?php endif; ?>
                                                 </div>

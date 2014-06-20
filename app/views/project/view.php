@@ -60,7 +60,7 @@ $createdate = $model->createDatePrint();
             <h2 class="section>-title"><?php echo Yii::t('app', 'License Issues');?>
                 <a href="/site/page/view/how-do-we">
                     <i class="glyphicon glyphicon-question-sign set-right" data-toggle="tooltip"
-                    data-original-title="<?php echo Yii::t('app', 'How do we calcute compatibility'); ?>"></i>
+                    data-original-title="<?php echo Yii::t('app', 'How do we calculate compatibility'); ?>"></i>
                 </a>
             </h2>
         </div>
