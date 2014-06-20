@@ -98,7 +98,7 @@ foreach ($modules as $item) {
                     <div class="row">
                         <div class="col-lg-12 col-md-12 col-xs-12">
                             <div class="font-faq">
-                            <?php echo Yii::t('app','Here you have a list of compartible licenses to be used with your project.'); ?>
+                            <?php echo Yii::t('app','Here you have a list of compatible licenses to be used with your project.'); ?>
                             </div>
                         </div>
                         <div class="project-licenses">
@@ -301,7 +301,7 @@ foreach ($modules as $item) {
         <div class="col-lg-12 col-md-12 col-xs-12"><hr /></div>
         <div class="col-lg-12 col-md-12 col-xs-12">
             <div class="page-title">
-                <h2 class="section-title"><?php echo Yii::t('app', 'Link to Report'); ?></h2>
+                <h2 class="section-title"><?php echo Yii::t('app', 'Share this Report'); ?></h2>
             </div>
         </div>
         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
