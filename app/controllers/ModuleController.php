@@ -29,7 +29,6 @@ class ModuleController extends Controller {
      * @param integer $id the ID of the model to be displayed
      */
     public function actionView($projectid, $id) {
-        sleep(2);
         if (Yii::app()->request->getIsAjaxRequest()) {
             $model = $this->loadModel($id, $projectid);
             $this->renderAjaxHtml('view', array('model' => $model));
@@ -78,7 +77,6 @@ class ModuleController extends Controller {
      * If creation is successful, the browser will be redirected to the 'view' page.
      */
     public function actionCreate($projectid) {
-        sleep(2);
         $model = new Module;
         $project = $this->loadProject($projectid);
 
@@ -107,7 +105,6 @@ class ModuleController extends Controller {
      * Update a project
      */
     public function actionUpdate($projectid, $id) {
-        sleep(2);
         $model = $this->loadModel($id, $projectid, true);
 
         // Case A: PostAjax, validate and save
