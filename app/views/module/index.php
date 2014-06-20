@@ -38,7 +38,7 @@ $hide = !empty($current) ? '' : 'hide';
             <?php if ($compatibility['status'] != Compatible::STATUS_COMPATIBLE) : ?>
                 <?php if (!empty($compatibility['conflicts'])): ?>
                     <div class="alert alert-danger">
-                        <p>There are some modules with licenses incompatibility issues:</p>
+                        <p><?php echo Yii::t('app','There are some modules with licenses incompatibility issues:');?></p>
                         <?php foreach ($compatibility['conflicts'] as $module): ?>
                             <i class="glyphicon glyphicon-thumbs-down thumbs" ></i><?php echo $module->name; ?><br>
                         <?php endforeach;?>
@@ -46,7 +46,7 @@ $hide = !empty($current) ? '' : 'hide';
                 <?php endif; ?>
             <?php else: ?>
                 <div class="alert alert-success">
-                    Well done!! Your project has no compatibility problems.
+                    <?php echo Yii::t('app','Well done!! Your project has no compatibility problems.')?>
                     <i class="glyphicon glyphicon-thumbs-up" ></i><br>
                 </div>
             <?php endif; ?>
