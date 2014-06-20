@@ -138,7 +138,7 @@ class ModuleController extends Controller {
             $this->renderAjaxRedirect($this->createUrl('/module/index',
                                                        array('projectid' => $projectid)));
         }
-        $this->renderAjaxError(Yii::t('app', 'While deleteting module "{name}"', array('{name}' => e($name) )));
+        $this->renderAjaxError(Yii::t('app', 'While deleting module "{name}"', array('{name}' => e($name) )));
     }
 
     public function actionEnable($projectid, $id) {
@@ -170,7 +170,7 @@ class ModuleController extends Controller {
             else                                         throw new CHttpException(404, $msg);
         }
         if ($model->project_id != $projectid) {
-            $msg = Yii::t('app', 'This module is not belong to selected project.');
+            $msg = Yii::t('app', 'This module does not belong to selected project.');
             if (Yii::app()->request->getIsAjaxRequest()) $this->renderAjaxError($msg);
             else                                         throw new CHttpException(401, $msg);
         }

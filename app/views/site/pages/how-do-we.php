@@ -32,7 +32,7 @@ $this->breadcrumbs=array(
                 <div class="images">
                     <img src="/img/how-3.png"/>
                 </div>
-                <p><?php echo Yii::t('app', 'Here we here can see the compatibility of the module with the one below. The first is compare with none; the second with the first, the third with the second and with the first and so on.');?></p>
+                <p><?php echo Yii::t('app', 'Here we can see the compatibility of the module with the one below. The first is compare with none; the second with the first, the third with the second and with the first and so on.');?></p>
                 <p><?php echo Yii::t('app', 'We can add a lower or a higher priority by using the arrow provided with each module.');?></p>
                 <p><?php echo Yii::t('app', 'The compatibility of the modules is determined by the color of the screw.');?>
                 <div class="images small">
@@ -58,7 +58,7 @@ $this->breadcrumbs=array(
                 <div class="images small">
                     <img src="/img/how-8.png"/>
                 </div>
-                <p><?php echo Yii::t('app', 'By pressing the “report” button we will get a full report and a link to share it.');?></p>
+                <p><?php echo Yii::t('app', 'By pressing the “report” button you will get a full report and a link to share it.');?></p>
                 <div class="images">
                     <img src="/img/how-9.png"/>
                 </div>

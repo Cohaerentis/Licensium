@@ -122,7 +122,7 @@ class ProjectController extends Controller {
             Yii::app()->user->setFlash('success', Yii::t('app', 'Project "{name}" has been deleted', array('{name}' => e($name) )));
             $this->renderAjaxRedirect($this->createUrl('.'));
         }
-        $this->renderAjaxError(Yii::t('app', 'While deleteting project "{name}"', array('{name}' => e($name) )));
+        $this->renderAjaxError(Yii::t('app', 'While deleting project "{name}"', array('{name}' => e($name) )));
     }
 
     /**
