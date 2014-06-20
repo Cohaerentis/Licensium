@@ -87,7 +87,7 @@ $createdate = $model->createDatePrint();
                         <?php if ($compatibility['status'] != Compatible::STATUS_COMPATIBLE) : ?>
                             <div class="col-lg-12 col-md-12 col-xs-12">
                                 <div class="alert alert-danger">
-                                    <p>There are some modules with licenses incompatibility issues:</p>
+                                    <p><?php echo Yii::t('app', 'There are some modules with licenses incompatibility issues:');?></p>
                                     <?php if (!empty($compatibility['conflicts'])) : foreach ($compatibility['conflicts'] as $module): ?>
                                     <i class="glyphicon glyphicon-thumbs-down thumbs" ></i><?php echo $module->name; ?><br>
                                     <?php endforeach; endif; ?>

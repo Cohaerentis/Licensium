@@ -253,7 +253,7 @@ foreach ($modules as $item) {
                             <div class="row">
                                 <div class="col-lg-12 col-md-6">
                                     <div class="label">
-                                        <?php echo e($model->getAttributeLabel('type')); ?>
+                                        <?php echo Yii::t('app','Type'); ?>
                                     </div>
                                 </div>
                                 <div class="col-lg-12 col-md-6">
@@ -269,7 +269,7 @@ foreach ($modules as $item) {
                             <div class="row">
                                 <div class="col-lg-12 col-md-6">
                                     <div class="label">
-                                        <?php echo e($model->getAttributeLabel('integrationdate')); ?>
+                                        <?php echo Yii::t('app','Integration date'); ?>
                                     </div>
                                 </div>
                                 <div class="col-lg-12 col-md-6">
@@ -284,7 +284,7 @@ foreach ($modules as $item) {
                             <div class="row">
                                 <div class="col-lg-12 col-md-6">
                                     <div class="label">
-                                        <?php echo e($model->getAttributeLabel('status')); ?>
+                                        <?php echo Yii::t('app','Status'); ?>
                                     </div>
                                 </div>
                                 <div class="col-lg-12 col-md-6">
