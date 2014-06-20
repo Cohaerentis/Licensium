@@ -43,9 +43,9 @@ class ProjectController extends Controller {
     public function actionReport($id, $code) {
         $model = Project::getById($id);
         if (!empty($model) && ($model->uuid == $code)) {
-            if (!Yii::app()->user->isGuest) {
+            /* - AAA  -if (!Yii::app()->user->isGuest) {
                 Yii::app()->user->setFlash('warning', Yii::t('app', 'Tell user that he can share this ofuscate link with anyone, for example its license expert consultant'));
-            }
+            }*/
             $this->render('report', array('model' => $model));
         } else {
             throw new CHttpException(404, Yii::t('app', 'Project does not exist.'));
