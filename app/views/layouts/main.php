@@ -1,7 +1,19 @@
 <?php
-  // Yii::app()->bootstrap->register();
+
+$cookies_warning = !isset(Yii::app()->request->cookies['licensium_cookies_acknowlegde']);
+/* Done in JS
+if ($cookies_warning) {
+  Yii::app()->request->cookies['licensium_cookies_acknowlegde'] =
+    new CHttpCookie('licensium_cookies_acknowlegde', 'yes', array(
+      'expire' => time() + (10 * 365 * 24 * 3600),
+    ));
+} */
+// Yii::app()->bootstrap->register();
 Yii::app()->assets->registerCss();
 Yii::app()->assets->registerScripts();
+// GoogleAnalytics : This only inyect JS garun function. It must be called in order to load
+Yii::app()->assets->registerGoogleAnalytics();
+
 $shiv  = 'html5shiv-3.7.0';
 $shiv .= YII_DEBUG ? '.js' : '.min.js';
 $respond  = 'respond-1.3.0';
@@ -52,6 +64,10 @@ if (Yii::app()->user->isGuest) {
 }
 
 $languages = !empty(Yii::app()->params['languages']) ? Yii::app()->params['languages'] : array();
+$bodyclass = '';
+if ($cookies_warning) {
+  $bodyclass = 'cookies-warning';
+}
 
 ?>
 <!DOCTYPE html>
@@ -73,7 +89,7 @@ $languages = !empty(Yii::app()->params['languages']) ? Yii::app()->params['langu
 
     <title><?php echo e($this->pageTitle); ?></title>
   </head>
-  <body>
+  <body class="<?php echo $bodyclass; ?>">
     <header>
       <nav class="navbar navbar-default" role="navigation">
         <div class="container">
@@ -214,12 +230,11 @@ $languages = !empty(Yii::app()->params['languages']) ? Yii::app()->params['langu
           </div>
           <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
             <div class="footer-bottom">
-              <p><?php echo Yii::t('app', 'Licensium is a Cohaerentis Consultores product, strategic business consulting for open 
-              business models. &copy; 2014')  ?></p>
+              <p><?php echo Yii::t('app', 'Licensium is a Cohaerentis Consultores product, strategic business consulting for open business models. &copy; 2014')  ?></p>
               <div class="legal">
                   <a href="/site/page/view/legal"><?php echo Yii::t('app', 'Disclaimer & Conditions of Use');?></a>
                   &nbsp;&nbsp;|&nbsp;&nbsp;
-                  <a href="/site/page/view/policy"><?php echo Yii::t('app', 'Privacy Policy');?></a>
+                  <a href="/site/page/view/privacy-policy"><?php echo Yii::t('app', 'Privacy Policy');?></a>
               </div>
             </div>
           </div>

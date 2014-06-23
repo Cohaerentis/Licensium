@@ -50,6 +50,7 @@ class Assets extends CApplicationComponent {
      */
     public function registerScripts() {
         $scripts = array('jquery-1.10.2' => CClientScript::POS_HEAD,
+                         'gaload' => CClientScript::POS_END,
                          'modernizr-2.7.0' => CClientScript::POS_END,
                          'jquery-form-3.50.0' => CClientScript::POS_END,
                          'jquery-chosen-1.1.0' => CClientScript::POS_END);
@@ -76,6 +77,14 @@ class Assets extends CApplicationComponent {
             $url = $this->getUrl() . '/js/' . $script;
             $cs->registerScriptFile($url, $position);
         }
+    }
+
+
+    public function registerGoogleAnalytics() {
+        $params = Yii::app()->params;
+        $cs = Yii::app()->getClientScript();
+        $script = garun($params['ga']['account'], $params['ga']['domain']);
+        $cs->registerScript('GoogleAnalytics', $script, CClientScript::POS_END);
     }
 
 }

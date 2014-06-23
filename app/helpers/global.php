@@ -360,3 +360,17 @@ function yearList($from = 1970, $until = null) {
     }
     return $list;
 }
+
+function garun($account, $domain) {
+    $ga = <<< EOS
+function garun() {
+    if (typeof ga == 'undefined') {
+        gaload(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+        ga('create', '$account', '$domain');
+        ga('send', 'pageview');
+    }
+}
+EOS;
+    return $ga;
+}

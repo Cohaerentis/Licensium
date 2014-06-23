@@ -65,3 +65,4 @@
     </div>
     <?php $this->endWidget(); ?>
   </div>
+<?php $this->widget('application.widgets.CookiesWarning'); ?>

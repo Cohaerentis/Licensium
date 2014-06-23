@@ -1,10 +1,8 @@
 <?php
 /* @var $this SiteController */
 
-$this->pageTitle=Yii::app()->name . ' - About';
-$this->breadcrumbs=array(
-    'About',
-);
+$this->pageTitle = Yii::app()->name . ' - ' . Yii::t('app', 'About Us');
+$this->breadcrumbs = array();
 ?>
 <div class="about-wrapper">
     <div class="row">
@@ -38,3 +36,4 @@ $this->breadcrumbs=array(
         </div>
     </div>
 </div>
+<?php $this->widget('application.widgets.CookiesWarning'); ?>
