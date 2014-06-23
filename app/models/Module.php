@@ -27,8 +27,6 @@ class Module extends CActiveRecord {
     const RELATION_LIBRARY      = 'LIB';
     const RELATION_MODULE       = 'MOD';
     const RELATION_FRAMEWORK    = 'FWK';
-    const RELATION_DESIGN       = 'DSN';
-    const RELATION_CONTENT      = 'CON';
     const RELATION_INDEPENDENT  = 'IND';
 
     const TYPE_STATIC           = 'S';
@@ -40,16 +38,32 @@ class Module extends CActiveRecord {
         if (empty(self::$available)) {
             self::$available = array(
                 'relations' => array(
-                    self::RELATION_LIBRARY      => Yii::t('app', 'Library'),
-                    self::RELATION_MODULE       => Yii::t('app', 'Module'),
-                    self::RELATION_FRAMEWORK    => Yii::t('app', 'Framework'),
-                    self::RELATION_DESIGN       => Yii::t('app', 'Design'),
-                    self::RELATION_CONTENT      => Yii::t('app', 'Content'),
-                    self::RELATION_INDEPENDENT  => Yii::t('app', 'Independent application'),
+                    self::RELATION_LIBRARY      => array(
+                        'name'          => Yii::t('app', 'Library'),
+                        'description'   => Yii::t('app', 'A piece of code linked with your program.'),
+                    ),
+                    self::RELATION_MODULE       => array(
+                        'name'          => Yii::t('app', 'Module'),
+                        'description'   => Yii::t('app', 'A differentiated block of code that provides a concrete feature.'),
+                    ),
+                    self::RELATION_FRAMEWORK    => array(
+                        'name'          => Yii::t('app', 'Framework'),
+                        'description'   => Yii::t('app', 'A collection of libraries and programming design patterns that helps developers to work faster.'),
+                    ),
+                    self::RELATION_INDEPENDENT  => array(
+                        'name'          => Yii::t('app', 'Independent application'),
+                        'description'   => Yii::t('app', 'An standalone application that communicates with your project.'),
+                    ),
                 ),
                 'types' => array(
-                    self::TYPE_STATIC           => Yii::t('app', 'Static'),
-                    self::TYPE_DINAMIC          => Yii::t('app', 'Dinamic'),
+                    self::TYPE_STATIC           => array(
+                        'name'          => Yii::t('app', 'Static'),
+                        'description'   => Yii::t('app', 'When this piece of code is compiled and linked statically.'),
+                    ),
+                    self::TYPE_DINAMIC          => array(
+                        'name'          => Yii::t('app', 'Dinamic'),
+                        'description'   => Yii::t('app', 'When this piece of code is interpreted or linked dinamically.'),
+                    ),
                 ),
             );
         }
@@ -70,14 +84,14 @@ class Module extends CActiveRecord {
         // will receive user inputs.
         return array(
             array('project_id, name, type', 'required'),
-            array('project_id, license_id', 'length', 'max'=>20),
-            array('name', 'length', 'max'=>100),
-            array('licenseother, website, repo', 'length', 'max'=>256),
-            array('relation, priority', 'length', 'max'=>3),
-            array('type, enabled', 'length', 'max'=>1),
-            array('day, month', 'length', 'max'=>2),
-            array('year', 'length', 'max'=>4),
-            array('createdate', 'length', 'max'=>11),
+            array('project_id, license_id', 'length', 'max' => 20),
+            array('name', 'length', 'max' => 100),
+            array('licenseother, website, repo', 'length', 'max' => 256),
+            array('relation, priority', 'length', 'max' => 3),
+            array('type, enabled', 'length', 'max' => 1),
+            array('day, month', 'length', 'max' => 2),
+            array('year', 'length', 'max' => 4),
+            array('createdate', 'length', 'max' => 11),
             array('licenseother, website, repo', 'url'),
             // The following rule is used by search().
             // @todo Please remove those attributes that should not be searched.
@@ -164,14 +178,14 @@ class Module extends CActiveRecord {
     public function fullRelation() {
         self::availableInit();
         $relation = strtoupper($this->relation);
-        if (!empty(self::$available['relations'][$relation])) return self::$available['relations'][$relation];
+        if (!empty(self::$available['relations'][$relation]['name'])) return self::$available['relations'][$relation]['name'];
         return $this->relation;
     }
 
     public function fullType() {
         self::availableInit();
         $type = strtoupper($this->type);
-        if (!empty(self::$available['types'][$type])) return self::$available['types'][$type];
+        if (!empty(self::$available['types'][$type]['name'])) return self::$available['types'][$type]['name'];
         return $this->type;
     }
 
@@ -349,7 +363,7 @@ class Module extends CActiveRecord {
         $criteria->compare('priority',$this->priority,true);
 
         return new CActiveDataProvider($this, array(
-            'criteria'=>$criteria,
+            'criteria' => $criteria,
         ));
     }
 
@@ -366,11 +380,12 @@ class Module extends CActiveRecord {
     public static function getList($type, $exclude = array()) {
         $items = array();
         self::availableInit();
-        foreach(self::$available[$type] as $code => $name) {
+        foreach(self::$available[$type] as $code => $info) {
             if (in_array($code, $exclude)) continue;
             $item = new stdClass();
             $item->code = $code;
-            $item->name = $name;
+            $item->name = $info['name'];
+            $item->description = $info['description'];
             $items[$item->code] = $item;
         }
         return $items;
@@ -407,7 +422,6 @@ class Module extends CActiveRecord {
 
                 // Check compatibility
                 $status = $this->isCompatible($module);
-wrlog("Module::compatibility: '$this->name' vs '$module->name' = $status");
                 if ($status != Compatible::STATUS_COMPATIBLE) {
                     // Get worst compatibility status
                     if (($global == Compatible::STATUS_COMPATIBLE) ||
