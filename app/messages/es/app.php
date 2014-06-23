@@ -208,7 +208,7 @@ then cut and paste the address into the address line at the top of your web brow
   'Remember' => 'Recordar',
   'Remember me next time' => 'Recordarme la próxima vex',
   'Remember password' => 'Recordar contraseña',
-  'Remember password instructions' => 'Instruccines para recuperar la contraseña',
+  'Remember password instructions' => 'Instrucciones para recuperar la contraseña',
   'Repo' => 'Repositorio',
   'Report' => 'Reporte',
   'Resend' => 'Reenviar',
