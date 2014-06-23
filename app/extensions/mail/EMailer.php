@@ -11,7 +11,6 @@ class EMailer extends PHPMailer {
         if (empty($view)) return false;
 
         $view = $this->viewPath . '.' . $view;
-wrlog('EMailer::viewFile : view = ' . var_export($view, true));
         // In web application, use existing method
         if (isset(Yii::app()->controller)) {
             return Yii::app()->controller->getViewFile($view);
@@ -30,7 +29,6 @@ wrlog('EMailer::viewFile : view = ' . var_export($view, true));
             if (isset(Yii::app()->controller)) $controller = Yii::app()->controller;
             else                               $controller = new CController(__CLASS__);
 
-wrlog('EMailer::render : file = ' . var_export($file, true));
             return $controller->renderInternal($file, $data, true);
         }
         return false;
@@ -115,7 +113,6 @@ wrlog('EMailer::render : file = ' . var_export($file, true));
 
     public function send() {
         $result = parent::send();
-wrlog('EMailer::send : result = ' . var_export($result, true));
         if ($result) $this->save();
         return $result;
     }
@@ -141,10 +138,8 @@ wrlog('EMailer::send : result = ' . var_export($result, true));
     }
 
     protected function save() {
-wrlog('EMailer::save : savePath = ' . var_export($this->savePath, true));
         if (!empty($this->savePath) && is_dir($this->savePath) && is_writable($this->savePath)) {
             $filename = date('Ymd_His') . '_' . uniqid() . '.eml';
-wrlog('EMailer::save : filename = ' . var_export($filename, true));
 
             try {
                 $file = fopen($this->savePath . DIRECTORY_SEPARATOR . $filename, 'w+');
@@ -153,7 +148,6 @@ wrlog('EMailer::save : filename = ' . var_export($filename, true));
 
                 return true;
             } catch(Exception $e) {
-wrlog('EMailer::save : error = ' . var_export($e->getMessage(), true));
                 $this->SetError($e->getMessage());
                 return false;
             }
