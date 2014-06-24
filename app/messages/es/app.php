@@ -296,7 +296,7 @@ return array (
   'Module does not exist.' =>
     'El módulo no existe',
   'Modules' =>
-    'Modulos',
+    'Módulos',
   'Modules integrated in ' =>
     'Módulos integrados en',
   'Month' =>
