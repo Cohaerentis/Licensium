@@ -73,7 +73,7 @@
             garun();
         } else if ($('#cookies-modal').length > 0) {
             $('#cookies-modal').modal('show');
-            $('#cookies-modal').on('hidden.bs.modal', function (e) {
+            $('#cookies-modal').on('hide.bs.modal', function (e) {
                 var date = new Date();
                 date.setTime(date.getTime() + (3650 * 24 * 60 * 60 * 1000));
                 expires = "; expires=" + date.toGMTString();
