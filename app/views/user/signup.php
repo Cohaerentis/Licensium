@@ -98,7 +98,8 @@
                     </div>
                 </div>
             </fieldset>
-      </div>
+        </div>
+    </div>
     <?php $this->endWidget(); ?>
   </div>
 <?php $this->widget('application.widgets.CookiesWarning'); ?>
