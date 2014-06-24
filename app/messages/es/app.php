@@ -581,6 +581,113 @@ return array (
     'Política de cookies',
   'Cookies warning' =>
     'Aviso sobre cookies',
+  'You can read our Cookies policy by visiting the following' =>
+    'Puedes leer nuestra Política de cookies visitando el siguiente',
+  'What are cookies?' =>
+    '¿Qué son las cookies?',
+  'A cookie is a text-only string of information that www.licensium.opencodex.es transfers to the cookie file of the browser on your computer’s hard disk.' =>
+    'Las cookies son pequeños archivos de información, enviadas por el sitio www.licensium.opencodex.es, que se almacenan en el navegador del usuario.',
+  'There are three main types of cookies:' =>
+    'Existen cookies de distintos tipos según la información que recojan:',
+  'To make the website work properly for you and to enable you to make use of the services we provide.' =>
+    'Cookies que permiten gestionar el acceso de la sesión del usuario para que no tenga que estar introduciendo su nombre de usuario y su contraseña, cada vez que accede al Sitio.',
+  'To remember your preferences and make the site easier for you to use.' =>
+    'Cookies que permiten configurar su página al usuario como opciones de idioma del navegador.',
+  'To collect information about how you use our website which is then anonymised and used to help us improve our services – cookies for this purpose are often described as analytical cookies.' =>
+    'Cookies que permiten medir la actividad por parte de los usuarios en el Sitio para introducir mejoras.',
+  'Cookies do not collect information such as email, username, telephone, etc.' =>
+    'Las cookies NO contienen información confidencial como pueda ser el email, el nombre de usuario, teléfono, etc.',
+  'Cookies may store the network ip address of the domain you are comming from.' =>
+    'Las cookies pueden almacenar la dirección IP de la red desde la que se accede a nuestro Sitio.',
+  'An ip address is a number that identifies a device (computer, tablet, mobile) in internet.' =>
+    'La dirección IP es un número que identifica un dispositivo (el ordenador, la tablet, el sparthphone) en Internet.',
+  'That number is given by the Internet Provider (Movistar, Jazztel, Orange) to the user.' =>
+    'Dicho número es asignado por el proveedor de Internet (Movistar, Jazztel, Orange, etc.) del usuario.',
+  'We do not use the ip address to identify users.' =>
+    'No utilizamos la dirección IP para identificar al usuario. ',
+  'We use the ip address to registrer the activity of the user browser activity in our site.' =>
+    'Utilizamos la dirección IP del usuario para registrar la actividad del Usuario desde su navegador en nuestro Sitio.',
+  'Here you have the cookies that we use in our site' =>
+    'A continuación se indican las cookies que utilizamos en nuestro Sitio.',
+  'Users must accept our cookies before browe.' =>
+    'El Usuario debe asegurarse de que está conforme con ellas antes de seguir navegando.',
+  'Users can also configure the web browser to not accept cookies although this might affect the right performance of the site.' =>
+    'También puede configurarse el navegador por el Usuario, para que no acepte cookies aunque eso puede afectar al correcto funcionamiento del Sitio.',
+  'These cookies store temporaly information to enable site functionality.' =>
+    'Estas cookies guardan información temporalmente para habilitar funcionalidades del Sitio',
+  'They are automatically deleted when you close your browser.' =>
+    'Se borran automáticamente cuando se cierra el navegador',
+  'is a persistent cookie which expires in 2 years from the last update.' =>
+    'La cookie se crea cuando la biblioteca de javascript se ejecuta y no existe la cookie _utma. ',
+  'It is used to track first visit, last visit, current visit, and number of visits.' =>
+    'Se utiliza para distinguir a los usuarios y sesiones.',
+  'The content of this cookie value is separated by a dot, and stores domain hash, random ID, time of first visit, time of last visit, time of current visit and session counter.' =>
+    'La cookie se actualiza cada vez que los datos se envían a Google Analytics.',
+  'They are automatically deleted when you close your browser.' =>
+    'Se borra automáticamente cuando se cuerra el navegador',
+  'The content of the cookie include domain hash, pageview, number of outbound link click counting down from 10, and current time stamp.' =>
+    'El contenido de la cookie contiene el dominio, páginas visitadas, número de clicks a enlaces externos, hora actual, etc',
+  'used to track session status but it is no longer used.' =>
+    'se usa para hacer un seguimiento del estado de la sessión. Actualmete está en desuso',
+  'The value contained domain hash.' =>
+    'Contiene el hash del dominio',
+  'keeps track of entry point into your website storing traffic source, medium, campaign, and search term used to land on your website.' =>
+    'hace un seguimiento del punto de entrada al Sitio, desde donde accedes y busca términos que se usan para llegar a nuestra web',
+  'The cookie value inclue Domain hash, current timestamp, session count, and campaign information.' =>
+    'La cookkie contiene el hash de Dominio, la hora actual, número de sesiones e información de la camplaña',
+  'The cookie is updated with each page view, and expires in 6 months from last update.' =>
+    'La cookie se actualiza cada vez que se acceda a la página y caduca en 6 meses desde la última actualización',
+  'How do I unistall, block or delete cookies?' =>
+    '¿Cómo desinstalo, bloqueo o borro las cookies?',
+  'You can delete cookies placed in your browser in any moment.' =>
+    'Puedes borrar las cookies alojadas en tu navegadro en cualquier momento.',
+  'Here is how you have to do it:' =>
+    'Ésta es la manera de hacerlo según el navegador:',
+  'Go to Tools in the menu bar' =>
+    'Pulsa en herramientas en barra de menús',
+  'Click on Options' =>
+    'Pulsa en Opciones',
+  'Click on the Privacy tab' =>
+    'Pulsa la pestaña de Privacidad',
+  'Click on "Clear Now"' =>
+    'Pulsa "Limpiar ahora"',
+  'Select "Cookies"' =>
+    'Elije "Cookies"',
+  'Click on "Clear Private Data Now"' =>
+    'Pulsa en "Limpiar información privada ahora"',
+  'Click on the spanner icon in the top right of the browser' =>
+    'Pulsa en el icono con forma de llave',
+  'Click on Options' =>
+    'Pulsa en opciones',
+  'Click on the "Content settings" button in the Privacy section' =>
+    'Pulsa sobre Ajustes en el menú de la izquierda',
+  'Select Click on the "Clear browsing data" button' =>
+    'Seleccciona Limpiar información de navegación',
+  'Go to the Safari menu' =>
+    'Veta al menú de Safari',
+  'Click on the Preferences' =>
+    'Pulsa sobre preferencias',
+  'Click the "Security" tab' =>
+    'Pulsa la pestaña de "Seguridad"',
+  'Under "Accept Cookies", set it to accept, reject, or selectively accept cookies' =>
+    'Debajo de "Aceptar Cookies", elije aceptar, rechazar o aceptar cookies de manera selectiva',
+  'Go to Tools in the menu bar' =>
+    'Vete a herramientas en la barra del menu',
+  'Click on Internet Options' =>
+    'Pulsa Opciones de Internet',
+  'Click on the General tab which should be under "Browsing History" and click "Delete"' =>
+    'Pulsa la pestaña "General" que está debajo de Historial de Navegación y pulsa "borrar"',
+  'Click OK and Close the screen' =>
+    'Pulsa Ok y cierra la ventana',
+  'Updates and changes in Cookies Policy' =>
+    'Actualizaciones y cambios en la Política de Cookies',
+  'We keep this Policy under regular review.' =>
+    'Mantenemos la Politica de Cookies bajo continuas revisiones.',
+  'We may change this Policy from time to time by updating this page in order to reflect changes in the law and/or our privacy practices.' =>
+    'Esta web puede realizar cambios en la Política de Cookies en función de las exigencias legislativas o bien para adaptarla en el caso de que se incorporen nuevas cookies',
+  'We will notify you of any modified versions of this Policy that might materially affect the way we use or disclose your personal information.' =>
+    'Cuestión de la que, el usuario, será debidamente informado en la página web.',
+
 //  '' =>
 //    '',
 );

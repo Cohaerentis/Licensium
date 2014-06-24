@@ -42,6 +42,7 @@ $this->breadcrumbs = array();
                         <li><?php echo Yii::t('app', 'Session Cookies');?></li>
                         <li><?php echo Yii::t('app', 'Google Analytics');?></li>
                     </ul>
+                    <p><?php echo Yii::t('app', 'You can read our Cookies policy by visiting the following');?><a href="/site/page/view/cookies-policy"><?php echo Yii::t('app', 'link') ?></a>.</p>
                 <div>
                     <h3><?php echo Yii::t('app', 'Data Controller');?></h3>
                 <p><?php echo Yii::t('app', 'The data controller is Cohaerentis S. L. You can view all business details in the'); ?>
