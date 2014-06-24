@@ -92,7 +92,8 @@ class Module extends CActiveRecord {
             array('day, month', 'length', 'max' => 2),
             array('year', 'length', 'max' => 4),
             array('createdate', 'length', 'max' => 11),
-            array('licenseother, website, repo', 'url'),
+            array('licenseother, website, repo', 'url',
+                'message' => Yii::t('app', 'URL must be absolute, for example, http://licensium.opencodex.es') ),
             // The following rule is used by search().
             // @todo Please remove those attributes that should not be searched.
             array('id, project_id, name, license_id, licenseother, website, repo, relation, type, enabled, day, month, year, createdate, priority', 'safe', 'on'=>'search'),
