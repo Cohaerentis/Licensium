@@ -1,6 +1,8 @@
 <?php
 
-class SiteTest extends WebTestCase {
+class SiteTest {}
+
+/*class SiteTest extends WebTestCase {
     public function testIndex() {
         $this->open('');
         $this->assertTextPresent('Welcome');
@@ -41,3 +43,4 @@ class SiteTest extends WebTestCase {
         $this->assertTextPresent('Login');
     }
 }
+*/
