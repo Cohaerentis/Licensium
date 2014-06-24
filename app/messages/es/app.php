@@ -318,7 +318,7 @@ return array (
   'No projects found. You can create a new one right now!' =>
     'No se han encontrado proyectos. Puedes crear uno nuevo ahora mismo',
   'Now you can log in the application with your user and password.' =>
-    'Ahora ya puedes loguearte en la aplicaciṕon con tu usuario y contraseña',
+    'Ahora ya puedes loguearte en la aplicación con tu usuario y contraseña',
   'Oh, dude!! That´s not the way. But you can keep trying.' =>
     'Venga tío! No hagas eso. Pero si quieres, sigue intentándolo.',
   'Old email' =>
@@ -400,7 +400,7 @@ return array (
   'Remember password' =>
     'Recordar contraseña',
   'Remember password instructions' =>
-    'Instruccines para recuperar la contraseña',
+    'Instrucciones para recuperar la contraseña',
   'Repo' =>
     'Repositorio',
   'Report' =>
