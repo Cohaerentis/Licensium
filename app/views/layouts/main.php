@@ -177,6 +177,16 @@ if ($cookies_warning) {
         </div>
       <?php endforeach; ?>
     <?php endif; ?>
+    <?php if ( (!Yii::app()->user->isGuest) && (Yii::app()->user->getState('confirmed') == 0) ) : ?>
+        <div class="alert alert-warning alert-dismissable">
+          <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+          <?php
+            $resendlink = CHtml::link(Yii::t('app', 'Resend'),
+                                      Yii::app()->createUrl('user/resend', array('id' => e(Yii::app()->user->id) )) );
+            echo Yii::t('app', 'Your email is not confirmed yet! {resend} email confirmation',
+                        array('{resend}' => $resendlink)); ?>
+        </div>
+    <?php endif; ?>
     <?php echo $content; ?>
   </main>
 

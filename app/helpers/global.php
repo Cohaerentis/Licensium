@@ -352,7 +352,7 @@ function monthList() {
 function yearList($from = 1970, $until = null) {
     if (!empty($until) || ($from >= $until)) $until = date('Y');
     $list = array();
-    for ($number = $from; $number <= $until; $number++) {
+    for ($number = $until; $number >= $from; $number--) {
         $item = new stdClass();
         $item->id = $number;
         $item->name = $number;

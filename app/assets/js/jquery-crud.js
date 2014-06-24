@@ -35,9 +35,6 @@ if (typeof jQuery === "undefined") {
 
   Crud.prototype.output = function (html) {
     this.$container.html(html);
-    this.$container.find('.chosen-select').chosen({
-        allow_single_deselect: true
-    });
     this.$container.removeClass('loading');
   };
 

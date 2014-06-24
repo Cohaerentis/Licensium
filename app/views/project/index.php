@@ -5,11 +5,7 @@
 // If selected not defined, define to none
 if (empty($selected)) $selected = 0;
 
-/*
-$this->breadcrumbs = array(
-  Yii::t('app', 'Home')       => '/',
-);
-*/
+$this->pageTitle = Yii::app()->name . ' - ' . Yii::t('app', 'Projects');
 
 // Search for selected item
 $current = null;
@@ -23,6 +19,13 @@ if (!empty($projects)) {
 }
 
 $hide = !empty($current) ? '' : 'hide';
+if (!empty($current)) {
+  $this->breadcrumbs = array(
+    Yii::t('app', 'Projects')   => '/project',
+  );
+} else {
+  $this->breadcrumbs = array();
+}
 
 ?>
 <div class="project-index-wrapper common-index-wrapper">

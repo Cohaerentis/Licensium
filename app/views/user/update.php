@@ -3,6 +3,9 @@
 /* @var $model User */
 /* @var $form CActiveForm  */
 
+$this->pageTitle = Yii::app()->name . ' - ' . Yii::t('app', 'Update my profile');
+$this->breadcrumbs = array();
+
 ?>
   <div class="update-wrapper">
     <?php $form = $this->beginWidget('CActiveForm', array(

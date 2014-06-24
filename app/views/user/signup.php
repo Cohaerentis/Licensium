@@ -3,6 +3,9 @@
 /* @var $model User */
 /* @var $form CActiveForm  */
 
+$this->pageTitle = Yii::app()->name . ' - ' . Yii::t('app', 'Registry Form');
+$this->breadcrumbs = array();
+
 ?>
   <div class="signup-wrapper">
     <?php $form = $this->beginWidget('CActiveForm', array(
@@ -92,7 +95,7 @@
                                 <?php /* <input type="checkbox" id="check" name="check"> */ ?>
                                 <?php echo $form->error($model, 'privacy'); ?>
                                 <?php echo $form->checkBox($model, 'privacy'); ?>
-                                <a href="/site/page/view/privacy-policy"><?php echo Yii::t('app', 'Privacy policy'); ?></a>
+                                <a href="/site/page/view/privacy-policy" target="_blank"><?php echo Yii::t('app', 'Privacy policy'); ?></a>
                             </div>
                         </div>
                     </div>

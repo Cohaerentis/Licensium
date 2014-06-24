@@ -3,6 +3,9 @@
 /* @var $model RememberForm */
 /* @var $form CActiveForm  */
 
+$this->pageTitle = Yii::app()->name . ' - ' . Yii::t('app', 'Forgot your password');
+$this->breadcrumbs = array();
+
 ?>
   <div class="remember-wrapper">
     <?php $form = $this->beginWidget('CActiveForm', array(

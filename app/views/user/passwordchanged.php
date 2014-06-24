@@ -1,3 +1,9 @@
+<?php
+/* @var $this UserController */
+
+$this->pageTitle = Yii::app()->name . ' - ' . Yii::t('app', 'Password changed');
+$this->breadcrumbs = array();
+?>
 <div class="confirm-wrapper">
     <div class="row">
         <div class="col-lg-12 col-md-12 col-xs-12">

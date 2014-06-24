@@ -34,6 +34,7 @@ class UserIdentity extends CUserIdentity {
             $this->setState('firstname',    $record->firstname);
             $this->setState('lastname',     $record->lastname);
             $this->setState('email',        $record->email);
+            $this->setState('confirmed',    $record->confirmed);
             $this->setState('privileges',   $record->privileges);
 
             // Save last access time

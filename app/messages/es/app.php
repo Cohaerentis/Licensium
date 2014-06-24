@@ -296,7 +296,7 @@ return array (
   'Module does not exist.' =>
     'El módulo no existe',
   'Modules' =>
-    'Modulos',
+    'Módulos',
   'Modules integrated in ' =>
     'Módulos integrados en',
   'Month' =>
@@ -450,7 +450,7 @@ return array (
   'There you can see where is the compatibility problem with that module.' =>
     'Ahí podrás ver dónde están los problemas de incompatiblidades con ese módulo.',
   'Therefore we always recommend as a "good practice" to be performed by the companies keep an inventory of such licenses attaching, if possible, the contents thereof by the time the code is linked or integrated.' =>
-    'Por ello siempre recomendamos como una “buena práctica” a llevar a cabo por las empresas llevar un inventario de dichas licencias adjuntando, si es posible, el contenido de las mismas en el momento en el que el código es esmaltado o integrado.',
+    'Por ello siempre recomendamos como una “buena práctica” a llevar a cabo por las empresas llevar un inventario de dichas licencias adjuntando, si es posible, el contenido de las mismas en el momento en el que el código es enlazado o integrado.',
   'This is a public link. Anyone may access to your project report so be carefull with whom we share it.' =>
     'Este es un enlace público. Cualquiera podría acceder a él por lo que tenga cuidado a la hora de compartirlo.',
   'This is not a valid date.' =>

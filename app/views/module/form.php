@@ -108,7 +108,7 @@
                           CHtml::listData(Module::getList('relations'), 'code', function($item) {
                               return e($item->name);
                           }),
-                          array('class'=>'col-md-6 col-xs-12 commom-dropdpown','empty' => '')); ?>
+                          array('class'=>'commom-dropdpown','empty' => '')); ?>
                     </div>
                     <div class="col-xs-12">
                         <?php echo $form->error($model,'relation'); ?>
@@ -127,7 +127,7 @@
                           CHtml::listData(Module::getList('types'), 'code', function($item) {
                               return e($item->name);
                           }),
-                          array('class'=>'col-md-6 col-xs-12 commom-dropdpown','empty' => '')); ?>
+                          array('class'=>'commom-dropdpown','empty' => '')); ?>
                     </div>
                     <div class="col-xs-12">
                         <?php echo $form->error($model,'type'); ?>
@@ -135,7 +135,15 @@
                 </div>
             </div>
         </div>
-        <div class="col-lg-12 col-md-12 col-xs-12">
+        <div class="col-xs-12">
+            <div class="field input-group input-group-md">
+                <label class="input-group-addon">
+                    <?php echo Yii::t('app', 'Integration date'); ?>
+                    <span class="required">*</span>
+                </label>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-4 col-xs-12">
             <div class="field input-group input-group-md">
                 <div class="row">
                     <div class="col-md-6 col-xs-12">
@@ -146,7 +154,7 @@
                           CHtml::listData(dayList(), 'id', function($item) {
                               return e($item->name);
                           }),
-                          array('class'=>'col-md-6 col-xs-12 commom-dropdpown','empty' => '')); ?>
+                          array('class'=>'commom-dropdpown','empty' => '')); ?>
                     </div>
                     <div class="col-xs-12">
                         <?php echo $form->error($model,'day', array('class' => 'input-group-addon')); ?>
@@ -154,7 +162,7 @@
                 </div>
             </div>
         </div>
-        <div class="col-lg-12 col-md-12 col-xs-12">
+        <div class="col-lg-4 col-md-4 col-xs-12">
             <div class="field input-group input-group-md">
                 <div class="row">
                     <div class="col-md-6 col-xs-12">
@@ -173,7 +181,7 @@
                 </div>
             </div>
         </div>
-        <div class="col-lg-12 col-md-12 col-xs-12">
+        <div class="col-lg-4 col-md-4 col-xs-12">
             <div class="field input-group input-group-md">
                 <div class="row">
                     <div class="col-md-6 col-xs-12">

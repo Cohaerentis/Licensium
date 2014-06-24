@@ -17,6 +17,7 @@ class UserController extends Controller {
      */
     public function actionIndex() {
         $model = User::getById(Yii::app()->user->id);
+        /* Made in main layout
         if (empty($model->confirmed)) {
             $resendlink = CHtml::link(Yii::t('app', 'Resend'),
                 Yii::app()->createUrl('user/resend', array('id' => e($model->id) )) );
@@ -24,6 +25,7 @@ class UserController extends Controller {
                 Yii::t('app', 'Your email is not confirmed yet! {resend} email confirmation',
                     array('{resend}' => $resendlink)));
         }
+        */
         $this->render('index', array('model' => $model));
     }
 
@@ -113,7 +115,7 @@ class UserController extends Controller {
 
         // Resend confirmation email
         $secret = $model->secretSet();
-        if ($model->save()) {
+        if (!$model->save()) {
             throw new CHttpException(500, Yii::t('app', 'Error while generating user confirmation code'));
         }
         $this->confirmationEmailSend($model, $secret);
@@ -168,6 +170,8 @@ class UserController extends Controller {
         if (!$model->save()) {
             throw new CHttpException(500, Yii::t('app', 'Error while confirming user email'));
         }
+
+        Yii::app()->user->setState('confirmed', 1);
 
         // Display that email has been confirmed
         $this->render('confirmed', array('model' => $model));
@@ -285,7 +289,9 @@ class UserController extends Controller {
                 Yii::app()->user->setFlash('success', Yii::t('app', 'Profile updated'));
                 if ( ($model->email != $emailold) &&
                      ($this->confirmationEmailSend($model, $secret, true)) ) {
+
                     $this->render('confirmsent', array('model' => $model, 'context' => 'update'));
+                    Yii::app()->user->setState('confirmed', 0);
                     Yii::app()->end();
                 }
                 $this->redirect('/user');

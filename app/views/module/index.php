@@ -8,6 +8,7 @@
 $compatibility = $project->compatibility();
 if (empty($selected)) $selected = 0;
 
+$this->pageTitle = Yii::app()->name . ' - ' . Yii::t('app', 'Modules');
 $this->breadcrumbs = array(
   Yii::t('app', 'Projects')   => '/project',
   e($project->name)           => '/project/view/' . e($project->id),
