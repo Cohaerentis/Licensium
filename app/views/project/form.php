@@ -85,11 +85,11 @@
         <div class="submit">
             <div class="col-md-9 col-sm-6">
               <?php if ($model->isNewRecord) {
-                  echo CHtml::linkButton('Cancel',
+                  echo CHtml::linkButton(Yii::t('app', 'Cancel'),
                     array('class'       => 'btn btn-link btn-cancel',
                           'data-action' => 'clear'));
               } else {
-                  echo CHtml::linkButton('Cancel',
+                  echo CHtml::linkButton(Yii::t('app', 'Cancel'),
                     array('class'       => 'btn btn-link btn-cancel',
                           'data-action' => 'view',
                           'data-target' => '/project/view',
@@ -98,12 +98,12 @@
             </div>
             <div class="col-md-3 col-sm-6">
               <?php if ($model->isNewRecord) {
-                  echo CHtml::submitButton('Create',
+                  echo CHtml::submitButton(Yii::t('app', 'Create'),
                     array('class'       => 'btn btn-success btn-create',
                           'data-action' => 'create',
                           'data-target' => '/project/create'));
               } else {
-                  echo CHtml::submitButton('Save',
+                  echo CHtml::submitButton(Yii::t('app', 'Save'),
                     array('class'       => 'btn btn-success btn-create',
                           'data-action' => 'update',
                           'data-target' => '/project/update',

@@ -53,7 +53,7 @@ class ModuleController extends Controller {
     }
 
     protected function priorityChange($change, $projectid, $id) {
-        $model = $this->loadModel($id, $projectid);
+        $model = $this->loadModel($id, $projectid, true);
         if (!$model->priorityChange($change, $this->project)) {
             $msg = Yii::t('app', 'Error while changing module priority.');
             throw new CHttpException(500, $msg);
@@ -78,7 +78,7 @@ class ModuleController extends Controller {
      */
     public function actionCreate($projectid) {
         $model = new Module;
-        $project = $this->loadProject($projectid);
+        $project = $this->loadProject($projectid, true);
 
         // Case A: PostAjax, validate and save
         if (isset($_POST['Module'])) {
@@ -162,7 +162,7 @@ class ModuleController extends Controller {
      * @throws CHttpException
      */
     public function loadModel($id, $projectid, $nocache = false) {
-        $project = $this->loadProject($projectid);
+        $project = $this->loadProject($projectid, $nocache);
         $model   = Module::getById($id, $nocache);
         if ($model === null) {
             $msg = Yii::t('app', 'Module does not exist.');
@@ -177,11 +177,11 @@ class ModuleController extends Controller {
         return $model;
     }
 
-    public function loadProject($projectid) {
+    public function loadProject($projectid, $nocache = false) {
         // Static cache
         if (!empty($this->project) && ($this->project->id == $projectid)) return $this->project;
 
-        $project = Project::getById($projectid);
+        $project = Project::getById($projectid, $nocache);
 
         if (empty($project)) {
             $msg = Yii::t('app', 'Project does not exist.');

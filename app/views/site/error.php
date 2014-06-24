@@ -2,10 +2,8 @@
 /* @var $this SiteController */
 /* @var $error array */
 
-$this->pageTitle=Yii::app()->name . ' - Error';
-$this->breadcrumbs=array(
-    'Error',
-);
+$this->pageTitle = Yii::app()->name . ' - Error ' . $code;
+$this->breadcrumbs = array();
 
 $msg = '';
 if($code==404) {

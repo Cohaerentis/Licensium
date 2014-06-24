@@ -1,16 +1,13 @@
 <?php
 /* @var $this SiteController */
 
-    // TODO : Nothing to show by now ;)
-
 ?>
 <div class="home-wrapper">
     <div class="row">
         <div class="col-lg-12 col-md-12 col-xs-12">
             <div class="home">
                 <h1>Licensium</h1>
-                <p class="home-text"><?php echo Yii::t('app', 'Licensium  is a tool for preparing inventories of open source licenses, 
-                in order to control their compatibility and their requirements.');?></p>
+                <p class="home-text"><?php echo Yii::t('app', 'Licensium is a tool for preparing inventories of open source licenses, in order to control their compatibility and their requirements.');?></p>
                 <p class="home-text"><?php echo Yii::t('app', 'With Licensium you will be able to:');?></p>
                 <div class="row">
                     <div class="items">
@@ -58,3 +55,4 @@
         </div>
     </div>
 </div>
+<?php $this->widget('application.widgets.CookiesWarning'); ?>

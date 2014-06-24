@@ -299,27 +299,26 @@ foreach ($modules as $item) {
             <?php endforeach;?>
         </div>
         <div class="col-lg-12 col-md-12 col-xs-12"><hr /></div>
-        <div class="col-lg-12 col-md-12 col-xs-12">
-            <div class="page-title">
-                <h2 class="section-title"><?php echo Yii::t('app', 'Share this Report'); ?></h2>
+        <?php if (!Yii::app()->user->isGuest && ($model->user_id == Yii::app()->user->id)) : ?>
+            <div class="col-lg-12 col-md-12 col-xs-12">
+                <div class="page-title">
+                    <h2 class="section-title"><?php echo Yii::t('app', 'Share this Report'); ?></h2>
+                </div>
             </div>
-        </div>
-        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-            <div class="alert alert-info share-link">
-                <p>
-                    <strong>
-                        <?php echo Yii::t('app',
-                        'This is a public link. Anyone may access to your project report so be carefull 
-                        with whom we share it.'
-                        );?>
-                    </strong>
-                </p>
-                <p class='report-link ellipsis'>
-                  <i class="glyphicon glyphicon-link report-link-icon"></i>
-                  <a href="<?php echo $url.'/project/report/id/'.$id.'/code/'.$uuid; ?>"><?php echo $url.'/project/report/id/'.$id.'/code/'.$uuid; ?></a>
-                </p>
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <div class="alert alert-info share-link">
+                    <p>
+                        <strong>
+                            <?php echo Yii::t('app', 'This is a public link. Anyone may access to your project report so be carefull with whom we share it.');?>
+                        </strong>
+                    </p>
+                    <p class='report-link ellipsis'>
+                      <i class="glyphicon glyphicon-link report-link-icon"></i>
+                      <a href="<?php echo $url.'/project/report/id/'.$id.'/code/'.$uuid; ?>"><?php echo $url.'/project/report/id/'.$id.'/code/'.$uuid; ?></a>
+                    </p>
+                </div>
             </div>
-        </div>
+        <?php endif; ?>
         <div class="col-lg-12 col-md-12 col-sm-12 colxs-12">
             <div class="print-link">
                 <a class=" btn btn-success right print" onClick="window.print()">
@@ -330,3 +329,4 @@ foreach ($modules as $item) {
         </div>
     <div>
 </div>
+<?php $this->widget('application.widgets.CookiesWarning'); ?>

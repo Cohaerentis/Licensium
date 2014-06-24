@@ -20,6 +20,7 @@
  * @property integer $deleted
  * @property integer $confirmed
  * @property integer $dontemailme
+ * @property integer $privacy
  */
 class User extends CActiveRecord {
     const CACHE_PREFIX = 'user';
@@ -44,10 +45,11 @@ class User extends CActiveRecord {
             array('password', 'length', 'min' => 8),
             array('email', 'email'),
             array('email', 'unique'),
-            array('privileges, deleted, confirmed, dontemailme', 'numerical', 'integerOnly'=>true),
+            array('privileges, deleted, confirmed, dontemailme, privacy', 'numerical', 'integerOnly'=>true),
             array('email, firstname, lastname, company, emailold', 'length', 'max'=>100),
             array('password, secret', 'length', 'max'=>80),
             array('secretdate, registerdate, modifydate, lastaccess', 'length', 'max'=>11),
+            array('privacy', 'compare', 'compareValue' => 1, 'message' => Yii::t('app', 'You must accept our privacy policy')),
             // The following rule is used by search().
             // @todo Please remove those attributes that should not be searched.
             array('id, email, password, privileges, firstname, lastname, company, emailold, secret, secretdate, registerdate, modifydate, lastaccess, deleted, confirmed, dontemailme', 'safe', 'on'=>'search'),
@@ -86,7 +88,7 @@ class User extends CActiveRecord {
     public function attributeLabels() {
         return array(
             'id'                => Yii::t('app', 'ID'),
-            'email'             => Yii::t('app', 'Email'),
+            'email'             => Yii::t('app', 'Email address'),
             'password'          => Yii::t('app', 'Password'),
             'privileges'        => Yii::t('app', 'Privileges'),
             'firstname'         => Yii::t('app', 'Firstname'),
@@ -101,6 +103,7 @@ class User extends CActiveRecord {
             'deleted'           => Yii::t('app', 'Deleted'),
             'confirmed'         => Yii::t('app', 'Confirmed'),
             'dontemailme'       => Yii::t('app', 'Don\'t email me'),
+            'privacy'           => Yii::t('app', 'Privacy policy'),
         );
     }
 
@@ -248,6 +251,7 @@ class User extends CActiveRecord {
         $criteria->compare('deleted',$this->deleted);
         $criteria->compare('confirmed',$this->confirmed);
         $criteria->compare('dontemailme',$this->dontemailme);
+        $criteria->compare('privacy',$this->privacy);
 
         return new CActiveDataProvider($this, array(
             'criteria'=>$criteria,

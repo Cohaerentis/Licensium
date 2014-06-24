@@ -1,10 +1,8 @@
 <?php
 /* @var $this SiteController */
 
-$this->pageTitle=Yii::app()->name . ' - Legal';
-$this->breadcrumbs=array(
-    'Legal',
-);
+$this->pageTitle = Yii::app()->name . ' - ' . Yii::t('app', 'Disclaimer and Conditions of Use');
+$this->breadcrumbs = array();
 ?>
 <article class="legal-wrapper">
     <div class="row">
@@ -16,7 +14,7 @@ $this->breadcrumbs=array(
         <div class="col-lg-12 col-md-12 col-xs-12">
             <div class="legal-text">
 
-               <div> 
+               <div>
                     <h3><?php echo Yii::t('app', 'Disclaimer')?></h3>
                </div>
 
@@ -46,13 +44,16 @@ $this->breadcrumbs=array(
                 <div>
                 <h3><?php echo Yii::t('app', 'Protection of personal data')?>:</h3>
                 </div>
-                <p><?php echo Yii::t('app', 'The treatment of personal data is governed by the privacy policy defined by Cohaerentis SL which can be found at this')?> <a href="/site/page/view/policy"><?php echo Yii::t('app', 'link')?></a></p>
+                <p>
+                    <?php echo Yii::t('app', 'The treatment of personal data is governed by the privacy policy defined by Cohaerentis SL which can be found at this')?>
+                    <a href="/site/page/view/privacy-policy"><?php echo Yii::t('app', 'link')?></a>
+                </p>
                 <div>
                     <h4><strong><?php echo Yii::t('app', 'Professional activity')?>:</strong></h4>
                 </div>
                 <p><?php echo Yii::t('app', 'The lawyers of Cohaerentis SL belongs to Ilustre Colegio de Abogados de Madrid.')?></p>
                 <p><?php echo Yii::t('app', 'Standards and codes of conduct: ICAM regulations.')?></p>
-                <p><?php echo Yii::t('app', 'The General Statute of the Spanish Legal Profession and the Ethical Code are applicable to the practice of law.')?></p> 
+                <p><?php echo Yii::t('app', 'The General Statute of the Spanish Legal Profession and the Ethical Code are applicable to the practice of law.')?></p>
                 <p><?php echo Yii::t('app', 'These rules are on the website of the Consejo General de la Abogacía.')?></p>
                 <div>
                     <h4><strong><?php echo Yii::t('app', 'Applicable law')?>:</strong></h4>

@@ -23,6 +23,7 @@ CREATE TABLE IF NOT EXISTS `user` (
     `deleted`       tinyint(1)      NOT NULL DEFAULT '0',
     `confirmed`     tinyint(1)      NOT NULL DEFAULT '0',
     `dontemailme`   tinyint(1)      NOT NULL DEFAULT '0',
+    `privacy`       tinyint(1)      NOT NULL DEFAULT '0',
 -- Keys and indexes
     PRIMARY KEY (`id`),
     KEY `user_deleted`              (`deleted`),

@@ -65,13 +65,16 @@ class UserController extends Controller {
             }
             $model->attributesClear($_POST['User'], 'create');
             $model->attributes = $_POST['User'];
-            $model->passwordChange($plainpass);
-            $secret = $model->secretSet();
-            $model->registerdate = time();
-            if ($model->save()) {
-                $this->confirmationEmailSend($model, $secret);
-                $this->render('confirmsent', array('model' => $model));
-                Yii::app()->end();
+            $model->password = $plainpass;
+            if ($model->validate(array('password'))) {
+                $model->passwordChange($plainpass);
+                $secret = $model->secretSet();
+                $model->registerdate = time();
+                if ($model->save()) {
+                    $this->confirmationEmailSend($model, $secret);
+                    $this->render('confirmsent', array('model' => $model, 'context' => 'signup'));
+                    Yii::app()->end();
+                }
             }
         }
 
@@ -111,9 +114,10 @@ class UserController extends Controller {
         // Resend confirmation email
         $secret = $model->secretSet();
         if ($model->save()) {
-            $this->confirmationEmailSend($model, $secret);
-            $this->render('confirmsent', array('model' => $model));
+            throw new CHttpException(500, Yii::t('app', 'Error while generating user confirmation code'));
         }
+        $this->confirmationEmailSend($model, $secret);
+        $this->render('confirmsent', array('model' => $model, 'context' => 'resend'));
     }
 
     protected function confirmationEmailSend($model, $secret) {
@@ -281,7 +285,7 @@ class UserController extends Controller {
                 Yii::app()->user->setFlash('success', Yii::t('app', 'Profile updated'));
                 if ( ($model->email != $emailold) &&
                      ($this->confirmationEmailSend($model, $secret, true)) ) {
-                    $this->render('confirmsent', array('model' => $model));
+                    $this->render('confirmsent', array('model' => $model, 'context' => 'update'));
                     Yii::app()->end();
                 }
                 $this->redirect('/user');

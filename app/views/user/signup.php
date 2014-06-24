@@ -29,7 +29,7 @@
                             <div class="row">
                                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                                     <?php echo $form->labelEx($model, 'email', array('class' => 'input-group-addon')); ?>
-                                    <?php echo $form->textField($model, 'email', array('class'=> 'type-text form-control', 'maxlength' => 100, 'placeholder' => 'email')); ?>
+                                    <?php echo $form->textField($model, 'email', array('class'=> 'type-text form-control', 'maxlength' => 100, 'placeholder' => Yii::t('app', 'your email address') )); ?>
                                     <?php echo $form->error($model, 'email'); ?>
                                 </div>
                             </div>
@@ -40,7 +40,7 @@
                             <div class="row">
                                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                                     <?php echo $form->labelEx($model, 'password', array('class' => 'input-group-addon')); ?>
-                                    <?php echo $form->passwordField($model, 'password', array('class' => 'type-text form-control', 'maxlength' => 100, 'placeholder' => 'password')); ?>
+                                    <?php echo $form->passwordField($model, 'password', array('class' => 'type-text form-control', 'maxlength' => 100, 'placeholder' => Yii::t('app', 'your favorite password'))); ?>
                                     <?php echo $form->error($model, 'password'); ?>
                                 </div>
                             </div>
@@ -51,7 +51,7 @@
                             <div class="row">
                                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                                     <?php echo $form->labelEx($model, 'firstname', array('class' => 'input-group-addon')); ?>
-                                    <?php echo $form->textField($model, 'firstname', array('class' => 'type-text form-control', 'maxlength' => 100, 'placeholder' => 'firstname')); ?>
+                                    <?php echo $form->textField($model, 'firstname', array('class' => 'type-text form-control', 'maxlength' => 100, 'placeholder' => Yii::t('app', 'your name'))); ?>
                                     <?php echo $form->error($model, 'firstname'); ?>
                                 </div>
                             </div>
@@ -62,7 +62,7 @@
                             <div class="row">
                                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                                     <?php echo $form->labelEx($model, 'lastname', array('class' => 'input-group-addon')); ?>
-                                    <?php echo $form->textField($model, 'lastname', array('class' => 'type-text form-control', 'maxlength' => 100, 'placeholder' => 'lastname')); ?>
+                                    <?php echo $form->textField($model, 'lastname', array('class' => 'type-text form-control', 'maxlength' => 100, 'placeholder' => Yii::t('app', 'your last name'))); ?>
                                     <?php echo $form->error($model, 'lastname'); ?>
                                 </div>
                             </div>
@@ -73,7 +73,7 @@
                             <div class="row">
                                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                                     <?php echo $form->labelEx($model, 'company', array('class' => 'input-group-addon')); ?>
-                                    <?php echo $form->textField($model, 'company', array('class' => 'type-text form-control', 'maxlength' => 100, 'placeholder' => 'company')); ?>
+                                    <?php echo $form->textField($model, 'company', array('class' => 'type-text form-control', 'maxlength' => 100, 'placeholder' => Yii::t('app', 'the company you are developing software'))); ?>
                                     <?php echo $form->error($model, 'company'); ?>
                                 </div>
                             </div>
@@ -89,13 +89,17 @@
                                 array('class'       => 'btn btn-success'));
                             ?>
                             <div class="privacy">
-                                <input type="checkbox" id="check" name="check">
-                                <a href="/site/page/view/policy"><?php echo Yii::t('app', 'Privacy policy'); ?></a>
+                                <?php /* <input type="checkbox" id="check" name="check"> */ ?>
+                                <?php echo $form->error($model, 'privacy'); ?>
+                                <?php echo $form->checkBox($model, 'privacy'); ?>
+                                <a href="/site/page/view/privacy-policy"><?php echo Yii::t('app', 'Privacy policy'); ?></a>
                             </div>
                         </div>
                     </div>
                 </div>
             </fieldset>
-      </div>
+        </div>
+    </div>
     <?php $this->endWidget(); ?>
   </div>
+<?php $this->widget('application.widgets.CookiesWarning'); ?>

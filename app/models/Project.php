@@ -225,11 +225,9 @@ class Project extends CActiveRecord {
             'dinamic'  => array(),
         );
         $all = License::getAll();
-// wrlog('All licenses = ' . var_export($all, true));
         foreach ($all as $candidate) {
             $static  = Compatible::STATUS_COMPATIBLE;
             $dinamic = Compatible::STATUS_COMPATIBLE;
-// wrlog('Comparing license = ' . var_export($candidate->name, true));
             foreach ($this->modules as $module) {
                 if (empty($module->enabled)) continue;
                 $s = Compatible::isCompatible(
@@ -242,13 +240,6 @@ class Project extends CActiveRecord {
                           'type'      => Module::TYPE_DINAMIC),
                     array('licenseid' => $module->license_id,
                           'type'      => $module->type));
-/*
-if (!empty($module->license)) {
-wrlog("Comparing with '{$module->license->name}' : s = '$s', d = '$d'");
-}else{
-wrlog("Comparing with 'unknown' : s = '$s', d = '$d'");
-}
-*/
                 if ($s != Compatible::STATUS_COMPATIBLE) $static = $s;
                 if ($d != Compatible::STATUS_COMPATIBLE) $dinamic = $d;
                 if ( ($static != Compatible::STATUS_COMPATIBLE) &&
@@ -260,7 +251,6 @@ wrlog("Comparing with 'unknown' : s = '$s', d = '$d'");
             if ($static == Compatible::STATUS_COMPATIBLE) $available['static'][$candidate->id] = $candidate;
             if ($dinamic == Compatible::STATUS_COMPATIBLE) $available['dinamic'][$candidate->id] = $candidate;
         }
-// wrlog('Available = ' . var_export($available, true));
         return $available;
     }
 

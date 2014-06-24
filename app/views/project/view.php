@@ -96,7 +96,7 @@ $createdate = $model->createDatePrint();
                             <?php else: ?>
                             <div class="col-lg-12 col-md-12 col-xs-12">
                                 <div class="alert alert-success">
-                                    Well done!! Your project has no compatibility problems.
+                                    <?php echo Yii::t('app','Well done!! Your project has no compatibility problems.')?>
                                     <i class="glyphicon glyphicon-thumbs-up thumbs" ></i><br>
                                 </div>
                             </div>

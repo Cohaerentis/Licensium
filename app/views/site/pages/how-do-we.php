@@ -1,10 +1,8 @@
 <?php
 /* @var $this SiteController */
 
-$this->pageTitle=Yii::app()->name . ' - How do we';
-$this->breadcrumbs=array(
-    'How do we...',
-);
+$this->pageTitle = Yii::app()->name . ' - ' . Yii::t('app', 'How do we calculate compatibility');
+$this->breadcrumbs = array();
 ?>
 <article class="about-wrapper">
     <div class="row">
@@ -39,9 +37,9 @@ $this->breadcrumbs=array(
                     <img src="/img/how-4.png"/>
                 </div>
                 <ul>
-                    <li><strong>GREEN:</strong> the module is compatible with one/all the modules below</li>
-                    <li><strong>RED:</strong> the module is incompatible with one/all the modules below</li>
-                    <li><strong>ORANGE:</strong> The status of the compatibility is unknown.</li>
+                    <li><strong><?php echo Yii::t('app', 'GREEN');?>:</strong> <?php echo Yii::t('app', 'The module is compatible with all of the modules below');?>.</li>
+                    <li><strong><?php echo Yii::t('app', 'RED');?>:</strong> <?php echo Yii::t('app', 'The module is incompatible with at least one of the modules below');?>.</li>
+                    <li><strong><?php echo Yii::t('app', 'ORANGE');?>:</strong> <?php echo Yii::t('app', 'The status of the compatibility is unknown');?>.</li>
                 </ul>
                 <p><?php echo Yii::t('app', 'When we press a module, on the right side of the screen, we will see the module status.');?></p>
                 <p><?php echo Yii::t('app', 'There you can see where is the compatibility problem with that module.');?></p>
@@ -66,3 +64,4 @@ $this->breadcrumbs=array(
         </div>
     </div>
 </article>
+<?php $this->widget('application.widgets.CookiesWarning'); ?>
