@@ -53,7 +53,7 @@ class Assets extends CApplicationComponent {
                          'gaload' => CClientScript::POS_END,
                          'modernizr-2.7.0' => CClientScript::POS_END,
                          'jquery-form-3.50.0' => CClientScript::POS_END,
-                         'jquery-chosen-1.1.0' => CClientScript::POS_END);
+        );
         if (YII_DEBUG) {
             // $scripts['bootstrap/affix'] = CClientScript::POS_END;
             $scripts['bootstrap/alert'] = CClientScript::POS_END;

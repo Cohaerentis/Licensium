@@ -1,9 +1,5 @@
 (function($){
     $(document).ready(function($) {
-        $(".chosen-select").chosen({
-            allow_single_deselect: true
-        });
-
         /* AEA - Disabled because now is a GET request
         $(".switcher").click(function(){
             // Disable the events for the parents of the "eye" (li)
