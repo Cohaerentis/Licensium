@@ -16,7 +16,10 @@ $this->breadcrumbs = array();
                 <div>
                     <h3><?php echo Yii::t('app', 'What are cookies?') ; ?></h3>
                 </div>
-                <p><?php echo Yii::t('app', 'A cookie is a text-only string of information that www.licensium.opencodex.es transfers to the cookie file of the browser on your computer’s hard disk.') ; ?></p>
+                <p>
+                    <?php echo Yii::t('app', 'A cookie is a text-only string of information that');?>
+                    licensium.opencodex.es
+                    <?php echo Yii::t('app', '(website) transfers to the cookie file of the browser on your computer’s hard disk.'); ?></p>
                 <p><?php echo Yii::t('app', 'There are three main types of cookies:'); ?></p>
                 <ul>
                     <li><?php echo Yii::t('app', 'To make the website work properly for you and to enable you to make use of the services we provide.'); ?></li>
@@ -37,37 +40,24 @@ $this->breadcrumbs = array();
                     <h3><?php echo Yii::t('app', 'Here you have the cookies that we use in our site'); ?></h3>
                 </div>
                 <p>
-                    <?php echo Yii::t('app', 'Users must accept our cookies before browe.'); ?>
+                    <?php echo Yii::t('app', 'Users must accept our cookies before browse.'); ?>
                     <?php echo Yii::t('app', 'Users can also configure the web browser to not accept cookies although this might affect the right performance of the site.'); ?>
                 </p>
                 <ul>
                      <li>
                         <strong>PHPSESSID: </strong>
-                        <?php echo Yii::t('app', 'These cookies store temporaly information to enable site functionality.'); ?>
-                        <?php echo Yii::t('app', 'They are automatically deleted when you close your browser.'); ?>
+                        <?php echo Yii::t('app', 'Store a temporally random identifier to enable site functionality.'); ?><br />
+                        <?php echo Yii::t('app', 'Automatically deleted when you close your browser.'); ?>
                     </li>
                     <li>
-                        <strong>_utma: </strong>
-                        <?php echo Yii::t('app', 'is a persistent cookie which expires in 2 years from the last update.'); ?>
-                        <?php echo Yii::t('app', 'It is used to track first visit, last visit, current visit, and number of visits.'); ?>
-                        <?php echo Yii::t('app', 'The content of this cookie value is separated by a dot, and stores domain hash, random ID, time of first visit, time of last visit, time of current visit and session counter.'); ?>
+                        <strong>_ga: </strong>
+                        <?php echo Yii::t('app', 'Used to distinguish users.'); ?><br />
+                        <?php echo Yii::t('app', 'Expires in 2 years from the last update.'); ?>
                     </li>
                     <li>
-                        <strong>_utmb: </strong>
-                        <?php echo Yii::t('app', 'They are automatically deleted when you close your browser.'); ?>
-                        <?php echo Yii::t('app', 'The content of the cookie include domain hash, pageview, number of outbound link click counting down from 10, and current time stamp.'); ?>
-
-                    </li>
-                    <li>
-                        <strong>_utmc: </strong>
-                        <?php echo Yii::t('app', 'used to track session status but it is no longer used.'); ?>
-                        <?php echo Yii::t('app', 'The value contained domain hash.'); ?>
-                    </li>
-                    <li>
-                        <strong>_utmz: </strong>
-                        <?php echo Yii::t('app', 'keeps track of entry point into your website storing traffic source, medium, campaign, and search term used to land on your website.'); ?>
-                        <?php echo Yii::t('app', 'The cookie value inclue Domain hash, current timestamp, session count, and campaign information.'); ?>
-                        <?php echo Yii::t('app', 'The cookie is updated with each page view, and expires in 6 months from last update.'); ?>
+                        <strong>licensium_cookies_acknowledge: </strong>
+                        <?php echo Yii::t('app', 'Used to not show cookies warning message.'); ?><br />
+                        <?php echo Yii::t('app', 'Expires in 10 years.'); ?><br />
                     </li>
                 </ul>
                 <div>
