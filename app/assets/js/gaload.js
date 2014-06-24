@@ -1,4 +1,4 @@
-function gaload(win,doc,tag,src,name){
+function gaload(win, doc, tag, src, name, a, m){
     win['GoogleAnalyticsObject'] = name;
     win[name] = win[name] || function(){
         (win[name].q = win[name].q || []).push(arguments)},
