@@ -235,6 +235,8 @@ if ($cookies_warning) {
                   <a href="/site/page/view/legal"><?php echo Yii::t('app', 'Disclaimer & Conditions of Use');?></a>
                   &nbsp;&nbsp;|&nbsp;&nbsp;
                   <a href="/site/page/view/privacy-policy"><?php echo Yii::t('app', 'Privacy Policy');?></a>
+                  &nbsp;&nbsp;|&nbsp;&nbsp;
+                  <a href="/site/page/view/cookies-policy"><?php echo Yii::t('app', 'Cookies policy');?></a>
               </div>
             </div>
           </div>
