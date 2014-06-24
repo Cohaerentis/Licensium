@@ -1,15 +1,21 @@
+<?php
+/* @var $this UserController */
+
+$title = Yii::t('app', 'Registry completed');
+if ($context == 'resend') {
+    $title = Yii::t('app', 'Confirmation code resent');
+} else if ($context == 'update') {
+    $title = Yii::t('app', 'Email updated');
+}
+$this->pageTitle = Yii::app()->name . ' - ' . $title;
+$this->breadcrumbs = array();
+?>
 <div class="confirm-wrapper">
     <div class="row">
         <div class="col-lg-12 col-md-12 col-xs-12">
             <div class="page-title">
                 <h2>
-                    <?php if ($context == 'resend') : ?>
-                        <?php echo Yii::t('app', 'Confirmation code resent');?>
-                    <?php elseif ($context == 'update') : ?>
-                        <?php echo Yii::t('app', 'Email updated');?>
-                    <?php else : ?>
-                        <?php echo Yii::t('app', 'Registry completed');?>
-                    <?php endif; ?>
+                    <?php echo $title;?>
                     <i class="glyphicon glyphicon-ok"></i>
                 </h2>
             </div>

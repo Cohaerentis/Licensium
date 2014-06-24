@@ -3,6 +3,9 @@
 /* @var $model LoginForm */
 /* @var $form CActiveForm  */
 
+$this->pageTitle = Yii::app()->name . ' - ' . Yii::t('app', 'Login');
+$this->breadcrumbs = array();
+
 ?>
   <div class="login-wrapper">
     <?php $form = $this->beginWidget('CActiveForm', array(

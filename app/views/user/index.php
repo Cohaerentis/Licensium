@@ -2,6 +2,8 @@
 /* @var $this UserController */
 /* @var $model User */
 
+$this->pageTitle = Yii::app()->name . ' - ' . Yii::t('app', 'My profile');
+$this->breadcrumbs = array();
 ?>
 <div class="user-wrapper">
     <div class="row">

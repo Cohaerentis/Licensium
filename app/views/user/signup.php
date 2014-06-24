@@ -3,6 +3,9 @@
 /* @var $model User */
 /* @var $form CActiveForm  */
 
+$this->pageTitle = Yii::app()->name . ' - ' . Yii::t('app', 'Registry Form');
+$this->breadcrumbs = array();
+
 ?>
   <div class="signup-wrapper">
     <?php $form = $this->beginWidget('CActiveForm', array(

@@ -1,6 +1,8 @@
 <?php
 /* @var $this SiteController */
 
+$this->pageTitle = Yii::app()->name;
+
 ?>
 <div class="home-wrapper">
     <div class="row">

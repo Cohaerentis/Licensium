@@ -3,6 +3,9 @@
 /* @var $model PasswordForm */
 /* @var $form CActiveForm  */
 
+$this->pageTitle = Yii::app()->name . ' - ' . Yii::t('app', 'Change your password');
+$this->breadcrumbs = array();
+
 ?>
   <div class="password-wrapper">
     <?php $form = $this->beginWidget('CActiveForm', array(
