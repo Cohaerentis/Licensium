@@ -579,6 +579,8 @@ return array (
     'política de cookies',
   'Cookies policy' =>
     'Política de cookies',
+  'Cookies warning' =>
+    'Aviso sobre cookies',
 //  '' =>
 //    '',
 );
