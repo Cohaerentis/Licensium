@@ -329,3 +329,4 @@ foreach ($modules as $item) {
         </div>
     <div>
 </div>
+<?php $this->widget('application.widgets.CookiesWarning'); ?>
