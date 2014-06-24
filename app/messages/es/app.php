@@ -450,7 +450,7 @@ return array (
   'There you can see where is the compatibility problem with that module.' =>
     'Ahí podrás ver dónde están los problemas de incompatiblidades con ese módulo.',
   'Therefore we always recommend as a "good practice" to be performed by the companies keep an inventory of such licenses attaching, if possible, the contents thereof by the time the code is linked or integrated.' =>
-    'Por ello siempre recomendamos como una “buena práctica” a llevar a cabo por las empresas llevar un inventario de dichas licencias adjuntando, si es posible, el contenido de las mismas en el momento en el que el código es esmaltado o integrado.',
+    'Por ello siempre recomendamos como una “buena práctica” a llevar a cabo por las empresas llevar un inventario de dichas licencias adjuntando, si es posible, el contenido de las mismas en el momento en el que el código es enlazado o integrado.',
   'This is a public link. Anyone may access to your project report so be carefull with whom we share it.' =>
     'Este es un enlace público. Cualquiera podría acceder a él por lo que tenga cuidado a la hora de compartirlo.',
   'This is not a valid date.' =>
@@ -581,6 +581,20 @@ return array (
     'Política de cookies',
   'Cookies warning' =>
     'Aviso sobre cookies',
+  'Public Domain License' =>
+    'Licencia de Dominio Público',
+  'The author waives all copyrights (all waivable rights) and grants them to public domain.' =>
+    'El autor renuncia a todos sus derechos (renunciables) y los cede al dominio público.',
+  'Propietary License' =>
+    'Licencia propietaria',
+  'We are calling proprietary software license to a license type that does not yield any intellectual property to third parties, beyond the mere use of the program that falls under such license. Opposed to any type of license called open source. Such a license would come to be expressed in the following terms:' =>
+    'Le estamos llamando licencia de software propietario a un tipo de licencia que no cede ningún derecho de propiedad intelectual en favor de terceros, más allá del mero uso del programa que cae bajo dicha licencia y en contraposición a cualquier tipo de licencia de las llamadas de código abierto. Una licencia de ese tipo vendría a expresarse en los siguientes términos:',
+  'The licensee is granted a nonexclusive, nontransferable license to download, access and use the Software for the sole purpose of using it.' =>
+    'Se  otorga al licenciatario un derecho no exclusivo e intransferible para descargar, acceder y usar el Programa con el único fin de utilizarlo para los fines destinados del mismo.',
+  'Licensee may not reverse engineer, decompile or disassemble all or part of the Program. Access to the source code in anyway is prohibited.' =>
+    'El licenciatario no podrá realizar ingeniería inversa, ni descompilar, ni desensamblar todo o parte del Programa, estando prohibida cualquier forma de acceso al código fuente del mismo.',
+  'URL must be absolute, for example, http://licensium.opencodex.es' =>
+    'URL debe ser absoluta, por ejemplo, http://licensium.opencodex.es',
 //  '' =>
 //    '',
 );
