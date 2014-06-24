@@ -289,7 +289,17 @@ foreach ($modules as $item) {
                                 </div>
                                 <div class="col-lg-12 col-md-6">
                                     <div class="value ellipsis">
-                                        <?php echo Compatible::statusPrint($compatibility['status']); ?>
+                                        <p class="comp-block <?php if($compatibility['status'] == 0) echo 'incompatible';
+                                                        if($compatibility['status'] == 1) echo 'compatible';
+                                                        if($compatibility['status'] == 2) echo 'unknown'
+                                                    ;?>">
+                                            <?php echo Compatible::statusPrint($compatibility['status']); ?>
+                                        </p>
+                                        <ul>
+                                        <?php foreach ($compatibility['conflicts'] as $id => $conflict): ?>
+                                            <li><?php echo e($conflict['versus']->name); ?></li>
+                                        <?php endforeach;?>
+                                        </ul>
                                     </div>
                                 </div>
                             </div>
