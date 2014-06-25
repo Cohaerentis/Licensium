@@ -79,24 +79,20 @@ class Controller extends CController {
     public function renderAjaxHtml($view, $data = array(), $return = false) {
         $this->layout = '/layouts/ajax-html';
         $this->render($view, $data, $return);
-        Yii::app()->end();
     }
 
     public function renderAjaxError($error = '', $return = false) {
         $this->layout = '/layouts/ajax-error';
         $this->render('/ajax/error', array('error' => $error), $return);
-        Yii::app()->end();
     }
 
     public function renderAjaxRedirect($uri = '/', $return = false) {
         $this->layout = '/layouts/ajax-redirect';
         $this->render('/ajax/redirect', array('redirect' => $uri), $return);
-        Yii::app()->end();
     }
 
     public function renderAjaxJson($json = null, $return = false) {
         $this->layout = '/layouts/ajax-json';
         $this->render('/ajax/json', array('json' => $json), $return);
-        Yii::app()->end();
     }
 }

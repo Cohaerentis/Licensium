@@ -80,6 +80,7 @@ class ProjectController extends Controller {
                 Yii::app()->user->setFlash('success', Yii::t('app', 'Project "{name}" created', array('{name}' => e($model->name))));
                 $this->renderAjaxRedirect($this->createUrl('/project/view',
                                                            array('id' => $model->id)));
+                Yii::app()->end();
             }
         }
 
@@ -102,6 +103,7 @@ class ProjectController extends Controller {
                 Yii::app()->user->setFlash('success', Yii::t('app', 'Project "{name}" updated', array('{name}' => e($model->name))));
                 $this->renderAjaxRedirect($this->createUrl('/project/view',
                                                            array('id' => $model->id)));
+                Yii::app()->end();
             }
         }
 
@@ -121,6 +123,7 @@ class ProjectController extends Controller {
         if ($model->delete()) {
             Yii::app()->user->setFlash('success', Yii::t('app', 'Project "{name}" has been deleted', array('{name}' => e($name) )));
             $this->renderAjaxRedirect($this->createUrl('.'));
+            Yii::app()->end();
         }
         $this->renderAjaxError(Yii::t('app', 'While deleting project "{name}"', array('{name}' => e($name) )));
     }
@@ -136,10 +139,22 @@ class ProjectController extends Controller {
     public function loadModel($id, $nocache = false) {
         $model = Project::getById($id, $nocache);
         if ($model === null) {
-            throw new CHttpException(404, Yii::t('app', 'Project does not exist.'));
+            $msg = Yii::t('app', 'Project does not exist.');
+            if (Yii::app()->request->getIsAjaxRequest()) {
+                $this->renderAjaxError($msg);
+                Yii::app()->end();
+            } else {
+                throw new CHttpException(404, $msg);
+            }
         }
         if ($model->user_id != Yii::app()->user->id) {
-            throw new CHttpException(401, Yii::t('app', 'You are not the owner of this project.'));
+            $msg = Yii::t('app', 'You are not the owner of this project.');
+            if (Yii::app()->request->getIsAjaxRequest()) {
+                $this->renderAjaxError($msg);
+                Yii::app()->end();
+            } else {
+                throw new CHttpException(401, $msg);
+            }
         }
         return $model;
     }
