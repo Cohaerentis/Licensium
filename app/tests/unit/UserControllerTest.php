@@ -1,8 +1,8 @@
 <?php
 
-class UserControllerTest extends CTestCase {
+/*class UserControllerTest extends CTestCase {
 
-   /* public function setUp() {
+    public function setUp() {
         parent::setUp();
     }
 
@@ -14,7 +14,7 @@ class UserControllerTest extends CTestCase {
     // SignUp test
     // =======================
 
-    public static $user_data = array (
+   /* public static $user_data = array (
         'attributes' => array ('email'     => 'a.aranda+unit@cohaerentis.com',
                                'password'  => '123456aS*',
                                'firstname' => 'Pepe',
@@ -29,9 +29,9 @@ class UserControllerTest extends CTestCase {
         $password = '123456aS*';
         $firstname = 'Pepe';
         $lastname = 'Perez';
-        $company = 'Perez Asociados';*/
+        $company = 'Perez Asociados';
 
-        $this->assertTrue(User::model()->actionSignup($model->attributes = self::$user_data['attributes']));
+        //$this->assertTrue(User::model()->actionSignup($model->attributes = self::$user_data['attributes']));
 
     }
 
@@ -54,6 +54,6 @@ class UserControllerTest extends CTestCase {
         $company = 'Perez Asociados';
 
     }
-}
+}*/
 
 ?>
