@@ -39,10 +39,14 @@ $this->breadcrumbs = array();
                     <h3><?php echo Yii::t('app', 'Navigation');?></h3>
                 <p><?php echo Yii::t('app', 'This web site uses the following cookies:');?></p>
                     <ul>
-                        <li><?php echo Yii::t('app', 'Session Cookies');?></li>
+                        <li><?php echo Yii::t('app', 'PHP Session cookie');?></li>
                         <li><?php echo Yii::t('app', 'Google Analytics');?></li>
+                        <li><?php echo Yii::t('app', 'Avoid cookies warning');?></li>
                     </ul>
-                    <p><?php echo Yii::t('app', 'You can read our Cookies policy by visiting the following');?><a href="/site/page/view/cookies-policy"><?php echo Yii::t('app', 'link') ?></a>.</p>
+                    <p>
+                        <?php echo Yii::t('app', 'You can read our Cookies policy by visiting the following');?><a href="/site/page/view/cookies-policy">
+                        <?php echo Yii::t('app', 'link') ?></a>.
+                    </p>
                 <div>
                     <h3><?php echo Yii::t('app', 'Data Controller');?></h3>
                 <p><?php echo Yii::t('app', 'The data controller is Cohaerentis S. L. You can view all business details in the'); ?>

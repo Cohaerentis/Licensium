@@ -92,6 +92,7 @@ class ModuleController extends Controller {
                 $this->renderAjaxRedirect($this->createUrl('/module/view',
                                                            array('id'        => $model->id,
                                                                  'projectid' => $model->project_id)));
+                Yii::app()->end();
             }
         }
 
@@ -116,6 +117,7 @@ class ModuleController extends Controller {
                 $this->renderAjaxRedirect($this->createUrl('/module/view',
                                                            array('id'        => $model->id,
                                                                  'projectid' => $model->project_id)));
+                Yii::app()->end();
             }
         }
 
@@ -137,6 +139,7 @@ class ModuleController extends Controller {
             Yii::app()->user->setFlash('success', Yii::t('app', 'Module "{name}" has been deleted', array('{name}' => e($name) )));
             $this->renderAjaxRedirect($this->createUrl('/module/index',
                                                        array('projectid' => $projectid)));
+            Yii::app()->end();
         }
         $this->renderAjaxError(Yii::t('app', 'While deleting module "{name}"', array('{name}' => e($name) )));
     }
@@ -166,13 +169,21 @@ class ModuleController extends Controller {
         $model   = Module::getById($id, $nocache);
         if ($model === null) {
             $msg = Yii::t('app', 'Module does not exist.');
-            if (Yii::app()->request->getIsAjaxRequest()) $this->renderAjaxError($msg);
-            else                                         throw new CHttpException(404, $msg);
+            if (Yii::app()->request->getIsAjaxRequest()) {
+                $this->renderAjaxError($msg);
+                Yii::app()->end();
+            } else {
+                throw new CHttpException(404, $msg);
+            }
         }
         if ($model->project_id != $projectid) {
             $msg = Yii::t('app', 'This module does not belong to selected project.');
-            if (Yii::app()->request->getIsAjaxRequest()) $this->renderAjaxError($msg);
-            else                                         throw new CHttpException(401, $msg);
+            if (Yii::app()->request->getIsAjaxRequest()) {
+                $this->renderAjaxError($msg);
+                Yii::app()->end();
+            } else {
+                throw new CHttpException(401, $msg);
+            }
         }
         return $model;
     }
@@ -185,13 +196,21 @@ class ModuleController extends Controller {
 
         if (empty($project)) {
             $msg = Yii::t('app', 'Project does not exist.');
-            if (Yii::app()->request->getIsAjaxRequest()) $this->renderAjaxError($msg);
-            else                                         throw new CHttpException(404, $msg);
+            if (Yii::app()->request->getIsAjaxRequest()) {
+                $this->renderAjaxError($msg);
+                Yii::app()->end();
+            } else {
+                throw new CHttpException(404, $msg);
+            }
         }
         if ($project->user_id != Yii::app()->user->id) {
             $msg = Yii::t('app', 'You are not the owner of this project.');
-            if (Yii::app()->request->getIsAjaxRequest()) $this->renderAjaxError($msg);
-            else                                         throw new CHttpException(401, $msg);
+            if (Yii::app()->request->getIsAjaxRequest()) {
+                $this->renderAjaxError($msg);
+                Yii::app()->end();
+            } else {
+                throw new CHttpException(401, $msg);
+            }
         }
         $this->project = $project;
         return $project;

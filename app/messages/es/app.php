@@ -59,8 +59,8 @@ return array (
     'Cohaerentis S.L. ha adoptado las adecuadas medidas técnicas y organizativas, de conformidad con la normativa sobre protección de datos, para evitar la pérdida de datos de carácter personal o el mal uso de los mismos.',
   'Security' =>
     'Medidas de seguridad',
-  'Session Cookies' =>
-    'Cookies de sesión',
+  'PHP Session cookie' =>
+    'Cookie de sesión PHP',
   'Standards and codes of conduct: ICAM regulations.' =>
     'Normas y códigos de conducta aplicables: normativa del ICAM.',
   'Telephone +34 91375 03 91.' =>
@@ -585,8 +585,10 @@ return array (
     'Puedes leer nuestra Política de cookies visitando el siguiente',
   'What are cookies?' =>
     '¿Qué son las cookies?',
-  'A cookie is a text-only string of information that www.licensium.opencodex.es transfers to the cookie file of the browser on your computer’s hard disk.' =>
-    'Las cookies son pequeños archivos de información, enviadas por el sitio www.licensium.opencodex.es, que se almacenan en el navegador del usuario.',
+  'A cookie is a text-only string of information that' =>
+    'Las cookies son pequeños archivos de información que',
+  '(website) transfers to the cookie file of the browser on your computer’s hard disk.' =>
+    '(Sitio) envía al navegador del usuario.',
   'There are three main types of cookies:' =>
     'Existen cookies de distintos tipos según la información que recojan:',
   'To make the website work properly for you and to enable you to make use of the services we provide.' =>
@@ -609,34 +611,22 @@ return array (
     'Utilizamos la dirección IP del usuario para registrar la actividad del Usuario desde su navegador en nuestro Sitio.',
   'Here you have the cookies that we use in our site' =>
     'A continuación se indican las cookies que utilizamos en nuestro Sitio.',
-  'Users must accept our cookies before browe.' =>
+  'Users must accept our cookies before browse.' =>
     'El Usuario debe asegurarse de que está conforme con ellas antes de seguir navegando.',
   'Users can also configure the web browser to not accept cookies although this might affect the right performance of the site.' =>
-    'También puede configurarse el navegador por el Usuario, para que no acepte cookies aunque eso puede afectar al correcto funcionamiento del Sitio.',
-  'These cookies store temporaly information to enable site functionality.' =>
-    'Estas cookies guardan información temporalmente para habilitar funcionalidades del Sitio',
-  'They are automatically deleted when you close your browser.' =>
-    'Se borran automáticamente cuando se cierra el navegador',
-  'is a persistent cookie which expires in 2 years from the last update.' =>
-    'La cookie se crea cuando la biblioteca de javascript se ejecuta y no existe la cookie _utma. ',
-  'It is used to track first visit, last visit, current visit, and number of visits.' =>
-    'Se utiliza para distinguir a los usuarios y sesiones.',
-  'The content of this cookie value is separated by a dot, and stores domain hash, random ID, time of first visit, time of last visit, time of current visit and session counter.' =>
-    'La cookie se actualiza cada vez que los datos se envían a Google Analytics.',
-  'They are automatically deleted when you close your browser.' =>
-    'Se borra automáticamente cuando se cuerra el navegador',
-  'The content of the cookie include domain hash, pageview, number of outbound link click counting down from 10, and current time stamp.' =>
-    'El contenido de la cookie contiene el dominio, páginas visitadas, número de clicks a enlaces externos, hora actual, etc',
-  'used to track session status but it is no longer used.' =>
-    'se usa para hacer un seguimiento del estado de la sessión. Actualmete está en desuso',
-  'The value contained domain hash.' =>
-    'Contiene el hash del dominio',
-  'keeps track of entry point into your website storing traffic source, medium, campaign, and search term used to land on your website.' =>
-    'hace un seguimiento del punto de entrada al Sitio, desde donde accedes y busca términos que se usan para llegar a nuestra web',
-  'The cookie value inclue Domain hash, current timestamp, session count, and campaign information.' =>
-    'La cookkie contiene el hash de Dominio, la hora actual, número de sesiones e información de la camplaña',
-  'The cookie is updated with each page view, and expires in 6 months from last update.' =>
-    'La cookie se actualiza cada vez que se acceda a la página y caduca en 6 meses desde la última actualización',
+    'El Usuario también puede configurar el navegador para que no acepte cookies aunque eso puede afectar al correcto funcionamiento del Sitio.',
+  'Store a temporally random identifier to enable site functionality.' =>
+    'Guarda un identificador aleatorio temporal para habilitar funcionalidades del Sitio.',
+  'Automatically deleted when you close your browser.' =>
+    'Se borra automáticamente cuando cierras el navegador.',
+  'Used to distinguish users.' =>
+    'Se usa para distinguir a los usuarios.',
+  'Expires in 2 years from the last update.' =>
+    'Expira después de dos años desde la última actualización.',
+  'Used to not show cookies warning message.' =>
+    'Se usa para no mostrar el mensaje de aviso de cookies.',
+  'Expires in 10 years.' =>
+    'Expira después de diez años.',
   'How do I unistall, block or delete cookies?' =>
     '¿Cómo desinstalo, bloqueo o borro las cookies?',
   'You can delete cookies placed in your browser in any moment.' =>
@@ -684,10 +674,11 @@ return array (
   'We keep this Policy under regular review.' =>
     'Mantenemos la Politica de Cookies bajo continuas revisiones.',
   'We may change this Policy from time to time by updating this page in order to reflect changes in the law and/or our privacy practices.' =>
-    'Esta web puede realizar cambios en la Política de Cookies en función de las exigencias legislativas o bien para adaptarla en el caso de que se incorporen nuevas cookies',
+    'Esta web puede realizar cambios en la Política de Cookies en función de las exigencias legislativas o bien para adaptarla en el caso de que se incorporen nuevas cookies.',
   'We will notify you of any modified versions of this Policy that might materially affect the way we use or disclose your personal information.' =>
     'Cuestión de la que, el usuario, será debidamente informado en la página web.',
-
+  'Avoid cookies warning' =>
+    'Evitar aviso de cookies',
 //  '' =>
 //    '',
 );
