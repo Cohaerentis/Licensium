@@ -38,4 +38,4 @@ if($code==400) {
     </div>
     </div>
 </div>
-
+<?php $this->widget('application.widgets.CookiesWarning'); ?>
