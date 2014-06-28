@@ -1,19 +1,28 @@
 {
-  "name": "ied-pass",
+  "name": "licensium",
   "version": "0.0.1",
-  "author": "Antonio Espinosa <aespinosa@teachnova.com.com>",
-  "description": "IED Pass",
+  "author": "Antonio Espinosa <aespinosa@teachnova.com>",
+  "description": "Licensium is a tool to manage your project licenses and check its compatibility",
   "contributors": [
     {
-      "name": "Antonio Espinosa",
-      "email": "aespinosa@teachnova.com",
-      "homepage": "http://www.teachnova.com/"
+      "name": "Juan Carlos Alvarez",
+      "email": "jc.alvarez@cohaerentis.com",
+      "homepage": "http://www.cohaerentis.com/"
+    },
+    {
+      "name": "Abraham Aranda",
+      "email": "a.aranda@cohaerentis.com",
+      "homepage": "http://www.cohaerentis.com/"
+    },
+    {
+      "name": "Elena Perez",
+      "email": "e.perez@cohaerentis.com",
+      "homepage": "http://www.cohaerentis.com/"
     }
   ],
   "keywords": [
-    "ied",
+    "licensium",
     "yii",
-    "yiistrap",
     "bootstrap"
   ],
   "devDependencies": {
