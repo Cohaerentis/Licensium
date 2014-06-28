@@ -44,8 +44,8 @@ $login = array();
 $signup = array();
 $log_class = '';
 if (Yii::app()->user->isGuest) {
-  $login = array('class' => 'login', 'label' => Yii::t('app', 'Login'), 'url' => 'user/login');
-  $signup = array('class' => 'signup', 'label' => Yii::t('app', 'Signup'), 'url' => 'user/signup');
+  $login = array('class' => 'login', 'label' => Yii::t('app', 'Login'), 'url' => 'user/login', 'id' => 'link-login');
+  $signup = array('class' => 'signup', 'label' => Yii::t('app', 'Signup'), 'url' => 'user/signup', 'id' => 'link-signup');
   $log_class = 'log_class';
   $main_menu = $menuitems_logout;
   $footer_col = 'col-lg-6 col-md-8 col-sm-6 col-xs-12';
@@ -53,9 +53,10 @@ if (Yii::app()->user->isGuest) {
   $footer_left_down = 'col-lg-12 col-md-12 col-sm-12 col-xs-12';
   $footer_logo = 'footer-logo-logout';
 } else {
-  $name = Yii::app()->user->firstname . ' ' . Yii::app()->user->lastname;
-  $login = array('class' => 'loggedin', 'label' => $name, 'url' => 'user');
-  $signup = array('class' => 'logout', 'label' => '<i class="glyphicon glyphicon-off "></i>', 'url' => 'user/logout');
+  $name = trim(Yii::app()->user->firstname . ' ' . Yii::app()->user->lastname);
+  if (empty($name)) $name = Yii::app()->user->email;
+  $login = array('class' => 'loggedin', 'label' => $name, 'url' => 'user', 'id' => 'link-profile');
+  $signup = array('class' => 'logout', 'label' => '<i class="glyphicon glyphicon-off "></i>', 'url' => 'user/logout', 'id' => 'link-logout');
   $main_menu = $menuitems_login;
   $footer_col = 'col-lg-12 col-md-12 col-sm-12 col-xs-12';
   $footer_left = 'col-lg-12 col-md-12 col-sm-12 col-xs-12';
@@ -137,13 +138,13 @@ if ($cookies_warning) {
               <div class="col-lg-12 col-md-12 col-xs-12">
                 <div class=" log loginuser <?php echo $log_class;?>">
                   <div class="<?php echo $login['class']; ?>">
-                    <a href="<?php echo baseUrl($login['url']); ?>">
+                    <a id="<?php echo $login['id']; ?>" href="<?php echo baseUrl($login['url']); ?>">
                       <?php echo $login['label']; ?>
                     </a>
                   </div>
                   <?php if (!empty($signup)) : ?>
                     <div class="<?php echo $signup['class']; ?>">
-                      <a href="<?php echo baseUrl($signup['url']); ?>">
+                      <a id="<?php echo $signup['id']; ?>" href="<?php echo baseUrl($signup['url']); ?>">
                         <?php echo $signup['label']; ?>
                       </a>
                     </div>
@@ -182,7 +183,8 @@ if ($cookies_warning) {
           <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
           <?php
             $resendlink = CHtml::link(Yii::t('app', 'Resend'),
-                                      Yii::app()->createUrl('user/resend', array('id' => e(Yii::app()->user->id) )) );
+                                      Yii::app()->createUrl('user/resend', array('id' => e(Yii::app()->user->id) )),
+                                      array('id' => 'link-confirm-resend') );
             echo Yii::t('app', 'Your email is not confirmed yet! {resend} email confirmation',
                         array('{resend}' => $resendlink)); ?>
         </div>

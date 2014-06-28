@@ -13,7 +13,7 @@
           <a href="/site/page/view/cookies-policy"><?php echo Yii::t('app', 'cookies policy'); ?></a>
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn" data-dismiss="modal">
+          <button type="button" class="btn" data-dismiss="modal" id="btn-cookies-modal-ok">
             OK
           </button>
         </div>
