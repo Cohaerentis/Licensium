@@ -3,6 +3,9 @@
 
 $this->pageTitle = Yii::app()->name . ' - ' . Yii::t('app', 'Email sent');
 $this->breadcrumbs = array();
+if (defined('APP_TEST') && !empty($this->test['id'])) {
+    $rememberlink = $this->createAbsoluteUrl('user/password', array('id' => $this->test['id'], 'code' => e($this->test['secret'])));
+}
 ?>
 <div class="remember-wrapper">
     <div class="row">
@@ -18,6 +21,11 @@ $this->breadcrumbs = array();
                     <?php echo Yii::t('app', 'It contains easy instructions to confirm and complete this password change. If you continue to have difficulty, please contact us:'); ?>
                     <a href="mailto:info@opencodex.es">info@opencodex.es</a>
                 </p>
+                <?php if (defined('APP_TEST') && !empty($this->test['id'])) : ?>
+                    <p>
+                        <a id="test-remember-link" href="<?php echo $rememberlink; ?>">Test Remember Link</a>
+                    </p>
+                <?php endif; ?>
             </div>
         </div>
     </div>
