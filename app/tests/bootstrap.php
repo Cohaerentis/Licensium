@@ -19,6 +19,8 @@ require_once($yiit);
 $global = $helpers . '/global.php';
 require_once($global);
 
+require_once(dirname(__FILE__) . '/EFuntionalTestCase.php');
+require_once(dirname(__FILE__) . '/EUnitTestCase.php');
 require_once(dirname(__FILE__) . '/WebTestCase.php');
 // require_once(dirname(__FILE__) . '/ControllerTestCase.php');
 

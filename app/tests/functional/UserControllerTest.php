@@ -1,6 +1,29 @@
 <?php
 class UserControllerTest extends WebTestCase {
     public static $user = null;
+    public static $sessionId = null;
+
+    private function startURL($url) {
+        $this->inyectAckCookie();
+        $this->inyectSessionCookie();
+        $this->url($url);
+        self::$sessionId = $this->cookie()->get('PHPSESSID');
+        $this->acceptCookies();
+    }
+
+    private function inyectSessionCookie() {
+        if (!empty(self::$sessionId)) {
+            $ackcookie = Yii::app()->params['ackcookie'];
+            $this->cookie()->add('PHPSESSID', self::$sessionId)
+                  ->domain($ackcookie['domain'])->expiry(0)->path('/')->set();
+        }
+    }
+
+    private function inyectAckCookie() {
+        $ackcookie = Yii::app()->params['ackcookie'];
+        $this->cookie()->add($ackcookie['name'], 'yes')
+              ->domain($ackcookie['domain'])->expiry(time() + 24 * 3600)->path('/')->set();
+    }
 
     private function acceptCookies() {
         $modals = $this->elements($this->using('id')->value('cookies-modal'));
@@ -12,8 +35,7 @@ class UserControllerTest extends WebTestCase {
     }
 
     private function login() {
-        $this->url('user/login');
-        $this->acceptCookies();
+        $this->startURL('user/login');
 
         // A. Login Form
         $this->assertEquals('Licensium - Login', $this->title());
@@ -37,10 +59,16 @@ class UserControllerTest extends WebTestCase {
         $this->assertElementExistsById('link-logout');
     }
 
-/* */
-    public function testSignup() {
-        $this->url('user/signup');
-        $this->acceptCookies();
+    private function logout() {
+        $this->assertElementExistsById('link-logout');
+        $this->clickOnElement('link-logout');
+
+        $this->assertElementExistsById('link-login');
+        $this->assertElementExistsById('link-signup');
+    }
+
+    private function signup() {
+        $this->startURL('user/signup');
 
         // A. SignUp Form
         $this->assertEquals('Licensium - Registry Form', $this->title());
@@ -78,11 +106,7 @@ class UserControllerTest extends WebTestCase {
         self::$user['confirmlink'] = $this->byId('test-confirm-link')->attribute('href');
     }
 
-    /**
-     * @depends testSignup
-     */
-/* */
-    public function testLoginAndConfirm() {
+    private function loginAndConfirm() {
         $this->login();
         // A. Resend confirmation link appears, because we are not confirmed yet
         $this->assertElementExistsById('link-confirm-resend');
@@ -94,23 +118,14 @@ class UserControllerTest extends WebTestCase {
         $this->assertEquals('Licensium - Email Confirmation Complete', $this->title());
     }
 
-    /**
-     * @depends testLoginAndConfirm
-     */
-/* */
-    public function testLogin() {
+    private function loginConfirmed() {
         $this->login();
         // A. Resend confirmation link does not appear, we are already confirmed
         $this->assertElementNotExistsById('link-confirm-resend');
     }
 
-    /**
-     * @depends testLoginAndConfirm
-     */
-/* */
-    public function testRemember() {
-        $this->url('user/remember');
-        $this->acceptCookies();
+    private function remember() {
+        $this->startURL('user/remember');
 
         // A. Remember Form
         $this->assertEquals('Licensium - Forgot your password', $this->title());
@@ -156,6 +171,19 @@ class UserControllerTest extends WebTestCase {
         $this->assertEquals('Licensium - Password changed', $this->title());
 
     }
+
+/* */
+    public function testSignup() {
+        $this->signup();
+        $this->loginAndConfirm();
+        $this->logout();
+        $this->loginConfirmed();
+        $this->logout();
+        $this->remember();
+        $this->loginConfirmed();
+        $this->logout();
+    }
+
 
 /* */
     public function setUp() {
