@@ -193,11 +193,22 @@ class User extends CActiveRecord {
         }
         return false;
     }
-
+/* - AAA -
     public function emailChange($newemail) {
         $emailvalidator = new CEmailValidator();
         if ( ($this->email != $newemail) && ($emailvalidator->validateValue($newemail)) ) {
             $this->emailold = $newemail;
+            return $this->secretSet();
+        }
+
+        return false;
+    }
+*/
+    public function emailChange($newemail) {
+        $emailvalidator = new CEmailValidator();
+        if ( ($this->email != $newemail) && ($emailvalidator->validateValue($newemail)) ) {
+            $this->emailold = $this->email;
+            $this->email = $newemail;
             return $this->secretSet();
         }
 
