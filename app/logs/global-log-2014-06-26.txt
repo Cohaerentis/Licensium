@@ -1,0 +1,59 @@
+2014/06/26-18:20:42(0.100)[cli/5421]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/26-18:20:43(0.926)[cli/5421]: Querying SQL: SHOW FULL COLUMNS FROM `user`
+2014/06/26-18:20:43(1.074)[cli/5421]: Querying SQL: SHOW CREATE TABLE `user`
+2014/06/26-18:20:43(1.333)[cli/5421]: Querying SQL: SELECT 1 FROM `user` `t` WHERE `t`.`email`=:ycp0 LIMIT 1
+2014/06/26-18:20:55(0.003)[cli/5423]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/26-18:20:55(0.048)[cli/5423]: Querying SQL: SHOW FULL COLUMNS FROM `user`
+2014/06/26-18:20:55(0.051)[cli/5423]: Querying SQL: SHOW CREATE TABLE `user`
+2014/06/26-18:20:55(0.065)[cli/5423]: Querying SQL: SELECT 1 FROM `user` `t` WHERE `t`.`email`=:ycp0 LIMIT 1
+2014/06/26-18:23:22(0.003)[cli/5425]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/26-18:23:22(0.049)[cli/5425]: Querying SQL: SHOW FULL COLUMNS FROM `user`
+2014/06/26-18:23:22(0.052)[cli/5425]: Querying SQL: SHOW CREATE TABLE `user`
+2014/06/26-18:23:22(0.060)[cli/5425]: 
+[0] wrlog_btrace() called at [/var/www/licensium/current/app/tests/unit/UserTest.php:9]
+
+[1] testCreate() called at [unknown-file:unknown-line]
+
+[2] invokeArgs() called at [/usr/share/php/PHPUnit/Framework/TestCase.php:942]
+   (0) [object] 
+   (1) [array] (0) ...
+
+[3] runTest() called at [/usr/share/php/PHPUnit/Framework/TestCase.php:804]
+
+[4] runBare() called at [/usr/share/php/PHPUnit/Framework/TestResult.php:649]
+
+[5] run() called at [/usr/share/php/PHPUnit/Framework/TestCase.php:751]
+   (0) [object] 
+
+[6] run() called at [/usr/share/php/PHPUnit/Framework/TestSuite.php:772]
+   (0) [object] 
+
+[7] runTest() called at [/usr/share/php/PHPUnit/Framework/TestSuite.php:745]
+   (0) [object] 
+   (1) [object] 
+
+[8] run() called at [/usr/share/php/PHPUnit/TextUI/TestRunner.php:325]
+   (0) [object] 
+   (1) [boolean] false
+   (2) [array] (0) ...
+   (3) [array] (0) ...
+   (4) [boolean] false
+
+[9] doRun() called at [/usr/share/php/PHPUnit/TextUI/Command.php:192]
+   (0) [object] 
+   (1) [array] (4) ...
+
+[10] run() called at [/usr/share/php/PHPUnit/TextUI/Command.php:130]
+   (0) [array] (3) ...
+   (1) [boolean] true
+
+[11] main() called at [/usr/bin/phpunit:46]
+
+2014/06/26-18:23:22(0.067)[cli/5425]: Querying SQL: SELECT 1 FROM `user` `t` WHERE `t`.`email`=:ycp0 LIMIT 1
+2014/06/26-18:23:46(0.003)[cli/5427]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/26-18:23:46(0.047)[cli/5427]: Querying SQL: SHOW FULL COLUMNS FROM `user`
+2014/06/26-18:23:46(0.050)[cli/5427]: Querying SQL: SHOW CREATE TABLE `user`
+2014/06/26-18:24:12(0.003)[cli/5429]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/26-18:24:12(0.047)[cli/5429]: Querying SQL: SHOW FULL COLUMNS FROM `user`
+2014/06/26-18:24:12(0.050)[cli/5429]: Querying SQL: SHOW CREATE TABLE `user`
+2014/06/26-18:24:13(0.065)[cli/5429]: Querying SQL: SELECT 1 FROM `user` `t` WHERE `t`.`email`=:ycp0 LIMIT 1

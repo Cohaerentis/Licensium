@@ -74,6 +74,7 @@ class UserController extends Controller {
                 $model->registerdate = time();
                 if ($model->save()) {
                     $this->confirmationEmailSend($model, $secret);
+                    if (defined('APP_TEST')) $this->test['secret'] = $secret;
                     $this->render('confirmsent', array('model' => $model, 'context' => 'signup'));
                     Yii::app()->end();
                 }
@@ -119,6 +120,7 @@ class UserController extends Controller {
             throw new CHttpException(500, Yii::t('app', 'Error while generating user confirmation code'));
         }
         $this->confirmationEmailSend($model, $secret);
+        if (defined('APP_TEST')) $this->test['secret'] = $secret;
         $this->render('confirmsent', array('model' => $model, 'context' => 'resend'));
     }
 
@@ -192,6 +194,10 @@ class UserController extends Controller {
                     $secret = $user->secretSet();
                     if ($user->save()) {
                         $this->rememberEmailSend($user, $secret);
+                        if (defined('APP_TEST')) {
+                            $this->test['secret'] = $secret;
+                            $this->test['id'] = $user->id;
+                        }
                     }
                 }
                 $this->render('remembersent', array('model' => $model));

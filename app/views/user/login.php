@@ -56,10 +56,12 @@ $this->breadcrumbs = array();
                     <div class="submit">
                         <div class="col-lg-12 col-md-12 col-xs-12">
                             <?php echo CHtml::submitButton(Yii::t('app', 'Login'),
-                                array('class'       => 'btn btn-success')); ?>
+                                array('class'       => 'btn btn-success',
+                                      'id'          => 'btn-login')); ?>
                             <?php echo CHtml::linkButton(Yii::t('app', 'Remember password'),
                                 array('class'       => 'btn btn-link remember',
-                                      'href'        => '/user/remember')); ?>
+                                      'href'        => '/user/remember',
+                                      'id'          => 'link-remember')); ?>
                         </div>
                     </div>
                 </div>

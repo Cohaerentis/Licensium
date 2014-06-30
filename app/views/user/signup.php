@@ -89,7 +89,8 @@ $this->breadcrumbs = array();
                     <div class="submit">
                         <div class="col-lg-12 col-md-12 col-xs-12">
                             <?php echo CHtml::submitButton(Yii::t('app', 'Signup'),
-                                array('class'       => 'btn btn-success'));
+                                array('class'       => 'btn btn-success',
+                                      'id'          => 'btn-signup'));
                             ?>
                             <div class="privacy">
                                 <?php /* <input type="checkbox" id="check" name="check"> */ ?>

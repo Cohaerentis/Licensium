@@ -1,6 +1,6 @@
 <?php
 
-class UserTest extends CDbTestCase {
+class UserTest extends EUnitTestCase {
     public static $user = null;
 
     public function testCreate() {

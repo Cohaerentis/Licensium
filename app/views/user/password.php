@@ -56,7 +56,8 @@ $this->breadcrumbs = array();
                     <div class="submit">
                         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                             <?php echo CHtml::submitButton(Yii::t('app', 'Change'),
-                                array('class'       => 'btn btn-success'));
+                                array('class'       => 'btn btn-success',
+                                      'id'          => 'btn-password-change'));
                             ?>
                         </div>
                     </div>

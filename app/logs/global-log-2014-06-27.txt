@@ -1,0 +1,1376 @@
+2014/06/27-09:14:10(0.003)[cli/5663]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/27-09:14:10(0.048)[cli/5663]: Querying SQL: SHOW FULL COLUMNS FROM `user`
+2014/06/27-09:14:10(0.051)[cli/5663]: Querying SQL: SHOW CREATE TABLE `user`
+2014/06/27-09:14:10(0.066)[cli/5663]: Querying SQL: SELECT 1 FROM `user` `t` WHERE `t`.`email`=:ycp0 LIMIT 1
+2014/06/27-09:20:52(0.003)[cli/5734]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/27-09:20:52(0.077)[cli/5734]: Querying SQL: SHOW FULL COLUMNS FROM `user`
+2014/06/27-09:20:52(0.083)[cli/5734]: Querying SQL: SHOW CREATE TABLE `user`
+2014/06/27-09:20:52(0.114)[cli/5734]: Querying SQL: SELECT 1 FROM `user` `t` WHERE `t`.`email`=:ycp0 LIMIT 1
+2014/06/27-09:21:54(0.003)[cli/5737]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/27-09:21:54(0.048)[cli/5737]: Querying SQL: SHOW FULL COLUMNS FROM `user`
+2014/06/27-09:21:54(0.069)[cli/5737]: Querying SQL: SHOW CREATE TABLE `user`
+2014/06/27-09:21:54(0.086)[cli/5737]: Querying SQL: SELECT 1 FROM `user` `t` WHERE `t`.`email`=:ycp0 LIMIT 1
+2014/06/27-09:22:28(0.003)[cli/5739]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/27-09:22:28(0.048)[cli/5739]: Querying SQL: SHOW FULL COLUMNS FROM `user`
+2014/06/27-09:22:29(0.051)[cli/5739]: Querying SQL: SHOW CREATE TABLE `user`
+2014/06/27-09:22:29(0.067)[cli/5739]: Querying SQL: SELECT 1 FROM `user` `t` WHERE `t`.`email`=:ycp0 LIMIT 1
+2014/06/27-09:23:18(0.006)[cli/5741]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/27-09:23:18(0.079)[cli/5741]: Querying SQL: SHOW FULL COLUMNS FROM `user`
+2014/06/27-09:23:18(0.083)[cli/5741]: Querying SQL: SHOW CREATE TABLE `user`
+2014/06/27-09:23:37(0.006)[cli/5743]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/27-09:23:37(0.070)[cli/5743]: Querying SQL: SHOW FULL COLUMNS FROM `user`
+2014/06/27-09:23:37(0.073)[cli/5743]: Querying SQL: SHOW CREATE TABLE `user`
+2014/06/27-09:23:37(0.091)[cli/5743]: Querying SQL: SELECT 1 FROM `user` `t` WHERE `t`.`email`=:ycp0 LIMIT 1
+2014/06/27-09:24:04(0.003)[cli/5745]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/27-09:24:04(0.051)[cli/5745]: Querying SQL: SHOW FULL COLUMNS FROM `user`
+2014/06/27-09:24:04(0.054)[cli/5745]: Querying SQL: SHOW CREATE TABLE `user`
+2014/06/27-09:24:04(0.070)[cli/5745]: Querying SQL: SELECT 1 FROM `user` `t` WHERE `t`.`email`=:ycp0 LIMIT 1
+2014/06/27-09:24:19(0.003)[cli/5747]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/27-09:24:19(0.049)[cli/5747]: Querying SQL: SHOW FULL COLUMNS FROM `user`
+2014/06/27-09:24:19(0.051)[cli/5747]: Querying SQL: SHOW CREATE TABLE `user`
+2014/06/27-09:24:19(0.066)[cli/5747]: Querying SQL: SELECT 1 FROM `user` `t` WHERE `t`.`email`=:ycp0 LIMIT 1
+2014/06/27-09:24:42(0.005)[cli/5749]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/27-09:24:42(0.065)[cli/5749]: Querying SQL: SHOW FULL COLUMNS FROM `user`
+2014/06/27-09:24:42(0.070)[cli/5749]: Querying SQL: SHOW CREATE TABLE `user`
+2014/06/27-09:24:51(0.006)[cli/5751]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/27-09:24:51(0.067)[cli/5751]: Querying SQL: SHOW FULL COLUMNS FROM `user`
+2014/06/27-09:24:51(0.070)[cli/5751]: Querying SQL: SHOW CREATE TABLE `user`
+2014/06/27-09:24:51(0.088)[cli/5751]: Querying SQL: SELECT 1 FROM `user` `t` WHERE `t`.`email`=:ycp0 LIMIT 1
+2014/06/27-09:25:18(0.005)[cli/5753]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/27-09:25:18(0.068)[cli/5753]: Querying SQL: SHOW FULL COLUMNS FROM `user`
+2014/06/27-09:25:18(0.071)[cli/5753]: Querying SQL: SHOW CREATE TABLE `user`
+2014/06/27-09:25:18(0.090)[cli/5753]: Querying SQL: SELECT 1 FROM `user` `t` WHERE `t`.`email`=:ycp0 LIMIT 1
+2014/06/27-09:25:29(0.003)[cli/5755]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/27-09:25:29(0.049)[cli/5755]: Querying SQL: SHOW FULL COLUMNS FROM `user`
+2014/06/27-09:25:29(0.051)[cli/5755]: Querying SQL: SHOW CREATE TABLE `user`
+2014/06/27-09:25:29(0.066)[cli/5755]: Querying SQL: SELECT 1 FROM `user` `t` WHERE `t`.`email`=:ycp0 LIMIT 1
+2014/06/27-09:25:36(0.003)[cli/5757]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/27-09:25:36(0.049)[cli/5757]: Querying SQL: SHOW FULL COLUMNS FROM `user`
+2014/06/27-09:25:36(0.051)[cli/5757]: Querying SQL: SHOW CREATE TABLE `user`
+2014/06/27-09:25:36(0.066)[cli/5757]: Querying SQL: SELECT 1 FROM `user` `t` WHERE `t`.`email`=:ycp0 LIMIT 1
+2014/06/27-09:27:27(0.004)[cli/5759]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/27-09:27:27(0.072)[cli/5759]: Querying SQL: SHOW FULL COLUMNS FROM `user`
+2014/06/27-09:27:27(0.075)[cli/5759]: Querying SQL: SHOW CREATE TABLE `user`
+2014/06/27-09:27:27(0.096)[cli/5759]: Querying SQL: SELECT 1 FROM `user` `t` WHERE `t`.`email`=:ycp0 LIMIT 1
+2014/06/27-09:27:35(0.003)[cli/5761]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/27-09:27:35(0.053)[cli/5761]: Querying SQL: SHOW FULL COLUMNS FROM `user`
+2014/06/27-09:27:35(0.056)[cli/5761]: Querying SQL: SHOW CREATE TABLE `user`
+2014/06/27-09:27:35(0.070)[cli/5761]: Querying SQL: SELECT 1 FROM `user` `t` WHERE `t`.`email`=:ycp0 LIMIT 1
+2014/06/27-09:27:43(0.005)[cli/5763]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/27-09:27:43(0.063)[cli/5763]: Querying SQL: SHOW FULL COLUMNS FROM `user`
+2014/06/27-09:27:43(0.066)[cli/5763]: Querying SQL: SHOW CREATE TABLE `user`
+2014/06/27-09:27:43(0.084)[cli/5763]: Querying SQL: SELECT 1 FROM `user` `t` WHERE `t`.`email`=:ycp0 LIMIT 1
+2014/06/27-09:27:53(0.004)[cli/5765]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/27-09:27:53(0.063)[cli/5765]: Querying SQL: SHOW FULL COLUMNS FROM `user`
+2014/06/27-09:27:53(0.066)[cli/5765]: Querying SQL: SHOW CREATE TABLE `user`
+2014/06/27-09:27:53(0.087)[cli/5765]: Querying SQL: SELECT 1 FROM `user` `t` WHERE `t`.`email`=:ycp0 LIMIT 1
+2014/06/27-09:28:06(0.003)[cli/5767]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/27-09:28:07(0.091)[cli/5767]: Querying SQL: SHOW FULL COLUMNS FROM `user`
+2014/06/27-09:28:07(0.096)[cli/5767]: Querying SQL: SHOW CREATE TABLE `user`
+2014/06/27-09:28:32(0.003)[cli/5769]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/27-09:28:47(0.004)[cli/5771]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/27-09:28:47(0.083)[cli/5771]: Querying SQL: SHOW FULL COLUMNS FROM `user`
+2014/06/27-09:28:47(0.090)[cli/5771]: Querying SQL: SHOW CREATE TABLE `user`
+2014/06/27-09:29:01(0.004)[cli/5773]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/27-09:29:01(0.073)[cli/5773]: Querying SQL: SHOW FULL COLUMNS FROM `user`
+2014/06/27-09:29:01(0.078)[cli/5773]: Querying SQL: SHOW CREATE TABLE `user`
+2014/06/27-09:29:02(0.207)[cli/5773]: Querying SQL: SELECT * FROM `user` `t`
+2014/06/27-09:29:02(0.228)[cli/5773]: Querying SQL: SELECT 1 FROM `user` `t` WHERE `t`.`email`=:ycp0 LIMIT 1
+2014/06/27-09:30:28(0.003)[cli/5775]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/27-09:30:28(0.091)[cli/5775]: Querying SQL: SHOW FULL COLUMNS FROM `user`
+2014/06/27-09:30:28(0.097)[cli/5775]: Querying SQL: SHOW CREATE TABLE `user`
+2014/06/27-09:30:28(0.121)[cli/5775]: Querying SQL: SELECT * FROM `user` `t` WHERE id=:ycp0 LIMIT 1
+2014/06/27-09:30:28(0.140)[cli/5775]: Querying SQL: SELECT 1 FROM `user` `t` WHERE `t`.`email`=:ycp1 LIMIT 1
+2014/06/27-09:30:49(0.003)[cli/5777]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/27-09:30:49(0.048)[cli/5777]: Querying SQL: SHOW FULL COLUMNS FROM `user`
+2014/06/27-09:30:49(0.051)[cli/5777]: Querying SQL: SHOW CREATE TABLE `user`
+2014/06/27-09:30:49(0.068)[cli/5777]: Querying SQL: SELECT 1 FROM `user` `t` WHERE `t`.`email`=:ycp0 LIMIT 1
+2014/06/27-09:33:00(0.003)[cli/5779]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/27-09:33:00(0.059)[cli/5779]: Querying SQL: SHOW FULL COLUMNS FROM `user`
+2014/06/27-09:33:00(0.061)[cli/5779]: Querying SQL: SHOW CREATE TABLE `user`
+2014/06/27-09:33:18(0.006)[cli/5781]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/27-09:33:18(0.093)[cli/5781]: Querying SQL: SHOW FULL COLUMNS FROM `user`
+2014/06/27-09:33:18(0.098)[cli/5781]: Querying SQL: SHOW CREATE TABLE `user`
+2014/06/27-09:33:18(0.127)[cli/5781]: Querying SQL: SELECT 1 FROM `user` `t` WHERE `t`.`email`=:ycp0 LIMIT 1
+2014/06/27-09:33:56(0.003)[cli/5814]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/27-09:41:18(0.003)[cli/5823]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/27-09:41:18(0.079)[cli/5823]: Querying SQL: SHOW FULL COLUMNS FROM `user`
+2014/06/27-09:41:18(0.083)[cli/5823]: Querying SQL: SHOW CREATE TABLE `user`
+2014/06/27-09:41:18(0.101)[cli/5823]: Querying SQL: SELECT 1 FROM `user` `t` WHERE `t`.`email`=:ycp0 LIMIT 1
+2014/06/27-09:41:48(0.005)[cli/5825]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/27-09:42:11(0.003)[cli/5827]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/27-09:42:18(0.004)[cli/5829]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/27-09:42:18(0.059)[cli/5829]: Querying SQL: SHOW FULL COLUMNS FROM `user`
+2014/06/27-09:42:18(0.061)[cli/5829]: Querying SQL: SHOW CREATE TABLE `user`
+2014/06/27-09:42:18(0.078)[cli/5829]: Querying SQL: SELECT 1 FROM `user` `t` WHERE `t`.`email`=:ycp0 LIMIT 1
+2014/06/27-09:42:50(0.004)[cli/5831]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/27-09:42:50(0.049)[cli/5831]: Querying SQL: SHOW FULL COLUMNS FROM `user`
+2014/06/27-09:42:50(0.052)[cli/5831]: Querying SQL: SHOW CREATE TABLE `user`
+2014/06/27-09:42:50(0.063)[cli/5831]: Querying SQL: SELECT 1 FROM `user` `t` WHERE `t`.`email`=:ycp0 LIMIT 1
+2014/06/27-09:42:50(0.066)[cli/5831]: Querying SQL: SELECT 1 FROM `user` `t` WHERE `t`.`email`=:ycp1 LIMIT 1
+2014/06/27-09:43:23(0.003)[cli/5833]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/27-09:43:23(0.052)[cli/5833]: Querying SQL: SHOW FULL COLUMNS FROM `user`
+2014/06/27-09:43:23(0.055)[cli/5833]: Querying SQL: SHOW CREATE TABLE `user`
+2014/06/27-09:43:23(0.068)[cli/5833]: Querying SQL: SELECT 1 FROM `user` `t` WHERE `t`.`email`=:ycp0 LIMIT 1
+2014/06/27-09:43:46(0.003)[cli/5835]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/27-09:43:46(0.049)[cli/5835]: Querying SQL: SHOW FULL COLUMNS FROM `user`
+2014/06/27-09:43:46(0.052)[cli/5835]: Querying SQL: SHOW CREATE TABLE `user`
+2014/06/27-09:43:46(0.065)[cli/5835]: Querying SQL: SELECT 1 FROM `user` `t` WHERE `t`.`email`=:ycp0 LIMIT 1
+2014/06/27-09:43:54(0.003)[cli/5837]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/27-09:43:54(0.048)[cli/5837]: Querying SQL: SHOW FULL COLUMNS FROM `user`
+2014/06/27-09:43:54(0.051)[cli/5837]: Querying SQL: SHOW CREATE TABLE `user`
+2014/06/27-09:43:54(0.064)[cli/5837]: Querying SQL: SELECT 1 FROM `user` `t` WHERE `t`.`email`=:ycp0 LIMIT 1
+2014/06/27-09:44:14(0.003)[cli/5839]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/27-09:44:14(0.051)[cli/5839]: Querying SQL: SHOW FULL COLUMNS FROM `user`
+2014/06/27-09:44:14(0.054)[cli/5839]: Querying SQL: SHOW CREATE TABLE `user`
+2014/06/27-09:44:14(0.067)[cli/5839]: Querying SQL: SELECT 1 FROM `user` `t` WHERE `t`.`email`=:ycp0 LIMIT 1
+2014/06/27-09:44:14(0.092)[cli/5839]: Querying SQL: SELECT 1 FROM `user` `t` WHERE `t`.`email`=:ycp1 LIMIT 1
+2014/06/27-09:44:57(0.003)[cli/5841]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/27-09:44:57(0.097)[cli/5841]: Querying SQL: SHOW FULL COLUMNS FROM `user`
+2014/06/27-09:44:57(0.100)[cli/5841]: Querying SQL: SHOW CREATE TABLE `user`
+2014/06/27-09:45:18(0.006)[cli/5843]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/27-09:45:18(0.071)[cli/5843]: Querying SQL: SHOW FULL COLUMNS FROM `user`
+2014/06/27-09:45:18(0.075)[cli/5843]: Querying SQL: SHOW CREATE TABLE `user`
+2014/06/27-09:45:18(0.093)[cli/5843]: Querying SQL: SELECT 1 FROM `user` `t` WHERE `t`.`email`=:ycp0 LIMIT 1
+2014/06/27-09:45:18(0.096)[cli/5843]: Querying SQL: SELECT 1 FROM `user` `t` WHERE `t`.`email`=:ycp1 LIMIT 1
+2014/06/27-09:46:03(0.003)[cli/5845]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/27-09:46:03(0.056)[cli/5845]: Querying SQL: SHOW FULL COLUMNS FROM `user`
+2014/06/27-09:46:03(0.059)[cli/5845]: Querying SQL: SHOW CREATE TABLE `user`
+2014/06/27-09:46:03(0.071)[cli/5845]: Querying SQL: SELECT 1 FROM `user` `t` WHERE `t`.`email`=:ycp0 LIMIT 1
+2014/06/27-09:46:03(0.074)[cli/5845]: Querying SQL: SELECT 1 FROM `user` `t` WHERE `t`.`email`=:ycp1 LIMIT 1
+2014/06/27-09:46:29(0.003)[cli/5847]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/27-09:46:29(0.048)[cli/5847]: Querying SQL: SHOW FULL COLUMNS FROM `user`
+2014/06/27-09:46:29(0.051)[cli/5847]: Querying SQL: SHOW CREATE TABLE `user`
+2014/06/27-09:46:44(0.003)[cli/5849]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/27-09:46:44(0.051)[cli/5849]: Querying SQL: SHOW FULL COLUMNS FROM `user`
+2014/06/27-09:46:44(0.054)[cli/5849]: Querying SQL: SHOW CREATE TABLE `user`
+2014/06/27-09:46:44(0.067)[cli/5849]: Querying SQL: SELECT 1 FROM `user` `t` WHERE `t`.`email`=:ycp0 LIMIT 1
+2014/06/27-09:46:44(0.069)[cli/5849]: Querying SQL: SELECT 1 FROM `user` `t` WHERE `t`.`email`=:ycp1 LIMIT 1
+2014/06/27-09:46:52(0.004)[cli/5851]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/27-09:46:52(0.074)[cli/5851]: Querying SQL: SHOW FULL COLUMNS FROM `user`
+2014/06/27-09:46:52(0.078)[cli/5851]: Querying SQL: SHOW CREATE TABLE `user`
+2014/06/27-09:46:52(0.097)[cli/5851]: Querying SQL: SELECT 1 FROM `user` `t` WHERE `t`.`email`=:ycp0 LIMIT 1
+2014/06/27-09:46:52(0.098)[cli/5851]: Executing SQL: INSERT INTO `user` (`privileges`, `deleted`, `confirmed`, `dontemailme`, `firstname`, `lastname`, `email`, `password`, `privacy`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7, :yp8)
+2014/06/27-09:46:52(0.175)[cli/5851]: Executing SQL: INSERT INTO `user` (`privileges`, `deleted`, `confirmed`, `dontemailme`, `firstname`, `lastname`, `email`, `password`, `privacy`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7, :yp8) returns n = 1
+2014/06/27-09:46:52(0.180)[cli/5851]: Querying SQL: SELECT * FROM `user` `t` WHERE `t`.`email`=:ycp1 LIMIT 2
+2014/06/27-09:46:52(0.182)[cli/5851]: Executing SQL: UPDATE `user` SET `privileges`=:yp0, `deleted`=:yp1, `confirmed`=:yp2, `dontemailme`=:yp3, `firstname`=:yp4, `lastname`=:yp5, `email`=:yp6, `password`=:yp7, `privacy`=:yp8, `id`=:yp9 WHERE `user`.`id`='3'
+2014/06/27-09:46:52(0.264)[cli/5851]: Executing SQL: UPDATE `user` SET `privileges`=:yp0, `deleted`=:yp1, `confirmed`=:yp2, `dontemailme`=:yp3, `firstname`=:yp4, `lastname`=:yp5, `email`=:yp6, `password`=:yp7, `privacy`=:yp8, `id`=:yp9 WHERE `user`.`id`='3' returns n = 0
+2014/06/27-09:46:52(0.320)[cli/5851]: Executing SQL: DELETE FROM `user` WHERE `user`.`id`='3'
+2014/06/27-09:46:52(0.408)[cli/5851]: Executing SQL: DELETE FROM `user` WHERE `user`.`id`='3' returns n = 1
+2014/06/27-09:46:52(0.409)[cli/5851]: Querying SQL: SELECT * FROM `user` `t` WHERE id=:ycp2 LIMIT 1
+2014/06/27-09:47:43(0.003)[cli/5853]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/27-09:47:43(0.049)[cli/5853]: Querying SQL: SHOW FULL COLUMNS FROM `user`
+2014/06/27-09:47:43(0.052)[cli/5853]: Querying SQL: SHOW CREATE TABLE `user`
+2014/06/27-09:47:43(0.065)[cli/5853]: Querying SQL: SELECT 1 FROM `user` `t` WHERE `t`.`email`=:ycp0 LIMIT 1
+2014/06/27-09:47:43(0.066)[cli/5853]: Executing SQL: INSERT INTO `user` (`privileges`, `deleted`, `confirmed`, `dontemailme`, `firstname`, `lastname`, `email`, `password`, `privacy`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7, :yp8)
+2014/06/27-09:47:44(0.154)[cli/5853]: Executing SQL: INSERT INTO `user` (`privileges`, `deleted`, `confirmed`, `dontemailme`, `firstname`, `lastname`, `email`, `password`, `privacy`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7, :yp8) returns n = 1
+2014/06/27-09:47:44(0.175)[cli/5853]: Executing SQL: DELETE FROM `user` WHERE `user`.`id`='4'
+2014/06/27-09:47:44(0.243)[cli/5853]: Executing SQL: DELETE FROM `user` WHERE `user`.`id`='4' returns n = 1
+2014/06/27-09:47:44(0.243)[cli/5853]: Querying SQL: SELECT * FROM `user` `t` WHERE id=:ycp1 LIMIT 1
+2014/06/27-09:48:25(0.003)[cli/5855]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/27-09:48:26(0.053)[cli/5855]: Querying SQL: SHOW FULL COLUMNS FROM `user`
+2014/06/27-09:48:26(0.056)[cli/5855]: Querying SQL: SHOW CREATE TABLE `user`
+2014/06/27-09:48:26(0.069)[cli/5855]: Querying SQL: SELECT 1 FROM `user` `t` WHERE `t`.`email`=:ycp0 LIMIT 1
+2014/06/27-09:48:26(0.071)[cli/5855]: Executing SQL: INSERT INTO `user` (`privileges`, `deleted`, `confirmed`, `dontemailme`, `firstname`, `lastname`, `email`, `password`, `privacy`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7, :yp8)
+2014/06/27-09:48:26(0.226)[cli/5855]: Executing SQL: INSERT INTO `user` (`privileges`, `deleted`, `confirmed`, `dontemailme`, `firstname`, `lastname`, `email`, `password`, `privacy`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7, :yp8) returns n = 1
+2014/06/27-09:48:26(0.235)[cli/5855]: Querying SQL: SELECT * FROM `user` `t`
+2014/06/27-09:48:26(0.267)[cli/5855]: Executing SQL: DELETE FROM `user` WHERE `user`.`id`='5'
+2014/06/27-09:48:26(0.349)[cli/5855]: Executing SQL: DELETE FROM `user` WHERE `user`.`id`='5' returns n = 1
+2014/06/27-09:48:26(0.351)[cli/5855]: Querying SQL: SELECT * FROM `user` `t` WHERE id=:ycp1 LIMIT 1
+2014/06/27-09:48:37(0.005)[cli/5857]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/27-09:48:37(0.116)[cli/5857]: Querying SQL: SHOW FULL COLUMNS FROM `user`
+2014/06/27-09:48:37(0.120)[cli/5857]: Querying SQL: SHOW CREATE TABLE `user`
+2014/06/27-09:48:37(0.143)[cli/5857]: Querying SQL: SELECT 1 FROM `user` `t` WHERE `t`.`email`=:ycp0 LIMIT 1
+2014/06/27-09:48:37(0.146)[cli/5857]: Executing SQL: INSERT INTO `user` (`privileges`, `deleted`, `confirmed`, `dontemailme`, `firstname`, `lastname`, `email`, `password`, `privacy`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7, :yp8)
+2014/06/27-09:48:37(0.234)[cli/5857]: Executing SQL: INSERT INTO `user` (`privileges`, `deleted`, `confirmed`, `dontemailme`, `firstname`, `lastname`, `email`, `password`, `privacy`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7, :yp8) returns n = 1
+2014/06/27-09:48:37(0.240)[cli/5857]: Querying SQL: SELECT COUNT(*) FROM `user` `t`
+2014/06/27-09:48:37(0.256)[cli/5857]: Executing SQL: DELETE FROM `user` WHERE `user`.`id`='6'
+2014/06/27-09:48:38(0.312)[cli/5857]: Executing SQL: DELETE FROM `user` WHERE `user`.`id`='6' returns n = 1
+2014/06/27-09:48:38(0.314)[cli/5857]: Querying SQL: SELECT * FROM `user` `t` WHERE id=:ycp1 LIMIT 1
+2014/06/27-09:50:00(0.003)[cli/5859]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/27-09:50:00(0.048)[cli/5859]: Querying SQL: SHOW FULL COLUMNS FROM `user`
+2014/06/27-09:50:00(0.051)[cli/5859]: Querying SQL: SHOW CREATE TABLE `user`
+2014/06/27-09:50:00(0.064)[cli/5859]: Querying SQL: SELECT 1 FROM `user` `t` WHERE `t`.`email`=:ycp0 LIMIT 1
+2014/06/27-09:50:00(0.066)[cli/5859]: Executing SQL: INSERT INTO `user` (`privileges`, `deleted`, `confirmed`, `dontemailme`, `firstname`, `lastname`, `email`, `password`, `privacy`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7, :yp8)
+2014/06/27-09:50:00(0.167)[cli/5859]: Executing SQL: INSERT INTO `user` (`privileges`, `deleted`, `confirmed`, `dontemailme`, `firstname`, `lastname`, `email`, `password`, `privacy`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7, :yp8) returns n = 1
+2014/06/27-09:50:00(0.182)[cli/5859]: Executing SQL: DELETE FROM `user` WHERE `user`.`id`='7'
+2014/06/27-09:50:01(0.222)[cli/5859]: Executing SQL: DELETE FROM `user` WHERE `user`.`id`='7' returns n = 1
+2014/06/27-09:50:01(0.224)[cli/5859]: Querying SQL: SELECT * FROM `user` `t` WHERE id=:ycp1 LIMIT 1
+2014/06/27-09:50:11(0.003)[cli/5861]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/27-09:50:11(0.052)[cli/5861]: Querying SQL: SHOW FULL COLUMNS FROM `user`
+2014/06/27-09:50:11(0.055)[cli/5861]: Querying SQL: SHOW CREATE TABLE `user`
+2014/06/27-09:50:11(0.070)[cli/5861]: Querying SQL: SELECT 1 FROM `user` `t` WHERE `t`.`email`=:ycp0 LIMIT 1
+2014/06/27-09:50:11(0.071)[cli/5861]: Executing SQL: INSERT INTO `user` (`privileges`, `deleted`, `confirmed`, `dontemailme`, `firstname`, `lastname`, `email`, `password`, `privacy`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7, :yp8)
+2014/06/27-09:50:11(0.125)[cli/5861]: Executing SQL: INSERT INTO `user` (`privileges`, `deleted`, `confirmed`, `dontemailme`, `firstname`, `lastname`, `email`, `password`, `privacy`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7, :yp8) returns n = 1
+2014/06/27-09:50:11(0.135)[cli/5861]: Executing SQL: DELETE FROM `user` WHERE `user`.`id`='8'
+2014/06/27-09:50:11(0.182)[cli/5861]: Executing SQL: DELETE FROM `user` WHERE `user`.`id`='8' returns n = 1
+2014/06/27-09:50:11(0.184)[cli/5861]: Querying SQL: SELECT * FROM `user` `t` WHERE id=:ycp1 LIMIT 1
+2014/06/27-09:50:11(0.186)[cli/5861]: Querying SQL: SELECT COUNT(*) FROM `user` `t`
+2014/06/27-09:50:20(0.003)[cli/5863]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/27-09:50:20(0.049)[cli/5863]: Querying SQL: SHOW FULL COLUMNS FROM `user`
+2014/06/27-09:50:20(0.052)[cli/5863]: Querying SQL: SHOW CREATE TABLE `user`
+2014/06/27-09:50:20(0.065)[cli/5863]: Querying SQL: SELECT 1 FROM `user` `t` WHERE `t`.`email`=:ycp0 LIMIT 1
+2014/06/27-09:50:20(0.068)[cli/5863]: Executing SQL: INSERT INTO `user` (`privileges`, `deleted`, `confirmed`, `dontemailme`, `firstname`, `lastname`, `email`, `password`, `privacy`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7, :yp8)
+2014/06/27-09:50:20(0.151)[cli/5863]: Executing SQL: INSERT INTO `user` (`privileges`, `deleted`, `confirmed`, `dontemailme`, `firstname`, `lastname`, `email`, `password`, `privacy`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7, :yp8) returns n = 1
+2014/06/27-09:50:20(0.159)[cli/5863]: Querying SQL: SELECT COUNT(*) FROM `user` `t`
+2014/06/27-09:50:20(0.165)[cli/5863]: Executing SQL: DELETE FROM `user` WHERE `user`.`id`='9'
+2014/06/27-09:50:20(0.229)[cli/5863]: Executing SQL: DELETE FROM `user` WHERE `user`.`id`='9' returns n = 1
+2014/06/27-09:50:20(0.230)[cli/5863]: Querying SQL: SELECT * FROM `user` `t` WHERE id=:ycp1 LIMIT 1
+2014/06/27-09:50:20(0.230)[cli/5863]: Querying SQL: SELECT COUNT(*) FROM `user` `t`
+2014/06/27-09:55:17(0.005)[cli/5896]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/27-09:55:17(0.077)[cli/5896]: Querying SQL: SHOW FULL COLUMNS FROM `user`
+2014/06/27-09:55:17(0.081)[cli/5896]: Querying SQL: SHOW CREATE TABLE `user`
+2014/06/27-09:55:17(0.099)[cli/5896]: Querying SQL: SELECT 1 FROM `user` `t` WHERE `t`.`email`=:ycp0 LIMIT 1
+2014/06/27-09:55:17(0.109)[cli/5896]: Executing SQL: INSERT INTO `user` (`privileges`, `deleted`, `confirmed`, `dontemailme`, `firstname`, `lastname`, `email`, `password`, `privacy`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7, :yp8)
+2014/06/27-09:55:17(0.186)[cli/5896]: Executing SQL: INSERT INTO `user` (`privileges`, `deleted`, `confirmed`, `dontemailme`, `firstname`, `lastname`, `email`, `password`, `privacy`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7, :yp8) returns n = 1
+2014/06/27-09:55:17(0.205)[cli/5896]: Executing SQL: DELETE FROM `user` WHERE `user`.`id`='10'
+2014/06/27-09:55:17(0.252)[cli/5896]: Executing SQL: DELETE FROM `user` WHERE `user`.`id`='10' returns n = 1
+2014/06/27-09:55:17(0.253)[cli/5896]: Querying SQL: SELECT * FROM `user` `t` WHERE id=:ycp1 LIMIT 1
+2014/06/27-09:57:30(0.003)[cli/5898]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/27-09:57:30(0.048)[cli/5898]: Querying SQL: SHOW FULL COLUMNS FROM `user`
+2014/06/27-09:57:30(0.051)[cli/5898]: Querying SQL: SHOW CREATE TABLE `user`
+2014/06/27-09:57:30(0.063)[cli/5898]: Querying SQL: SELECT 1 FROM `user` `t` WHERE `t`.`email`=:ycp0 LIMIT 1
+2014/06/27-09:57:30(0.065)[cli/5898]: Executing SQL: INSERT INTO `user` (`privileges`, `deleted`, `confirmed`, `dontemailme`, `firstname`, `lastname`, `email`, `password`, `privacy`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7, :yp8)
+2014/06/27-09:57:30(0.132)[cli/5898]: Executing SQL: INSERT INTO `user` (`privileges`, `deleted`, `confirmed`, `dontemailme`, `firstname`, `lastname`, `email`, `password`, `privacy`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7, :yp8) returns n = 1
+2014/06/27-09:57:30(0.149)[cli/5898]: Executing SQL: DELETE FROM `user` WHERE `user`.`id`='11'
+2014/06/27-09:57:30(0.221)[cli/5898]: Executing SQL: DELETE FROM `user` WHERE `user`.`id`='11' returns n = 1
+2014/06/27-09:57:30(0.224)[cli/5898]: Querying SQL: SELECT * FROM `user` `t` WHERE id=:ycp1 LIMIT 1
+2014/06/27-09:57:56(0.003)[cli/5900]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/27-09:57:57(0.081)[cli/5900]: Querying SQL: SHOW FULL COLUMNS FROM `user`
+2014/06/27-09:57:57(0.085)[cli/5900]: Querying SQL: SHOW CREATE TABLE `user`
+2014/06/27-09:57:57(0.111)[cli/5900]: Querying SQL: SELECT 1 FROM `user` `t` WHERE `t`.`email`=:ycp0 LIMIT 1
+2014/06/27-09:57:57(0.115)[cli/5900]: Executing SQL: INSERT INTO `user` (`privileges`, `deleted`, `confirmed`, `dontemailme`, `firstname`, `lastname`, `email`, `password`, `privacy`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7, :yp8)
+2014/06/27-09:57:57(0.199)[cli/5900]: Executing SQL: INSERT INTO `user` (`privileges`, `deleted`, `confirmed`, `dontemailme`, `firstname`, `lastname`, `email`, `password`, `privacy`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7, :yp8) returns n = 1
+2014/06/27-09:57:57(0.223)[cli/5900]: Executing SQL: DELETE FROM `user` WHERE `user`.`id`='12'
+2014/06/27-09:57:57(0.277)[cli/5900]: Executing SQL: DELETE FROM `user` WHERE `user`.`id`='12' returns n = 1
+2014/06/27-09:57:57(0.278)[cli/5900]: Querying SQL: SELECT * FROM `user` `t` WHERE id=:ycp1 LIMIT 1
+2014/06/27-09:59:26(0.004)[cli/5902]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/27-09:59:26(0.058)[cli/5902]: Querying SQL: SHOW FULL COLUMNS FROM `user`
+2014/06/27-09:59:26(0.061)[cli/5902]: Querying SQL: SHOW CREATE TABLE `user`
+2014/06/27-09:59:26(0.077)[cli/5902]: Querying SQL: SELECT 1 FROM `user` `t` WHERE `t`.`email`=:ycp0 LIMIT 1
+2014/06/27-09:59:26(0.079)[cli/5902]: Executing SQL: INSERT INTO `user` (`privileges`, `deleted`, `confirmed`, `dontemailme`, `firstname`, `lastname`, `email`, `password`, `privacy`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7, :yp8)
+2014/06/27-09:59:26(0.162)[cli/5902]: Executing SQL: INSERT INTO `user` (`privileges`, `deleted`, `confirmed`, `dontemailme`, `firstname`, `lastname`, `email`, `password`, `privacy`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7, :yp8) returns n = 1
+2014/06/27-09:59:26(0.187)[cli/5902]: Executing SQL: DELETE FROM `user` WHERE `user`.`id`='13'
+2014/06/27-09:59:27(0.273)[cli/5902]: Executing SQL: DELETE FROM `user` WHERE `user`.`id`='13' returns n = 1
+2014/06/27-09:59:27(0.275)[cli/5902]: Querying SQL: SELECT * FROM `user` `t` WHERE id=:ycp1 LIMIT 1
+2014/06/27-09:59:56(0.003)[cli/5904]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/27-09:59:56(0.048)[cli/5904]: Querying SQL: SHOW FULL COLUMNS FROM `user`
+2014/06/27-09:59:56(0.051)[cli/5904]: Querying SQL: SHOW CREATE TABLE `user`
+2014/06/27-09:59:56(0.064)[cli/5904]: Querying SQL: SELECT 1 FROM `user` `t` WHERE `t`.`email`=:ycp0 LIMIT 1
+2014/06/27-09:59:56(0.065)[cli/5904]: Executing SQL: INSERT INTO `user` (`privileges`, `deleted`, `confirmed`, `dontemailme`, `firstname`, `lastname`, `email`, `password`, `privacy`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7, :yp8)
+2014/06/27-09:59:56(0.146)[cli/5904]: Executing SQL: INSERT INTO `user` (`privileges`, `deleted`, `confirmed`, `dontemailme`, `firstname`, `lastname`, `email`, `password`, `privacy`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7, :yp8) returns n = 1
+2014/06/27-09:59:56(0.163)[cli/5904]: Executing SQL: DELETE FROM `user` WHERE `user`.`id`='14'
+2014/06/27-09:59:56(0.235)[cli/5904]: Executing SQL: DELETE FROM `user` WHERE `user`.`id`='14' returns n = 1
+2014/06/27-09:59:56(0.237)[cli/5904]: Querying SQL: SELECT * FROM `user` `t` WHERE id=:ycp1 LIMIT 1
+2014/06/27-09:59:57(1.056)[cli/5904]: Querying SQL: SELECT * FROM `user` `t` WHERE `t`.`email`=:ycp2 LIMIT 2
+2014/06/27-09:59:57(1.059)[cli/5904]: Executing SQL: UPDATE `user` SET `privileges`=:yp0, `deleted`=:yp1, `confirmed`=:yp2, `dontemailme`=:yp3, `firstname`=:yp4, `lastname`=:yp5, `email`=:yp6, `password`=:yp7, `privacy`=:yp8, `id`=:yp9 WHERE `user`.`id`='14'
+2014/06/27-09:59:57(1.059)[cli/5904]: Executing SQL: UPDATE `user` SET `privileges`=:yp0, `deleted`=:yp1, `confirmed`=:yp2, `dontemailme`=:yp3, `firstname`=:yp4, `lastname`=:yp5, `email`=:yp6, `password`=:yp7, `privacy`=:yp8, `id`=:yp9 WHERE `user`.`id`='14' returns n = 0
+2014/06/27-10:00:13(0.003)[cli/5909]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/27-10:00:13(0.049)[cli/5909]: Querying SQL: SHOW FULL COLUMNS FROM `user`
+2014/06/27-10:00:13(0.052)[cli/5909]: Querying SQL: SHOW CREATE TABLE `user`
+2014/06/27-10:00:13(0.067)[cli/5909]: Querying SQL: SELECT 1 FROM `user` `t` WHERE `t`.`email`=:ycp0 LIMIT 1
+2014/06/27-10:00:13(0.068)[cli/5909]: Executing SQL: INSERT INTO `user` (`privileges`, `deleted`, `confirmed`, `dontemailme`, `firstname`, `lastname`, `email`, `password`, `privacy`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7, :yp8)
+2014/06/27-10:00:13(0.147)[cli/5909]: Executing SQL: INSERT INTO `user` (`privileges`, `deleted`, `confirmed`, `dontemailme`, `firstname`, `lastname`, `email`, `password`, `privacy`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7, :yp8) returns n = 1
+2014/06/27-10:00:13(0.165)[cli/5909]: Executing SQL: DELETE FROM `user` WHERE `user`.`id`='15'
+2014/06/27-10:00:13(0.225)[cli/5909]: Executing SQL: DELETE FROM `user` WHERE `user`.`id`='15' returns n = 1
+2014/06/27-10:00:13(0.227)[cli/5909]: Querying SQL: SELECT * FROM `user` `t` WHERE id=:ycp1 LIMIT 1
+2014/06/27-10:00:14(1.017)[cli/5909]: Querying SQL: SELECT * FROM `user` `t` WHERE `t`.`email`=:ycp2 LIMIT 2
+2014/06/27-10:00:14(1.018)[cli/5909]: Executing SQL: UPDATE `user` SET `privileges`=:yp0, `deleted`=:yp1, `confirmed`=:yp2, `dontemailme`=:yp3, `firstname`=:yp4, `lastname`=:yp5, `email`=:yp6, `password`=:yp7, `privacy`=:yp8, `id`=:yp9 WHERE `user`.`id`='15'
+2014/06/27-10:00:14(1.018)[cli/5909]: Executing SQL: UPDATE `user` SET `privileges`=:yp0, `deleted`=:yp1, `confirmed`=:yp2, `dontemailme`=:yp3, `firstname`=:yp4, `lastname`=:yp5, `email`=:yp6, `password`=:yp7, `privacy`=:yp8, `id`=:yp9 WHERE `user`.`id`='15' returns n = 0
+2014/06/27-10:01:00(0.003)[cli/5911]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/27-10:01:00(0.048)[cli/5911]: Querying SQL: SHOW FULL COLUMNS FROM `user`
+2014/06/27-10:01:00(0.051)[cli/5911]: Querying SQL: SHOW CREATE TABLE `user`
+2014/06/27-10:01:00(0.063)[cli/5911]: Querying SQL: SELECT 1 FROM `user` `t` WHERE `t`.`email`=:ycp0 LIMIT 1
+2014/06/27-10:01:00(0.065)[cli/5911]: Executing SQL: INSERT INTO `user` (`privileges`, `deleted`, `confirmed`, `dontemailme`, `firstname`, `lastname`, `email`, `password`, `privacy`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7, :yp8)
+2014/06/27-10:01:00(0.108)[cli/5911]: Executing SQL: INSERT INTO `user` (`privileges`, `deleted`, `confirmed`, `dontemailme`, `firstname`, `lastname`, `email`, `password`, `privacy`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7, :yp8) returns n = 1
+2014/06/27-10:01:00(0.128)[cli/5911]: Executing SQL: DELETE FROM `user` WHERE `user`.`id`='16'
+2014/06/27-10:01:00(0.173)[cli/5911]: Executing SQL: DELETE FROM `user` WHERE `user`.`id`='16' returns n = 1
+2014/06/27-10:01:00(0.174)[cli/5911]: Querying SQL: SELECT * FROM `user` `t` WHERE id=:ycp1 LIMIT 1
+2014/06/27-10:01:01(0.990)[cli/5911]: Querying SQL: SELECT * FROM `user` `t` WHERE `t`.`email`=:ycp2 LIMIT 2
+2014/06/27-10:01:01(0.993)[cli/5911]: Executing SQL: UPDATE `user` SET `privileges`=:yp0, `deleted`=:yp1, `confirmed`=:yp2, `dontemailme`=:yp3, `firstname`=:yp4, `lastname`=:yp5, `email`=:yp6, `password`=:yp7, `privacy`=:yp8, `id`=:yp9 WHERE `user`.`id`='16'
+2014/06/27-10:01:01(0.993)[cli/5911]: Executing SQL: UPDATE `user` SET `privileges`=:yp0, `deleted`=:yp1, `confirmed`=:yp2, `dontemailme`=:yp3, `firstname`=:yp4, `lastname`=:yp5, `email`=:yp6, `password`=:yp7, `privacy`=:yp8, `id`=:yp9 WHERE `user`.`id`='16' returns n = 0
+2014/06/27-10:03:33(0.003)[cli/5913]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/27-10:03:33(0.048)[cli/5913]: Querying SQL: SHOW FULL COLUMNS FROM `user`
+2014/06/27-10:03:33(0.051)[cli/5913]: Querying SQL: SHOW CREATE TABLE `user`
+2014/06/27-10:03:33(0.065)[cli/5913]: Querying SQL: SELECT 1 FROM `user` `t` WHERE `t`.`email`=:ycp0 LIMIT 1
+2014/06/27-10:03:33(0.067)[cli/5913]: Executing SQL: INSERT INTO `user` (`privileges`, `deleted`, `confirmed`, `dontemailme`, `firstname`, `lastname`, `email`, `password`, `privacy`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7, :yp8)
+2014/06/27-10:03:33(0.170)[cli/5913]: Executing SQL: INSERT INTO `user` (`privileges`, `deleted`, `confirmed`, `dontemailme`, `firstname`, `lastname`, `email`, `password`, `privacy`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7, :yp8) returns n = 1
+2014/06/27-10:03:34(0.985)[cli/5913]: Querying SQL: SELECT * FROM `user` `t` WHERE `t`.`email`=:ycp1 LIMIT 2
+2014/06/27-10:03:34(0.987)[cli/5913]: Executing SQL: UPDATE `user` SET `privileges`=:yp0, `deleted`=:yp1, `confirmed`=:yp2, `dontemailme`=:yp3, `firstname`=:yp4, `lastname`=:yp5, `email`=:yp6, `password`=:yp7, `privacy`=:yp8, `id`=:yp9 WHERE `user`.`id`='17'
+2014/06/27-10:03:34(1.036)[cli/5913]: Executing SQL: UPDATE `user` SET `privileges`=:yp0, `deleted`=:yp1, `confirmed`=:yp2, `dontemailme`=:yp3, `firstname`=:yp4, `lastname`=:yp5, `email`=:yp6, `password`=:yp7, `privacy`=:yp8, `id`=:yp9 WHERE `user`.`id`='17' returns n = 1
+2014/06/27-10:03:48(0.003)[cli/5915]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/27-10:03:48(0.056)[cli/5915]: Querying SQL: SHOW FULL COLUMNS FROM `user`
+2014/06/27-10:03:48(0.059)[cli/5915]: Querying SQL: SHOW CREATE TABLE `user`
+2014/06/27-10:03:48(0.074)[cli/5915]: Querying SQL: SELECT 1 FROM `user` `t` WHERE `t`.`email`=:ycp0 LIMIT 1
+2014/06/27-10:03:48(0.075)[cli/5915]: Executing SQL: INSERT INTO `user` (`privileges`, `deleted`, `confirmed`, `dontemailme`, `firstname`, `lastname`, `email`, `password`, `privacy`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7, :yp8)
+2014/06/27-10:03:48(0.153)[cli/5915]: Executing SQL: INSERT INTO `user` (`privileges`, `deleted`, `confirmed`, `dontemailme`, `firstname`, `lastname`, `email`, `password`, `privacy`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7, :yp8) returns n = 1
+2014/06/27-10:03:48(0.965)[cli/5915]: Querying SQL: SELECT * FROM `user` `t` WHERE `t`.`email`=:ycp1 LIMIT 2
+2014/06/27-10:03:48(0.967)[cli/5915]: Executing SQL: UPDATE `user` SET `privileges`=:yp0, `deleted`=:yp1, `confirmed`=:yp2, `dontemailme`=:yp3, `firstname`=:yp4, `lastname`=:yp5, `email`=:yp6, `password`=:yp7, `privacy`=:yp8, `id`=:yp9 WHERE `user`.`id`='18'
+2014/06/27-10:03:49(1.008)[cli/5915]: Executing SQL: UPDATE `user` SET `privileges`=:yp0, `deleted`=:yp1, `confirmed`=:yp2, `dontemailme`=:yp3, `firstname`=:yp4, `lastname`=:yp5, `email`=:yp6, `password`=:yp7, `privacy`=:yp8, `id`=:yp9 WHERE `user`.`id`='18' returns n = 1
+2014/06/27-10:03:49(1.014)[cli/5915]: Executing SQL: DELETE FROM `user` WHERE `user`.`id`='18'
+2014/06/27-10:03:49(1.063)[cli/5915]: Executing SQL: DELETE FROM `user` WHERE `user`.`id`='18' returns n = 1
+2014/06/27-10:03:49(1.065)[cli/5915]: Querying SQL: SELECT * FROM `user` `t` WHERE id=:ycp2 LIMIT 1
+2014/06/27-10:06:37(0.007)[cli/5917]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/27-10:06:37(0.093)[cli/5917]: Querying SQL: SHOW FULL COLUMNS FROM `user`
+2014/06/27-10:06:37(0.099)[cli/5917]: Querying SQL: SHOW CREATE TABLE `user`
+2014/06/27-10:06:37(0.124)[cli/5917]: Querying SQL: SELECT 1 FROM `user` `t` WHERE `t`.`email`=:ycp0 LIMIT 1
+2014/06/27-10:06:37(0.126)[cli/5917]: Executing SQL: INSERT INTO `user` (`privileges`, `deleted`, `confirmed`, `dontemailme`, `firstname`, `lastname`, `email`, `password`, `privacy`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7, :yp8)
+2014/06/27-10:06:37(0.202)[cli/5917]: Executing SQL: INSERT INTO `user` (`privileges`, `deleted`, `confirmed`, `dontemailme`, `firstname`, `lastname`, `email`, `password`, `privacy`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7, :yp8) returns n = 1
+2014/06/27-10:06:38(1.025)[cli/5917]: Querying SQL: SELECT * FROM `user` `t` WHERE `t`.`email`=:ycp1 LIMIT 2
+2014/06/27-10:06:38(1.026)[cli/5917]: Executing SQL: UPDATE `user` SET `privileges`=:yp0, `deleted`=:yp1, `confirmed`=:yp2, `dontemailme`=:yp3, `firstname`=:yp4, `lastname`=:yp5, `email`=:yp6, `password`=:yp7, `privacy`=:yp8, `id`=:yp9 WHERE `user`.`id`='19'
+2014/06/27-10:06:38(1.103)[cli/5917]: Executing SQL: UPDATE `user` SET `privileges`=:yp0, `deleted`=:yp1, `confirmed`=:yp2, `dontemailme`=:yp3, `firstname`=:yp4, `lastname`=:yp5, `email`=:yp6, `password`=:yp7, `privacy`=:yp8, `id`=:yp9 WHERE `user`.`id`='19' returns n = 1
+2014/06/27-10:06:38(1.115)[cli/5917]: Executing SQL: DELETE FROM `user` WHERE `user`.`id`='19'
+2014/06/27-10:06:38(1.158)[cli/5917]: Executing SQL: DELETE FROM `user` WHERE `user`.`id`='19' returns n = 1
+2014/06/27-10:06:38(1.160)[cli/5917]: Querying SQL: SELECT * FROM `user` `t` WHERE id=:ycp2 LIMIT 1
+2014/06/27-10:06:46(0.005)[cli/5919]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/27-10:06:46(0.097)[cli/5919]: Querying SQL: SHOW FULL COLUMNS FROM `user`
+2014/06/27-10:06:46(0.103)[cli/5919]: Querying SQL: SHOW CREATE TABLE `user`
+2014/06/27-10:06:46(0.127)[cli/5919]: Querying SQL: SELECT 1 FROM `user` `t` WHERE `t`.`email`=:ycp0 LIMIT 1
+2014/06/27-10:06:46(0.129)[cli/5919]: Executing SQL: INSERT INTO `user` (`privileges`, `deleted`, `confirmed`, `dontemailme`, `firstname`, `lastname`, `email`, `password`, `privacy`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7, :yp8)
+2014/06/27-10:06:46(0.204)[cli/5919]: Executing SQL: INSERT INTO `user` (`privileges`, `deleted`, `confirmed`, `dontemailme`, `firstname`, `lastname`, `email`, `password`, `privacy`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7, :yp8) returns n = 1
+2014/06/27-10:06:47(1.087)[cli/5919]: Querying SQL: SELECT * FROM `user` `t` WHERE `t`.`email`=:ycp1 LIMIT 2
+2014/06/27-10:06:47(1.090)[cli/5919]: Executing SQL: UPDATE `user` SET `privileges`=:yp0, `deleted`=:yp1, `confirmed`=:yp2, `dontemailme`=:yp3, `firstname`=:yp4, `lastname`=:yp5, `email`=:yp6, `password`=:yp7, `privacy`=:yp8, `id`=:yp9 WHERE `user`.`id`='20'
+2014/06/27-10:06:47(1.248)[cli/5919]: Executing SQL: UPDATE `user` SET `privileges`=:yp0, `deleted`=:yp1, `confirmed`=:yp2, `dontemailme`=:yp3, `firstname`=:yp4, `lastname`=:yp5, `email`=:yp6, `password`=:yp7, `privacy`=:yp8, `id`=:yp9 WHERE `user`.`id`='20' returns n = 1
+2014/06/27-10:06:47(1.253)[cli/5919]: Executing SQL: DELETE FROM `user` WHERE `user`.`id`='20'
+2014/06/27-10:06:48(1.360)[cli/5919]: Executing SQL: DELETE FROM `user` WHERE `user`.`id`='20' returns n = 1
+2014/06/27-10:06:48(1.362)[cli/5919]: Querying SQL: SELECT * FROM `user` `t` WHERE id=:ycp2 LIMIT 1
+2014/06/27-10:07:35(0.007)[cli/5921]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/27-10:07:35(0.182)[cli/5921]: Querying SQL: SHOW FULL COLUMNS FROM `user`
+2014/06/27-10:07:35(0.185)[cli/5921]: Querying SQL: SHOW CREATE TABLE `user`
+2014/06/27-10:07:35(0.218)[cli/5921]: Querying SQL: SELECT 1 FROM `user` `t` WHERE `t`.`email`=:ycp0 LIMIT 1
+2014/06/27-10:07:35(0.220)[cli/5921]: Executing SQL: INSERT INTO `user` (`privileges`, `deleted`, `confirmed`, `dontemailme`, `firstname`, `lastname`, `email`, `password`, `privacy`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7, :yp8)
+2014/06/27-10:07:35(0.307)[cli/5921]: Executing SQL: INSERT INTO `user` (`privileges`, `deleted`, `confirmed`, `dontemailme`, `firstname`, `lastname`, `email`, `password`, `privacy`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7, :yp8) returns n = 1
+2014/06/27-10:07:37(1.813)[cli/5921]: Querying SQL: SELECT * FROM `user` `t` WHERE `t`.`email`=:ycp1 LIMIT 2
+2014/06/27-10:07:37(1.816)[cli/5921]: Executing SQL: UPDATE `user` SET `privileges`=:yp0, `deleted`=:yp1, `confirmed`=:yp2, `dontemailme`=:yp3, `firstname`=:yp4, `lastname`=:yp5, `email`=:yp6, `password`=:yp7, `privacy`=:yp8, `id`=:yp9 WHERE `user`.`id`='21'
+2014/06/27-10:07:37(1.896)[cli/5921]: Executing SQL: UPDATE `user` SET `privileges`=:yp0, `deleted`=:yp1, `confirmed`=:yp2, `dontemailme`=:yp3, `firstname`=:yp4, `lastname`=:yp5, `email`=:yp6, `password`=:yp7, `privacy`=:yp8, `id`=:yp9 WHERE `user`.`id`='21' returns n = 1
+2014/06/27-10:07:37(1.908)[cli/5921]: Executing SQL: DELETE FROM `user` WHERE `user`.`id`='21'
+2014/06/27-10:07:37(2.008)[cli/5921]: Executing SQL: DELETE FROM `user` WHERE `user`.`id`='21' returns n = 1
+2014/06/27-10:07:37(2.009)[cli/5921]: Querying SQL: SELECT * FROM `user` `t` WHERE id=:ycp2 LIMIT 1
+2014/06/27-10:12:10(0.020)[cli/5930]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/27-10:12:31(0.006)[cli/5932]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/27-10:12:31(0.086)[cli/5932]: Querying SQL: SHOW FULL COLUMNS FROM `user`
+2014/06/27-10:12:31(0.092)[cli/5932]: Querying SQL: SHOW CREATE TABLE `user`
+2014/06/27-10:12:31(0.197)[cli/5932]: Querying SQL: SELECT 1 FROM `user` `t` WHERE `t`.`email`=:ycp0 LIMIT 1
+2014/06/27-10:12:31(0.202)[cli/5932]: Executing SQL: INSERT INTO `user` (`privileges`, `deleted`, `confirmed`, `dontemailme`, `firstname`, `lastname`, `email`, `password`, `privacy`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7, :yp8)
+2014/06/27-10:12:31(0.294)[cli/5932]: Executing SQL: INSERT INTO `user` (`privileges`, `deleted`, `confirmed`, `dontemailme`, `firstname`, `lastname`, `email`, `password`, `privacy`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7, :yp8) returns n = 1
+2014/06/27-10:12:32(1.164)[cli/5932]: Querying SQL: SELECT * FROM `user` `t` WHERE `t`.`email`=:ycp1 LIMIT 2
+2014/06/27-10:12:32(1.167)[cli/5932]: Executing SQL: UPDATE `user` SET `privileges`=:yp0, `deleted`=:yp1, `confirmed`=:yp2, `dontemailme`=:yp3, `firstname`=:yp4, `lastname`=:yp5, `email`=:yp6, `password`=:yp7, `privacy`=:yp8, `id`=:yp9 WHERE `user`.`id`='22'
+2014/06/27-10:12:32(1.227)[cli/5932]: Executing SQL: UPDATE `user` SET `privileges`=:yp0, `deleted`=:yp1, `confirmed`=:yp2, `dontemailme`=:yp3, `firstname`=:yp4, `lastname`=:yp5, `email`=:yp6, `password`=:yp7, `privacy`=:yp8, `id`=:yp9 WHERE `user`.`id`='22' returns n = 1
+2014/06/27-10:12:33(2.036)[cli/5932]: Executing SQL: DELETE FROM `user` WHERE `user`.`id`='22'
+2014/06/27-10:12:33(2.118)[cli/5932]: Executing SQL: DELETE FROM `user` WHERE `user`.`id`='22' returns n = 1
+2014/06/27-10:12:33(2.120)[cli/5932]: Querying SQL: SELECT * FROM `user` `t` WHERE id=:ycp2 LIMIT 1
+2014/06/27-10:12:42(0.006)[cli/5934]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/27-10:12:42(0.097)[cli/5934]: Querying SQL: SHOW FULL COLUMNS FROM `user`
+2014/06/27-10:12:42(0.102)[cli/5934]: Querying SQL: SHOW CREATE TABLE `user`
+2014/06/27-10:12:42(0.119)[cli/5934]: Querying SQL: SELECT 1 FROM `user` `t` WHERE `t`.`email`=:ycp0 LIMIT 1
+2014/06/27-10:12:42(0.122)[cli/5934]: Executing SQL: INSERT INTO `user` (`privileges`, `deleted`, `confirmed`, `dontemailme`, `firstname`, `lastname`, `email`, `password`, `privacy`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7, :yp8)
+2014/06/27-10:12:42(0.210)[cli/5934]: Executing SQL: INSERT INTO `user` (`privileges`, `deleted`, `confirmed`, `dontemailme`, `firstname`, `lastname`, `email`, `password`, `privacy`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7, :yp8) returns n = 1
+2014/06/27-10:12:43(1.025)[cli/5934]: Querying SQL: SELECT * FROM `user` `t` WHERE `t`.`email`=:ycp1 LIMIT 2
+2014/06/27-10:12:43(1.026)[cli/5934]: Executing SQL: UPDATE `user` SET `privileges`=:yp0, `deleted`=:yp1, `confirmed`=:yp2, `dontemailme`=:yp3, `firstname`=:yp4, `lastname`=:yp5, `email`=:yp6, `password`=:yp7, `privacy`=:yp8, `id`=:yp9 WHERE `user`.`id`='23'
+2014/06/27-10:12:43(1.099)[cli/5934]: Executing SQL: UPDATE `user` SET `privileges`=:yp0, `deleted`=:yp1, `confirmed`=:yp2, `dontemailme`=:yp3, `firstname`=:yp4, `lastname`=:yp5, `email`=:yp6, `password`=:yp7, `privacy`=:yp8, `id`=:yp9 WHERE `user`.`id`='23' returns n = 1
+2014/06/27-10:12:44(1.891)[cli/5934]: Querying SQL: SELECT * FROM `user` `t` WHERE `t`.`email`=:ycp2 LIMIT 2
+2014/06/27-10:12:44(1.892)[cli/5934]: Executing SQL: UPDATE `user` SET `privileges`=:yp0, `deleted`=:yp1, `confirmed`=:yp2, `dontemailme`=:yp3, `firstname`=:yp4, `lastname`=:yp5, `email`=:yp6, `password`=:yp7, `privacy`=:yp8, `id`=:yp9, `emailold`=:yp10, `secret`=:yp11, `secretdate`=:yp12 WHERE `user`.`id`='23'
+2014/06/27-10:12:44(1.933)[cli/5934]: Executing SQL: UPDATE `user` SET `privileges`=:yp0, `deleted`=:yp1, `confirmed`=:yp2, `dontemailme`=:yp3, `firstname`=:yp4, `lastname`=:yp5, `email`=:yp6, `password`=:yp7, `privacy`=:yp8, `id`=:yp9, `emailold`=:yp10, `secret`=:yp11, `secretdate`=:yp12 WHERE `user`.`id`='23' returns n = 1
+2014/06/27-10:12:44(1.937)[cli/5934]: Executing SQL: DELETE FROM `user` WHERE `user`.`id`='23'
+2014/06/27-10:12:44(2.011)[cli/5934]: Executing SQL: DELETE FROM `user` WHERE `user`.`id`='23' returns n = 1
+2014/06/27-10:12:44(2.013)[cli/5934]: Querying SQL: SELECT * FROM `user` `t` WHERE id=:ycp3 LIMIT 1
+2014/06/27-10:13:40(0.003)[cli/5936]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/27-10:13:40(0.048)[cli/5936]: Querying SQL: SHOW FULL COLUMNS FROM `user`
+2014/06/27-10:13:40(0.051)[cli/5936]: Querying SQL: SHOW CREATE TABLE `user`
+2014/06/27-10:13:40(0.064)[cli/5936]: Querying SQL: SELECT 1 FROM `user` `t` WHERE `t`.`email`=:ycp0 LIMIT 1
+2014/06/27-10:13:40(0.066)[cli/5936]: Executing SQL: INSERT INTO `user` (`privileges`, `deleted`, `confirmed`, `dontemailme`, `firstname`, `lastname`, `email`, `password`, `privacy`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7, :yp8)
+2014/06/27-10:13:40(0.141)[cli/5936]: Executing SQL: INSERT INTO `user` (`privileges`, `deleted`, `confirmed`, `dontemailme`, `firstname`, `lastname`, `email`, `password`, `privacy`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7, :yp8) returns n = 1
+2014/06/27-10:13:41(0.987)[cli/5936]: Querying SQL: SELECT * FROM `user` `t` WHERE `t`.`email`=:ycp1 LIMIT 2
+2014/06/27-10:13:41(0.990)[cli/5936]: Executing SQL: UPDATE `user` SET `privileges`=:yp0, `deleted`=:yp1, `confirmed`=:yp2, `dontemailme`=:yp3, `firstname`=:yp4, `lastname`=:yp5, `email`=:yp6, `password`=:yp7, `privacy`=:yp8, `id`=:yp9 WHERE `user`.`id`='24'
+2014/06/27-10:13:41(1.053)[cli/5936]: Executing SQL: UPDATE `user` SET `privileges`=:yp0, `deleted`=:yp1, `confirmed`=:yp2, `dontemailme`=:yp3, `firstname`=:yp4, `lastname`=:yp5, `email`=:yp6, `password`=:yp7, `privacy`=:yp8, `id`=:yp9 WHERE `user`.`id`='24' returns n = 1
+2014/06/27-10:13:42(1.895)[cli/5936]: Querying SQL: SELECT * FROM `user` `t` WHERE `t`.`email`=:ycp2 LIMIT 2
+2014/06/27-10:13:42(1.896)[cli/5936]: Executing SQL: UPDATE `user` SET `privileges`=:yp0, `deleted`=:yp1, `confirmed`=:yp2, `dontemailme`=:yp3, `firstname`=:yp4, `lastname`=:yp5, `email`=:yp6, `password`=:yp7, `privacy`=:yp8, `id`=:yp9, `emailold`=:yp10, `secret`=:yp11, `secretdate`=:yp12 WHERE `user`.`id`='24'
+2014/06/27-10:13:42(1.942)[cli/5936]: Executing SQL: UPDATE `user` SET `privileges`=:yp0, `deleted`=:yp1, `confirmed`=:yp2, `dontemailme`=:yp3, `firstname`=:yp4, `lastname`=:yp5, `email`=:yp6, `password`=:yp7, `privacy`=:yp8, `id`=:yp9, `emailold`=:yp10, `secret`=:yp11, `secretdate`=:yp12 WHERE `user`.`id`='24' returns n = 1
+2014/06/27-10:13:42(1.948)[cli/5936]: Executing SQL: DELETE FROM `user` WHERE `user`.`id`='24'
+2014/06/27-10:13:42(1.997)[cli/5936]: Executing SQL: DELETE FROM `user` WHERE `user`.`id`='24' returns n = 1
+2014/06/27-10:13:42(1.998)[cli/5936]: Querying SQL: SELECT * FROM `user` `t` WHERE id=:ycp3 LIMIT 1
+2014/06/27-10:13:55(0.005)[cli/5938]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/27-10:13:55(0.081)[cli/5938]: Querying SQL: SHOW FULL COLUMNS FROM `user`
+2014/06/27-10:13:55(0.085)[cli/5938]: Querying SQL: SHOW CREATE TABLE `user`
+2014/06/27-10:13:55(0.104)[cli/5938]: Querying SQL: SELECT 1 FROM `user` `t` WHERE `t`.`email`=:ycp0 LIMIT 1
+2014/06/27-10:13:55(0.105)[cli/5938]: Executing SQL: INSERT INTO `user` (`privileges`, `deleted`, `confirmed`, `dontemailme`, `firstname`, `lastname`, `email`, `password`, `privacy`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7, :yp8)
+2014/06/27-10:13:55(0.172)[cli/5938]: Executing SQL: INSERT INTO `user` (`privileges`, `deleted`, `confirmed`, `dontemailme`, `firstname`, `lastname`, `email`, `password`, `privacy`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7, :yp8) returns n = 1
+2014/06/27-10:13:56(1.010)[cli/5938]: Querying SQL: SELECT * FROM `user` `t` WHERE `t`.`email`=:ycp1 LIMIT 2
+2014/06/27-10:13:56(1.012)[cli/5938]: Executing SQL: UPDATE `user` SET `privileges`=:yp0, `deleted`=:yp1, `confirmed`=:yp2, `dontemailme`=:yp3, `firstname`=:yp4, `lastname`=:yp5, `email`=:yp6, `password`=:yp7, `privacy`=:yp8, `id`=:yp9 WHERE `user`.`id`='25'
+2014/06/27-10:13:56(1.061)[cli/5938]: Executing SQL: UPDATE `user` SET `privileges`=:yp0, `deleted`=:yp1, `confirmed`=:yp2, `dontemailme`=:yp3, `firstname`=:yp4, `lastname`=:yp5, `email`=:yp6, `password`=:yp7, `privacy`=:yp8, `id`=:yp9 WHERE `user`.`id`='25' returns n = 1
+2014/06/27-10:13:57(1.901)[cli/5938]: Querying SQL: SELECT * FROM `user` `t` WHERE `t`.`email`=:ycp2 LIMIT 2
+2014/06/27-10:13:57(1.904)[cli/5938]: Executing SQL: UPDATE `user` SET `privileges`=:yp0, `deleted`=:yp1, `confirmed`=:yp2, `dontemailme`=:yp3, `firstname`=:yp4, `lastname`=:yp5, `email`=:yp6, `password`=:yp7, `privacy`=:yp8, `id`=:yp9, `emailold`=:yp10, `secret`=:yp11, `secretdate`=:yp12 WHERE `user`.`id`='25'
+2014/06/27-10:13:57(1.961)[cli/5938]: Executing SQL: UPDATE `user` SET `privileges`=:yp0, `deleted`=:yp1, `confirmed`=:yp2, `dontemailme`=:yp3, `firstname`=:yp4, `lastname`=:yp5, `email`=:yp6, `password`=:yp7, `privacy`=:yp8, `id`=:yp9, `emailold`=:yp10, `secret`=:yp11, `secretdate`=:yp12 WHERE `user`.`id`='25' returns n = 1
+2014/06/27-10:13:57(1.969)[cli/5938]: Executing SQL: DELETE FROM `user` WHERE `user`.`id`='25'
+2014/06/27-10:13:57(2.017)[cli/5938]: Executing SQL: DELETE FROM `user` WHERE `user`.`id`='25' returns n = 1
+2014/06/27-10:13:57(2.019)[cli/5938]: Querying SQL: SELECT * FROM `user` `t` WHERE id=:ycp3 LIMIT 1
+2014/06/27-10:14:26(0.005)[cli/5940]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/27-10:14:26(0.072)[cli/5940]: Querying SQL: SHOW FULL COLUMNS FROM `user`
+2014/06/27-10:14:26(0.077)[cli/5940]: Querying SQL: SHOW CREATE TABLE `user`
+2014/06/27-10:14:26(0.094)[cli/5940]: Querying SQL: SELECT 1 FROM `user` `t` WHERE `t`.`email`=:ycp0 LIMIT 1
+2014/06/27-10:14:26(0.096)[cli/5940]: Executing SQL: INSERT INTO `user` (`privileges`, `deleted`, `confirmed`, `dontemailme`, `firstname`, `lastname`, `email`, `password`, `privacy`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7, :yp8)
+2014/06/27-10:14:26(0.146)[cli/5940]: Executing SQL: INSERT INTO `user` (`privileges`, `deleted`, `confirmed`, `dontemailme`, `firstname`, `lastname`, `email`, `password`, `privacy`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7, :yp8) returns n = 1
+2014/06/27-10:14:27(0.992)[cli/5940]: Querying SQL: SELECT * FROM `user` `t` WHERE `t`.`email`=:ycp1 LIMIT 2
+2014/06/27-10:14:27(0.995)[cli/5940]: Executing SQL: UPDATE `user` SET `privileges`=:yp0, `deleted`=:yp1, `confirmed`=:yp2, `dontemailme`=:yp3, `firstname`=:yp4, `lastname`=:yp5, `email`=:yp6, `password`=:yp7, `privacy`=:yp8, `id`=:yp9 WHERE `user`.`id`='26'
+2014/06/27-10:14:27(1.046)[cli/5940]: Executing SQL: UPDATE `user` SET `privileges`=:yp0, `deleted`=:yp1, `confirmed`=:yp2, `dontemailme`=:yp3, `firstname`=:yp4, `lastname`=:yp5, `email`=:yp6, `password`=:yp7, `privacy`=:yp8, `id`=:yp9 WHERE `user`.`id`='26' returns n = 1
+2014/06/27-10:14:27(1.881)[cli/5940]: Querying SQL: SELECT * FROM `user` `t` WHERE `t`.`email`=:ycp2 LIMIT 2
+2014/06/27-10:14:27(1.883)[cli/5940]: Executing SQL: UPDATE `user` SET `privileges`=:yp0, `deleted`=:yp1, `confirmed`=:yp2, `dontemailme`=:yp3, `firstname`=:yp4, `lastname`=:yp5, `email`=:yp6, `password`=:yp7, `privacy`=:yp8, `id`=:yp9, `emailold`=:yp10, `secret`=:yp11, `secretdate`=:yp12 WHERE `user`.`id`='26'
+2014/06/27-10:14:28(1.936)[cli/5940]: Executing SQL: UPDATE `user` SET `privileges`=:yp0, `deleted`=:yp1, `confirmed`=:yp2, `dontemailme`=:yp3, `firstname`=:yp4, `lastname`=:yp5, `email`=:yp6, `password`=:yp7, `privacy`=:yp8, `id`=:yp9, `emailold`=:yp10, `secret`=:yp11, `secretdate`=:yp12 WHERE `user`.`id`='26' returns n = 1
+2014/06/27-10:14:28(1.946)[cli/5940]: Executing SQL: DELETE FROM `user` WHERE `user`.`id`='26'
+2014/06/27-10:14:28(1.991)[cli/5940]: Executing SQL: DELETE FROM `user` WHERE `user`.`id`='26' returns n = 1
+2014/06/27-10:14:28(1.993)[cli/5940]: Querying SQL: SELECT * FROM `user` `t` WHERE id=:ycp3 LIMIT 1
+2014/06/27-10:15:28(0.003)[cli/5942]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/27-10:15:28(0.049)[cli/5942]: Querying SQL: SHOW FULL COLUMNS FROM `user`
+2014/06/27-10:15:28(0.052)[cli/5942]: Querying SQL: SHOW CREATE TABLE `user`
+2014/06/27-10:15:28(0.065)[cli/5942]: Querying SQL: SELECT 1 FROM `user` `t` WHERE `t`.`email`=:ycp0 LIMIT 1
+2014/06/27-10:15:28(0.066)[cli/5942]: Executing SQL: INSERT INTO `user` (`privileges`, `deleted`, `confirmed`, `dontemailme`, `firstname`, `lastname`, `email`, `password`, `privacy`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7, :yp8)
+2014/06/27-10:15:28(0.185)[cli/5942]: Executing SQL: INSERT INTO `user` (`privileges`, `deleted`, `confirmed`, `dontemailme`, `firstname`, `lastname`, `email`, `password`, `privacy`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7, :yp8) returns n = 1
+2014/06/27-10:15:29(0.993)[cli/5942]: Querying SQL: SELECT * FROM `user` `t` WHERE `t`.`email`=:ycp1 LIMIT 2
+2014/06/27-10:15:29(0.994)[cli/5942]: Executing SQL: UPDATE `user` SET `privileges`=:yp0, `deleted`=:yp1, `confirmed`=:yp2, `dontemailme`=:yp3, `firstname`=:yp4, `lastname`=:yp5, `email`=:yp6, `password`=:yp7, `privacy`=:yp8, `id`=:yp9 WHERE `user`.`id`='27'
+2014/06/27-10:15:29(1.064)[cli/5942]: Executing SQL: UPDATE `user` SET `privileges`=:yp0, `deleted`=:yp1, `confirmed`=:yp2, `dontemailme`=:yp3, `firstname`=:yp4, `lastname`=:yp5, `email`=:yp6, `password`=:yp7, `privacy`=:yp8, `id`=:yp9 WHERE `user`.`id`='27' returns n = 1
+2014/06/27-10:15:30(1.866)[cli/5942]: Querying SQL: SELECT * FROM `user` `t` WHERE `t`.`email`=:ycp2 LIMIT 2
+2014/06/27-10:15:30(1.869)[cli/5942]: Executing SQL: UPDATE `user` SET `privileges`=:yp0, `deleted`=:yp1, `confirmed`=:yp2, `dontemailme`=:yp3, `firstname`=:yp4, `lastname`=:yp5, `email`=:yp6, `password`=:yp7, `privacy`=:yp8, `id`=:yp9, `emailold`=:yp10, `secret`=:yp11, `secretdate`=:yp12 WHERE `user`.`id`='27'
+2014/06/27-10:15:30(1.942)[cli/5942]: Executing SQL: UPDATE `user` SET `privileges`=:yp0, `deleted`=:yp1, `confirmed`=:yp2, `dontemailme`=:yp3, `firstname`=:yp4, `lastname`=:yp5, `email`=:yp6, `password`=:yp7, `privacy`=:yp8, `id`=:yp9, `emailold`=:yp10, `secret`=:yp11, `secretdate`=:yp12 WHERE `user`.`id`='27' returns n = 1
+2014/06/27-10:15:30(1.951)[cli/5942]: Executing SQL: DELETE FROM `user` WHERE `user`.`id`='27'
+2014/06/27-10:15:30(2.008)[cli/5942]: Executing SQL: DELETE FROM `user` WHERE `user`.`id`='27' returns n = 1
+2014/06/27-10:15:30(2.011)[cli/5942]: Querying SQL: SELECT * FROM `user` `t` WHERE id=:ycp3 LIMIT 1
+2014/06/27-10:16:06(0.004)[cli/5944]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/27-10:16:06(0.085)[cli/5944]: Querying SQL: SHOW FULL COLUMNS FROM `user`
+2014/06/27-10:16:06(0.091)[cli/5944]: Querying SQL: SHOW CREATE TABLE `user`
+2014/06/27-10:16:06(0.124)[cli/5944]: Querying SQL: SELECT 1 FROM `user` `t` WHERE `t`.`email`=:ycp0 LIMIT 1
+2014/06/27-10:16:06(0.126)[cli/5944]: Executing SQL: INSERT INTO `user` (`privileges`, `deleted`, `confirmed`, `dontemailme`, `firstname`, `lastname`, `email`, `password`, `privacy`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7, :yp8)
+2014/06/27-10:16:06(0.189)[cli/5944]: Executing SQL: INSERT INTO `user` (`privileges`, `deleted`, `confirmed`, `dontemailme`, `firstname`, `lastname`, `email`, `password`, `privacy`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7, :yp8) returns n = 1
+2014/06/27-10:16:07(1.030)[cli/5944]: Querying SQL: SELECT * FROM `user` `t` WHERE `t`.`email`=:ycp1 LIMIT 2
+2014/06/27-10:16:07(1.033)[cli/5944]: Executing SQL: UPDATE `user` SET `privileges`=:yp0, `deleted`=:yp1, `confirmed`=:yp2, `dontemailme`=:yp3, `firstname`=:yp4, `lastname`=:yp5, `email`=:yp6, `password`=:yp7, `privacy`=:yp8, `id`=:yp9 WHERE `user`.`id`='28'
+2014/06/27-10:16:07(1.101)[cli/5944]: Executing SQL: UPDATE `user` SET `privileges`=:yp0, `deleted`=:yp1, `confirmed`=:yp2, `dontemailme`=:yp3, `firstname`=:yp4, `lastname`=:yp5, `email`=:yp6, `password`=:yp7, `privacy`=:yp8, `id`=:yp9 WHERE `user`.`id`='28' returns n = 1
+2014/06/27-10:16:08(1.919)[cli/5944]: Querying SQL: SELECT * FROM `user` `t` WHERE `t`.`email`=:ycp2 LIMIT 2
+2014/06/27-10:16:08(1.920)[cli/5944]: Executing SQL: UPDATE `user` SET `privileges`=:yp0, `deleted`=:yp1, `confirmed`=:yp2, `dontemailme`=:yp3, `firstname`=:yp4, `lastname`=:yp5, `email`=:yp6, `password`=:yp7, `privacy`=:yp8, `id`=:yp9, `emailold`=:yp10, `secret`=:yp11, `secretdate`=:yp12 WHERE `user`.`id`='28'
+2014/06/27-10:16:08(1.990)[cli/5944]: Executing SQL: UPDATE `user` SET `privileges`=:yp0, `deleted`=:yp1, `confirmed`=:yp2, `dontemailme`=:yp3, `firstname`=:yp4, `lastname`=:yp5, `email`=:yp6, `password`=:yp7, `privacy`=:yp8, `id`=:yp9, `emailold`=:yp10, `secret`=:yp11, `secretdate`=:yp12 WHERE `user`.`id`='28' returns n = 1
+2014/06/27-10:16:08(1.996)[cli/5944]: Executing SQL: DELETE FROM `user` WHERE `user`.`id`='28'
+2014/06/27-10:16:08(2.057)[cli/5944]: Executing SQL: DELETE FROM `user` WHERE `user`.`id`='28' returns n = 1
+2014/06/27-10:16:08(2.057)[cli/5944]: Querying SQL: SELECT * FROM `user` `t` WHERE id=:ycp3 LIMIT 1
+2014/06/27-10:17:29(0.003)[cli/5980]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/27-10:17:29(0.049)[cli/5980]: Querying SQL: SHOW FULL COLUMNS FROM `user`
+2014/06/27-10:17:29(0.052)[cli/5980]: Querying SQL: SHOW CREATE TABLE `user`
+2014/06/27-10:17:29(0.065)[cli/5980]: Querying SQL: SELECT 1 FROM `user` `t` WHERE `t`.`email`=:ycp0 LIMIT 1
+2014/06/27-10:17:29(0.066)[cli/5980]: Executing SQL: INSERT INTO `user` (`privileges`, `deleted`, `confirmed`, `dontemailme`, `firstname`, `lastname`, `email`, `password`, `privacy`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7, :yp8)
+2014/06/27-10:17:29(0.220)[cli/5980]: Executing SQL: INSERT INTO `user` (`privileges`, `deleted`, `confirmed`, `dontemailme`, `firstname`, `lastname`, `email`, `password`, `privacy`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7, :yp8) returns n = 1
+2014/06/27-10:17:30(1.018)[cli/5980]: Querying SQL: SELECT * FROM `user` `t` WHERE `t`.`email`=:ycp1 LIMIT 2
+2014/06/27-10:17:30(1.020)[cli/5980]: Executing SQL: UPDATE `user` SET `privileges`=:yp0, `deleted`=:yp1, `confirmed`=:yp2, `dontemailme`=:yp3, `firstname`=:yp4, `lastname`=:yp5, `email`=:yp6, `password`=:yp7, `privacy`=:yp8, `id`=:yp9 WHERE `user`.`id`='29'
+2014/06/27-10:17:30(1.087)[cli/5980]: Executing SQL: UPDATE `user` SET `privileges`=:yp0, `deleted`=:yp1, `confirmed`=:yp2, `dontemailme`=:yp3, `firstname`=:yp4, `lastname`=:yp5, `email`=:yp6, `password`=:yp7, `privacy`=:yp8, `id`=:yp9 WHERE `user`.`id`='29' returns n = 1
+2014/06/27-10:17:31(1.926)[cli/5980]: Querying SQL: SELECT * FROM `user` `t` WHERE `t`.`email`=:ycp2 LIMIT 2
+2014/06/27-10:17:31(1.928)[cli/5980]: Executing SQL: UPDATE `user` SET `privileges`=:yp0, `deleted`=:yp1, `confirmed`=:yp2, `dontemailme`=:yp3, `firstname`=:yp4, `lastname`=:yp5, `email`=:yp6, `password`=:yp7, `privacy`=:yp8, `id`=:yp9, `emailold`=:yp10, `secret`=:yp11, `secretdate`=:yp12 WHERE `user`.`id`='29'
+2014/06/27-10:17:31(2.031)[cli/5980]: Executing SQL: UPDATE `user` SET `privileges`=:yp0, `deleted`=:yp1, `confirmed`=:yp2, `dontemailme`=:yp3, `firstname`=:yp4, `lastname`=:yp5, `email`=:yp6, `password`=:yp7, `privacy`=:yp8, `id`=:yp9, `emailold`=:yp10, `secret`=:yp11, `secretdate`=:yp12 WHERE `user`.`id`='29' returns n = 1
+2014/06/27-10:17:31(2.036)[cli/5980]: Executing SQL: DELETE FROM `user` WHERE `user`.`id`='29'
+2014/06/27-10:17:31(2.075)[cli/5980]: Executing SQL: DELETE FROM `user` WHERE `user`.`id`='29' returns n = 1
+2014/06/27-10:17:31(2.077)[cli/5980]: Querying SQL: SELECT * FROM `user` `t` WHERE id=:ycp3 LIMIT 1
+2014/06/27-10:18:08(0.003)[cli/5982]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/27-10:18:08(0.049)[cli/5982]: Querying SQL: SHOW FULL COLUMNS FROM `user`
+2014/06/27-10:18:08(0.051)[cli/5982]: Querying SQL: SHOW CREATE TABLE `user`
+2014/06/27-10:18:08(0.064)[cli/5982]: Querying SQL: SELECT 1 FROM `user` `t` WHERE `t`.`email`=:ycp0 LIMIT 1
+2014/06/27-10:18:08(0.066)[cli/5982]: Executing SQL: INSERT INTO `user` (`privileges`, `deleted`, `confirmed`, `dontemailme`, `firstname`, `lastname`, `email`, `password`, `privacy`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7, :yp8)
+2014/06/27-10:18:08(0.164)[cli/5982]: Executing SQL: INSERT INTO `user` (`privileges`, `deleted`, `confirmed`, `dontemailme`, `firstname`, `lastname`, `email`, `password`, `privacy`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7, :yp8) returns n = 1
+2014/06/27-10:18:09(0.968)[cli/5982]: Querying SQL: SELECT * FROM `user` `t` WHERE `t`.`email`=:ycp1 LIMIT 2
+2014/06/27-10:18:09(0.969)[cli/5982]: Executing SQL: UPDATE `user` SET `privileges`=:yp0, `deleted`=:yp1, `confirmed`=:yp2, `dontemailme`=:yp3, `firstname`=:yp4, `lastname`=:yp5, `email`=:yp6, `password`=:yp7, `privacy`=:yp8, `id`=:yp9 WHERE `user`.`id`='30'
+2014/06/27-10:18:09(1.020)[cli/5982]: Executing SQL: UPDATE `user` SET `privileges`=:yp0, `deleted`=:yp1, `confirmed`=:yp2, `dontemailme`=:yp3, `firstname`=:yp4, `lastname`=:yp5, `email`=:yp6, `password`=:yp7, `privacy`=:yp8, `id`=:yp9 WHERE `user`.`id`='30' returns n = 1
+2014/06/27-10:18:09(1.816)[cli/5982]: Querying SQL: SELECT * FROM `user` `t` WHERE `t`.`email`=:ycp2 LIMIT 2
+2014/06/27-10:18:09(1.817)[cli/5982]: Executing SQL: UPDATE `user` SET `privileges`=:yp0, `deleted`=:yp1, `confirmed`=:yp2, `dontemailme`=:yp3, `firstname`=:yp4, `lastname`=:yp5, `email`=:yp6, `password`=:yp7, `privacy`=:yp8, `id`=:yp9, `emailold`=:yp10, `secret`=:yp11, `secretdate`=:yp12 WHERE `user`.`id`='30'
+2014/06/27-10:18:09(1.875)[cli/5982]: Executing SQL: UPDATE `user` SET `privileges`=:yp0, `deleted`=:yp1, `confirmed`=:yp2, `dontemailme`=:yp3, `firstname`=:yp4, `lastname`=:yp5, `email`=:yp6, `password`=:yp7, `privacy`=:yp8, `id`=:yp9, `emailold`=:yp10, `secret`=:yp11, `secretdate`=:yp12 WHERE `user`.`id`='30' returns n = 1
+2014/06/27-10:18:09(1.881)[cli/5982]: Executing SQL: DELETE FROM `user` WHERE `user`.`id`='30'
+2014/06/27-10:18:09(1.930)[cli/5982]: Executing SQL: DELETE FROM `user` WHERE `user`.`id`='30' returns n = 1
+2014/06/27-10:18:09(1.931)[cli/5982]: Querying SQL: SELECT * FROM `user` `t` WHERE id=:ycp3 LIMIT 1
+2014/06/27-10:18:59(0.003)[cli/5984]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/27-10:18:59(0.053)[cli/5984]: Querying SQL: SHOW FULL COLUMNS FROM `user`
+2014/06/27-10:18:59(0.056)[cli/5984]: Querying SQL: SHOW CREATE TABLE `user`
+2014/06/27-10:18:59(0.069)[cli/5984]: Querying SQL: SELECT 1 FROM `user` `t` WHERE `t`.`email`=:ycp0 LIMIT 1
+2014/06/27-10:18:59(0.071)[cli/5984]: Executing SQL: INSERT INTO `user` (`privileges`, `deleted`, `confirmed`, `dontemailme`, `firstname`, `lastname`, `email`, `password`, `privacy`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7, :yp8)
+2014/06/27-10:18:59(0.138)[cli/5984]: Executing SQL: INSERT INTO `user` (`privileges`, `deleted`, `confirmed`, `dontemailme`, `firstname`, `lastname`, `email`, `password`, `privacy`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7, :yp8) returns n = 1
+2014/06/27-10:19:00(0.938)[cli/5984]: Querying SQL: SELECT * FROM `user` `t` WHERE `t`.`email`=:ycp1 LIMIT 2
+2014/06/27-10:19:00(0.939)[cli/5984]: Executing SQL: UPDATE `user` SET `privileges`=:yp0, `deleted`=:yp1, `confirmed`=:yp2, `dontemailme`=:yp3, `firstname`=:yp4, `lastname`=:yp5, `email`=:yp6, `password`=:yp7, `privacy`=:yp8, `id`=:yp9 WHERE `user`.`id`='31'
+2014/06/27-10:19:00(1.062)[cli/5984]: Executing SQL: UPDATE `user` SET `privileges`=:yp0, `deleted`=:yp1, `confirmed`=:yp2, `dontemailme`=:yp3, `firstname`=:yp4, `lastname`=:yp5, `email`=:yp6, `password`=:yp7, `privacy`=:yp8, `id`=:yp9 WHERE `user`.`id`='31' returns n = 1
+2014/06/27-10:19:01(1.880)[cli/5984]: Querying SQL: SELECT * FROM `user` `t` WHERE `t`.`email`=:ycp2 LIMIT 2
+2014/06/27-10:19:01(1.882)[cli/5984]: Executing SQL: UPDATE `user` SET `privileges`=:yp0, `deleted`=:yp1, `confirmed`=:yp2, `dontemailme`=:yp3, `firstname`=:yp4, `lastname`=:yp5, `email`=:yp6, `password`=:yp7, `privacy`=:yp8, `id`=:yp9, `emailold`=:yp10, `secret`=:yp11, `secretdate`=:yp12 WHERE `user`.`id`='31'
+2014/06/27-10:19:01(1.940)[cli/5984]: Executing SQL: UPDATE `user` SET `privileges`=:yp0, `deleted`=:yp1, `confirmed`=:yp2, `dontemailme`=:yp3, `firstname`=:yp4, `lastname`=:yp5, `email`=:yp6, `password`=:yp7, `privacy`=:yp8, `id`=:yp9, `emailold`=:yp10, `secret`=:yp11, `secretdate`=:yp12 WHERE `user`.`id`='31' returns n = 1
+2014/06/27-10:19:01(1.944)[cli/5984]: Executing SQL: DELETE FROM `user` WHERE `user`.`id`='31'
+2014/06/27-10:19:01(1.984)[cli/5984]: Executing SQL: DELETE FROM `user` WHERE `user`.`id`='31' returns n = 1
+2014/06/27-10:19:01(1.986)[cli/5984]: Querying SQL: SELECT * FROM `user` `t` WHERE id=:ycp3 LIMIT 1
+2014/06/27-10:19:39(0.003)[cli/5986]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/27-10:19:39(0.049)[cli/5986]: Querying SQL: SHOW FULL COLUMNS FROM `user`
+2014/06/27-10:19:39(0.051)[cli/5986]: Querying SQL: SHOW CREATE TABLE `user`
+2014/06/27-10:19:39(0.065)[cli/5986]: Querying SQL: SELECT 1 FROM `user` `t` WHERE `t`.`email`=:ycp0 LIMIT 1
+2014/06/27-10:19:39(0.066)[cli/5986]: Executing SQL: INSERT INTO `user` (`privileges`, `deleted`, `confirmed`, `dontemailme`, `firstname`, `lastname`, `email`, `password`, `privacy`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7, :yp8)
+2014/06/27-10:19:39(0.155)[cli/5986]: Executing SQL: INSERT INTO `user` (`privileges`, `deleted`, `confirmed`, `dontemailme`, `firstname`, `lastname`, `email`, `password`, `privacy`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7, :yp8) returns n = 1
+2014/06/27-10:19:40(0.955)[cli/5986]: Querying SQL: SELECT * FROM `user` `t` WHERE `t`.`email`=:ycp1 LIMIT 2
+2014/06/27-10:19:40(0.957)[cli/5986]: Executing SQL: UPDATE `user` SET `privileges`=:yp0, `deleted`=:yp1, `confirmed`=:yp2, `dontemailme`=:yp3, `firstname`=:yp4, `lastname`=:yp5, `email`=:yp6, `password`=:yp7, `privacy`=:yp8, `id`=:yp9 WHERE `user`.`id`='32'
+2014/06/27-10:19:40(1.011)[cli/5986]: Executing SQL: UPDATE `user` SET `privileges`=:yp0, `deleted`=:yp1, `confirmed`=:yp2, `dontemailme`=:yp3, `firstname`=:yp4, `lastname`=:yp5, `email`=:yp6, `password`=:yp7, `privacy`=:yp8, `id`=:yp9 WHERE `user`.`id`='32' returns n = 1
+2014/06/27-10:19:41(1.838)[cli/5986]: Querying SQL: SELECT * FROM `user` `t` WHERE `t`.`email`=:ycp2 LIMIT 2
+2014/06/27-10:19:41(1.840)[cli/5986]: Executing SQL: UPDATE `user` SET `privileges`=:yp0, `deleted`=:yp1, `confirmed`=:yp2, `dontemailme`=:yp3, `firstname`=:yp4, `lastname`=:yp5, `email`=:yp6, `password`=:yp7, `privacy`=:yp8, `id`=:yp9, `emailold`=:yp10, `secret`=:yp11, `secretdate`=:yp12 WHERE `user`.`id`='32'
+2014/06/27-10:19:41(1.888)[cli/5986]: Executing SQL: UPDATE `user` SET `privileges`=:yp0, `deleted`=:yp1, `confirmed`=:yp2, `dontemailme`=:yp3, `firstname`=:yp4, `lastname`=:yp5, `email`=:yp6, `password`=:yp7, `privacy`=:yp8, `id`=:yp9, `emailold`=:yp10, `secret`=:yp11, `secretdate`=:yp12 WHERE `user`.`id`='32' returns n = 1
+2014/06/27-10:19:41(1.890)[cli/5986]: Executing SQL: DELETE FROM `user` WHERE `user`.`id`='32'
+2014/06/27-10:19:41(1.932)[cli/5986]: Executing SQL: DELETE FROM `user` WHERE `user`.`id`='32' returns n = 1
+2014/06/27-10:19:41(1.934)[cli/5986]: Querying SQL: SELECT * FROM `user` `t` WHERE id=:ycp3 LIMIT 1
+2014/06/27-10:20:42(0.006)[cli/5988]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/27-10:20:42(0.080)[cli/5988]: Querying SQL: SHOW FULL COLUMNS FROM `user`
+2014/06/27-10:20:42(0.086)[cli/5988]: Querying SQL: SHOW CREATE TABLE `user`
+2014/06/27-10:20:42(0.109)[cli/5988]: Querying SQL: SELECT 1 FROM `user` `t` WHERE `t`.`email`=:ycp0 LIMIT 1
+2014/06/27-10:20:42(0.111)[cli/5988]: Executing SQL: INSERT INTO `user` (`privileges`, `deleted`, `confirmed`, `dontemailme`, `firstname`, `lastname`, `email`, `password`, `privacy`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7, :yp8)
+2014/06/27-10:20:42(0.229)[cli/5988]: Executing SQL: INSERT INTO `user` (`privileges`, `deleted`, `confirmed`, `dontemailme`, `firstname`, `lastname`, `email`, `password`, `privacy`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7, :yp8) returns n = 1
+2014/06/27-10:20:43(1.078)[cli/5988]: Querying SQL: SELECT * FROM `user` `t` WHERE `t`.`email`=:ycp1 LIMIT 2
+2014/06/27-10:20:43(1.080)[cli/5988]: Executing SQL: UPDATE `user` SET `privileges`=:yp0, `deleted`=:yp1, `confirmed`=:yp2, `dontemailme`=:yp3, `firstname`=:yp4, `lastname`=:yp5, `email`=:yp6, `password`=:yp7, `privacy`=:yp8, `id`=:yp9 WHERE `user`.`id`='33'
+2014/06/27-10:20:43(1.152)[cli/5988]: Executing SQL: UPDATE `user` SET `privileges`=:yp0, `deleted`=:yp1, `confirmed`=:yp2, `dontemailme`=:yp3, `firstname`=:yp4, `lastname`=:yp5, `email`=:yp6, `password`=:yp7, `privacy`=:yp8, `id`=:yp9 WHERE `user`.`id`='33' returns n = 1
+2014/06/27-10:20:44(1.942)[cli/5988]: Querying SQL: SELECT * FROM `user` `t` WHERE `t`.`email`=:ycp2 LIMIT 2
+2014/06/27-10:20:44(1.943)[cli/5988]: Executing SQL: UPDATE `user` SET `privileges`=:yp0, `deleted`=:yp1, `confirmed`=:yp2, `dontemailme`=:yp3, `firstname`=:yp4, `lastname`=:yp5, `email`=:yp6, `password`=:yp7, `privacy`=:yp8, `id`=:yp9, `emailold`=:yp10, `secret`=:yp11, `secretdate`=:yp12 WHERE `user`.`id`='33'
+2014/06/27-10:20:44(2.019)[cli/5988]: Executing SQL: UPDATE `user` SET `privileges`=:yp0, `deleted`=:yp1, `confirmed`=:yp2, `dontemailme`=:yp3, `firstname`=:yp4, `lastname`=:yp5, `email`=:yp6, `password`=:yp7, `privacy`=:yp8, `id`=:yp9, `emailold`=:yp10, `secret`=:yp11, `secretdate`=:yp12 WHERE `user`.`id`='33' returns n = 1
+2014/06/27-10:20:44(2.025)[cli/5988]: Executing SQL: DELETE FROM `user` WHERE `user`.`id`='33'
+2014/06/27-10:20:44(2.097)[cli/5988]: Executing SQL: DELETE FROM `user` WHERE `user`.`id`='33' returns n = 1
+2014/06/27-10:20:44(2.099)[cli/5988]: Querying SQL: SELECT * FROM `user` `t` WHERE id=:ycp3 LIMIT 1
+2014/06/27-10:20:53(0.003)[cli/5990]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/27-10:20:53(0.050)[cli/5990]: Querying SQL: SHOW FULL COLUMNS FROM `user`
+2014/06/27-10:20:54(0.053)[cli/5990]: Querying SQL: SHOW CREATE TABLE `user`
+2014/06/27-10:20:54(0.067)[cli/5990]: Querying SQL: SELECT 1 FROM `user` `t` WHERE `t`.`email`=:ycp0 LIMIT 1
+2014/06/27-10:20:54(0.068)[cli/5990]: Executing SQL: INSERT INTO `user` (`privileges`, `deleted`, `confirmed`, `dontemailme`, `firstname`, `lastname`, `email`, `password`, `privacy`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7, :yp8)
+2014/06/27-10:20:54(0.147)[cli/5990]: Executing SQL: INSERT INTO `user` (`privileges`, `deleted`, `confirmed`, `dontemailme`, `firstname`, `lastname`, `email`, `password`, `privacy`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7, :yp8) returns n = 1
+2014/06/27-10:20:55(1.595)[cli/5990]: Querying SQL: SELECT * FROM `user` `t` WHERE `t`.`email`=:ycp1 LIMIT 2
+2014/06/27-10:20:55(1.597)[cli/5990]: Executing SQL: UPDATE `user` SET `privileges`=:yp0, `deleted`=:yp1, `confirmed`=:yp2, `dontemailme`=:yp3, `firstname`=:yp4, `lastname`=:yp5, `email`=:yp6, `password`=:yp7, `privacy`=:yp8, `id`=:yp9 WHERE `user`.`id`='34'
+2014/06/27-10:20:55(1.657)[cli/5990]: Executing SQL: UPDATE `user` SET `privileges`=:yp0, `deleted`=:yp1, `confirmed`=:yp2, `dontemailme`=:yp3, `firstname`=:yp4, `lastname`=:yp5, `email`=:yp6, `password`=:yp7, `privacy`=:yp8, `id`=:yp9 WHERE `user`.`id`='34' returns n = 1
+2014/06/27-10:20:57(3.340)[cli/5990]: Querying SQL: SELECT * FROM `user` `t` WHERE `t`.`email`=:ycp2 LIMIT 2
+2014/06/27-10:20:57(3.346)[cli/5990]: Executing SQL: UPDATE `user` SET `privileges`=:yp0, `deleted`=:yp1, `confirmed`=:yp2, `dontemailme`=:yp3, `firstname`=:yp4, `lastname`=:yp5, `email`=:yp6, `password`=:yp7, `privacy`=:yp8, `id`=:yp9, `emailold`=:yp10, `secret`=:yp11, `secretdate`=:yp12 WHERE `user`.`id`='34'
+2014/06/27-10:20:57(3.425)[cli/5990]: Executing SQL: UPDATE `user` SET `privileges`=:yp0, `deleted`=:yp1, `confirmed`=:yp2, `dontemailme`=:yp3, `firstname`=:yp4, `lastname`=:yp5, `email`=:yp6, `password`=:yp7, `privacy`=:yp8, `id`=:yp9, `emailold`=:yp10, `secret`=:yp11, `secretdate`=:yp12 WHERE `user`.`id`='34' returns n = 1
+2014/06/27-10:20:57(3.439)[cli/5990]: Executing SQL: DELETE FROM `user` WHERE `user`.`id`='34'
+2014/06/27-10:20:57(3.502)[cli/5990]: Executing SQL: DELETE FROM `user` WHERE `user`.`id`='34' returns n = 1
+2014/06/27-10:20:57(3.503)[cli/5990]: Querying SQL: SELECT * FROM `user` `t` WHERE id=:ycp3 LIMIT 1
+2014/06/27-11:08:53(0.023)[cli/6082]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/27-11:08:53(0.195)[cli/6082]: Querying SQL: SHOW FULL COLUMNS FROM `user`
+2014/06/27-11:08:53(0.198)[cli/6082]: Querying SQL: SHOW CREATE TABLE `user`
+2014/06/27-11:08:53(0.232)[cli/6082]: Querying SQL: SELECT 1 FROM `user` `t` WHERE `t`.`email`=:ycp0 LIMIT 1
+2014/06/27-11:08:53(0.233)[cli/6082]: Executing SQL: INSERT INTO `user` (`privileges`, `deleted`, `confirmed`, `dontemailme`, `firstname`, `lastname`, `email`, `password`, `privacy`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7, :yp8)
+2014/06/27-11:08:53(0.295)[cli/6082]: Executing SQL: INSERT INTO `user` (`privileges`, `deleted`, `confirmed`, `dontemailme`, `firstname`, `lastname`, `email`, `password`, `privacy`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7, :yp8) returns n = 1
+2014/06/27-11:08:54(1.091)[cli/6082]: Querying SQL: SELECT * FROM `user` `t` WHERE `t`.`email`=:ycp1 LIMIT 2
+2014/06/27-11:08:54(1.093)[cli/6082]: Executing SQL: UPDATE `user` SET `privileges`=:yp0, `deleted`=:yp1, `confirmed`=:yp2, `dontemailme`=:yp3, `firstname`=:yp4, `lastname`=:yp5, `email`=:yp6, `password`=:yp7, `privacy`=:yp8, `id`=:yp9 WHERE `user`.`id`='35'
+2014/06/27-11:08:54(1.150)[cli/6082]: Executing SQL: UPDATE `user` SET `privileges`=:yp0, `deleted`=:yp1, `confirmed`=:yp2, `dontemailme`=:yp3, `firstname`=:yp4, `lastname`=:yp5, `email`=:yp6, `password`=:yp7, `privacy`=:yp8, `id`=:yp9 WHERE `user`.`id`='35' returns n = 1
+2014/06/27-11:08:54(1.155)[cli/6082]: Executing SQL: DELETE FROM `user` WHERE `user`.`id`='35'
+2014/06/27-11:08:54(1.206)[cli/6082]: Executing SQL: DELETE FROM `user` WHERE `user`.`id`='35' returns n = 1
+2014/06/27-11:08:54(1.208)[cli/6082]: Querying SQL: SELECT * FROM `user` `t` WHERE id=:ycp2 LIMIT 1
+2014/06/27-11:19:24(0.003)[cli/6095]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/27-11:19:24(0.051)[cli/6095]: Querying SQL: SHOW FULL COLUMNS FROM `user`
+2014/06/27-11:19:24(0.053)[cli/6095]: Querying SQL: SHOW CREATE TABLE `user`
+2014/06/27-11:19:24(0.066)[cli/6095]: Querying SQL: SELECT 1 FROM `user` `t` WHERE `t`.`email`=:ycp0 LIMIT 1
+2014/06/27-11:19:24(0.067)[cli/6095]: Executing SQL: INSERT INTO `user` (`privileges`, `deleted`, `confirmed`, `dontemailme`, `firstname`, `lastname`, `email`, `password`, `privacy`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7, :yp8)
+2014/06/27-11:19:24(0.173)[cli/6095]: Executing SQL: INSERT INTO `user` (`privileges`, `deleted`, `confirmed`, `dontemailme`, `firstname`, `lastname`, `email`, `password`, `privacy`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7, :yp8) returns n = 1
+2014/06/27-11:19:25(0.973)[cli/6095]: Querying SQL: SELECT * FROM `user` `t` WHERE `t`.`email`=:ycp1 LIMIT 2
+2014/06/27-11:19:25(0.975)[cli/6095]: Executing SQL: UPDATE `user` SET `privileges`=:yp0, `deleted`=:yp1, `confirmed`=:yp2, `dontemailme`=:yp3, `firstname`=:yp4, `lastname`=:yp5, `email`=:yp6, `password`=:yp7, `privacy`=:yp8, `id`=:yp9 WHERE `user`.`id`='36'
+2014/06/27-11:19:25(1.040)[cli/6095]: Executing SQL: UPDATE `user` SET `privileges`=:yp0, `deleted`=:yp1, `confirmed`=:yp2, `dontemailme`=:yp3, `firstname`=:yp4, `lastname`=:yp5, `email`=:yp6, `password`=:yp7, `privacy`=:yp8, `id`=:yp9 WHERE `user`.`id`='36' returns n = 1
+2014/06/27-11:19:25(1.053)[cli/6095]: Executing SQL: DELETE FROM `user` WHERE `user`.`id`='36'
+2014/06/27-11:19:25(1.130)[cli/6095]: Executing SQL: DELETE FROM `user` WHERE `user`.`id`='36' returns n = 1
+2014/06/27-11:19:25(1.132)[cli/6095]: Querying SQL: SELECT * FROM `user` `t` WHERE id=:ycp2 LIMIT 1
+2014/06/27-11:19:52(0.003)[cli/6097]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/27-11:19:52(0.048)[cli/6097]: Querying SQL: SHOW FULL COLUMNS FROM `user`
+2014/06/27-11:19:52(0.051)[cli/6097]: Querying SQL: SHOW CREATE TABLE `user`
+2014/06/27-11:19:52(0.063)[cli/6097]: Querying SQL: SELECT 1 FROM `user` `t` WHERE `t`.`email`=:ycp0 LIMIT 1
+2014/06/27-11:19:52(0.064)[cli/6097]: Executing SQL: INSERT INTO `user` (`privileges`, `deleted`, `confirmed`, `dontemailme`, `firstname`, `lastname`, `email`, `password`, `privacy`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7, :yp8)
+2014/06/27-11:19:52(0.196)[cli/6097]: Executing SQL: INSERT INTO `user` (`privileges`, `deleted`, `confirmed`, `dontemailme`, `firstname`, `lastname`, `email`, `password`, `privacy`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7, :yp8) returns n = 1
+2014/06/27-11:19:53(1.002)[cli/6097]: Querying SQL: SELECT * FROM `user` `t` WHERE `t`.`email`=:ycp1 LIMIT 2
+2014/06/27-11:19:53(1.004)[cli/6097]: Executing SQL: UPDATE `user` SET `privileges`=:yp0, `deleted`=:yp1, `confirmed`=:yp2, `dontemailme`=:yp3, `firstname`=:yp4, `lastname`=:yp5, `email`=:yp6, `password`=:yp7, `privacy`=:yp8, `id`=:yp9 WHERE `user`.`id`='37'
+2014/06/27-11:19:53(1.107)[cli/6097]: Executing SQL: UPDATE `user` SET `privileges`=:yp0, `deleted`=:yp1, `confirmed`=:yp2, `dontemailme`=:yp3, `firstname`=:yp4, `lastname`=:yp5, `email`=:yp6, `password`=:yp7, `privacy`=:yp8, `id`=:yp9 WHERE `user`.`id`='37' returns n = 1
+2014/06/27-11:19:54(1.895)[cli/6097]: Querying SQL: SELECT * FROM `user` `t` WHERE `t`.`email`=:ycp2 LIMIT 2
+2014/06/27-11:19:54(1.896)[cli/6097]: Executing SQL: UPDATE `user` SET `privileges`=:yp0, `deleted`=:yp1, `confirmed`=:yp2, `dontemailme`=:yp3, `firstname`=:yp4, `lastname`=:yp5, `email`=:yp6, `password`=:yp7, `privacy`=:yp8, `id`=:yp9, `emailold`=:yp10, `secret`=:yp11, `secretdate`=:yp12 WHERE `user`.`id`='37'
+2014/06/27-11:19:54(1.997)[cli/6097]: Executing SQL: UPDATE `user` SET `privileges`=:yp0, `deleted`=:yp1, `confirmed`=:yp2, `dontemailme`=:yp3, `firstname`=:yp4, `lastname`=:yp5, `email`=:yp6, `password`=:yp7, `privacy`=:yp8, `id`=:yp9, `emailold`=:yp10, `secret`=:yp11, `secretdate`=:yp12 WHERE `user`.`id`='37' returns n = 1
+2014/06/27-11:19:54(2.010)[cli/6097]: Executing SQL: DELETE FROM `user` WHERE `user`.`id`='37'
+2014/06/27-11:19:54(2.075)[cli/6097]: Executing SQL: DELETE FROM `user` WHERE `user`.`id`='37' returns n = 1
+2014/06/27-11:19:54(2.077)[cli/6097]: Querying SQL: SELECT * FROM `user` `t` WHERE id=:ycp3 LIMIT 1
+2014/06/27-11:28:36(0.003)[cli/6132]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/27-11:28:36(0.052)[cli/6132]: Querying SQL: SHOW FULL COLUMNS FROM `user`
+2014/06/27-11:28:36(0.055)[cli/6132]: Querying SQL: SHOW CREATE TABLE `user`
+2014/06/27-11:28:36(0.069)[cli/6132]: Querying SQL: SELECT 1 FROM `user` `t` WHERE `t`.`email`=:ycp0 LIMIT 1
+2014/06/27-11:28:36(0.070)[cli/6132]: Executing SQL: INSERT INTO `user` (`privileges`, `deleted`, `confirmed`, `dontemailme`, `firstname`, `lastname`, `email`, `password`, `privacy`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7, :yp8)
+2014/06/27-11:28:36(0.112)[cli/6132]: Executing SQL: INSERT INTO `user` (`privileges`, `deleted`, `confirmed`, `dontemailme`, `firstname`, `lastname`, `email`, `password`, `privacy`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7, :yp8) returns n = 1
+2014/06/27-11:28:37(0.908)[cli/6132]: Querying SQL: SELECT * FROM `user` `t` WHERE `t`.`email`=:ycp1 LIMIT 2
+2014/06/27-11:28:37(0.910)[cli/6132]: Executing SQL: UPDATE `user` SET `privileges`=:yp0, `deleted`=:yp1, `confirmed`=:yp2, `dontemailme`=:yp3, `firstname`=:yp4, `lastname`=:yp5, `email`=:yp6, `password`=:yp7, `privacy`=:yp8, `id`=:yp9 WHERE `user`.`id`='38'
+2014/06/27-11:28:37(1.000)[cli/6132]: Executing SQL: UPDATE `user` SET `privileges`=:yp0, `deleted`=:yp1, `confirmed`=:yp2, `dontemailme`=:yp3, `firstname`=:yp4, `lastname`=:yp5, `email`=:yp6, `password`=:yp7, `privacy`=:yp8, `id`=:yp9 WHERE `user`.`id`='38' returns n = 1
+2014/06/27-11:28:38(1.791)[cli/6132]: Querying SQL: SELECT * FROM `user` `t` WHERE `t`.`email`=:ycp2 LIMIT 2
+2014/06/27-11:28:38(1.792)[cli/6132]: Executing SQL: UPDATE `user` SET `privileges`=:yp0, `deleted`=:yp1, `confirmed`=:yp2, `dontemailme`=:yp3, `firstname`=:yp4, `lastname`=:yp5, `email`=:yp6, `password`=:yp7, `privacy`=:yp8, `id`=:yp9, `emailold`=:yp10, `secret`=:yp11, `secretdate`=:yp12 WHERE `user`.`id`='38'
+2014/06/27-11:28:38(1.879)[cli/6132]: Executing SQL: UPDATE `user` SET `privileges`=:yp0, `deleted`=:yp1, `confirmed`=:yp2, `dontemailme`=:yp3, `firstname`=:yp4, `lastname`=:yp5, `email`=:yp6, `password`=:yp7, `privacy`=:yp8, `id`=:yp9, `emailold`=:yp10, `secret`=:yp11, `secretdate`=:yp12 WHERE `user`.`id`='38' returns n = 1
+2014/06/27-11:28:38(1.885)[cli/6132]: Executing SQL: DELETE FROM `user` WHERE `user`.`id`='38'
+2014/06/27-11:28:38(1.935)[cli/6132]: Executing SQL: DELETE FROM `user` WHERE `user`.`id`='38' returns n = 1
+2014/06/27-11:28:38(1.937)[cli/6132]: Querying SQL: SELECT * FROM `user` `t` WHERE id=:ycp3 LIMIT 1
+2014/06/27-11:29:30(0.003)[cli/6134]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/27-11:29:30(0.047)[cli/6134]: Querying SQL: SHOW FULL COLUMNS FROM `user`
+2014/06/27-11:29:30(0.050)[cli/6134]: Querying SQL: SHOW CREATE TABLE `user`
+2014/06/27-11:29:30(0.062)[cli/6134]: Querying SQL: SELECT 1 FROM `user` `t` WHERE `t`.`email`=:ycp0 LIMIT 1
+2014/06/27-11:29:30(0.063)[cli/6134]: Executing SQL: INSERT INTO `user` (`privileges`, `deleted`, `confirmed`, `dontemailme`, `firstname`, `lastname`, `email`, `password`, `privacy`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7, :yp8)
+2014/06/27-11:29:31(0.181)[cli/6134]: Executing SQL: INSERT INTO `user` (`privileges`, `deleted`, `confirmed`, `dontemailme`, `firstname`, `lastname`, `email`, `password`, `privacy`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7, :yp8) returns n = 1
+2014/06/27-11:29:31(0.979)[cli/6134]: Querying SQL: SELECT * FROM `user` `t` WHERE `t`.`email`=:ycp1 LIMIT 2
+2014/06/27-11:29:31(0.980)[cli/6134]: Executing SQL: UPDATE `user` SET `privileges`=:yp0, `deleted`=:yp1, `confirmed`=:yp2, `dontemailme`=:yp3, `firstname`=:yp4, `lastname`=:yp5, `email`=:yp6, `password`=:yp7, `privacy`=:yp8, `id`=:yp9 WHERE `user`.`id`='39'
+2014/06/27-11:29:31(1.070)[cli/6134]: Executing SQL: UPDATE `user` SET `privileges`=:yp0, `deleted`=:yp1, `confirmed`=:yp2, `dontemailme`=:yp3, `firstname`=:yp4, `lastname`=:yp5, `email`=:yp6, `password`=:yp7, `privacy`=:yp8, `id`=:yp9 WHERE `user`.`id`='39' returns n = 1
+2014/06/27-11:29:32(1.870)[cli/6134]: Querying SQL: SELECT * FROM `user` `t` WHERE `t`.`email`=:ycp2 LIMIT 2
+2014/06/27-11:29:32(1.873)[cli/6134]: Executing SQL: UPDATE `user` SET `privileges`=:yp0, `deleted`=:yp1, `confirmed`=:yp2, `dontemailme`=:yp3, `firstname`=:yp4, `lastname`=:yp5, `email`=:yp6, `password`=:yp7, `privacy`=:yp8, `id`=:yp9, `emailold`=:yp10, `secret`=:yp11, `secretdate`=:yp12 WHERE `user`.`id`='39'
+2014/06/27-11:29:32(2.048)[cli/6134]: Executing SQL: UPDATE `user` SET `privileges`=:yp0, `deleted`=:yp1, `confirmed`=:yp2, `dontemailme`=:yp3, `firstname`=:yp4, `lastname`=:yp5, `email`=:yp6, `password`=:yp7, `privacy`=:yp8, `id`=:yp9, `emailold`=:yp10, `secret`=:yp11, `secretdate`=:yp12 WHERE `user`.`id`='39' returns n = 1
+2014/06/27-11:29:32(2.056)[cli/6134]: Executing SQL: DELETE FROM `user` WHERE `user`.`id`='39'
+2014/06/27-11:29:32(2.115)[cli/6134]: Executing SQL: DELETE FROM `user` WHERE `user`.`id`='39' returns n = 1
+2014/06/27-11:29:32(2.117)[cli/6134]: Querying SQL: SELECT * FROM `user` `t` WHERE id=:ycp3 LIMIT 1
+2014/06/27-11:29:44(0.003)[cli/6136]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/27-11:29:44(0.053)[cli/6136]: Querying SQL: SHOW FULL COLUMNS FROM `user`
+2014/06/27-11:29:44(0.056)[cli/6136]: Querying SQL: SHOW CREATE TABLE `user`
+2014/06/27-11:29:44(0.068)[cli/6136]: Querying SQL: SELECT 1 FROM `user` `t` WHERE `t`.`email`=:ycp0 LIMIT 1
+2014/06/27-11:29:44(0.070)[cli/6136]: Executing SQL: INSERT INTO `user` (`privileges`, `deleted`, `confirmed`, `dontemailme`, `firstname`, `lastname`, `email`, `password`, `privacy`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7, :yp8)
+2014/06/27-11:29:44(0.165)[cli/6136]: Executing SQL: INSERT INTO `user` (`privileges`, `deleted`, `confirmed`, `dontemailme`, `firstname`, `lastname`, `email`, `password`, `privacy`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7, :yp8) returns n = 1
+2014/06/27-11:29:45(0.974)[cli/6136]: Querying SQL: SELECT * FROM `user` `t` WHERE `t`.`email`=:ycp1 LIMIT 2
+2014/06/27-11:29:45(0.977)[cli/6136]: Executing SQL: UPDATE `user` SET `privileges`=:yp0, `deleted`=:yp1, `confirmed`=:yp2, `dontemailme`=:yp3, `firstname`=:yp4, `lastname`=:yp5, `email`=:yp6, `password`=:yp7, `privacy`=:yp8, `id`=:yp9 WHERE `user`.`id`='40'
+2014/06/27-11:29:45(1.032)[cli/6136]: Executing SQL: UPDATE `user` SET `privileges`=:yp0, `deleted`=:yp1, `confirmed`=:yp2, `dontemailme`=:yp3, `firstname`=:yp4, `lastname`=:yp5, `email`=:yp6, `password`=:yp7, `privacy`=:yp8, `id`=:yp9 WHERE `user`.`id`='40' returns n = 1
+2014/06/27-11:29:46(1.823)[cli/6136]: Querying SQL: SELECT * FROM `user` `t` WHERE `t`.`email`=:ycp2 LIMIT 2
+2014/06/27-11:29:46(1.825)[cli/6136]: Executing SQL: UPDATE `user` SET `privileges`=:yp0, `deleted`=:yp1, `confirmed`=:yp2, `dontemailme`=:yp3, `firstname`=:yp4, `lastname`=:yp5, `email`=:yp6, `password`=:yp7, `privacy`=:yp8, `id`=:yp9, `emailold`=:yp10, `secret`=:yp11, `secretdate`=:yp12 WHERE `user`.`id`='40'
+2014/06/27-11:29:46(1.965)[cli/6136]: Executing SQL: UPDATE `user` SET `privileges`=:yp0, `deleted`=:yp1, `confirmed`=:yp2, `dontemailme`=:yp3, `firstname`=:yp4, `lastname`=:yp5, `email`=:yp6, `password`=:yp7, `privacy`=:yp8, `id`=:yp9, `emailold`=:yp10, `secret`=:yp11, `secretdate`=:yp12 WHERE `user`.`id`='40' returns n = 1
+2014/06/27-11:29:46(1.969)[cli/6136]: Executing SQL: DELETE FROM `user` WHERE `user`.`id`='40'
+2014/06/27-11:29:46(2.020)[cli/6136]: Executing SQL: DELETE FROM `user` WHERE `user`.`id`='40' returns n = 1
+2014/06/27-11:29:46(2.022)[cli/6136]: Querying SQL: SELECT * FROM `user` `t` WHERE id=:ycp3 LIMIT 1
+2014/06/27-11:29:56(0.003)[cli/6138]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/27-11:29:56(0.051)[cli/6138]: Querying SQL: SHOW FULL COLUMNS FROM `user`
+2014/06/27-11:29:56(0.056)[cli/6138]: Querying SQL: SHOW CREATE TABLE `user`
+2014/06/27-11:29:56(0.071)[cli/6138]: Querying SQL: SELECT 1 FROM `user` `t` WHERE `t`.`email`=:ycp0 LIMIT 1
+2014/06/27-11:29:56(0.073)[cli/6138]: Executing SQL: INSERT INTO `user` (`privileges`, `deleted`, `confirmed`, `dontemailme`, `firstname`, `lastname`, `email`, `password`, `privacy`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7, :yp8)
+2014/06/27-11:29:56(0.154)[cli/6138]: Executing SQL: INSERT INTO `user` (`privileges`, `deleted`, `confirmed`, `dontemailme`, `firstname`, `lastname`, `email`, `password`, `privacy`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7, :yp8) returns n = 1
+2014/06/27-11:29:57(0.958)[cli/6138]: Querying SQL: SELECT * FROM `user` `t` WHERE `t`.`email`=:ycp1 LIMIT 2
+2014/06/27-11:29:57(0.959)[cli/6138]: Executing SQL: UPDATE `user` SET `privileges`=:yp0, `deleted`=:yp1, `confirmed`=:yp2, `dontemailme`=:yp3, `firstname`=:yp4, `lastname`=:yp5, `email`=:yp6, `password`=:yp7, `privacy`=:yp8, `id`=:yp9 WHERE `user`.`id`='41'
+2014/06/27-11:29:57(1.097)[cli/6138]: Executing SQL: UPDATE `user` SET `privileges`=:yp0, `deleted`=:yp1, `confirmed`=:yp2, `dontemailme`=:yp3, `firstname`=:yp4, `lastname`=:yp5, `email`=:yp6, `password`=:yp7, `privacy`=:yp8, `id`=:yp9 WHERE `user`.`id`='41' returns n = 1
+2014/06/27-11:29:58(1.882)[cli/6138]: Querying SQL: SELECT * FROM `user` `t` WHERE `t`.`email`=:ycp2 LIMIT 2
+2014/06/27-11:29:58(1.883)[cli/6138]: Executing SQL: UPDATE `user` SET `privileges`=:yp0, `deleted`=:yp1, `confirmed`=:yp2, `dontemailme`=:yp3, `firstname`=:yp4, `lastname`=:yp5, `email`=:yp6, `password`=:yp7, `privacy`=:yp8, `id`=:yp9, `emailold`=:yp10, `secret`=:yp11, `secretdate`=:yp12 WHERE `user`.`id`='41'
+2014/06/27-11:29:58(1.966)[cli/6138]: Executing SQL: UPDATE `user` SET `privileges`=:yp0, `deleted`=:yp1, `confirmed`=:yp2, `dontemailme`=:yp3, `firstname`=:yp4, `lastname`=:yp5, `email`=:yp6, `password`=:yp7, `privacy`=:yp8, `id`=:yp9, `emailold`=:yp10, `secret`=:yp11, `secretdate`=:yp12 WHERE `user`.`id`='41' returns n = 1
+2014/06/27-11:29:58(1.972)[cli/6138]: Executing SQL: DELETE FROM `user` WHERE `user`.`id`='41'
+2014/06/27-11:29:58(2.045)[cli/6138]: Executing SQL: DELETE FROM `user` WHERE `user`.`id`='41' returns n = 1
+2014/06/27-11:29:58(2.047)[cli/6138]: Querying SQL: SELECT * FROM `user` `t` WHERE id=:ycp3 LIMIT 1
+2014/06/27-11:30:17(0.003)[cli/6140]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/27-11:30:17(0.052)[cli/6140]: Querying SQL: SHOW FULL COLUMNS FROM `user`
+2014/06/27-11:30:17(0.055)[cli/6140]: Querying SQL: SHOW CREATE TABLE `user`
+2014/06/27-11:30:17(0.067)[cli/6140]: Querying SQL: SELECT 1 FROM `user` `t` WHERE `t`.`email`=:ycp0 LIMIT 1
+2014/06/27-11:30:17(0.068)[cli/6140]: Executing SQL: INSERT INTO `user` (`privileges`, `deleted`, `confirmed`, `dontemailme`, `firstname`, `lastname`, `email`, `password`, `privacy`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7, :yp8)
+2014/06/27-11:30:17(0.205)[cli/6140]: Executing SQL: INSERT INTO `user` (`privileges`, `deleted`, `confirmed`, `dontemailme`, `firstname`, `lastname`, `email`, `password`, `privacy`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7, :yp8) returns n = 1
+2014/06/27-11:30:18(1.014)[cli/6140]: Querying SQL: SELECT * FROM `user` `t` WHERE `t`.`email`=:ycp1 LIMIT 2
+2014/06/27-11:30:18(1.015)[cli/6140]: Executing SQL: UPDATE `user` SET `privileges`=:yp0, `deleted`=:yp1, `confirmed`=:yp2, `dontemailme`=:yp3, `firstname`=:yp4, `lastname`=:yp5, `email`=:yp6, `password`=:yp7, `privacy`=:yp8, `id`=:yp9 WHERE `user`.`id`='42'
+2014/06/27-11:30:18(1.150)[cli/6140]: Executing SQL: UPDATE `user` SET `privileges`=:yp0, `deleted`=:yp1, `confirmed`=:yp2, `dontemailme`=:yp3, `firstname`=:yp4, `lastname`=:yp5, `email`=:yp6, `password`=:yp7, `privacy`=:yp8, `id`=:yp9 WHERE `user`.`id`='42' returns n = 1
+2014/06/27-11:30:19(1.958)[cli/6140]: Querying SQL: SELECT * FROM `user` `t` WHERE `t`.`email`=:ycp2 LIMIT 2
+2014/06/27-11:30:19(1.960)[cli/6140]: Executing SQL: UPDATE `user` SET `privileges`=:yp0, `deleted`=:yp1, `confirmed`=:yp2, `dontemailme`=:yp3, `firstname`=:yp4, `lastname`=:yp5, `email`=:yp6, `password`=:yp7, `privacy`=:yp8, `id`=:yp9, `emailold`=:yp10, `secret`=:yp11, `secretdate`=:yp12 WHERE `user`.`id`='42'
+2014/06/27-11:30:19(2.061)[cli/6140]: Executing SQL: UPDATE `user` SET `privileges`=:yp0, `deleted`=:yp1, `confirmed`=:yp2, `dontemailme`=:yp3, `firstname`=:yp4, `lastname`=:yp5, `email`=:yp6, `password`=:yp7, `privacy`=:yp8, `id`=:yp9, `emailold`=:yp10, `secret`=:yp11, `secretdate`=:yp12 WHERE `user`.`id`='42' returns n = 1
+2014/06/27-11:31:00(0.003)[cli/6142]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/27-11:31:00(0.057)[cli/6142]: Querying SQL: SHOW FULL COLUMNS FROM `user`
+2014/06/27-11:31:00(0.060)[cli/6142]: Querying SQL: SHOW CREATE TABLE `user`
+2014/06/27-11:31:00(0.073)[cli/6142]: Querying SQL: SELECT 1 FROM `user` `t` WHERE `t`.`email`=:ycp0 LIMIT 1
+2014/06/27-11:31:00(0.074)[cli/6142]: Executing SQL: INSERT INTO `user` (`privileges`, `deleted`, `confirmed`, `dontemailme`, `firstname`, `lastname`, `email`, `password`, `privacy`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7, :yp8)
+2014/06/27-11:31:00(0.162)[cli/6142]: Executing SQL: INSERT INTO `user` (`privileges`, `deleted`, `confirmed`, `dontemailme`, `firstname`, `lastname`, `email`, `password`, `privacy`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7, :yp8) returns n = 1
+2014/06/27-11:31:01(0.974)[cli/6142]: Querying SQL: SELECT * FROM `user` `t` WHERE `t`.`email`=:ycp1 LIMIT 2
+2014/06/27-11:31:01(0.975)[cli/6142]: Executing SQL: UPDATE `user` SET `privileges`=:yp0, `deleted`=:yp1, `confirmed`=:yp2, `dontemailme`=:yp3, `firstname`=:yp4, `lastname`=:yp5, `email`=:yp6, `password`=:yp7, `privacy`=:yp8, `id`=:yp9 WHERE `user`.`id`='43'
+2014/06/27-11:31:01(1.062)[cli/6142]: Executing SQL: UPDATE `user` SET `privileges`=:yp0, `deleted`=:yp1, `confirmed`=:yp2, `dontemailme`=:yp3, `firstname`=:yp4, `lastname`=:yp5, `email`=:yp6, `password`=:yp7, `privacy`=:yp8, `id`=:yp9 WHERE `user`.`id`='43' returns n = 1
+2014/06/27-11:31:27(0.003)[cli/6145]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/27-11:31:27(0.048)[cli/6145]: Querying SQL: SHOW FULL COLUMNS FROM `user`
+2014/06/27-11:31:27(0.051)[cli/6145]: Querying SQL: SHOW CREATE TABLE `user`
+2014/06/27-11:31:27(0.064)[cli/6145]: Querying SQL: SELECT 1 FROM `user` `t` WHERE `t`.`email`=:ycp0 LIMIT 1
+2014/06/27-11:31:27(0.065)[cli/6145]: Executing SQL: INSERT INTO `user` (`privileges`, `deleted`, `confirmed`, `dontemailme`, `firstname`, `lastname`, `email`, `password`, `privacy`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7, :yp8)
+2014/06/27-11:31:27(0.176)[cli/6145]: Executing SQL: INSERT INTO `user` (`privileges`, `deleted`, `confirmed`, `dontemailme`, `firstname`, `lastname`, `email`, `password`, `privacy`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7, :yp8) returns n = 1
+2014/06/27-11:31:28(0.998)[cli/6145]: Querying SQL: SELECT * FROM `user` `t` WHERE `t`.`email`=:ycp1 LIMIT 2
+2014/06/27-11:31:28(1.000)[cli/6145]: Executing SQL: UPDATE `user` SET `privileges`=:yp0, `deleted`=:yp1, `confirmed`=:yp2, `dontemailme`=:yp3, `firstname`=:yp4, `lastname`=:yp5, `email`=:yp6, `password`=:yp7, `privacy`=:yp8, `id`=:yp9 WHERE `user`.`id`='44'
+2014/06/27-11:31:28(1.042)[cli/6145]: Executing SQL: UPDATE `user` SET `privileges`=:yp0, `deleted`=:yp1, `confirmed`=:yp2, `dontemailme`=:yp3, `firstname`=:yp4, `lastname`=:yp5, `email`=:yp6, `password`=:yp7, `privacy`=:yp8, `id`=:yp9 WHERE `user`.`id`='44' returns n = 1
+2014/06/27-11:31:29(1.834)[cli/6145]: Querying SQL: SELECT * FROM `user` `t` WHERE `t`.`email`=:ycp2 LIMIT 2
+2014/06/27-11:31:29(1.836)[cli/6145]: Executing SQL: UPDATE `user` SET `privileges`=:yp0, `deleted`=:yp1, `confirmed`=:yp2, `dontemailme`=:yp3, `firstname`=:yp4, `lastname`=:yp5, `email`=:yp6, `password`=:yp7, `privacy`=:yp8, `id`=:yp9, `emailold`=:yp10, `secret`=:yp11, `secretdate`=:yp12 WHERE `user`.`id`='44'
+2014/06/27-11:31:29(1.954)[cli/6145]: Executing SQL: UPDATE `user` SET `privileges`=:yp0, `deleted`=:yp1, `confirmed`=:yp2, `dontemailme`=:yp3, `firstname`=:yp4, `lastname`=:yp5, `email`=:yp6, `password`=:yp7, `privacy`=:yp8, `id`=:yp9, `emailold`=:yp10, `secret`=:yp11, `secretdate`=:yp12 WHERE `user`.`id`='44' returns n = 1
+2014/06/27-11:32:30(0.003)[cli/6147]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/27-11:32:30(0.052)[cli/6147]: Querying SQL: SHOW FULL COLUMNS FROM `user`
+2014/06/27-11:32:30(0.055)[cli/6147]: Querying SQL: SHOW CREATE TABLE `user`
+2014/06/27-11:32:30(0.069)[cli/6147]: Querying SQL: SELECT 1 FROM `user` `t` WHERE `t`.`email`=:ycp0 LIMIT 1
+2014/06/27-11:32:30(0.070)[cli/6147]: Executing SQL: INSERT INTO `user` (`privileges`, `deleted`, `confirmed`, `dontemailme`, `firstname`, `lastname`, `email`, `password`, `privacy`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7, :yp8)
+2014/06/27-11:32:30(0.183)[cli/6147]: Executing SQL: INSERT INTO `user` (`privileges`, `deleted`, `confirmed`, `dontemailme`, `firstname`, `lastname`, `email`, `password`, `privacy`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7, :yp8) returns n = 1
+2014/06/27-11:32:31(0.984)[cli/6147]: Querying SQL: SELECT * FROM `user` `t` WHERE `t`.`email`=:ycp1 LIMIT 2
+2014/06/27-11:32:31(0.985)[cli/6147]: Executing SQL: UPDATE `user` SET `privileges`=:yp0, `deleted`=:yp1, `confirmed`=:yp2, `dontemailme`=:yp3, `firstname`=:yp4, `lastname`=:yp5, `email`=:yp6, `password`=:yp7, `privacy`=:yp8, `id`=:yp9 WHERE `user`.`id`='45'
+2014/06/27-11:32:31(1.073)[cli/6147]: Executing SQL: UPDATE `user` SET `privileges`=:yp0, `deleted`=:yp1, `confirmed`=:yp2, `dontemailme`=:yp3, `firstname`=:yp4, `lastname`=:yp5, `email`=:yp6, `password`=:yp7, `privacy`=:yp8, `id`=:yp9 WHERE `user`.`id`='45' returns n = 1
+2014/06/27-11:32:32(1.869)[cli/6147]: Querying SQL: SELECT * FROM `user` `t` WHERE `t`.`email`=:ycp2 LIMIT 2
+2014/06/27-11:32:32(1.872)[cli/6147]: Executing SQL: UPDATE `user` SET `privileges`=:yp0, `deleted`=:yp1, `confirmed`=:yp2, `dontemailme`=:yp3, `firstname`=:yp4, `lastname`=:yp5, `email`=:yp6, `password`=:yp7, `privacy`=:yp8, `id`=:yp9, `emailold`=:yp10, `secret`=:yp11, `secretdate`=:yp12 WHERE `user`.`id`='45'
+2014/06/27-11:32:32(2.018)[cli/6147]: Executing SQL: UPDATE `user` SET `privileges`=:yp0, `deleted`=:yp1, `confirmed`=:yp2, `dontemailme`=:yp3, `firstname`=:yp4, `lastname`=:yp5, `email`=:yp6, `password`=:yp7, `privacy`=:yp8, `id`=:yp9, `emailold`=:yp10, `secret`=:yp11, `secretdate`=:yp12 WHERE `user`.`id`='45' returns n = 1
+2014/06/27-11:32:32(2.024)[cli/6147]: Executing SQL: DELETE FROM `user` WHERE `user`.`id`='45'
+2014/06/27-11:32:32(2.095)[cli/6147]: Executing SQL: DELETE FROM `user` WHERE `user`.`id`='45' returns n = 1
+2014/06/27-11:32:32(2.097)[cli/6147]: Querying SQL: SELECT * FROM `user` `t` WHERE id=:ycp3 LIMIT 1
+2014/06/27-11:50:25(0.005)[cli/6157]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/27-11:50:25(0.058)[cli/6157]: Querying SQL: SHOW FULL COLUMNS FROM `user`
+2014/06/27-11:50:25(0.060)[cli/6157]: Querying SQL: SHOW CREATE TABLE `user`
+2014/06/27-11:50:25(0.077)[cli/6157]: Querying SQL: SELECT 1 FROM `user` `t` WHERE `t`.`email`=:ycp0 LIMIT 1
+2014/06/27-11:50:25(0.079)[cli/6157]: Executing SQL: INSERT INTO `user` (`privileges`, `deleted`, `confirmed`, `dontemailme`, `firstname`, `lastname`, `email`, `password`, `privacy`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7, :yp8)
+2014/06/27-11:50:25(0.154)[cli/6157]: Executing SQL: INSERT INTO `user` (`privileges`, `deleted`, `confirmed`, `dontemailme`, `firstname`, `lastname`, `email`, `password`, `privacy`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7, :yp8) returns n = 1
+2014/06/27-11:50:35(0.003)[cli/6159]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/27-11:50:35(0.050)[cli/6159]: Querying SQL: SHOW FULL COLUMNS FROM `user`
+2014/06/27-11:50:35(0.052)[cli/6159]: Querying SQL: SHOW CREATE TABLE `user`
+2014/06/27-11:50:35(0.066)[cli/6159]: Querying SQL: SELECT 1 FROM `user` `t` WHERE `t`.`email`=:ycp0 LIMIT 1
+2014/06/27-11:50:35(0.067)[cli/6159]: Executing SQL: INSERT INTO `user` (`privileges`, `deleted`, `confirmed`, `dontemailme`, `firstname`, `lastname`, `email`, `password`, `privacy`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7, :yp8)
+2014/06/27-11:50:35(0.120)[cli/6159]: Executing SQL: INSERT INTO `user` (`privileges`, `deleted`, `confirmed`, `dontemailme`, `firstname`, `lastname`, `email`, `password`, `privacy`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7, :yp8) returns n = 1
+2014/06/27-11:50:46(0.003)[cli/6161]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/27-11:50:46(0.048)[cli/6161]: Querying SQL: SHOW FULL COLUMNS FROM `user`
+2014/06/27-11:50:46(0.051)[cli/6161]: Querying SQL: SHOW CREATE TABLE `user`
+2014/06/27-11:50:46(0.063)[cli/6161]: Querying SQL: SELECT 1 FROM `user` `t` WHERE `t`.`email`=:ycp0 LIMIT 1
+2014/06/27-11:50:46(0.064)[cli/6161]: Executing SQL: INSERT INTO `user` (`privileges`, `deleted`, `confirmed`, `dontemailme`, `firstname`, `lastname`, `email`, `password`, `privacy`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7, :yp8)
+2014/06/27-11:50:46(0.118)[cli/6161]: Executing SQL: INSERT INTO `user` (`privileges`, `deleted`, `confirmed`, `dontemailme`, `firstname`, `lastname`, `email`, `password`, `privacy`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7, :yp8) returns n = 1
+2014/06/27-11:50:47(0.913)[cli/6161]: Querying SQL: SELECT * FROM `user` `t` WHERE `t`.`email`=:ycp1 LIMIT 2
+2014/06/27-11:50:47(0.914)[cli/6161]: Executing SQL: UPDATE `user` SET `privileges`=:yp0, `deleted`=:yp1, `confirmed`=:yp2, `dontemailme`=:yp3, `firstname`=:yp4, `lastname`=:yp5, `email`=:yp6, `password`=:yp7, `privacy`=:yp8, `id`=:yp9 WHERE `user`.`id`='48'
+2014/06/27-11:50:47(0.974)[cli/6161]: Executing SQL: UPDATE `user` SET `privileges`=:yp0, `deleted`=:yp1, `confirmed`=:yp2, `dontemailme`=:yp3, `firstname`=:yp4, `lastname`=:yp5, `email`=:yp6, `password`=:yp7, `privacy`=:yp8, `id`=:yp9 WHERE `user`.`id`='48' returns n = 1
+2014/06/27-11:50:48(1.765)[cli/6161]: Querying SQL: SELECT * FROM `user` `t` WHERE `t`.`email`=:ycp2 LIMIT 2
+2014/06/27-11:50:48(1.766)[cli/6161]: Executing SQL: UPDATE `user` SET `privileges`=:yp0, `deleted`=:yp1, `confirmed`=:yp2, `dontemailme`=:yp3, `firstname`=:yp4, `lastname`=:yp5, `email`=:yp6, `password`=:yp7, `privacy`=:yp8, `id`=:yp9, `emailold`=:yp10, `secret`=:yp11, `secretdate`=:yp12 WHERE `user`.`id`='48'
+2014/06/27-11:50:48(1.818)[cli/6161]: Executing SQL: UPDATE `user` SET `privileges`=:yp0, `deleted`=:yp1, `confirmed`=:yp2, `dontemailme`=:yp3, `firstname`=:yp4, `lastname`=:yp5, `email`=:yp6, `password`=:yp7, `privacy`=:yp8, `id`=:yp9, `emailold`=:yp10, `secret`=:yp11, `secretdate`=:yp12 WHERE `user`.`id`='48' returns n = 1
+2014/06/27-11:50:48(1.826)[cli/6161]: Executing SQL: DELETE FROM `user` WHERE `user`.`id`='48'
+2014/06/27-11:50:48(1.885)[cli/6161]: Executing SQL: DELETE FROM `user` WHERE `user`.`id`='48' returns n = 1
+2014/06/27-11:50:48(1.887)[cli/6161]: Querying SQL: SELECT * FROM `user` `t` WHERE id=:ycp3 LIMIT 1
+2014/06/27-11:50:58(0.005)[cli/6163]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/27-11:50:58(0.055)[cli/6163]: Querying SQL: SHOW FULL COLUMNS FROM `user`
+2014/06/27-11:50:58(0.057)[cli/6163]: Querying SQL: SHOW CREATE TABLE `user`
+2014/06/27-11:50:58(0.072)[cli/6163]: Querying SQL: SELECT 1 FROM `user` `t` WHERE `t`.`email`=:ycp0 LIMIT 1
+2014/06/27-11:50:58(0.074)[cli/6163]: Executing SQL: INSERT INTO `user` (`privileges`, `deleted`, `confirmed`, `dontemailme`, `firstname`, `lastname`, `email`, `password`, `privacy`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7, :yp8)
+2014/06/27-11:50:59(0.165)[cli/6163]: Executing SQL: INSERT INTO `user` (`privileges`, `deleted`, `confirmed`, `dontemailme`, `firstname`, `lastname`, `email`, `password`, `privacy`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7, :yp8) returns n = 1
+2014/06/27-11:50:59(0.968)[cli/6163]: Querying SQL: SELECT * FROM `user` `t` WHERE `t`.`email`=:ycp1 LIMIT 2
+2014/06/27-11:50:59(0.970)[cli/6163]: Executing SQL: UPDATE `user` SET `privileges`=:yp0, `deleted`=:yp1, `confirmed`=:yp2, `dontemailme`=:yp3, `firstname`=:yp4, `lastname`=:yp5, `email`=:yp6, `password`=:yp7, `privacy`=:yp8, `id`=:yp9 WHERE `user`.`id`='49'
+2014/06/27-11:50:59(1.021)[cli/6163]: Executing SQL: UPDATE `user` SET `privileges`=:yp0, `deleted`=:yp1, `confirmed`=:yp2, `dontemailme`=:yp3, `firstname`=:yp4, `lastname`=:yp5, `email`=:yp6, `password`=:yp7, `privacy`=:yp8, `id`=:yp9 WHERE `user`.`id`='49' returns n = 1
+2014/06/27-11:51:00(1.811)[cli/6163]: Querying SQL: SELECT * FROM `user` `t` WHERE `t`.`email`=:ycp2 LIMIT 2
+2014/06/27-11:51:00(1.812)[cli/6163]: Executing SQL: UPDATE `user` SET `privileges`=:yp0, `deleted`=:yp1, `confirmed`=:yp2, `dontemailme`=:yp3, `firstname`=:yp4, `lastname`=:yp5, `email`=:yp6, `password`=:yp7, `privacy`=:yp8, `id`=:yp9, `emailold`=:yp10, `secret`=:yp11, `secretdate`=:yp12 WHERE `user`.`id`='49'
+2014/06/27-11:51:00(1.910)[cli/6163]: Executing SQL: UPDATE `user` SET `privileges`=:yp0, `deleted`=:yp1, `confirmed`=:yp2, `dontemailme`=:yp3, `firstname`=:yp4, `lastname`=:yp5, `email`=:yp6, `password`=:yp7, `privacy`=:yp8, `id`=:yp9, `emailold`=:yp10, `secret`=:yp11, `secretdate`=:yp12 WHERE `user`.`id`='49' returns n = 1
+2014/06/27-11:51:00(1.916)[cli/6163]: Executing SQL: DELETE FROM `user` WHERE `user`.`id`='49'
+2014/06/27-11:51:00(1.976)[cli/6163]: Executing SQL: DELETE FROM `user` WHERE `user`.`id`='49' returns n = 1
+2014/06/27-11:51:00(1.977)[cli/6163]: Querying SQL: SELECT * FROM `user` `t` WHERE id=:ycp3 LIMIT 1
+2014/06/27-11:52:49(0.003)[cli/6196]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/27-11:52:49(0.048)[cli/6196]: Querying SQL: SHOW FULL COLUMNS FROM `user`
+2014/06/27-11:52:49(0.051)[cli/6196]: Querying SQL: SHOW CREATE TABLE `user`
+2014/06/27-11:52:49(0.064)[cli/6196]: Querying SQL: SELECT 1 FROM `user` `t` WHERE `t`.`email`=:ycp0 LIMIT 1
+2014/06/27-11:52:49(0.066)[cli/6196]: Executing SQL: INSERT INTO `user` (`privileges`, `deleted`, `confirmed`, `dontemailme`, `firstname`, `lastname`, `email`, `password`, `privacy`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7, :yp8)
+2014/06/27-11:52:49(0.151)[cli/6196]: Executing SQL: INSERT INTO `user` (`privileges`, `deleted`, `confirmed`, `dontemailme`, `firstname`, `lastname`, `email`, `password`, `privacy`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7, :yp8) returns n = 1
+2014/06/27-11:53:33(0.003)[cli/6198]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/27-11:53:33(0.048)[cli/6198]: Querying SQL: SHOW FULL COLUMNS FROM `user`
+2014/06/27-11:53:33(0.051)[cli/6198]: Querying SQL: SHOW CREATE TABLE `user`
+2014/06/27-11:53:33(0.064)[cli/6198]: Querying SQL: SELECT 1 FROM `user` `t` WHERE `t`.`email`=:ycp0 LIMIT 1
+2014/06/27-11:53:33(0.065)[cli/6198]: Executing SQL: INSERT INTO `user` (`privileges`, `deleted`, `confirmed`, `dontemailme`, `firstname`, `lastname`, `email`, `password`, `privacy`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7, :yp8)
+2014/06/27-11:53:33(0.191)[cli/6198]: Executing SQL: INSERT INTO `user` (`privileges`, `deleted`, `confirmed`, `dontemailme`, `firstname`, `lastname`, `email`, `password`, `privacy`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7, :yp8) returns n = 1
+2014/06/27-11:53:34(0.991)[cli/6198]: Querying SQL: SELECT * FROM `user` `t` WHERE `t`.`email`=:ycp1 LIMIT 2
+2014/06/27-11:53:34(0.993)[cli/6198]: Executing SQL: UPDATE `user` SET `privileges`=:yp0, `deleted`=:yp1, `confirmed`=:yp2, `dontemailme`=:yp3, `firstname`=:yp4, `lastname`=:yp5, `email`=:yp6, `password`=:yp7, `privacy`=:yp8, `id`=:yp9 WHERE `user`.`id`='51'
+2014/06/27-11:53:34(1.068)[cli/6198]: Executing SQL: UPDATE `user` SET `privileges`=:yp0, `deleted`=:yp1, `confirmed`=:yp2, `dontemailme`=:yp3, `firstname`=:yp4, `lastname`=:yp5, `email`=:yp6, `password`=:yp7, `privacy`=:yp8, `id`=:yp9 WHERE `user`.`id`='51' returns n = 1
+2014/06/27-11:53:35(1.853)[cli/6198]: Querying SQL: SELECT * FROM `user` `t` WHERE `t`.`email`=:ycp2 LIMIT 2
+2014/06/27-11:53:35(1.854)[cli/6198]: Executing SQL: UPDATE `user` SET `privileges`=:yp0, `deleted`=:yp1, `confirmed`=:yp2, `dontemailme`=:yp3, `firstname`=:yp4, `lastname`=:yp5, `email`=:yp6, `password`=:yp7, `privacy`=:yp8, `id`=:yp9, `emailold`=:yp10, `secret`=:yp11, `secretdate`=:yp12 WHERE `user`.`id`='51'
+2014/06/27-11:53:35(1.925)[cli/6198]: Executing SQL: UPDATE `user` SET `privileges`=:yp0, `deleted`=:yp1, `confirmed`=:yp2, `dontemailme`=:yp3, `firstname`=:yp4, `lastname`=:yp5, `email`=:yp6, `password`=:yp7, `privacy`=:yp8, `id`=:yp9, `emailold`=:yp10, `secret`=:yp11, `secretdate`=:yp12 WHERE `user`.`id`='51' returns n = 1
+2014/06/27-11:53:35(1.931)[cli/6198]: Executing SQL: DELETE FROM `user` WHERE `user`.`id`='51'
+2014/06/27-11:53:35(2.003)[cli/6198]: Executing SQL: DELETE FROM `user` WHERE `user`.`id`='51' returns n = 1
+2014/06/27-11:53:35(2.005)[cli/6198]: Querying SQL: SELECT * FROM `user` `t` WHERE id=:ycp3 LIMIT 1
+2014/06/27-11:56:23(0.003)[cli/6200]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/27-11:56:23(0.053)[cli/6200]: Querying SQL: SHOW FULL COLUMNS FROM `user`
+2014/06/27-11:56:23(0.055)[cli/6200]: Querying SQL: SHOW CREATE TABLE `user`
+2014/06/27-11:56:23(0.068)[cli/6200]: Querying SQL: SELECT 1 FROM `user` `t` WHERE `t`.`email`=:ycp0 LIMIT 1
+2014/06/27-11:56:23(0.070)[cli/6200]: Executing SQL: INSERT INTO `user` (`privileges`, `deleted`, `confirmed`, `dontemailme`, `firstname`, `lastname`, `email`, `password`, `privacy`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7, :yp8)
+2014/06/27-11:56:23(0.189)[cli/6200]: Executing SQL: INSERT INTO `user` (`privileges`, `deleted`, `confirmed`, `dontemailme`, `firstname`, `lastname`, `email`, `password`, `privacy`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7, :yp8) returns n = 1
+2014/06/27-11:56:24(0.991)[cli/6200]: Querying SQL: SELECT * FROM `user` `t` WHERE `t`.`email`=:ycp1 LIMIT 2
+2014/06/27-11:56:24(0.993)[cli/6200]: Executing SQL: UPDATE `user` SET `privileges`=:yp0, `deleted`=:yp1, `confirmed`=:yp2, `dontemailme`=:yp3, `firstname`=:yp4, `lastname`=:yp5, `email`=:yp6, `password`=:yp7, `privacy`=:yp8, `id`=:yp9 WHERE `user`.`id`='52'
+2014/06/27-11:56:24(1.056)[cli/6200]: Executing SQL: UPDATE `user` SET `privileges`=:yp0, `deleted`=:yp1, `confirmed`=:yp2, `dontemailme`=:yp3, `firstname`=:yp4, `lastname`=:yp5, `email`=:yp6, `password`=:yp7, `privacy`=:yp8, `id`=:yp9 WHERE `user`.`id`='52' returns n = 1
+2014/06/27-11:56:25(1.841)[cli/6200]: Querying SQL: SELECT * FROM `user` `t` WHERE `t`.`email`=:ycp2 LIMIT 2
+2014/06/27-11:56:25(1.842)[cli/6200]: Executing SQL: UPDATE `user` SET `privileges`=:yp0, `deleted`=:yp1, `confirmed`=:yp2, `dontemailme`=:yp3, `firstname`=:yp4, `lastname`=:yp5, `email`=:yp6, `password`=:yp7, `privacy`=:yp8, `id`=:yp9, `emailold`=:yp10, `secret`=:yp11, `secretdate`=:yp12 WHERE `user`.`id`='52'
+2014/06/27-11:56:25(1.900)[cli/6200]: Executing SQL: UPDATE `user` SET `privileges`=:yp0, `deleted`=:yp1, `confirmed`=:yp2, `dontemailme`=:yp3, `firstname`=:yp4, `lastname`=:yp5, `email`=:yp6, `password`=:yp7, `privacy`=:yp8, `id`=:yp9, `emailold`=:yp10, `secret`=:yp11, `secretdate`=:yp12 WHERE `user`.`id`='52' returns n = 1
+2014/06/27-11:56:25(1.902)[cli/6200]: Executing SQL: DELETE FROM `user` WHERE `user`.`id`='52'
+2014/06/27-11:56:25(1.956)[cli/6200]: Executing SQL: DELETE FROM `user` WHERE `user`.`id`='52' returns n = 1
+2014/06/27-11:56:25(1.958)[cli/6200]: Querying SQL: SELECT * FROM `user` `t` WHERE id=:ycp3 LIMIT 1
+2014/06/27-12:00:54(0.003)[cli/6205]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/27-12:00:54(0.051)[cli/6205]: Querying SQL: SHOW FULL COLUMNS FROM `user`
+2014/06/27-12:00:54(0.054)[cli/6205]: Querying SQL: SHOW CREATE TABLE `user`
+2014/06/27-12:00:54(0.067)[cli/6205]: Querying SQL: SELECT 1 FROM `user` `t` WHERE `t`.`email`=:ycp0 LIMIT 1
+2014/06/27-12:00:54(0.068)[cli/6205]: Executing SQL: INSERT INTO `user` (`privileges`, `deleted`, `confirmed`, `dontemailme`, `firstname`, `lastname`, `email`, `password`, `privacy`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7, :yp8)
+2014/06/27-12:00:54(0.180)[cli/6205]: Executing SQL: INSERT INTO `user` (`privileges`, `deleted`, `confirmed`, `dontemailme`, `firstname`, `lastname`, `email`, `password`, `privacy`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7, :yp8) returns n = 1
+2014/06/27-12:00:55(1.724)[cli/6205]: Querying SQL: SELECT * FROM `user` `t` WHERE `t`.`email`=:ycp1 LIMIT 2
+2014/06/27-12:00:55(1.732)[cli/6205]: Executing SQL: UPDATE `user` SET `privileges`=:yp0, `deleted`=:yp1, `confirmed`=:yp2, `dontemailme`=:yp3, `firstname`=:yp4, `lastname`=:yp5, `email`=:yp6, `password`=:yp7, `privacy`=:yp8, `id`=:yp9 WHERE `user`.`id`='53'
+2014/06/27-12:00:55(1.790)[cli/6205]: Executing SQL: UPDATE `user` SET `privileges`=:yp0, `deleted`=:yp1, `confirmed`=:yp2, `dontemailme`=:yp3, `firstname`=:yp4, `lastname`=:yp5, `email`=:yp6, `password`=:yp7, `privacy`=:yp8, `id`=:yp9 WHERE `user`.`id`='53' returns n = 1
+2014/06/27-12:00:57(3.193)[cli/6205]: Querying SQL: SELECT * FROM `user` `t` WHERE `t`.`email`=:ycp2 LIMIT 2
+2014/06/27-12:00:57(3.194)[cli/6205]: Executing SQL: UPDATE `user` SET `privileges`=:yp0, `deleted`=:yp1, `confirmed`=:yp2, `dontemailme`=:yp3, `firstname`=:yp4, `lastname`=:yp5, `email`=:yp6, `password`=:yp7, `privacy`=:yp8, `id`=:yp9, `emailold`=:yp10, `secret`=:yp11, `secretdate`=:yp12 WHERE `user`.`id`='53'
+2014/06/27-12:00:57(3.257)[cli/6205]: Executing SQL: UPDATE `user` SET `privileges`=:yp0, `deleted`=:yp1, `confirmed`=:yp2, `dontemailme`=:yp3, `firstname`=:yp4, `lastname`=:yp5, `email`=:yp6, `password`=:yp7, `privacy`=:yp8, `id`=:yp9, `emailold`=:yp10, `secret`=:yp11, `secretdate`=:yp12 WHERE `user`.`id`='53' returns n = 1
+2014/06/27-12:00:57(3.261)[cli/6205]: Executing SQL: DELETE FROM `user` WHERE `user`.`id`='53'
+2014/06/27-12:00:57(3.303)[cli/6205]: Executing SQL: DELETE FROM `user` WHERE `user`.`id`='53' returns n = 1
+2014/06/27-12:00:57(3.304)[cli/6205]: Querying SQL: SELECT * FROM `user` `t` WHERE id=:ycp3 LIMIT 1
+2014/06/27-12:01:03(0.003)[cli/6207]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/27-12:01:03(0.051)[cli/6207]: Querying SQL: SHOW FULL COLUMNS FROM `user`
+2014/06/27-12:01:03(0.054)[cli/6207]: Querying SQL: SHOW CREATE TABLE `user`
+2014/06/27-12:01:03(0.068)[cli/6207]: Querying SQL: SELECT 1 FROM `user` `t` WHERE `t`.`email`=:ycp0 LIMIT 1
+2014/06/27-12:01:03(0.069)[cli/6207]: Executing SQL: INSERT INTO `user` (`privileges`, `deleted`, `confirmed`, `dontemailme`, `firstname`, `lastname`, `email`, `password`, `privacy`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7, :yp8)
+2014/06/27-12:01:03(0.124)[cli/6207]: Executing SQL: INSERT INTO `user` (`privileges`, `deleted`, `confirmed`, `dontemailme`, `firstname`, `lastname`, `email`, `password`, `privacy`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7, :yp8) returns n = 1
+2014/06/27-12:01:04(0.941)[cli/6207]: Querying SQL: SELECT * FROM `user` `t` WHERE `t`.`email`=:ycp1 LIMIT 2
+2014/06/27-12:01:04(0.942)[cli/6207]: Executing SQL: UPDATE `user` SET `privileges`=:yp0, `deleted`=:yp1, `confirmed`=:yp2, `dontemailme`=:yp3, `firstname`=:yp4, `lastname`=:yp5, `email`=:yp6, `password`=:yp7, `privacy`=:yp8, `id`=:yp9 WHERE `user`.`id`='54'
+2014/06/27-12:01:04(0.992)[cli/6207]: Executing SQL: UPDATE `user` SET `privileges`=:yp0, `deleted`=:yp1, `confirmed`=:yp2, `dontemailme`=:yp3, `firstname`=:yp4, `lastname`=:yp5, `email`=:yp6, `password`=:yp7, `privacy`=:yp8, `id`=:yp9 WHERE `user`.`id`='54' returns n = 1
+2014/06/27-12:01:05(1.787)[cli/6207]: Querying SQL: SELECT * FROM `user` `t` WHERE `t`.`email`=:ycp2 LIMIT 2
+2014/06/27-12:01:05(1.789)[cli/6207]: Executing SQL: UPDATE `user` SET `privileges`=:yp0, `deleted`=:yp1, `confirmed`=:yp2, `dontemailme`=:yp3, `firstname`=:yp4, `lastname`=:yp5, `email`=:yp6, `password`=:yp7, `privacy`=:yp8, `id`=:yp9, `emailold`=:yp10, `secret`=:yp11, `secretdate`=:yp12 WHERE `user`.`id`='54'
+2014/06/27-12:01:05(1.858)[cli/6207]: Executing SQL: UPDATE `user` SET `privileges`=:yp0, `deleted`=:yp1, `confirmed`=:yp2, `dontemailme`=:yp3, `firstname`=:yp4, `lastname`=:yp5, `email`=:yp6, `password`=:yp7, `privacy`=:yp8, `id`=:yp9, `emailold`=:yp10, `secret`=:yp11, `secretdate`=:yp12 WHERE `user`.`id`='54' returns n = 1
+2014/06/27-12:01:05(1.861)[cli/6207]: Executing SQL: DELETE FROM `user` WHERE `user`.`id`='54'
+2014/06/27-12:01:05(1.926)[cli/6207]: Executing SQL: DELETE FROM `user` WHERE `user`.`id`='54' returns n = 1
+2014/06/27-12:01:05(1.928)[cli/6207]: Querying SQL: SELECT * FROM `user` `t` WHERE id=:ycp3 LIMIT 1
+2014/06/27-12:01:16(0.003)[cli/6209]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/27-12:01:16(0.049)[cli/6209]: Querying SQL: SHOW FULL COLUMNS FROM `user`
+2014/06/27-12:01:16(0.055)[cli/6209]: Querying SQL: SHOW CREATE TABLE `user`
+2014/06/27-12:01:16(0.071)[cli/6209]: Querying SQL: SELECT 1 FROM `user` `t` WHERE `t`.`email`=:ycp0 LIMIT 1
+2014/06/27-12:01:16(0.072)[cli/6209]: Executing SQL: INSERT INTO `user` (`privileges`, `deleted`, `confirmed`, `dontemailme`, `firstname`, `lastname`, `email`, `password`, `privacy`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7, :yp8)
+2014/06/27-12:01:16(0.150)[cli/6209]: Executing SQL: INSERT INTO `user` (`privileges`, `deleted`, `confirmed`, `dontemailme`, `firstname`, `lastname`, `email`, `password`, `privacy`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7, :yp8) returns n = 1
+2014/06/27-12:01:17(0.950)[cli/6209]: Querying SQL: SELECT * FROM `user` `t` WHERE `t`.`email`=:ycp1 LIMIT 2
+2014/06/27-12:01:17(0.952)[cli/6209]: Executing SQL: UPDATE `user` SET `privileges`=:yp0, `deleted`=:yp1, `confirmed`=:yp2, `dontemailme`=:yp3, `firstname`=:yp4, `lastname`=:yp5, `email`=:yp6, `password`=:yp7, `privacy`=:yp8, `id`=:yp9 WHERE `user`.`id`='55'
+2014/06/27-12:01:17(1.017)[cli/6209]: Executing SQL: UPDATE `user` SET `privileges`=:yp0, `deleted`=:yp1, `confirmed`=:yp2, `dontemailme`=:yp3, `firstname`=:yp4, `lastname`=:yp5, `email`=:yp6, `password`=:yp7, `privacy`=:yp8, `id`=:yp9 WHERE `user`.`id`='55' returns n = 1
+2014/06/27-12:01:18(1.806)[cli/6209]: Querying SQL: SELECT * FROM `user` `t` WHERE `t`.`email`=:ycp2 LIMIT 2
+2014/06/27-12:01:18(1.808)[cli/6209]: Executing SQL: UPDATE `user` SET `privileges`=:yp0, `deleted`=:yp1, `confirmed`=:yp2, `dontemailme`=:yp3, `firstname`=:yp4, `lastname`=:yp5, `email`=:yp6, `password`=:yp7, `privacy`=:yp8, `id`=:yp9, `emailold`=:yp10, `secret`=:yp11, `secretdate`=:yp12 WHERE `user`.`id`='55'
+2014/06/27-12:01:18(1.884)[cli/6209]: Executing SQL: UPDATE `user` SET `privileges`=:yp0, `deleted`=:yp1, `confirmed`=:yp2, `dontemailme`=:yp3, `firstname`=:yp4, `lastname`=:yp5, `email`=:yp6, `password`=:yp7, `privacy`=:yp8, `id`=:yp9, `emailold`=:yp10, `secret`=:yp11, `secretdate`=:yp12 WHERE `user`.`id`='55' returns n = 1
+2014/06/27-12:01:18(1.890)[cli/6209]: Executing SQL: DELETE FROM `user` WHERE `user`.`id`='55'
+2014/06/27-12:01:18(1.962)[cli/6209]: Executing SQL: DELETE FROM `user` WHERE `user`.`id`='55' returns n = 1
+2014/06/27-12:01:18(1.964)[cli/6209]: Querying SQL: SELECT * FROM `user` `t` WHERE id=:ycp3 LIMIT 1
+2014/06/27-12:01:31(0.003)[cli/6211]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/27-12:01:31(0.049)[cli/6211]: Querying SQL: SHOW FULL COLUMNS FROM `user`
+2014/06/27-12:01:31(0.052)[cli/6211]: Querying SQL: SHOW CREATE TABLE `user`
+2014/06/27-12:01:31(0.065)[cli/6211]: Querying SQL: SELECT 1 FROM `user` `t` WHERE `t`.`email`=:ycp0 LIMIT 1
+2014/06/27-12:01:31(0.066)[cli/6211]: Executing SQL: INSERT INTO `user` (`privileges`, `deleted`, `confirmed`, `dontemailme`, `firstname`, `lastname`, `email`, `password`, `privacy`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7, :yp8)
+2014/06/27-12:01:32(0.161)[cli/6211]: Executing SQL: INSERT INTO `user` (`privileges`, `deleted`, `confirmed`, `dontemailme`, `firstname`, `lastname`, `email`, `password`, `privacy`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7, :yp8) returns n = 1
+2014/06/27-12:01:32(0.969)[cli/6211]: Querying SQL: SELECT * FROM `user` `t` WHERE `t`.`email`=:ycp1 LIMIT 2
+2014/06/27-12:01:32(0.971)[cli/6211]: Executing SQL: UPDATE `user` SET `privileges`=:yp0, `deleted`=:yp1, `confirmed`=:yp2, `dontemailme`=:yp3, `firstname`=:yp4, `lastname`=:yp5, `email`=:yp6, `password`=:yp7, `privacy`=:yp8, `id`=:yp9 WHERE `user`.`id`='56'
+2014/06/27-12:01:32(1.071)[cli/6211]: Executing SQL: UPDATE `user` SET `privileges`=:yp0, `deleted`=:yp1, `confirmed`=:yp2, `dontemailme`=:yp3, `firstname`=:yp4, `lastname`=:yp5, `email`=:yp6, `password`=:yp7, `privacy`=:yp8, `id`=:yp9 WHERE `user`.`id`='56' returns n = 1
+2014/06/27-12:01:33(1.876)[cli/6211]: Querying SQL: SELECT * FROM `user` `t` WHERE `t`.`email`=:ycp2 LIMIT 2
+2014/06/27-12:01:33(1.877)[cli/6211]: Executing SQL: UPDATE `user` SET `privileges`=:yp0, `deleted`=:yp1, `confirmed`=:yp2, `dontemailme`=:yp3, `firstname`=:yp4, `lastname`=:yp5, `email`=:yp6, `password`=:yp7, `privacy`=:yp8, `id`=:yp9, `emailold`=:yp10, `secret`=:yp11, `secretdate`=:yp12 WHERE `user`.`id`='56'
+2014/06/27-12:01:33(1.950)[cli/6211]: Executing SQL: UPDATE `user` SET `privileges`=:yp0, `deleted`=:yp1, `confirmed`=:yp2, `dontemailme`=:yp3, `firstname`=:yp4, `lastname`=:yp5, `email`=:yp6, `password`=:yp7, `privacy`=:yp8, `id`=:yp9, `emailold`=:yp10, `secret`=:yp11, `secretdate`=:yp12 WHERE `user`.`id`='56' returns n = 1
+2014/06/27-12:04:17(0.003)[cli/6214]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/27-12:04:17(0.049)[cli/6214]: Querying SQL: SHOW FULL COLUMNS FROM `user`
+2014/06/27-12:04:17(0.052)[cli/6214]: Querying SQL: SHOW CREATE TABLE `user`
+2014/06/27-12:04:17(0.065)[cli/6214]: Querying SQL: SELECT 1 FROM `user` `t` WHERE `t`.`email`=:ycp0 LIMIT 1
+2014/06/27-12:04:17(0.066)[cli/6214]: Executing SQL: INSERT INTO `user` (`privileges`, `deleted`, `confirmed`, `dontemailme`, `firstname`, `lastname`, `email`, `password`, `privacy`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7, :yp8)
+2014/06/27-12:04:17(0.155)[cli/6214]: Executing SQL: INSERT INTO `user` (`privileges`, `deleted`, `confirmed`, `dontemailme`, `firstname`, `lastname`, `email`, `password`, `privacy`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7, :yp8) returns n = 1
+2014/06/27-12:04:18(0.963)[cli/6214]: Querying SQL: SELECT * FROM `user` `t` WHERE `t`.`email`=:ycp1 LIMIT 2
+2014/06/27-12:04:18(0.965)[cli/6214]: Executing SQL: UPDATE `user` SET `privileges`=:yp0, `deleted`=:yp1, `confirmed`=:yp2, `dontemailme`=:yp3, `firstname`=:yp4, `lastname`=:yp5, `email`=:yp6, `password`=:yp7, `privacy`=:yp8, `id`=:yp9 WHERE `user`.`id`='57'
+2014/06/27-12:04:18(1.044)[cli/6214]: Executing SQL: UPDATE `user` SET `privileges`=:yp0, `deleted`=:yp1, `confirmed`=:yp2, `dontemailme`=:yp3, `firstname`=:yp4, `lastname`=:yp5, `email`=:yp6, `password`=:yp7, `privacy`=:yp8, `id`=:yp9 WHERE `user`.`id`='57' returns n = 1
+2014/06/27-12:04:19(1.835)[cli/6214]: Querying SQL: SELECT * FROM `user` `t` WHERE `t`.`email`=:ycp2 LIMIT 2
+2014/06/27-12:04:19(1.957)[cli/6214]: Executing SQL: DELETE FROM `user` WHERE `user`.`id`='57'
+2014/06/27-12:04:19(2.044)[cli/6214]: Executing SQL: DELETE FROM `user` WHERE `user`.`id`='57' returns n = 1
+2014/06/27-12:04:19(2.046)[cli/6214]: Querying SQL: SELECT * FROM `user` `t` WHERE id=:ycp3 LIMIT 1
+2014/06/27-12:05:08(0.003)[cli/6216]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/27-12:05:18(0.003)[cli/6218]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/27-12:05:18(0.049)[cli/6218]: Querying SQL: SHOW FULL COLUMNS FROM `user`
+2014/06/27-12:05:18(0.051)[cli/6218]: Querying SQL: SHOW CREATE TABLE `user`
+2014/06/27-12:05:18(0.064)[cli/6218]: Querying SQL: SELECT 1 FROM `user` `t` WHERE `t`.`email`=:ycp0 LIMIT 1
+2014/06/27-12:05:18(0.065)[cli/6218]: Executing SQL: INSERT INTO `user` (`privileges`, `deleted`, `confirmed`, `dontemailme`, `firstname`, `lastname`, `email`, `password`, `privacy`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7, :yp8)
+2014/06/27-12:05:18(0.141)[cli/6218]: Executing SQL: INSERT INTO `user` (`privileges`, `deleted`, `confirmed`, `dontemailme`, `firstname`, `lastname`, `email`, `password`, `privacy`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7, :yp8) returns n = 1
+2014/06/27-12:05:19(0.954)[cli/6218]: Querying SQL: SELECT * FROM `user` `t` WHERE `t`.`email`=:ycp1 LIMIT 2
+2014/06/27-12:05:19(0.955)[cli/6218]: Executing SQL: UPDATE `user` SET `privileges`=:yp0, `deleted`=:yp1, `confirmed`=:yp2, `dontemailme`=:yp3, `firstname`=:yp4, `lastname`=:yp5, `email`=:yp6, `password`=:yp7, `privacy`=:yp8, `id`=:yp9 WHERE `user`.`id`='58'
+2014/06/27-12:05:19(1.007)[cli/6218]: Executing SQL: UPDATE `user` SET `privileges`=:yp0, `deleted`=:yp1, `confirmed`=:yp2, `dontemailme`=:yp3, `firstname`=:yp4, `lastname`=:yp5, `email`=:yp6, `password`=:yp7, `privacy`=:yp8, `id`=:yp9 WHERE `user`.`id`='58' returns n = 1
+2014/06/27-12:05:19(1.799)[cli/6218]: Querying SQL: SELECT * FROM `user` `t` WHERE `t`.`email`=:ycp2 LIMIT 2
+2014/06/27-12:05:19(1.800)[cli/6218]: Executing SQL: UPDATE `user` SET `privileges`=:yp0, `deleted`=:yp1, `confirmed`=:yp2, `dontemailme`=:yp3, `firstname`=:yp4, `lastname`=:yp5, `email`=:yp6, `password`=:yp7, `privacy`=:yp8, `id`=:yp9, `emailold`=:yp10, `secret`=:yp11, `secretdate`=:yp12 WHERE `user`.`id`='58'
+2014/06/27-12:05:19(1.852)[cli/6218]: Executing SQL: UPDATE `user` SET `privileges`=:yp0, `deleted`=:yp1, `confirmed`=:yp2, `dontemailme`=:yp3, `firstname`=:yp4, `lastname`=:yp5, `email`=:yp6, `password`=:yp7, `privacy`=:yp8, `id`=:yp9, `emailold`=:yp10, `secret`=:yp11, `secretdate`=:yp12 WHERE `user`.`id`='58' returns n = 1
+2014/06/27-12:05:19(1.858)[cli/6218]: Executing SQL: DELETE FROM `user` WHERE `user`.`id`='58'
+2014/06/27-12:05:20(1.907)[cli/6218]: Executing SQL: DELETE FROM `user` WHERE `user`.`id`='58' returns n = 1
+2014/06/27-12:05:20(1.909)[cli/6218]: Querying SQL: SELECT * FROM `user` `t` WHERE id=:ycp3 LIMIT 1
+2014/06/27-12:05:41(0.004)[cli/6220]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/27-12:05:42(0.052)[cli/6220]: Querying SQL: SHOW FULL COLUMNS FROM `user`
+2014/06/27-12:05:42(0.055)[cli/6220]: Querying SQL: SHOW CREATE TABLE `user`
+2014/06/27-12:05:42(0.070)[cli/6220]: Querying SQL: SELECT 1 FROM `user` `t` WHERE `t`.`email`=:ycp0 LIMIT 1
+2014/06/27-12:05:42(0.072)[cli/6220]: Executing SQL: INSERT INTO `user` (`privileges`, `deleted`, `confirmed`, `dontemailme`, `firstname`, `lastname`, `email`, `password`, `privacy`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7, :yp8)
+2014/06/27-12:05:42(0.138)[cli/6220]: Executing SQL: INSERT INTO `user` (`privileges`, `deleted`, `confirmed`, `dontemailme`, `firstname`, `lastname`, `email`, `password`, `privacy`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7, :yp8) returns n = 1
+2014/06/27-12:05:42(0.933)[cli/6220]: Querying SQL: SELECT * FROM `user` `t` WHERE `t`.`email`=:ycp1 LIMIT 2
+2014/06/27-12:05:42(0.935)[cli/6220]: Executing SQL: UPDATE `user` SET `privileges`=:yp0, `deleted`=:yp1, `confirmed`=:yp2, `dontemailme`=:yp3, `firstname`=:yp4, `lastname`=:yp5, `email`=:yp6, `password`=:yp7, `privacy`=:yp8, `id`=:yp9 WHERE `user`.`id`='59'
+2014/06/27-12:05:42(0.995)[cli/6220]: Executing SQL: UPDATE `user` SET `privileges`=:yp0, `deleted`=:yp1, `confirmed`=:yp2, `dontemailme`=:yp3, `firstname`=:yp4, `lastname`=:yp5, `email`=:yp6, `password`=:yp7, `privacy`=:yp8, `id`=:yp9 WHERE `user`.`id`='59' returns n = 1
+2014/06/27-12:05:43(1.785)[cli/6220]: Querying SQL: SELECT * FROM `user` `t` WHERE `t`.`email`=:ycp2 LIMIT 2
+2014/06/27-12:05:43(1.787)[cli/6220]: Executing SQL: UPDATE `user` SET `privileges`=:yp0, `deleted`=:yp1, `confirmed`=:yp2, `dontemailme`=:yp3, `firstname`=:yp4, `lastname`=:yp5, `email`=:yp6, `password`=:yp7, `privacy`=:yp8, `id`=:yp9, `emailold`=:yp10, `secret`=:yp11, `secretdate`=:yp12 WHERE `user`.`id`='59'
+2014/06/27-12:05:43(1.839)[cli/6220]: Executing SQL: UPDATE `user` SET `privileges`=:yp0, `deleted`=:yp1, `confirmed`=:yp2, `dontemailme`=:yp3, `firstname`=:yp4, `lastname`=:yp5, `email`=:yp6, `password`=:yp7, `privacy`=:yp8, `id`=:yp9, `emailold`=:yp10, `secret`=:yp11, `secretdate`=:yp12 WHERE `user`.`id`='59' returns n = 1
+2014/06/27-12:05:43(1.844)[cli/6220]: Executing SQL: DELETE FROM `user` WHERE `user`.`id`='59'
+2014/06/27-12:05:43(1.906)[cli/6220]: Executing SQL: DELETE FROM `user` WHERE `user`.`id`='59' returns n = 1
+2014/06/27-12:05:43(1.908)[cli/6220]: Querying SQL: SELECT * FROM `user` `t` WHERE id=:ycp3 LIMIT 1
+2014/06/27-12:08:33(0.003)[cli/6222]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/27-12:08:53(0.003)[cli/6224]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/27-12:08:53(0.053)[cli/6224]: Querying SQL: SHOW FULL COLUMNS FROM `user`
+2014/06/27-12:08:53(0.056)[cli/6224]: Querying SQL: SHOW CREATE TABLE `user`
+2014/06/27-12:08:53(0.070)[cli/6224]: Querying SQL: SELECT 1 FROM `user` `t` WHERE `t`.`email`=:ycp0 LIMIT 1
+2014/06/27-12:08:53(0.071)[cli/6224]: Executing SQL: INSERT INTO `user` (`privileges`, `deleted`, `confirmed`, `dontemailme`, `firstname`, `lastname`, `email`, `password`, `privacy`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7, :yp8)
+2014/06/27-12:08:54(0.171)[cli/6224]: Executing SQL: INSERT INTO `user` (`privileges`, `deleted`, `confirmed`, `dontemailme`, `firstname`, `lastname`, `email`, `password`, `privacy`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7, :yp8) returns n = 1
+2014/06/27-12:08:54(0.196)[cli/6224]: Querying SQL: SELECT * FROM `user` `t` WHERE `t`.`email`=:ycp1 LIMIT 2
+2014/06/27-12:08:54(0.198)[cli/6224]: Executing SQL: UPDATE `user` SET `privileges`=:yp0, `deleted`=:yp1, `confirmed`=:yp2, `dontemailme`=:yp3, `firstname`=:yp4, `lastname`=:yp5, `email`=:yp6, `password`=:yp7, `privacy`=:yp8, `id`=:yp9 WHERE `user`.`id`='60'
+2014/06/27-12:08:54(0.260)[cli/6224]: Executing SQL: UPDATE `user` SET `privileges`=:yp0, `deleted`=:yp1, `confirmed`=:yp2, `dontemailme`=:yp3, `firstname`=:yp4, `lastname`=:yp5, `email`=:yp6, `password`=:yp7, `privacy`=:yp8, `id`=:yp9 WHERE `user`.`id`='60' returns n = 1
+2014/06/27-12:08:54(1.050)[cli/6224]: Querying SQL: SELECT * FROM `user` `t` WHERE `t`.`email`=:ycp2 LIMIT 2
+2014/06/27-12:08:54(1.052)[cli/6224]: Executing SQL: UPDATE `user` SET `privileges`=:yp0, `deleted`=:yp1, `confirmed`=:yp2, `dontemailme`=:yp3, `firstname`=:yp4, `lastname`=:yp5, `email`=:yp6, `password`=:yp7, `privacy`=:yp8, `id`=:yp9 WHERE `user`.`id`='60'
+2014/06/27-12:08:54(1.116)[cli/6224]: Executing SQL: UPDATE `user` SET `privileges`=:yp0, `deleted`=:yp1, `confirmed`=:yp2, `dontemailme`=:yp3, `firstname`=:yp4, `lastname`=:yp5, `email`=:yp6, `password`=:yp7, `privacy`=:yp8, `id`=:yp9 WHERE `user`.`id`='60' returns n = 1
+2014/06/27-12:08:55(1.911)[cli/6224]: Querying SQL: SELECT * FROM `user` `t` WHERE `t`.`email`=:ycp3 LIMIT 2
+2014/06/27-12:08:55(1.912)[cli/6224]: Executing SQL: UPDATE `user` SET `privileges`=:yp0, `deleted`=:yp1, `confirmed`=:yp2, `dontemailme`=:yp3, `firstname`=:yp4, `lastname`=:yp5, `email`=:yp6, `password`=:yp7, `privacy`=:yp8, `id`=:yp9, `emailold`=:yp10, `secret`=:yp11, `secretdate`=:yp12 WHERE `user`.`id`='60'
+2014/06/27-12:08:55(1.993)[cli/6224]: Executing SQL: UPDATE `user` SET `privileges`=:yp0, `deleted`=:yp1, `confirmed`=:yp2, `dontemailme`=:yp3, `firstname`=:yp4, `lastname`=:yp5, `email`=:yp6, `password`=:yp7, `privacy`=:yp8, `id`=:yp9, `emailold`=:yp10, `secret`=:yp11, `secretdate`=:yp12 WHERE `user`.`id`='60' returns n = 1
+2014/06/27-12:08:55(2.000)[cli/6224]: Executing SQL: DELETE FROM `user` WHERE `user`.`id`='60'
+2014/06/27-12:08:55(2.060)[cli/6224]: Executing SQL: DELETE FROM `user` WHERE `user`.`id`='60' returns n = 1
+2014/06/27-12:08:55(2.063)[cli/6224]: Querying SQL: SELECT * FROM `user` `t` WHERE id=:ycp4 LIMIT 1
+2014/06/27-12:10:16(0.003)[cli/6234]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/27-12:10:16(0.060)[cli/6234]: Querying SQL: SHOW FULL COLUMNS FROM `project`
+2014/06/27-12:10:16(0.063)[cli/6234]: Querying SQL: SHOW CREATE TABLE `project`
+2014/06/27-12:15:08(0.003)[cli/6267]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/27-12:15:08(0.047)[cli/6267]: Querying SQL: SHOW FULL COLUMNS FROM `project`
+2014/06/27-12:15:08(0.049)[cli/6267]: Querying SQL: SHOW CREATE TABLE `project`
+2014/06/27-12:16:17(0.003)[cli/6269]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/27-12:16:17(0.050)[cli/6269]: Querying SQL: SHOW FULL COLUMNS FROM `project`
+2014/06/27-12:16:17(0.052)[cli/6269]: Querying SQL: SHOW CREATE TABLE `project`
+2014/06/27-12:18:15(0.003)[cli/6276]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/27-12:18:15(0.048)[cli/6276]: Querying SQL: SHOW FULL COLUMNS FROM `project`
+2014/06/27-12:18:15(0.050)[cli/6276]: Querying SQL: SHOW CREATE TABLE `project`
+2014/06/27-12:18:38(0.003)[cli/6278]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/27-12:18:38(0.048)[cli/6278]: Querying SQL: SHOW FULL COLUMNS FROM `project`
+2014/06/27-12:18:38(0.050)[cli/6278]: Querying SQL: SHOW CREATE TABLE `project`
+2014/06/27-12:19:58(0.003)[cli/6280]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/27-12:19:58(0.048)[cli/6280]: Querying SQL: SHOW FULL COLUMNS FROM `project`
+2014/06/27-12:19:58(0.050)[cli/6280]: Querying SQL: SHOW CREATE TABLE `project`
+2014/06/27-12:20:08(0.003)[cli/6282]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/27-12:20:08(0.051)[cli/6282]: Querying SQL: SHOW FULL COLUMNS FROM `project`
+2014/06/27-12:20:08(0.053)[cli/6282]: Querying SQL: SHOW CREATE TABLE `project`
+2014/06/27-12:20:26(0.003)[cli/6284]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/27-12:20:26(0.050)[cli/6284]: Querying SQL: SHOW FULL COLUMNS FROM `project`
+2014/06/27-12:20:26(0.055)[cli/6284]: Querying SQL: SHOW CREATE TABLE `project`
+2014/06/27-12:21:29(0.003)[cli/6286]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/27-12:21:29(0.048)[cli/6286]: Querying SQL: SHOW FULL COLUMNS FROM `project`
+2014/06/27-12:21:29(0.050)[cli/6286]: Querying SQL: SHOW CREATE TABLE `project`
+2014/06/27-12:22:48(0.003)[cli/6288]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/27-12:22:48(0.048)[cli/6288]: Querying SQL: SHOW FULL COLUMNS FROM `project`
+2014/06/27-12:22:48(0.050)[cli/6288]: Querying SQL: SHOW CREATE TABLE `project`
+2014/06/27-12:25:05(0.003)[cli/6290]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/27-12:25:05(0.048)[cli/6290]: Querying SQL: SHOW FULL COLUMNS FROM `project`
+2014/06/27-12:25:05(0.050)[cli/6290]: Querying SQL: SHOW CREATE TABLE `project`
+2014/06/27-12:25:05(0.051)[cli/6290]: Querying SQL: SHOW FULL COLUMNS FROM `user`
+2014/06/27-12:25:05(0.053)[cli/6290]: Querying SQL: SHOW CREATE TABLE `user`
+2014/06/27-12:25:05(0.058)[cli/6290]: Querying SQL: SELECT * FROM `user` `t`
+2014/06/27-12:26:52(0.003)[cli/6292]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/27-12:26:52(0.047)[cli/6292]: Querying SQL: SHOW FULL COLUMNS FROM `project`
+2014/06/27-12:26:52(0.049)[cli/6292]: Querying SQL: SHOW CREATE TABLE `project`
+2014/06/27-12:26:52(0.051)[cli/6292]: Querying SQL: SHOW FULL COLUMNS FROM `user`
+2014/06/27-12:26:52(0.052)[cli/6292]: Querying SQL: SHOW CREATE TABLE `user`
+2014/06/27-12:27:15(0.003)[cli/6294]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/27-12:27:15(0.048)[cli/6294]: Querying SQL: SHOW FULL COLUMNS FROM `project`
+2014/06/27-12:27:15(0.050)[cli/6294]: Querying SQL: SHOW CREATE TABLE `project`
+2014/06/27-12:27:15(0.051)[cli/6294]: Querying SQL: SHOW FULL COLUMNS FROM `user`
+2014/06/27-12:27:15(0.053)[cli/6294]: Querying SQL: SHOW CREATE TABLE `user`
+2014/06/27-12:27:39(0.003)[cli/6296]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/27-12:27:39(0.048)[cli/6296]: Querying SQL: SHOW FULL COLUMNS FROM `project`
+2014/06/27-12:27:39(0.050)[cli/6296]: Querying SQL: SHOW CREATE TABLE `project`
+2014/06/27-12:27:39(0.052)[cli/6296]: Querying SQL: SHOW FULL COLUMNS FROM `user`
+2014/06/27-12:27:39(0.054)[cli/6296]: Querying SQL: SHOW CREATE TABLE `user`
+2014/06/27-12:27:39(0.063)[cli/6296]: Querying SQL: SELECT 1 FROM `user` `t` WHERE `t`.`email`=:ycp0 LIMIT 1
+2014/06/27-12:27:39(0.065)[cli/6296]: Executing SQL: INSERT INTO `user` (`privileges`, `deleted`, `confirmed`, `dontemailme`, `email`, `password`, `privacy`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6)
+2014/06/27-12:27:40(0.124)[cli/6296]: Executing SQL: INSERT INTO `user` (`privileges`, `deleted`, `confirmed`, `dontemailme`, `email`, `password`, `privacy`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6) returns n = 1
+2014/06/27-12:28:50(0.003)[cli/6298]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/27-12:29:10(0.003)[cli/6300]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/27-12:29:50(0.003)[cli/6302]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/27-12:29:50(0.048)[cli/6302]: Querying SQL: SHOW FULL COLUMNS FROM `project`
+2014/06/27-12:29:50(0.050)[cli/6302]: Querying SQL: SHOW CREATE TABLE `project`
+2014/06/27-12:29:50(0.052)[cli/6302]: Querying SQL: SHOW FULL COLUMNS FROM `user`
+2014/06/27-12:29:50(0.054)[cli/6302]: Querying SQL: SHOW CREATE TABLE `user`
+2014/06/27-12:29:50(0.063)[cli/6302]: Querying SQL: SELECT 1 FROM `user` `t` WHERE `t`.`email`=:ycp0 LIMIT 1
+2014/06/27-12:29:50(0.065)[cli/6302]: Executing SQL: INSERT INTO `user` (`privileges`, `deleted`, `confirmed`, `dontemailme`, `email`, `password`, `privacy`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6)
+2014/06/27-12:29:50(0.138)[cli/6302]: Executing SQL: INSERT INTO `user` (`privileges`, `deleted`, `confirmed`, `dontemailme`, `email`, `password`, `privacy`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6) returns n = 1
+2014/06/27-12:30:14(0.003)[cli/6304]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/27-12:30:14(0.049)[cli/6304]: Querying SQL: SHOW FULL COLUMNS FROM `project`
+2014/06/27-12:30:14(0.051)[cli/6304]: Querying SQL: SHOW CREATE TABLE `project`
+2014/06/27-12:30:14(0.053)[cli/6304]: Querying SQL: SHOW FULL COLUMNS FROM `user`
+2014/06/27-12:30:14(0.055)[cli/6304]: Querying SQL: SHOW CREATE TABLE `user`
+2014/06/27-12:30:14(0.070)[cli/6304]: Querying SQL: SELECT 1 FROM `user` `t` WHERE `t`.`email`=:ycp0 LIMIT 1
+2014/06/27-12:30:14(0.071)[cli/6304]: Executing SQL: INSERT INTO `user` (`privileges`, `deleted`, `confirmed`, `dontemailme`, `email`, `password`, `privacy`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6)
+2014/06/27-12:30:14(0.127)[cli/6304]: Executing SQL: INSERT INTO `user` (`privileges`, `deleted`, `confirmed`, `dontemailme`, `email`, `password`, `privacy`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6) returns n = 1
+2014/06/27-12:30:14(0.134)[cli/6304]: Executing SQL: INSERT INTO `project` (`name`, `user_id`) VALUES (:yp0, :yp1)
+2014/06/27-12:30:14(0.216)[cli/6304]: Executing SQL: INSERT INTO `project` (`name`, `user_id`) VALUES (:yp0, :yp1) returns n = 1
+2014/06/27-12:30:24(0.003)[cli/6306]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/27-12:30:24(0.050)[cli/6306]: Querying SQL: SHOW FULL COLUMNS FROM `project`
+2014/06/27-12:30:24(0.052)[cli/6306]: Querying SQL: SHOW CREATE TABLE `project`
+2014/06/27-12:30:24(0.054)[cli/6306]: Querying SQL: SHOW FULL COLUMNS FROM `user`
+2014/06/27-12:30:24(0.056)[cli/6306]: Querying SQL: SHOW CREATE TABLE `user`
+2014/06/27-12:30:24(0.066)[cli/6306]: Querying SQL: SELECT 1 FROM `user` `t` WHERE `t`.`email`=:ycp0 LIMIT 1
+2014/06/27-12:30:24(0.067)[cli/6306]: Executing SQL: INSERT INTO `user` (`privileges`, `deleted`, `confirmed`, `dontemailme`, `email`, `password`, `privacy`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6)
+2014/06/27-12:30:24(0.132)[cli/6306]: Executing SQL: INSERT INTO `user` (`privileges`, `deleted`, `confirmed`, `dontemailme`, `email`, `password`, `privacy`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6) returns n = 1
+2014/06/27-12:30:24(0.144)[cli/6306]: Executing SQL: INSERT INTO `project` (`name`, `user_id`) VALUES (:yp0, :yp1)
+2014/06/27-12:30:25(0.199)[cli/6306]: Executing SQL: INSERT INTO `project` (`name`, `user_id`) VALUES (:yp0, :yp1) returns n = 1
+2014/06/27-12:30:35(0.003)[cli/6308]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/27-12:30:35(0.050)[cli/6308]: Querying SQL: SHOW FULL COLUMNS FROM `project`
+2014/06/27-12:30:35(0.052)[cli/6308]: Querying SQL: SHOW CREATE TABLE `project`
+2014/06/27-12:30:35(0.053)[cli/6308]: Querying SQL: SHOW FULL COLUMNS FROM `user`
+2014/06/27-12:30:35(0.055)[cli/6308]: Querying SQL: SHOW CREATE TABLE `user`
+2014/06/27-12:30:35(0.064)[cli/6308]: Querying SQL: SELECT 1 FROM `user` `t` WHERE `t`.`email`=:ycp0 LIMIT 1
+2014/06/27-12:30:35(0.065)[cli/6308]: Executing SQL: INSERT INTO `user` (`privileges`, `deleted`, `confirmed`, `dontemailme`, `email`, `password`, `privacy`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6)
+2014/06/27-12:30:35(0.141)[cli/6308]: Executing SQL: INSERT INTO `user` (`privileges`, `deleted`, `confirmed`, `dontemailme`, `email`, `password`, `privacy`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6) returns n = 1
+2014/06/27-12:30:35(0.148)[cli/6308]: Executing SQL: INSERT INTO `project` (`name`, `user_id`) VALUES (:yp0, :yp1)
+2014/06/27-12:30:35(0.220)[cli/6308]: Executing SQL: INSERT INTO `project` (`name`, `user_id`) VALUES (:yp0, :yp1) returns n = 1
+2014/06/27-12:33:16(0.003)[cli/6310]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/27-12:33:16(0.054)[cli/6310]: Querying SQL: SHOW FULL COLUMNS FROM `project`
+2014/06/27-12:33:16(0.056)[cli/6310]: Querying SQL: SHOW CREATE TABLE `project`
+2014/06/27-12:33:16(0.058)[cli/6310]: Querying SQL: SHOW FULL COLUMNS FROM `user`
+2014/06/27-12:33:16(0.060)[cli/6310]: Querying SQL: SHOW CREATE TABLE `user`
+2014/06/27-12:33:16(0.071)[cli/6310]: Querying SQL: SELECT 1 FROM `user` `t` WHERE `t`.`email`=:ycp0 LIMIT 1
+2014/06/27-12:33:16(0.072)[cli/6310]: Executing SQL: INSERT INTO `user` (`privileges`, `deleted`, `confirmed`, `dontemailme`, `email`, `password`, `privacy`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6)
+2014/06/27-12:33:16(0.160)[cli/6310]: Executing SQL: INSERT INTO `user` (`privileges`, `deleted`, `confirmed`, `dontemailme`, `email`, `password`, `privacy`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6) returns n = 1
+2014/06/27-12:33:16(0.172)[cli/6310]: Executing SQL: INSERT INTO `project` (`name`, `user_id`) VALUES (:yp0, :yp1)
+2014/06/27-12:33:16(0.249)[cli/6310]: Executing SQL: INSERT INTO `project` (`name`, `user_id`) VALUES (:yp0, :yp1) returns n = 1
+2014/06/27-12:33:39(0.003)[cli/6312]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/27-12:33:39(0.048)[cli/6312]: Querying SQL: SHOW FULL COLUMNS FROM `project`
+2014/06/27-12:33:39(0.050)[cli/6312]: Querying SQL: SHOW CREATE TABLE `project`
+2014/06/27-12:33:39(0.051)[cli/6312]: Querying SQL: SHOW FULL COLUMNS FROM `user`
+2014/06/27-12:33:39(0.053)[cli/6312]: Querying SQL: SHOW CREATE TABLE `user`
+2014/06/27-12:33:40(0.062)[cli/6312]: Querying SQL: SELECT 1 FROM `user` `t` WHERE `t`.`email`=:ycp0 LIMIT 1
+2014/06/27-12:33:40(0.064)[cli/6312]: Executing SQL: INSERT INTO `user` (`privileges`, `deleted`, `confirmed`, `dontemailme`, `email`, `password`, `privacy`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6)
+2014/06/27-12:33:40(0.187)[cli/6312]: Executing SQL: INSERT INTO `user` (`privileges`, `deleted`, `confirmed`, `dontemailme`, `email`, `password`, `privacy`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6) returns n = 1
+2014/06/27-12:33:40(0.204)[cli/6312]: Executing SQL: INSERT INTO `project` (`name`, `user_id`) VALUES (:yp0, :yp1)
+2014/06/27-12:33:40(0.276)[cli/6312]: Executing SQL: INSERT INTO `project` (`name`, `user_id`) VALUES (:yp0, :yp1) returns n = 1
+2014/06/27-12:34:12(0.004)[cli/6314]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/27-12:34:12(0.055)[cli/6314]: Querying SQL: SHOW FULL COLUMNS FROM `project`
+2014/06/27-12:34:12(0.057)[cli/6314]: Querying SQL: SHOW CREATE TABLE `project`
+2014/06/27-12:34:12(0.058)[cli/6314]: Querying SQL: SHOW FULL COLUMNS FROM `user`
+2014/06/27-12:34:12(0.060)[cli/6314]: Querying SQL: SHOW CREATE TABLE `user`
+2014/06/27-12:34:12(0.071)[cli/6314]: Querying SQL: SELECT 1 FROM `user` `t` WHERE `t`.`email`=:ycp0 LIMIT 1
+2014/06/27-12:34:12(0.072)[cli/6314]: Executing SQL: INSERT INTO `user` (`privileges`, `deleted`, `confirmed`, `dontemailme`, `email`, `password`, `privacy`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6)
+2014/06/27-12:34:12(0.159)[cli/6314]: Executing SQL: INSERT INTO `user` (`privileges`, `deleted`, `confirmed`, `dontemailme`, `email`, `password`, `privacy`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6) returns n = 1
+2014/06/27-12:34:12(0.171)[cli/6314]: Executing SQL: INSERT INTO `project` (`name`, `user_id`) VALUES (:yp0, :yp1)
+2014/06/27-12:34:12(0.248)[cli/6314]: Executing SQL: INSERT INTO `project` (`name`, `user_id`) VALUES (:yp0, :yp1) returns n = 1
+2014/06/27-12:34:12(0.254)[cli/6314]: Executing SQL: DELETE FROM `project` WHERE `project`.`id`='10'
+2014/06/27-12:34:13(0.326)[cli/6314]: Executing SQL: DELETE FROM `project` WHERE `project`.`id`='10' returns n = 1
+2014/06/27-12:34:48(0.003)[cli/6316]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/27-12:34:48(0.048)[cli/6316]: Querying SQL: SHOW FULL COLUMNS FROM `project`
+2014/06/27-12:34:48(0.050)[cli/6316]: Querying SQL: SHOW CREATE TABLE `project`
+2014/06/27-12:34:48(0.051)[cli/6316]: Querying SQL: SHOW FULL COLUMNS FROM `user`
+2014/06/27-12:34:48(0.053)[cli/6316]: Querying SQL: SHOW CREATE TABLE `user`
+2014/06/27-12:34:48(0.062)[cli/6316]: Querying SQL: SELECT 1 FROM `user` `t` WHERE `t`.`email`=:ycp0 LIMIT 1
+2014/06/27-12:34:48(0.064)[cli/6316]: Executing SQL: INSERT INTO `user` (`privileges`, `deleted`, `confirmed`, `dontemailme`, `email`, `password`, `privacy`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6)
+2014/06/27-12:34:49(0.156)[cli/6316]: Executing SQL: INSERT INTO `user` (`privileges`, `deleted`, `confirmed`, `dontemailme`, `email`, `password`, `privacy`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6) returns n = 1
+2014/06/27-12:34:49(0.162)[cli/6316]: Executing SQL: INSERT INTO `project` (`name`, `user_id`) VALUES (:yp0, :yp1)
+2014/06/27-12:34:49(0.212)[cli/6316]: Executing SQL: INSERT INTO `project` (`name`, `user_id`) VALUES (:yp0, :yp1) returns n = 1
+2014/06/27-12:34:49(0.219)[cli/6316]: Executing SQL: DELETE FROM `project` WHERE `project`.`id`='11'
+2014/06/27-12:34:49(0.279)[cli/6316]: Executing SQL: DELETE FROM `project` WHERE `project`.`id`='11' returns n = 1
+2014/06/27-12:41:36(0.003)[cli/6356]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/27-12:41:36(0.057)[cli/6356]: Querying SQL: SHOW FULL COLUMNS FROM `project`
+2014/06/27-12:41:36(0.059)[cli/6356]: Querying SQL: SHOW CREATE TABLE `project`
+2014/06/27-12:41:36(0.061)[cli/6356]: Querying SQL: SHOW FULL COLUMNS FROM `user`
+2014/06/27-12:41:36(0.063)[cli/6356]: Querying SQL: SHOW CREATE TABLE `user`
+2014/06/27-12:41:36(0.072)[cli/6356]: Querying SQL: SELECT 1 FROM `user` `t` WHERE `t`.`email`=:ycp0 LIMIT 1
+2014/06/27-12:41:36(0.074)[cli/6356]: Executing SQL: INSERT INTO `user` (`privileges`, `deleted`, `confirmed`, `dontemailme`, `email`, `password`, `privacy`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6)
+2014/06/27-12:41:36(0.217)[cli/6356]: Executing SQL: INSERT INTO `user` (`privileges`, `deleted`, `confirmed`, `dontemailme`, `email`, `password`, `privacy`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6) returns n = 1
+2014/06/27-12:41:36(0.234)[cli/6356]: Executing SQL: INSERT INTO `project` (`name`, `user_id`) VALUES (:yp0, :yp1)
+2014/06/27-12:41:36(0.294)[cli/6356]: Executing SQL: INSERT INTO `project` (`name`, `user_id`) VALUES (:yp0, :yp1) returns n = 1
+2014/06/27-12:41:36(0.305)[cli/6356]: Executing SQL: DELETE FROM `project` WHERE `project`.`id`='12'
+2014/06/27-12:41:36(0.361)[cli/6356]: Executing SQL: DELETE FROM `project` WHERE `project`.`id`='12' returns n = 1
+2014/06/27-12:44:12(0.003)[cli/6358]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/27-12:44:12(0.051)[cli/6358]: Querying SQL: SHOW FULL COLUMNS FROM `project`
+2014/06/27-12:44:12(0.053)[cli/6358]: Querying SQL: SHOW CREATE TABLE `project`
+2014/06/27-12:44:12(0.054)[cli/6358]: Querying SQL: SHOW FULL COLUMNS FROM `user`
+2014/06/27-12:44:12(0.056)[cli/6358]: Querying SQL: SHOW CREATE TABLE `user`
+2014/06/27-12:44:12(0.065)[cli/6358]: Querying SQL: SELECT 1 FROM `user` `t` WHERE `t`.`email`=:ycp0 LIMIT 1
+2014/06/27-12:44:12(0.066)[cli/6358]: Executing SQL: INSERT INTO `user` (`privileges`, `deleted`, `confirmed`, `dontemailme`, `email`, `password`, `privacy`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6)
+2014/06/27-12:44:12(0.156)[cli/6358]: Executing SQL: INSERT INTO `user` (`privileges`, `deleted`, `confirmed`, `dontemailme`, `email`, `password`, `privacy`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6) returns n = 1
+2014/06/27-12:44:12(0.168)[cli/6358]: Executing SQL: INSERT INTO `project` (`name`, `user_id`) VALUES (:yp0, :yp1)
+2014/06/27-12:44:12(0.246)[cli/6358]: Executing SQL: INSERT INTO `project` (`name`, `user_id`) VALUES (:yp0, :yp1) returns n = 1
+2014/06/27-12:44:12(0.259)[cli/6358]: Executing SQL: DELETE FROM `project` WHERE `project`.`id`='13'
+2014/06/27-12:44:12(0.335)[cli/6358]: Executing SQL: DELETE FROM `project` WHERE `project`.`id`='13' returns n = 1
+2014/06/27-13:17:11(0.003)[cli/6403]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/27-13:17:12(0.048)[cli/6403]: Querying SQL: SHOW FULL COLUMNS FROM `project`
+2014/06/27-13:17:12(0.050)[cli/6403]: Querying SQL: SHOW CREATE TABLE `project`
+2014/06/27-13:17:12(0.051)[cli/6403]: Querying SQL: SHOW FULL COLUMNS FROM `user`
+2014/06/27-13:17:12(0.053)[cli/6403]: Querying SQL: SHOW CREATE TABLE `user`
+2014/06/27-13:17:12(0.062)[cli/6403]: Querying SQL: SELECT 1 FROM `user` `t` WHERE `t`.`email`=:ycp0 LIMIT 1
+2014/06/27-13:17:12(0.064)[cli/6403]: Executing SQL: INSERT INTO `user` (`privileges`, `deleted`, `confirmed`, `dontemailme`, `email`, `password`, `privacy`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6)
+2014/06/27-13:17:12(0.154)[cli/6403]: Executing SQL: INSERT INTO `user` (`privileges`, `deleted`, `confirmed`, `dontemailme`, `email`, `password`, `privacy`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6) returns n = 1
+2014/06/27-13:17:12(0.170)[cli/6403]: Executing SQL: INSERT INTO `project` (`name`, `user_id`) VALUES (:yp0, :yp1)
+2014/06/27-13:17:12(0.232)[cli/6403]: Executing SQL: INSERT INTO `project` (`name`, `user_id`) VALUES (:yp0, :yp1) returns n = 1
+2014/06/27-13:17:12(0.246)[cli/6403]: Executing SQL: DELETE FROM `project` WHERE `project`.`id`='14'
+2014/06/27-13:17:12(0.321)[cli/6403]: Executing SQL: DELETE FROM `project` WHERE `project`.`id`='14' returns n = 1
+2014/06/27-13:17:26(0.003)[cli/6405]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/27-13:17:26(0.048)[cli/6405]: Querying SQL: SHOW FULL COLUMNS FROM `project`
+2014/06/27-13:17:26(0.050)[cli/6405]: Querying SQL: SHOW CREATE TABLE `project`
+2014/06/27-13:17:26(0.051)[cli/6405]: Querying SQL: SHOW FULL COLUMNS FROM `user`
+2014/06/27-13:17:26(0.053)[cli/6405]: Querying SQL: SHOW CREATE TABLE `user`
+2014/06/27-13:17:26(0.062)[cli/6405]: Querying SQL: SELECT 1 FROM `user` `t` WHERE `t`.`email`=:ycp0 LIMIT 1
+2014/06/27-13:17:26(0.063)[cli/6405]: Executing SQL: INSERT INTO `user` (`privileges`, `deleted`, `confirmed`, `dontemailme`, `email`, `password`, `privacy`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6)
+2014/06/27-13:17:26(0.159)[cli/6405]: Executing SQL: INSERT INTO `user` (`privileges`, `deleted`, `confirmed`, `dontemailme`, `email`, `password`, `privacy`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6) returns n = 1
+2014/06/27-13:17:26(0.173)[cli/6405]: Executing SQL: INSERT INTO `project` (`name`, `user_id`) VALUES (:yp0, :yp1)
+2014/06/27-13:17:26(0.226)[cli/6405]: Executing SQL: INSERT INTO `project` (`name`, `user_id`) VALUES (:yp0, :yp1) returns n = 1
+2014/06/27-13:17:26(0.245)[cli/6405]: Executing SQL: DELETE FROM `project` WHERE `project`.`id`='15'
+2014/06/27-13:17:26(0.304)[cli/6405]: Executing SQL: DELETE FROM `project` WHERE `project`.`id`='15' returns n = 1
+2014/06/27-13:19:21(0.003)[cli/6407]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/27-13:19:21(0.049)[cli/6407]: Querying SQL: SHOW FULL COLUMNS FROM `project`
+2014/06/27-13:19:21(0.052)[cli/6407]: Querying SQL: SHOW CREATE TABLE `project`
+2014/06/27-13:19:21(0.060)[cli/6407]: Executing SQL: INSERT INTO `project` (`name`, `user_id`) VALUES (:yp0, :yp1)
+2014/06/27-13:19:21(0.130)[cli/6407]: Executing SQL: INSERT INTO `project` (`name`, `user_id`) VALUES (:yp0, :yp1) returns n = 1
+2014/06/27-13:19:22(0.143)[cli/6407]: Executing SQL: DELETE FROM `project` WHERE `project`.`id`='16'
+2014/06/27-13:19:22(0.185)[cli/6407]: Executing SQL: DELETE FROM `project` WHERE `project`.`id`='16' returns n = 1
+2014/06/27-13:20:05(0.003)[cli/6409]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/27-13:20:05(0.051)[cli/6409]: Querying SQL: SHOW FULL COLUMNS FROM `project`
+2014/06/27-13:20:05(0.053)[cli/6409]: Querying SQL: SHOW CREATE TABLE `project`
+2014/06/27-13:20:05(0.062)[cli/6409]: Executing SQL: INSERT INTO `project` (`name`, `user_id`) VALUES (:yp0, :yp1)
+2014/06/27-13:20:05(0.218)[cli/6409]: Executing SQL: INSERT INTO `project` (`name`, `user_id`) VALUES (:yp0, :yp1) returns n = 1
+2014/06/27-13:20:05(0.229)[cli/6409]: Executing SQL: DELETE FROM `project` WHERE `project`.`id`='17'
+2014/06/27-13:20:05(0.288)[cli/6409]: Executing SQL: DELETE FROM `project` WHERE `project`.`id`='17' returns n = 1
+2014/06/27-13:20:14(0.003)[cli/6411]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/27-13:20:14(0.049)[cli/6411]: Querying SQL: SHOW FULL COLUMNS FROM `project`
+2014/06/27-13:20:14(0.051)[cli/6411]: Querying SQL: SHOW CREATE TABLE `project`
+2014/06/27-13:20:14(0.060)[cli/6411]: Executing SQL: INSERT INTO `project` (`name`, `user_id`) VALUES (:yp0, :yp1)
+2014/06/27-13:20:14(0.148)[cli/6411]: Executing SQL: INSERT INTO `project` (`name`, `user_id`) VALUES (:yp0, :yp1) returns n = 1
+2014/06/27-13:20:14(0.156)[cli/6411]: Executing SQL: DELETE FROM `project` WHERE `project`.`id`='18'
+2014/06/27-13:20:14(0.215)[cli/6411]: Executing SQL: DELETE FROM `project` WHERE `project`.`id`='18' returns n = 1
+2014/06/27-13:20:38(0.003)[cli/6413]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/27-13:20:38(0.051)[cli/6413]: Querying SQL: SHOW FULL COLUMNS FROM `project`
+2014/06/27-13:20:38(0.054)[cli/6413]: Querying SQL: SHOW CREATE TABLE `project`
+2014/06/27-13:20:38(0.063)[cli/6413]: Executing SQL: INSERT INTO `project` (`name`, `user_id`) VALUES (:yp0, :yp1)
+2014/06/27-13:20:38(0.152)[cli/6413]: Executing SQL: INSERT INTO `project` (`name`, `user_id`) VALUES (:yp0, :yp1) returns n = 1
+2014/06/27-13:20:38(0.170)[cli/6413]: Executing SQL: DELETE FROM `project` WHERE `project`.`id`='19'
+2014/06/27-13:20:38(0.230)[cli/6413]: Executing SQL: DELETE FROM `project` WHERE `project`.`id`='19' returns n = 1
+2014/06/27-13:20:50(0.003)[cli/6415]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/27-13:20:50(0.049)[cli/6415]: Querying SQL: SHOW FULL COLUMNS FROM `project`
+2014/06/27-13:20:50(0.051)[cli/6415]: Querying SQL: SHOW CREATE TABLE `project`
+2014/06/27-13:20:50(0.060)[cli/6415]: Executing SQL: INSERT INTO `project` (`name`, `user_id`) VALUES (:yp0, :yp1)
+2014/06/27-13:20:50(0.169)[cli/6415]: Executing SQL: INSERT INTO `project` (`name`, `user_id`) VALUES (:yp0, :yp1) returns n = 1
+2014/06/27-13:20:50(0.189)[cli/6415]: Executing SQL: DELETE FROM `project` WHERE `project`.`id`='20'
+2014/06/27-13:20:50(0.235)[cli/6415]: Executing SQL: DELETE FROM `project` WHERE `project`.`id`='20' returns n = 1
+2014/06/27-13:21:14(0.003)[cli/6417]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/27-13:21:14(0.049)[cli/6417]: Querying SQL: SHOW FULL COLUMNS FROM `project`
+2014/06/27-13:21:14(0.052)[cli/6417]: Querying SQL: SHOW CREATE TABLE `project`
+2014/06/27-13:21:15(0.061)[cli/6417]: Executing SQL: INSERT INTO `project` (`name`, `user_id`) VALUES (:yp0, :yp1)
+2014/06/27-13:21:15(0.106)[cli/6417]: Executing SQL: INSERT INTO `project` (`name`, `user_id`) VALUES (:yp0, :yp1) returns n = 1
+2014/06/27-13:22:40(0.003)[cli/6419]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/27-13:22:40(0.049)[cli/6419]: Querying SQL: SHOW FULL COLUMNS FROM `project`
+2014/06/27-13:22:40(0.051)[cli/6419]: Querying SQL: SHOW CREATE TABLE `project`
+2014/06/27-13:22:40(0.060)[cli/6419]: Executing SQL: INSERT INTO `project` (`name`, `user_id`) VALUES (:yp0, :yp1)
+2014/06/27-13:22:40(0.136)[cli/6419]: Executing SQL: INSERT INTO `project` (`name`, `user_id`) VALUES (:yp0, :yp1) returns n = 1
+2014/06/27-13:22:40(0.155)[cli/6419]: Querying SQL: SELECT * FROM `project` `t`
+2014/06/27-13:22:40(0.161)[cli/6419]: Executing SQL: DELETE FROM `project` WHERE `project`.`id`='22'
+2014/06/27-13:22:40(0.204)[cli/6419]: Executing SQL: DELETE FROM `project` WHERE `project`.`id`='22' returns n = 1
+2014/06/27-13:22:51(0.003)[cli/6421]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/27-13:22:51(0.048)[cli/6421]: Querying SQL: SHOW FULL COLUMNS FROM `project`
+2014/06/27-13:22:51(0.050)[cli/6421]: Querying SQL: SHOW CREATE TABLE `project`
+2014/06/27-13:22:51(0.059)[cli/6421]: Executing SQL: INSERT INTO `project` (`name`, `user_id`) VALUES (:yp0, :yp1)
+2014/06/27-13:22:51(0.144)[cli/6421]: Executing SQL: INSERT INTO `project` (`name`, `user_id`) VALUES (:yp0, :yp1) returns n = 1
+2014/06/27-13:22:51(0.159)[cli/6421]: Querying SQL: SELECT * FROM `project` `t`
+2014/06/27-13:22:51(0.166)[cli/6421]: Executing SQL: DELETE FROM `project` WHERE `project`.`id`='23'
+2014/06/27-13:22:51(0.211)[cli/6421]: Executing SQL: DELETE FROM `project` WHERE `project`.`id`='23' returns n = 1
+2014/06/27-13:23:00(0.003)[cli/6423]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/27-13:23:00(0.047)[cli/6423]: Querying SQL: SHOW FULL COLUMNS FROM `project`
+2014/06/27-13:23:00(0.049)[cli/6423]: Querying SQL: SHOW CREATE TABLE `project`
+2014/06/27-13:23:00(0.059)[cli/6423]: Executing SQL: INSERT INTO `project` (`name`, `user_id`) VALUES (:yp0, :yp1)
+2014/06/27-13:23:00(0.144)[cli/6423]: Executing SQL: INSERT INTO `project` (`name`, `user_id`) VALUES (:yp0, :yp1) returns n = 1
+2014/06/27-13:23:00(0.158)[cli/6423]: Executing SQL: DELETE FROM `project` WHERE `project`.`id`='24'
+2014/06/27-13:23:00(0.211)[cli/6423]: Executing SQL: DELETE FROM `project` WHERE `project`.`id`='24' returns n = 1
+2014/06/27-13:24:05(0.003)[cli/6425]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/27-13:24:05(0.051)[cli/6425]: Querying SQL: SHOW FULL COLUMNS FROM `project`
+2014/06/27-13:24:05(0.053)[cli/6425]: Querying SQL: SHOW CREATE TABLE `project`
+2014/06/27-13:24:05(0.062)[cli/6425]: Executing SQL: INSERT INTO `project` (`name`, `user_id`) VALUES (:yp0, :yp1)
+2014/06/27-13:24:05(0.152)[cli/6425]: Executing SQL: INSERT INTO `project` (`name`, `user_id`) VALUES (:yp0, :yp1) returns n = 1
+2014/06/27-13:24:05(0.172)[cli/6425]: Executing SQL: DELETE FROM `project` WHERE `project`.`id`='25'
+2014/06/27-13:24:05(0.274)[cli/6425]: Executing SQL: DELETE FROM `project` WHERE `project`.`id`='25' returns n = 1
+2014/06/27-13:25:29(0.003)[cli/6427]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/27-13:25:29(0.056)[cli/6427]: Querying SQL: SHOW FULL COLUMNS FROM `project`
+2014/06/27-13:25:29(0.058)[cli/6427]: Querying SQL: SHOW CREATE TABLE `project`
+2014/06/27-13:25:29(0.068)[cli/6427]: Executing SQL: INSERT INTO `project` (`name`, `user_id`) VALUES (:yp0, :yp1)
+2014/06/27-13:25:29(0.160)[cli/6427]: Executing SQL: INSERT INTO `project` (`name`, `user_id`) VALUES (:yp0, :yp1) returns n = 1
+2014/06/27-13:25:29(0.177)[cli/6427]: Executing SQL: DELETE FROM `project` WHERE `project`.`id`='26'
+2014/06/27-13:25:29(0.238)[cli/6427]: Executing SQL: DELETE FROM `project` WHERE `project`.`id`='26' returns n = 1
+2014/06/27-13:25:44(0.003)[cli/6429]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/27-13:25:44(0.049)[cli/6429]: Querying SQL: SHOW FULL COLUMNS FROM `project`
+2014/06/27-13:25:44(0.051)[cli/6429]: Querying SQL: SHOW CREATE TABLE `project`
+2014/06/27-13:25:44(0.060)[cli/6429]: Executing SQL: INSERT INTO `project` (`name`, `user_id`) VALUES (:yp0, :yp1)
+2014/06/27-13:25:44(0.139)[cli/6429]: Executing SQL: INSERT INTO `project` (`name`, `user_id`) VALUES (:yp0, :yp1) returns n = 1
+2014/06/27-13:25:44(0.155)[cli/6429]: Querying SQL: SELECT * FROM `project` `t`
+2014/06/27-13:25:44(0.158)[cli/6429]: Executing SQL: DELETE FROM `project` WHERE `project`.`id`='27'
+2014/06/27-13:25:44(0.205)[cli/6429]: Executing SQL: DELETE FROM `project` WHERE `project`.`id`='27' returns n = 1
+2014/06/27-13:26:33(0.003)[cli/6431]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/27-13:26:33(0.049)[cli/6431]: Querying SQL: SHOW FULL COLUMNS FROM `project`
+2014/06/27-13:26:33(0.051)[cli/6431]: Querying SQL: SHOW CREATE TABLE `project`
+2014/06/27-13:26:33(0.060)[cli/6431]: Executing SQL: INSERT INTO `project` (`name`, `user_id`) VALUES (:yp0, :yp1)
+2014/06/27-13:26:33(0.125)[cli/6431]: Executing SQL: INSERT INTO `project` (`name`, `user_id`) VALUES (:yp0, :yp1) returns n = 1
+2014/06/27-13:26:34(0.137)[cli/6431]: Querying SQL: SELECT * FROM `project` `t` WHERE user_id = :userid
+2014/06/27-13:26:34(0.139)[cli/6431]: Executing SQL: DELETE FROM `project` WHERE `project`.`id`='28'
+2014/06/27-13:26:34(0.192)[cli/6431]: Executing SQL: DELETE FROM `project` WHERE `project`.`id`='28' returns n = 1
+2014/06/27-13:28:50(0.003)[cli/6464]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/27-13:28:50(0.049)[cli/6464]: Querying SQL: SHOW FULL COLUMNS FROM `project`
+2014/06/27-13:28:50(0.051)[cli/6464]: Querying SQL: SHOW CREATE TABLE `project`
+2014/06/27-13:28:50(0.060)[cli/6464]: Executing SQL: INSERT INTO `project` (`name`, `user_id`) VALUES (:yp0, :yp1)
+2014/06/27-13:28:50(0.200)[cli/6464]: Executing SQL: INSERT INTO `project` (`name`, `user_id`) VALUES (:yp0, :yp1) returns n = 1
+2014/06/27-13:28:50(0.223)[cli/6464]: Querying SQL: SELECT * FROM `project` `t` WHERE user_id = :userid
+2014/06/27-13:28:50(0.225)[cli/6464]: Executing SQL: DELETE FROM `project` WHERE `project`.`id`='29'
+2014/06/27-13:28:50(0.277)[cli/6464]: Executing SQL: DELETE FROM `project` WHERE `project`.`id`='29' returns n = 1
+2014/06/27-13:30:17(0.003)[cli/6466]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/27-13:30:17(0.048)[cli/6466]: Querying SQL: SHOW FULL COLUMNS FROM `project`
+2014/06/27-13:30:17(0.050)[cli/6466]: Querying SQL: SHOW CREATE TABLE `project`
+2014/06/27-13:30:17(0.059)[cli/6466]: Executing SQL: INSERT INTO `project` (`name`, `user_id`) VALUES (:yp0, :yp1)
+2014/06/27-13:30:17(0.122)[cli/6466]: Executing SQL: INSERT INTO `project` (`name`, `user_id`) VALUES (:yp0, :yp1) returns n = 1
+2014/06/27-13:30:17(0.138)[cli/6466]: Querying SQL: SELECT * FROM `project` `t` WHERE user_id = :userid
+2014/06/27-13:30:17(0.140)[cli/6466]: Executing SQL: DELETE FROM `project` WHERE `project`.`id`='30'
+2014/06/27-13:30:17(0.200)[cli/6466]: Executing SQL: DELETE FROM `project` WHERE `project`.`id`='30' returns n = 1
+2014/06/27-13:36:10(0.003)[cli/6468]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/27-13:36:10(0.148)[cli/6468]: Querying SQL: SHOW FULL COLUMNS FROM `module`
+2014/06/27-13:36:10(0.150)[cli/6468]: Querying SQL: SHOW CREATE TABLE `module`
+2014/06/27-13:36:16(0.003)[cli/6470]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/27-13:36:16(0.053)[cli/6470]: Querying SQL: SHOW FULL COLUMNS FROM `module`
+2014/06/27-13:36:17(0.056)[cli/6470]: Querying SQL: SHOW CREATE TABLE `module`
+2014/06/27-13:39:46(0.003)[cli/6479]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/27-13:39:46(0.049)[cli/6479]: Querying SQL: SHOW FULL COLUMNS FROM `module`
+2014/06/27-13:39:46(0.051)[cli/6479]: Querying SQL: SHOW CREATE TABLE `module`
+2014/06/27-13:39:46(0.057)[cli/6479]: Querying SQL: SHOW FULL COLUMNS FROM `project`
+2014/06/27-13:39:46(0.059)[cli/6479]: Querying SQL: SHOW CREATE TABLE `project`
+2014/06/27-13:39:46(0.059)[cli/6479]: Querying SQL: SELECT * FROM `project` `t`
+2014/06/27-13:40:17(0.003)[cli/6481]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/27-13:40:17(0.071)[cli/6481]: Querying SQL: SHOW FULL COLUMNS FROM `module`
+2014/06/27-13:40:17(0.074)[cli/6481]: Querying SQL: SHOW CREATE TABLE `module`
+2014/06/27-13:42:17(0.003)[cli/6483]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/27-13:42:17(0.048)[cli/6483]: Querying SQL: SHOW FULL COLUMNS FROM `module`
+2014/06/27-13:42:17(0.050)[cli/6483]: Querying SQL: SHOW CREATE TABLE `module`
+2014/06/27-13:42:25(0.005)[cli/6485]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/27-13:42:25(0.056)[cli/6485]: Querying SQL: SHOW FULL COLUMNS FROM `module`
+2014/06/27-13:42:25(0.058)[cli/6485]: Querying SQL: SHOW CREATE TABLE `module`
+2014/06/27-13:42:26(0.003)[cli/6487]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/27-13:42:26(0.048)[cli/6487]: Querying SQL: SHOW FULL COLUMNS FROM `module`
+2014/06/27-13:42:26(0.051)[cli/6487]: Querying SQL: SHOW CREATE TABLE `module`
+2014/06/27-13:42:27(0.003)[cli/6489]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/27-13:42:27(0.048)[cli/6489]: Querying SQL: SHOW FULL COLUMNS FROM `module`
+2014/06/27-13:42:27(0.050)[cli/6489]: Querying SQL: SHOW CREATE TABLE `module`
+2014/06/27-13:42:28(0.003)[cli/6491]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/27-13:42:28(0.050)[cli/6491]: Querying SQL: SHOW FULL COLUMNS FROM `module`
+2014/06/27-13:42:28(0.053)[cli/6491]: Querying SQL: SHOW CREATE TABLE `module`
+2014/06/27-13:43:02(0.003)[cli/6493]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/27-13:43:02(0.053)[cli/6493]: Querying SQL: SHOW FULL COLUMNS FROM `module`
+2014/06/27-13:43:02(0.056)[cli/6493]: Querying SQL: SHOW CREATE TABLE `module`
+2014/06/27-13:43:02(0.060)[cli/6493]: Querying SQL: SHOW FULL COLUMNS FROM `project`
+2014/06/27-13:43:02(0.062)[cli/6493]: Querying SQL: SHOW CREATE TABLE `project`
+2014/06/27-13:43:02(0.062)[cli/6493]: Querying SQL: SELECT * FROM `project` `t`
+2014/06/27-13:43:27(0.004)[cli/6496]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/27-13:43:27(0.055)[cli/6496]: Querying SQL: SHOW FULL COLUMNS FROM `module`
+2014/06/27-13:43:27(0.057)[cli/6496]: Querying SQL: SHOW CREATE TABLE `module`
+2014/06/27-13:43:40(0.003)[cli/6498]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/27-13:43:40(0.048)[cli/6498]: Querying SQL: SHOW FULL COLUMNS FROM `module`
+2014/06/27-13:43:40(0.050)[cli/6498]: Querying SQL: SHOW CREATE TABLE `module`
+2014/06/27-13:45:04(0.003)[cli/6500]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/27-13:45:15(0.003)[cli/6502]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/27-13:45:15(0.048)[cli/6502]: Querying SQL: SHOW FULL COLUMNS FROM `module`
+2014/06/27-13:45:15(0.052)[cli/6502]: Querying SQL: SHOW CREATE TABLE `module`
+2014/06/27-13:45:28(0.003)[cli/6504]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/27-13:45:28(0.050)[cli/6504]: Querying SQL: SHOW FULL COLUMNS FROM `module`
+2014/06/27-13:45:28(0.053)[cli/6504]: Querying SQL: SHOW CREATE TABLE `module`
+2014/06/27-13:45:50(0.003)[cli/6506]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/27-13:45:50(0.053)[cli/6506]: Querying SQL: SHOW FULL COLUMNS FROM `module`
+2014/06/27-13:45:50(0.055)[cli/6506]: Querying SQL: SHOW CREATE TABLE `module`
+2014/06/27-13:46:19(0.003)[cli/6508]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/27-13:46:19(0.049)[cli/6508]: Querying SQL: SHOW FULL COLUMNS FROM `module`
+2014/06/27-13:46:19(0.051)[cli/6508]: Querying SQL: SHOW CREATE TABLE `module`
+2014/06/27-13:46:36(0.003)[cli/6510]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/27-13:46:36(0.050)[cli/6510]: Querying SQL: SHOW FULL COLUMNS FROM `module`
+2014/06/27-13:46:36(0.053)[cli/6510]: Querying SQL: SHOW CREATE TABLE `module`
+2014/06/27-13:46:47(0.003)[cli/6512]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/27-13:46:47(0.055)[cli/6512]: Querying SQL: SHOW FULL COLUMNS FROM `module`
+2014/06/27-13:46:47(0.058)[cli/6512]: Querying SQL: SHOW CREATE TABLE `module`
+2014/06/27-13:47:22(0.003)[cli/6514]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/27-13:47:22(0.048)[cli/6514]: Querying SQL: SHOW FULL COLUMNS FROM `module`
+2014/06/27-13:47:22(0.051)[cli/6514]: Querying SQL: SHOW CREATE TABLE `module`
+2014/06/27-13:48:12(0.003)[cli/6516]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/27-13:48:12(0.049)[cli/6516]: Querying SQL: SHOW FULL COLUMNS FROM `module`
+2014/06/27-13:48:12(0.051)[cli/6516]: Querying SQL: SHOW CREATE TABLE `module`
+2014/06/27-13:48:14(0.003)[cli/6518]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/27-13:48:14(0.047)[cli/6518]: Querying SQL: SHOW FULL COLUMNS FROM `module`
+2014/06/27-13:48:14(0.050)[cli/6518]: Querying SQL: SHOW CREATE TABLE `module`
+2014/06/27-13:48:22(0.005)[cli/6520]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/27-13:48:22(0.053)[cli/6520]: Querying SQL: SHOW FULL COLUMNS FROM `module`
+2014/06/27-13:48:22(0.056)[cli/6520]: Querying SQL: SHOW CREATE TABLE `module`
+2014/06/27-13:48:23(0.003)[cli/6522]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/27-13:48:23(0.050)[cli/6522]: Querying SQL: SHOW FULL COLUMNS FROM `module`
+2014/06/27-13:48:23(0.052)[cli/6522]: Querying SQL: SHOW CREATE TABLE `module`
+2014/06/27-13:48:23(0.003)[cli/6524]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/27-13:48:24(0.048)[cli/6524]: Querying SQL: SHOW FULL COLUMNS FROM `module`
+2014/06/27-13:48:24(0.050)[cli/6524]: Querying SQL: SHOW CREATE TABLE `module`
+2014/06/27-13:48:24(0.003)[cli/6526]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/27-13:48:24(0.048)[cli/6526]: Querying SQL: SHOW FULL COLUMNS FROM `module`
+2014/06/27-13:48:24(0.050)[cli/6526]: Querying SQL: SHOW CREATE TABLE `module`
+2014/06/27-13:48:25(0.003)[cli/6528]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/27-13:48:25(0.049)[cli/6528]: Querying SQL: SHOW FULL COLUMNS FROM `module`
+2014/06/27-13:48:25(0.051)[cli/6528]: Querying SQL: SHOW CREATE TABLE `module`
+2014/06/27-13:49:04(0.003)[cli/6530]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/27-13:49:04(0.050)[cli/6530]: Querying SQL: SHOW FULL COLUMNS FROM `module`
+2014/06/27-13:49:04(0.052)[cli/6530]: Querying SQL: SHOW CREATE TABLE `module`
+2014/06/27-13:50:35(0.005)[cli/6532]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/27-13:50:44(0.004)[cli/6534]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/27-13:50:44(0.062)[cli/6534]: Querying SQL: SHOW FULL COLUMNS FROM `module`
+2014/06/27-13:50:44(0.065)[cli/6534]: Querying SQL: SHOW CREATE TABLE `module`
+2014/06/27-13:54:37(0.003)[cli/6567]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/27-13:54:45(0.003)[cli/6569]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/27-13:54:55(0.003)[cli/6571]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/27-13:54:55(0.055)[cli/6571]: Querying SQL: SHOW FULL COLUMNS FROM `module`
+2014/06/27-13:54:55(0.058)[cli/6571]: Querying SQL: SHOW CREATE TABLE `module`
+2014/06/27-13:55:11(0.003)[cli/6573]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/27-13:55:11(0.056)[cli/6573]: Querying SQL: SHOW FULL COLUMNS FROM `module`
+2014/06/27-13:55:11(0.058)[cli/6573]: Querying SQL: SHOW CREATE TABLE `module`
+2014/06/27-13:55:51(0.003)[cli/6575]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/27-13:55:52(0.048)[cli/6575]: Querying SQL: SHOW FULL COLUMNS FROM `module`
+2014/06/27-13:55:52(0.051)[cli/6575]: Querying SQL: SHOW CREATE TABLE `module`
+2014/06/27-13:58:13(0.003)[cli/6577]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/27-13:58:13(0.049)[cli/6577]: Querying SQL: SHOW FULL COLUMNS FROM `module`
+2014/06/27-13:58:13(0.051)[cli/6577]: Querying SQL: SHOW CREATE TABLE `module`
+2014/06/27-13:58:19(0.003)[cli/6579]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/27-13:58:19(0.051)[cli/6579]: Querying SQL: SHOW FULL COLUMNS FROM `module`
+2014/06/27-13:58:19(0.054)[cli/6579]: Querying SQL: SHOW CREATE TABLE `module`
+2014/06/27-13:58:21(0.003)[cli/6581]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/27-13:58:21(0.047)[cli/6581]: Querying SQL: SHOW FULL COLUMNS FROM `module`
+2014/06/27-13:58:21(0.049)[cli/6581]: Querying SQL: SHOW CREATE TABLE `module`
+2014/06/27-13:58:22(0.003)[cli/6583]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/27-13:58:22(0.050)[cli/6583]: Querying SQL: SHOW FULL COLUMNS FROM `module`
+2014/06/27-13:58:22(0.053)[cli/6583]: Querying SQL: SHOW CREATE TABLE `module`
+2014/06/27-13:58:22(0.003)[cli/6585]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/27-13:58:22(0.048)[cli/6585]: Querying SQL: SHOW FULL COLUMNS FROM `module`
+2014/06/27-13:58:22(0.051)[cli/6585]: Querying SQL: SHOW CREATE TABLE `module`
+2014/06/27-13:58:23(0.003)[cli/6587]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/27-13:58:23(0.051)[cli/6587]: Querying SQL: SHOW FULL COLUMNS FROM `module`
+2014/06/27-13:58:23(0.053)[cli/6587]: Querying SQL: SHOW CREATE TABLE `module`
+2014/06/27-13:58:24(0.003)[cli/6589]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/27-13:58:24(0.056)[cli/6589]: Querying SQL: SHOW FULL COLUMNS FROM `module`
+2014/06/27-13:58:24(0.059)[cli/6589]: Querying SQL: SHOW CREATE TABLE `module`
+2014/06/27-14:03:16(0.003)[cli/6594]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/27-14:03:16(0.053)[cli/6594]: Querying SQL: SHOW FULL COLUMNS FROM `module`
+2014/06/27-14:03:16(0.055)[cli/6594]: Querying SQL: SHOW CREATE TABLE `module`
+2014/06/27-14:03:23(0.003)[cli/6596]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/27-14:03:23(0.061)[cli/6596]: Querying SQL: SHOW FULL COLUMNS FROM `module`
+2014/06/27-14:03:24(0.064)[cli/6596]: Querying SQL: SHOW CREATE TABLE `module`
+2014/06/27-14:03:36(0.003)[cli/6598]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/27-14:04:11(0.003)[cli/6600]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/27-14:04:39(0.003)[cli/6602]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/27-14:04:39(0.048)[cli/6602]: Querying SQL: SHOW FULL COLUMNS FROM `module`
+2014/06/27-14:04:39(0.051)[cli/6602]: Querying SQL: SHOW CREATE TABLE `module`
+2014/06/27-14:05:08(0.003)[cli/6604]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/27-14:05:08(0.057)[cli/6604]: Querying SQL: SHOW FULL COLUMNS FROM `module`
+2014/06/27-14:05:08(0.060)[cli/6604]: Querying SQL: SHOW CREATE TABLE `module`
+2014/06/27-14:05:17(0.005)[cli/6606]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/27-14:05:17(0.065)[cli/6606]: Querying SQL: SHOW FULL COLUMNS FROM `module`
+2014/06/27-14:05:17(0.067)[cli/6606]: Querying SQL: SHOW CREATE TABLE `module`
+2014/06/27-23:46:43(0.003)[cli/6652]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/27-23:46:43(0.047)[cli/6652]: Querying SQL: SHOW FULL COLUMNS FROM `module`
+2014/06/27-23:46:43(0.050)[cli/6652]: Querying SQL: SHOW CREATE TABLE `module`
+2014/06/27-23:46:46(0.003)[cli/6654]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/27-23:46:46(0.047)[cli/6654]: Querying SQL: SHOW FULL COLUMNS FROM `module`
+2014/06/27-23:46:46(0.050)[cli/6654]: Querying SQL: SHOW CREATE TABLE `module`
+2014/06/27-23:46:48(0.003)[cli/6656]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/27-23:46:48(0.049)[cli/6656]: Querying SQL: SHOW FULL COLUMNS FROM `module`
+2014/06/27-23:46:48(0.052)[cli/6656]: Querying SQL: SHOW CREATE TABLE `module`
+2014/06/27-23:46:49(0.003)[cli/6658]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/27-23:46:49(0.047)[cli/6658]: Querying SQL: SHOW FULL COLUMNS FROM `module`
+2014/06/27-23:46:49(0.050)[cli/6658]: Querying SQL: SHOW CREATE TABLE `module`
+2014/06/27-23:46:50(0.003)[cli/6660]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/27-23:46:50(0.049)[cli/6660]: Querying SQL: SHOW FULL COLUMNS FROM `module`
+2014/06/27-23:46:50(0.051)[cli/6660]: Querying SQL: SHOW CREATE TABLE `module`
+2014/06/27-23:46:50(0.003)[cli/6662]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/27-23:46:50(0.048)[cli/6662]: Querying SQL: SHOW FULL COLUMNS FROM `module`
+2014/06/27-23:46:50(0.050)[cli/6662]: Querying SQL: SHOW CREATE TABLE `module`
+2014/06/27-23:46:51(0.003)[cli/6664]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/27-23:46:51(0.048)[cli/6664]: Querying SQL: SHOW FULL COLUMNS FROM `module`
+2014/06/27-23:46:51(0.050)[cli/6664]: Querying SQL: SHOW CREATE TABLE `module`
+2014/06/27-23:48:04(0.005)[cli/6666]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/27-23:48:04(0.072)[cli/6666]: Querying SQL: SHOW FULL COLUMNS FROM `module`
+2014/06/27-23:48:04(0.075)[cli/6666]: Querying SQL: SHOW CREATE TABLE `module`
+2014/06/27-23:48:19(0.003)[cli/6668]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/27-23:48:19(0.047)[cli/6668]: Querying SQL: SHOW FULL COLUMNS FROM `module`
+2014/06/27-23:48:19(0.049)[cli/6668]: Querying SQL: SHOW CREATE TABLE `module`
+2014/06/27-23:48:52(0.003)[cli/6670]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/27-23:48:52(0.048)[cli/6670]: Querying SQL: SHOW FULL COLUMNS FROM `module`
+2014/06/27-23:48:52(0.050)[cli/6670]: Querying SQL: SHOW CREATE TABLE `module`
+2014/06/27-23:49:18(0.003)[cli/6672]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/27-23:49:19(0.066)[cli/6672]: Querying SQL: SHOW FULL COLUMNS FROM `module`
+2014/06/27-23:49:19(0.069)[cli/6672]: Querying SQL: SHOW CREATE TABLE `module`
+2014/06/27-23:49:41(0.003)[cli/6674]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/27-23:49:42(0.051)[cli/6674]: Querying SQL: SHOW FULL COLUMNS FROM `module`
+2014/06/27-23:49:42(0.054)[cli/6674]: Querying SQL: SHOW CREATE TABLE `module`
+2014/06/27-23:50:03(0.003)[cli/6676]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/27-23:50:03(0.047)[cli/6676]: Querying SQL: SHOW FULL COLUMNS FROM `module`
+2014/06/27-23:50:03(0.050)[cli/6676]: Querying SQL: SHOW CREATE TABLE `module`
+2014/06/27-23:50:30(0.003)[cli/6678]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/27-23:50:43(0.003)[cli/6680]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/27-23:50:56(0.003)[cli/6682]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/27-23:50:56(0.048)[cli/6682]: Querying SQL: SHOW FULL COLUMNS FROM `module`
+2014/06/27-23:50:56(0.051)[cli/6682]: Querying SQL: SHOW CREATE TABLE `module`
+2014/06/27-23:51:46(0.003)[cli/6684]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/27-23:51:46(0.050)[cli/6684]: Querying SQL: SHOW FULL COLUMNS FROM `module`
+2014/06/27-23:51:46(0.053)[cli/6684]: Querying SQL: SHOW CREATE TABLE `module`
+2014/06/27-23:51:46(0.067)[cli/6684]: Executing SQL: INSERT INTO `module` (`enabled`, `project_id`, `name`, `type`, `year`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4)
+2014/06/27-23:51:46(0.188)[cli/6684]: Executing SQL: INSERT INTO `module` (`enabled`, `project_id`, `name`, `type`, `year`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4) returns n = 1
+2014/06/27-23:52:03(0.003)[cli/6686]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/27-23:52:03(0.048)[cli/6686]: Querying SQL: SHOW FULL COLUMNS FROM `module`
+2014/06/27-23:52:03(0.050)[cli/6686]: Querying SQL: SHOW CREATE TABLE `module`
+2014/06/27-23:52:03(0.064)[cli/6686]: Executing SQL: INSERT INTO `module` (`enabled`, `project_id`, `name`, `type`, `year`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4)
+2014/06/27-23:52:03(0.192)[cli/6686]: Executing SQL: INSERT INTO `module` (`enabled`, `project_id`, `name`, `type`, `year`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4) returns n = 1
