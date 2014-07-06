@@ -41,6 +41,7 @@ class User extends CActiveRecord {
         // NOTE: you should only define rules for those attributes that
         // will receive user inputs.
         return array(
+            array('email', 'filter', 'filter' => 'trim'),
             array('email, password', 'required'),
             array('password', 'length', 'min' => 8),
             array('email', 'email'),
