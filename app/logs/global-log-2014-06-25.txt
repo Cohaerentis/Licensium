@@ -1,0 +1,541 @@
+2014/06/25-10:09:48(0.142)[cli/3266]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/25-10:09:48(0.243)[cli/3266]: Querying SQL: SHOW FULL COLUMNS FROM `user`
+2014/06/25-10:09:48(0.248)[cli/3266]: Querying SQL: SHOW CREATE TABLE `user`
+2014/06/25-10:09:48(0.249)[cli/3266]: Querying SQL: SELECT * FROM `user` `t` WHERE id=:ycp0 LIMIT 1
+2014/06/25-10:10:06(0.003)[cli/3268]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/25-10:10:32(0.005)[cli/3270]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/25-10:11:01(0.004)[cli/3272]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/25-10:11:38(0.006)[cli/3274]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/25-10:12:30(0.003)[cli/3276]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/25-10:12:48(0.003)[cli/3278]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/25-10:12:48(0.064)[cli/3278]: Querying SQL: SHOW FULL COLUMNS FROM `user`
+2014/06/25-10:12:48(0.067)[cli/3278]: Querying SQL: SHOW CREATE TABLE `user`
+2014/06/25-10:12:48(0.068)[cli/3278]: Querying SQL: SELECT * FROM `user` `t` WHERE id=:ycp0 LIMIT 1
+2014/06/25-10:16:53(0.003)[cli/3311]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/25-10:18:23(0.003)[cli/3316]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/25-10:18:39(0.006)[cli/3318]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/25-12:07:46(0.004)[cli/3475]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/25-12:08:59(0.004)[cli/3477]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/25-15:11:26(0.003)[cli/3821]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/25-15:11:26(0.053)[cli/3821]: Querying SQL: SHOW FULL COLUMNS FROM `user`
+2014/06/25-15:11:26(0.056)[cli/3821]: Querying SQL: SHOW CREATE TABLE `user`
+2014/06/25-15:11:26(0.181)[cli/3821]: Querying SQL: SELECT 1 FROM `user` `t` WHERE `t`.`email`=:ycp0 LIMIT 1
+2014/06/25-15:11:51(0.003)[cli/3823]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/25-15:11:51(0.054)[cli/3823]: Querying SQL: SHOW FULL COLUMNS FROM `user`
+2014/06/25-15:11:51(0.057)[cli/3823]: Querying SQL: SHOW CREATE TABLE `user`
+2014/06/25-15:11:51(0.070)[cli/3823]: Querying SQL: SELECT 1 FROM `user` `t` WHERE `t`.`email`=:ycp0 LIMIT 1
+2014/06/25-15:15:02(0.003)[cli/3825]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/25-15:15:02(0.053)[cli/3825]: Querying SQL: SHOW FULL COLUMNS FROM `user`
+2014/06/25-15:15:02(0.056)[cli/3825]: Querying SQL: SHOW CREATE TABLE `user`
+2014/06/25-15:15:02(0.070)[cli/3825]: Querying SQL: SELECT 1 FROM `user` `t` WHERE `t`.`email`=:ycp0 LIMIT 1
+2014/06/25-15:15:43(0.003)[cli/3827]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/25-15:15:43(0.053)[cli/3827]: Querying SQL: SHOW FULL COLUMNS FROM `user`
+2014/06/25-15:15:43(0.056)[cli/3827]: Querying SQL: SHOW CREATE TABLE `user`
+2014/06/25-15:15:43(0.069)[cli/3827]: Querying SQL: SELECT 1 FROM `user` `t` WHERE `t`.`email`=:ycp0 LIMIT 1
+2014/06/25-15:16:41(0.003)[cli/3829]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/25-15:16:41(0.053)[cli/3829]: Querying SQL: SHOW FULL COLUMNS FROM `user`
+2014/06/25-15:16:41(0.056)[cli/3829]: Querying SQL: SHOW CREATE TABLE `user`
+2014/06/25-15:16:55(0.003)[cli/3831]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/25-15:16:55(0.053)[cli/3831]: Querying SQL: SHOW FULL COLUMNS FROM `user`
+2014/06/25-15:16:55(0.055)[cli/3831]: Querying SQL: SHOW CREATE TABLE `user`
+2014/06/25-15:16:55(0.069)[cli/3831]: Querying SQL: SELECT 1 FROM `user` `t` WHERE `t`.`email`=:ycp0 LIMIT 1
+2014/06/25-15:17:17(0.003)[cli/3836]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/25-15:17:17(0.052)[cli/3836]: Querying SQL: SHOW FULL COLUMNS FROM `user`
+2014/06/25-15:17:17(0.055)[cli/3836]: Querying SQL: SHOW CREATE TABLE `user`
+2014/06/25-15:17:17(0.068)[cli/3836]: Querying SQL: SELECT 1 FROM `user` `t` WHERE `t`.`email`=:ycp0 LIMIT 1
+2014/06/25-15:46:35(0.003)[cli/3878]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/25-15:46:35(0.052)[cli/3878]: Querying SQL: SHOW FULL COLUMNS FROM `user`
+2014/06/25-15:46:35(0.055)[cli/3878]: Querying SQL: SHOW CREATE TABLE `user`
+2014/06/25-15:46:35(0.067)[cli/3878]: Querying SQL: SELECT 1 FROM `user` `t` WHERE `t`.`email`=:ycp0 LIMIT 1
+2014/06/25-15:47:47(0.003)[cli/3880]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/25-15:47:47(0.069)[cli/3880]: Querying SQL: SHOW FULL COLUMNS FROM `user`
+2014/06/25-15:47:47(0.072)[cli/3880]: Querying SQL: SHOW CREATE TABLE `user`
+2014/06/25-15:47:47(0.085)[cli/3880]: Querying SQL: SELECT 1 FROM `user` `t` WHERE `t`.`email`=:ycp0 LIMIT 1
+2014/06/25-15:48:12(0.003)[cli/3882]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/25-15:48:12(0.052)[cli/3882]: Querying SQL: SHOW FULL COLUMNS FROM `user`
+2014/06/25-15:48:12(0.055)[cli/3882]: Querying SQL: SHOW CREATE TABLE `user`
+2014/06/25-15:48:12(0.068)[cli/3882]: Querying SQL: SELECT 1 FROM `user` `t` WHERE `t`.`email`=:ycp0 LIMIT 1
+2014/06/25-15:48:26(0.003)[cli/3884]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/25-15:48:26(0.052)[cli/3884]: Querying SQL: SHOW FULL COLUMNS FROM `user`
+2014/06/25-15:48:26(0.055)[cli/3884]: Querying SQL: SHOW CREATE TABLE `user`
+2014/06/25-15:48:26(0.068)[cli/3884]: Querying SQL: SELECT 1 FROM `user` `t` WHERE `t`.`email`=:ycp0 LIMIT 1
+2014/06/25-15:48:55(0.004)[cli/3886]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/25-15:48:55(0.066)[cli/3886]: Querying SQL: SHOW FULL COLUMNS FROM `user`
+2014/06/25-15:48:55(0.068)[cli/3886]: Querying SQL: SHOW CREATE TABLE `user`
+2014/06/25-15:48:55(0.081)[cli/3886]: Querying SQL: SELECT 1 FROM `user` `t` WHERE `t`.`email`=:ycp0 LIMIT 1
+2014/06/25-15:49:21(0.003)[cli/3888]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/25-15:49:21(0.053)[cli/3888]: Querying SQL: SHOW FULL COLUMNS FROM `user`
+2014/06/25-15:49:21(0.055)[cli/3888]: Querying SQL: SHOW CREATE TABLE `user`
+2014/06/25-15:49:21(0.069)[cli/3888]: Querying SQL: SELECT 1 FROM `user` `t` WHERE `t`.`email`=:ycp0 LIMIT 1
+2014/06/25-15:49:25(0.003)[cli/3891]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/25-15:49:25(0.052)[cli/3891]: Querying SQL: SHOW FULL COLUMNS FROM `user`
+2014/06/25-15:49:25(0.055)[cli/3891]: Querying SQL: SHOW CREATE TABLE `user`
+2014/06/25-15:49:25(0.067)[cli/3891]: Querying SQL: SELECT 1 FROM `user` `t` WHERE `t`.`email`=:ycp0 LIMIT 1
+2014/06/25-15:51:39(0.003)[cli/3893]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/25-15:51:39(0.055)[cli/3893]: Querying SQL: SHOW FULL COLUMNS FROM `user`
+2014/06/25-15:51:39(0.058)[cli/3893]: Querying SQL: SHOW CREATE TABLE `user`
+2014/06/25-15:51:39(0.071)[cli/3893]: Querying SQL: SELECT 1 FROM `user` `t` WHERE `t`.`email`=:ycp0 LIMIT 1
+2014/06/25-15:52:58(0.005)[cli/3926]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/25-15:52:58(0.069)[cli/3926]: Querying SQL: SHOW FULL COLUMNS FROM `user`
+2014/06/25-15:52:58(0.072)[cli/3926]: Querying SQL: SHOW CREATE TABLE `user`
+2014/06/25-15:52:58(0.086)[cli/3926]: Querying SQL: SELECT 1 FROM `user` `t` WHERE `t`.`email`=:ycp0 LIMIT 1
+2014/06/25-15:53:47(0.003)[cli/3928]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/25-15:53:47(0.057)[cli/3928]: Querying SQL: SHOW FULL COLUMNS FROM `user`
+2014/06/25-15:53:47(0.060)[cli/3928]: Querying SQL: SHOW CREATE TABLE `user`
+2014/06/25-15:53:47(0.073)[cli/3928]: Querying SQL: SELECT 1 FROM `user` `t` WHERE `t`.`email`=:ycp0 LIMIT 1
+2014/06/25-15:54:01(0.003)[cli/3930]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/25-15:54:01(0.052)[cli/3930]: Querying SQL: SHOW FULL COLUMNS FROM `user`
+2014/06/25-15:54:01(0.055)[cli/3930]: Querying SQL: SHOW CREATE TABLE `user`
+2014/06/25-15:54:27(0.003)[cli/3932]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/25-15:54:27(0.051)[cli/3932]: Querying SQL: SHOW FULL COLUMNS FROM `user`
+2014/06/25-15:54:27(0.054)[cli/3932]: Querying SQL: SHOW CREATE TABLE `user`
+2014/06/25-15:54:27(0.067)[cli/3932]: Querying SQL: SELECT 1 FROM `user` `t` WHERE `t`.`email`=:ycp0 LIMIT 1
+2014/06/25-15:54:43(0.003)[cli/3934]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/25-15:54:43(0.053)[cli/3934]: Querying SQL: SHOW FULL COLUMNS FROM `user`
+2014/06/25-15:54:43(0.055)[cli/3934]: Querying SQL: SHOW CREATE TABLE `user`
+2014/06/25-15:54:43(0.069)[cli/3934]: Querying SQL: SELECT 1 FROM `user` `t` WHERE `t`.`email`=:ycp0 LIMIT 1
+2014/06/25-15:55:37(0.003)[cli/3936]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/25-15:55:37(0.052)[cli/3936]: Querying SQL: SHOW FULL COLUMNS FROM `user`
+2014/06/25-15:55:37(0.055)[cli/3936]: Querying SQL: SHOW CREATE TABLE `user`
+2014/06/25-15:55:37(0.067)[cli/3936]: Querying SQL: SELECT 1 FROM `user` `t` WHERE `t`.`email`=:ycp0 LIMIT 1
+2014/06/25-15:56:24(0.003)[cli/3938]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/25-15:56:24(0.053)[cli/3938]: Querying SQL: SHOW FULL COLUMNS FROM `user`
+2014/06/25-15:56:24(0.056)[cli/3938]: Querying SQL: SHOW CREATE TABLE `user`
+2014/06/25-16:19:44(0.003)[cli/3984]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/25-16:19:44(0.054)[cli/3984]: Querying SQL: SHOW FULL COLUMNS FROM `user`
+2014/06/25-16:19:44(0.056)[cli/3984]: Querying SQL: SHOW CREATE TABLE `user`
+2014/06/25-16:21:54(0.003)[cli/3986]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/25-16:21:54(0.053)[cli/3986]: Querying SQL: SHOW FULL COLUMNS FROM `user`
+2014/06/25-16:21:54(0.056)[cli/3986]: Querying SQL: SHOW CREATE TABLE `user`
+2014/06/25-16:22:31(0.003)[cli/3988]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/25-16:22:31(0.052)[cli/3988]: Querying SQL: SHOW FULL COLUMNS FROM `user`
+2014/06/25-16:22:31(0.055)[cli/3988]: Querying SQL: SHOW CREATE TABLE `user`
+2014/06/25-16:22:31(0.068)[cli/3988]: Querying SQL: SELECT 1 FROM `user` `t` WHERE `t`.`email`=:ycp0 LIMIT 1
+2014/06/25-16:23:00(0.003)[cli/3990]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/25-16:23:00(0.053)[cli/3990]: Querying SQL: SHOW FULL COLUMNS FROM `user`
+2014/06/25-16:23:00(0.056)[cli/3990]: Querying SQL: SHOW CREATE TABLE `user`
+2014/06/25-16:23:01(0.073)[cli/3990]: Querying SQL: SELECT 1 FROM `user` `t` WHERE `t`.`email`=:ycp0 LIMIT 1
+2014/06/25-16:24:54(0.004)[cli/3992]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/25-16:26:03(0.003)[cli/3994]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/25-16:27:25(0.003)[cli/3996]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/25-16:27:25(0.069)[cli/3996]: Querying SQL: SHOW FULL COLUMNS FROM `user`
+2014/06/25-16:27:25(0.072)[cli/3996]: Querying SQL: SHOW CREATE TABLE `user`
+2014/06/25-16:27:25(0.089)[cli/3996]: Querying SQL: SELECT 1 FROM `user` `t` WHERE `t`.`email`=:ycp0 LIMIT 1
+2014/06/25-16:30:13(0.003)[cli/3998]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/25-16:30:13(0.053)[cli/3998]: Querying SQL: SHOW FULL COLUMNS FROM `user`
+2014/06/25-16:30:13(0.056)[cli/3998]: Querying SQL: SHOW CREATE TABLE `user`
+2014/06/25-16:30:13(0.069)[cli/3998]: Querying SQL: SELECT 1 FROM `user` `t` WHERE `t`.`email`=:ycp0 LIMIT 1
+2014/06/25-16:30:26(0.003)[cli/4000]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/25-16:30:26(0.052)[cli/4000]: Querying SQL: SHOW FULL COLUMNS FROM `user`
+2014/06/25-16:30:26(0.055)[cli/4000]: Querying SQL: SHOW CREATE TABLE `user`
+2014/06/25-16:30:26(0.069)[cli/4000]: Querying SQL: SELECT 1 FROM `user` `t` WHERE `t`.`email`=:ycp0 LIMIT 1
+2014/06/25-16:31:41(0.004)[cli/4002]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/25-16:31:41(0.059)[cli/4002]: Querying SQL: SHOW FULL COLUMNS FROM `user`
+2014/06/25-16:31:41(0.062)[cli/4002]: Querying SQL: SHOW CREATE TABLE `user`
+2014/06/25-16:31:41(0.077)[cli/4002]: Querying SQL: SELECT 1 FROM `user` `t` WHERE `t`.`email`=:ycp0 LIMIT 1
+2014/06/25-16:32:28(0.003)[cli/4004]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/25-16:32:28(0.052)[cli/4004]: Querying SQL: SHOW FULL COLUMNS FROM `user`
+2014/06/25-16:32:28(0.054)[cli/4004]: Querying SQL: SHOW CREATE TABLE `user`
+2014/06/25-16:32:28(0.067)[cli/4004]: Querying SQL: SELECT 1 FROM `user` `t` WHERE `t`.`email`=:ycp0 LIMIT 1
+2014/06/25-16:32:41(0.005)[cli/4006]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/25-16:32:41(0.060)[cli/4006]: Querying SQL: SHOW FULL COLUMNS FROM `user`
+2014/06/25-16:32:41(0.062)[cli/4006]: Querying SQL: SHOW CREATE TABLE `user`
+2014/06/25-16:32:41(0.075)[cli/4006]: Querying SQL: SELECT 1 FROM `user` `t` WHERE `t`.`email`=:ycp0 LIMIT 1
+2014/06/25-16:35:08(0.003)[cli/4008]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/25-16:35:08(0.052)[cli/4008]: Querying SQL: SHOW FULL COLUMNS FROM `user`
+2014/06/25-16:35:08(0.055)[cli/4008]: Querying SQL: SHOW CREATE TABLE `user`
+2014/06/25-16:35:29(0.003)[cli/4010]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/25-16:35:29(0.058)[cli/4010]: Querying SQL: SHOW FULL COLUMNS FROM `user`
+2014/06/25-16:35:29(0.060)[cli/4010]: Querying SQL: SHOW CREATE TABLE `user`
+2014/06/25-16:35:29(0.076)[cli/4010]: Querying SQL: SELECT 1 FROM `user` `t` WHERE `t`.`email`=:ycp0 LIMIT 1
+2014/06/25-16:35:38(0.003)[cli/4012]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/25-16:35:38(0.052)[cli/4012]: Querying SQL: SHOW FULL COLUMNS FROM `user`
+2014/06/25-16:35:38(0.054)[cli/4012]: Querying SQL: SHOW CREATE TABLE `user`
+2014/06/25-16:35:38(0.067)[cli/4012]: Querying SQL: SELECT 1 FROM `user` `t` WHERE `t`.`email`=:ycp0 LIMIT 1
+2014/06/25-16:35:53(0.003)[cli/4014]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/25-16:35:53(0.053)[cli/4014]: Querying SQL: SHOW FULL COLUMNS FROM `user`
+2014/06/25-16:35:53(0.055)[cli/4014]: Querying SQL: SHOW CREATE TABLE `user`
+2014/06/25-16:35:53(0.069)[cli/4014]: Querying SQL: SELECT 1 FROM `user` `t` WHERE `t`.`email`=:ycp0 LIMIT 1
+2014/06/25-16:38:18(0.003)[cli/4017]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/25-16:38:18(0.053)[cli/4017]: Querying SQL: SHOW FULL COLUMNS FROM `user`
+2014/06/25-16:38:18(0.055)[cli/4017]: Querying SQL: SHOW CREATE TABLE `user`
+2014/06/25-16:38:18(0.068)[cli/4017]: Querying SQL: SELECT 1 FROM `user` `t` WHERE `t`.`email`=:ycp0 LIMIT 1
+2014/06/25-16:41:11(0.003)[cli/4057]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/25-16:41:11(0.060)[cli/4057]: Querying SQL: SHOW FULL COLUMNS FROM `user`
+2014/06/25-16:41:11(0.063)[cli/4057]: Querying SQL: SHOW CREATE TABLE `user`
+2014/06/25-16:41:26(0.003)[cli/4059]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/25-16:41:26(0.055)[cli/4059]: Querying SQL: SHOW FULL COLUMNS FROM `user`
+2014/06/25-16:41:26(0.057)[cli/4059]: Querying SQL: SHOW CREATE TABLE `user`
+2014/06/25-16:41:26(0.071)[cli/4059]: Querying SQL: SELECT 1 FROM `user` `t` WHERE `t`.`email`=:ycp0 LIMIT 1
+2014/06/25-16:42:00(0.003)[cli/4061]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/25-16:42:00(0.053)[cli/4061]: Querying SQL: SHOW FULL COLUMNS FROM `user`
+2014/06/25-16:42:00(0.056)[cli/4061]: Querying SQL: SHOW CREATE TABLE `user`
+2014/06/25-16:42:12(0.003)[cli/4063]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/25-16:42:12(0.053)[cli/4063]: Querying SQL: SHOW FULL COLUMNS FROM `user`
+2014/06/25-16:42:12(0.058)[cli/4063]: Querying SQL: SHOW CREATE TABLE `user`
+2014/06/25-16:42:26(0.003)[cli/4065]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/25-16:42:26(0.053)[cli/4065]: Querying SQL: SHOW FULL COLUMNS FROM `user`
+2014/06/25-16:42:26(0.056)[cli/4065]: Querying SQL: SHOW CREATE TABLE `user`
+2014/06/25-16:43:44(0.003)[cli/4067]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/25-16:43:44(0.054)[cli/4067]: Querying SQL: SHOW FULL COLUMNS FROM `user`
+2014/06/25-16:43:44(0.057)[cli/4067]: Querying SQL: SHOW CREATE TABLE `user`
+2014/06/25-16:43:44(0.070)[cli/4067]: Querying SQL: SELECT 1 FROM `user` `t` WHERE `t`.`email`=:ycp0 LIMIT 1
+2014/06/25-16:45:37(0.003)[cli/4069]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/25-16:45:37(0.058)[cli/4069]: Querying SQL: SHOW FULL COLUMNS FROM `user`
+2014/06/25-16:45:37(0.061)[cli/4069]: Querying SQL: SHOW CREATE TABLE `user`
+2014/06/25-16:45:38(0.110)[cli/4069]: Querying SQL: SELECT * FROM `user` `t` LIMIT 1
+2014/06/25-16:45:58(0.003)[cli/4071]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/25-16:45:58(0.051)[cli/4071]: Querying SQL: SHOW FULL COLUMNS FROM `user`
+2014/06/25-16:45:58(0.054)[cli/4071]: Querying SQL: SHOW CREATE TABLE `user`
+2014/06/25-16:46:30(0.003)[cli/4073]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/25-16:46:30(0.052)[cli/4073]: Querying SQL: SHOW FULL COLUMNS FROM `user`
+2014/06/25-16:46:30(0.054)[cli/4073]: Querying SQL: SHOW CREATE TABLE `user`
+2014/06/25-16:46:49(0.003)[cli/4075]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/25-16:46:49(0.054)[cli/4075]: Querying SQL: SHOW FULL COLUMNS FROM `user`
+2014/06/25-16:46:49(0.056)[cli/4075]: Querying SQL: SHOW CREATE TABLE `user`
+2014/06/25-16:47:45(0.003)[cli/4077]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/25-16:47:45(0.054)[cli/4077]: Querying SQL: SHOW FULL COLUMNS FROM `user`
+2014/06/25-16:47:45(0.057)[cli/4077]: Querying SQL: SHOW CREATE TABLE `user`
+2014/06/25-16:47:57(0.003)[cli/4079]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/25-16:47:57(0.059)[cli/4079]: Querying SQL: SHOW FULL COLUMNS FROM `user`
+2014/06/25-16:47:57(0.062)[cli/4079]: Querying SQL: SHOW CREATE TABLE `user`
+2014/06/25-16:48:02(0.003)[cli/4081]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/25-16:48:03(0.055)[cli/4081]: Querying SQL: SHOW FULL COLUMNS FROM `user`
+2014/06/25-16:48:03(0.058)[cli/4081]: Querying SQL: SHOW CREATE TABLE `user`
+2014/06/25-16:48:19(0.003)[cli/4083]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/25-16:48:19(0.051)[cli/4083]: Querying SQL: SHOW FULL COLUMNS FROM `user`
+2014/06/25-16:48:19(0.054)[cli/4083]: Querying SQL: SHOW CREATE TABLE `user`
+2014/06/25-16:48:39(0.003)[cli/4085]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/25-16:48:39(0.053)[cli/4085]: Querying SQL: SHOW FULL COLUMNS FROM `user`
+2014/06/25-16:48:39(0.056)[cli/4085]: Querying SQL: SHOW CREATE TABLE `user`
+2014/06/25-16:48:49(0.003)[cli/4087]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/25-16:48:49(0.051)[cli/4087]: Querying SQL: SHOW FULL COLUMNS FROM `user`
+2014/06/25-16:48:49(0.054)[cli/4087]: Querying SQL: SHOW CREATE TABLE `user`
+2014/06/25-16:49:16(0.004)[cli/4089]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/25-16:49:16(0.062)[cli/4089]: Querying SQL: SHOW FULL COLUMNS FROM `user`
+2014/06/25-16:49:16(0.065)[cli/4089]: Querying SQL: SHOW CREATE TABLE `user`
+2014/06/25-16:49:46(0.003)[cli/4091]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/25-16:49:46(0.057)[cli/4091]: Querying SQL: SHOW FULL COLUMNS FROM `user`
+2014/06/25-16:49:46(0.060)[cli/4091]: Querying SQL: SHOW CREATE TABLE `user`
+2014/06/25-16:49:53(0.003)[cli/4093]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/25-16:49:53(0.053)[cli/4093]: Querying SQL: SHOW FULL COLUMNS FROM `user`
+2014/06/25-16:49:53(0.055)[cli/4093]: Querying SQL: SHOW CREATE TABLE `user`
+2014/06/25-16:50:01(0.003)[cli/4095]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/25-16:50:01(0.069)[cli/4095]: Querying SQL: SHOW FULL COLUMNS FROM `user`
+2014/06/25-16:50:01(0.074)[cli/4095]: Querying SQL: SHOW CREATE TABLE `user`
+2014/06/25-16:50:11(0.003)[cli/4097]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/25-16:50:11(0.065)[cli/4097]: Querying SQL: SHOW FULL COLUMNS FROM `user`
+2014/06/25-16:50:11(0.068)[cli/4097]: Querying SQL: SHOW CREATE TABLE `user`
+2014/06/25-16:50:32(0.003)[cli/4099]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/25-16:50:32(0.051)[cli/4099]: Querying SQL: SHOW FULL COLUMNS FROM `user`
+2014/06/25-16:50:32(0.054)[cli/4099]: Querying SQL: SHOW CREATE TABLE `user`
+2014/06/25-16:51:24(0.003)[cli/4101]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/25-16:51:24(0.058)[cli/4101]: Querying SQL: SHOW FULL COLUMNS FROM `user`
+2014/06/25-16:51:24(0.061)[cli/4101]: Querying SQL: SHOW CREATE TABLE `user`
+2014/06/25-16:52:10(0.003)[cli/4103]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/25-16:52:10(0.053)[cli/4103]: Querying SQL: SHOW FULL COLUMNS FROM `user`
+2014/06/25-16:52:10(0.056)[cli/4103]: Querying SQL: SHOW CREATE TABLE `user`
+2014/06/25-16:52:10(0.069)[cli/4103]: Querying SQL: SELECT 1 FROM `user` `t` WHERE `t`.`email`=:ycp0 LIMIT 1
+2014/06/25-16:52:29(0.006)[cli/4105]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/25-16:52:29(0.085)[cli/4105]: Querying SQL: SHOW FULL COLUMNS FROM `user`
+2014/06/25-16:52:29(0.088)[cli/4105]: Querying SQL: SHOW CREATE TABLE `user`
+2014/06/25-16:52:44(0.003)[cli/4107]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/25-16:52:44(0.056)[cli/4107]: Querying SQL: SHOW FULL COLUMNS FROM `user`
+2014/06/25-16:52:44(0.058)[cli/4107]: Querying SQL: SHOW CREATE TABLE `user`
+2014/06/25-16:53:09(0.003)[cli/4109]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/25-16:53:09(0.052)[cli/4109]: Querying SQL: SHOW FULL COLUMNS FROM `user`
+2014/06/25-16:53:09(0.055)[cli/4109]: Querying SQL: SHOW CREATE TABLE `user`
+2014/06/25-16:54:45(0.003)[cli/4111]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/25-16:54:45(0.055)[cli/4111]: Querying SQL: SHOW FULL COLUMNS FROM `user`
+2014/06/25-16:54:45(0.058)[cli/4111]: Querying SQL: SHOW CREATE TABLE `user`
+2014/06/25-16:55:53(0.003)[cli/4113]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/25-16:55:53(0.074)[cli/4113]: Querying SQL: SHOW FULL COLUMNS FROM `user`
+2014/06/25-16:55:53(0.077)[cli/4113]: Querying SQL: SHOW CREATE TABLE `user`
+2014/06/25-16:55:53(0.090)[cli/4113]: Querying SQL: SELECT 1 FROM `user` `t` WHERE `t`.`email`=:ycp0 LIMIT 1
+2014/06/25-16:56:11(0.003)[cli/4115]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/25-16:56:11(0.052)[cli/4115]: Querying SQL: SHOW FULL COLUMNS FROM `user`
+2014/06/25-16:56:11(0.054)[cli/4115]: Querying SQL: SHOW CREATE TABLE `user`
+2014/06/25-16:56:11(0.067)[cli/4115]: Querying SQL: SELECT 1 FROM `user` `t` WHERE `t`.`email`=:ycp0 LIMIT 1
+2014/06/25-16:56:53(0.003)[cli/4117]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/25-16:56:53(0.056)[cli/4117]: Querying SQL: SHOW FULL COLUMNS FROM `user`
+2014/06/25-16:56:53(0.059)[cli/4117]: Querying SQL: SHOW CREATE TABLE `user`
+2014/06/25-16:56:53(0.071)[cli/4117]: Querying SQL: SELECT 1 FROM `user` `t` WHERE `t`.`email`=:ycp0 LIMIT 1
+2014/06/25-17:02:00(0.003)[cli/4119]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/25-17:02:20(0.003)[cli/4121]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/25-17:02:40(0.003)[cli/4123]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/25-17:02:40(0.053)[cli/4123]: Querying SQL: SHOW FULL COLUMNS FROM `project`
+2014/06/25-17:02:40(0.055)[cli/4123]: Querying SQL: SHOW CREATE TABLE `project`
+2014/06/25-17:02:40(0.058)[cli/4123]: Querying SQL: SHOW FULL COLUMNS FROM `user`
+2014/06/25-17:02:40(0.060)[cli/4123]: Querying SQL: SHOW CREATE TABLE `user`
+2014/06/25-17:02:40(0.073)[cli/4123]: Querying SQL: SELECT 1 FROM `user` `t` WHERE `t`.`email`=:ycp0 LIMIT 1
+2014/06/25-17:03:50(0.003)[cli/4125]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/25-17:03:50(0.053)[cli/4125]: Querying SQL: SHOW FULL COLUMNS FROM `project`
+2014/06/25-17:03:50(0.055)[cli/4125]: Querying SQL: SHOW CREATE TABLE `project`
+2014/06/25-17:03:50(0.058)[cli/4125]: Querying SQL: SHOW FULL COLUMNS FROM `user`
+2014/06/25-17:03:50(0.060)[cli/4125]: Querying SQL: SHOW CREATE TABLE `user`
+2014/06/25-17:03:50(0.073)[cli/4125]: Querying SQL: SELECT 1 FROM `user` `t` WHERE `t`.`email`=:ycp0 LIMIT 1
+2014/06/25-17:04:24(0.003)[cli/4158]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/25-17:04:24(0.054)[cli/4158]: Querying SQL: SHOW FULL COLUMNS FROM `project`
+2014/06/25-17:04:24(0.056)[cli/4158]: Querying SQL: SHOW CREATE TABLE `project`
+2014/06/25-17:04:24(0.081)[cli/4158]: Querying SQL: SHOW FULL COLUMNS FROM `user`
+2014/06/25-17:04:24(0.085)[cli/4158]: Querying SQL: SHOW CREATE TABLE `user`
+2014/06/25-17:04:24(0.094)[cli/4158]: Querying SQL: SELECT 1 FROM `user` `t` WHERE `t`.`email`=:ycp0 LIMIT 1
+2014/06/25-17:07:21(0.003)[cli/4160]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/25-17:07:21(0.056)[cli/4160]: Querying SQL: SHOW FULL COLUMNS FROM `user`
+2014/06/25-17:07:21(0.059)[cli/4160]: Querying SQL: SHOW CREATE TABLE `user`
+2014/06/25-17:07:21(0.072)[cli/4160]: Querying SQL: SELECT 1 FROM `user` `t` WHERE `t`.`email`=:ycp0 LIMIT 1
+2014/06/25-17:07:34(0.003)[cli/4162]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/25-17:07:34(0.059)[cli/4162]: Querying SQL: SHOW FULL COLUMNS FROM `user`
+2014/06/25-17:07:34(0.061)[cli/4162]: Querying SQL: SHOW CREATE TABLE `user`
+2014/06/25-17:07:34(0.075)[cli/4162]: Querying SQL: SELECT 1 FROM `user` `t` WHERE `t`.`email`=:ycp0 LIMIT 1
+2014/06/25-17:07:55(0.003)[cli/4164]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/25-17:07:55(0.061)[cli/4164]: Querying SQL: SHOW FULL COLUMNS FROM `user`
+2014/06/25-17:07:55(0.063)[cli/4164]: Querying SQL: SHOW CREATE TABLE `user`
+2014/06/25-17:07:55(0.078)[cli/4164]: Querying SQL: SELECT 1 FROM `user` `t` WHERE `t`.`email`=:ycp0 LIMIT 1
+2014/06/25-17:08:12(0.005)[cli/4166]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/25-17:08:12(0.071)[cli/4166]: Querying SQL: SHOW FULL COLUMNS FROM `user`
+2014/06/25-17:08:12(0.074)[cli/4166]: Querying SQL: SHOW CREATE TABLE `user`
+2014/06/25-17:08:12(0.090)[cli/4166]: Querying SQL: SELECT 1 FROM `user` `t` WHERE `t`.`email`=:ycp0 LIMIT 1
+2014/06/25-17:08:38(0.003)[cli/4168]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/25-17:08:38(0.057)[cli/4168]: Querying SQL: SHOW FULL COLUMNS FROM `user`
+2014/06/25-17:08:38(0.059)[cli/4168]: Querying SQL: SHOW CREATE TABLE `user`
+2014/06/25-17:08:38(0.073)[cli/4168]: Querying SQL: SELECT 1 FROM `user` `t` WHERE `t`.`email`=:ycp0 LIMIT 1
+2014/06/25-17:09:27(0.004)[cli/4177]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/25-17:10:28(0.003)[cli/4233]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/25-17:10:28(0.060)[cli/4233]: Querying SQL: SHOW FULL COLUMNS FROM `project`
+2014/06/25-17:10:28(0.062)[cli/4233]: Querying SQL: SHOW CREATE TABLE `project`
+2014/06/25-17:10:28(0.073)[cli/4233]: Querying SQL: SHOW FULL COLUMNS FROM `user`
+2014/06/25-17:10:28(0.075)[cli/4233]: Querying SQL: SHOW CREATE TABLE `user`
+2014/06/25-17:10:28(0.083)[cli/4233]: Querying SQL: SELECT 1 FROM `user` `t` WHERE `t`.`email`=:ycp0 LIMIT 1
+2014/06/25-17:12:17(0.003)[cli/4235]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/25-17:12:17(0.054)[cli/4235]: Querying SQL: SHOW FULL COLUMNS FROM `user`
+2014/06/25-17:12:17(0.057)[cli/4235]: Querying SQL: SHOW CREATE TABLE `user`
+2014/06/25-17:12:17(0.070)[cli/4235]: Querying SQL: SELECT 1 FROM `user` `t` WHERE `t`.`email`=:ycp0 LIMIT 1
+2014/06/25-17:14:14(0.005)[cli/4237]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/25-17:14:14(0.073)[cli/4237]: Querying SQL: SHOW FULL COLUMNS FROM `user`
+2014/06/25-17:14:14(0.075)[cli/4237]: Querying SQL: SHOW CREATE TABLE `user`
+2014/06/25-17:14:14(0.089)[cli/4237]: Querying SQL: SELECT 1 FROM `user` `t` WHERE `t`.`email`=:ycp0 LIMIT 1
+2014/06/25-17:15:46(0.005)[cli/4240]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/25-17:15:46(0.097)[cli/4240]: Querying SQL: SHOW FULL COLUMNS FROM `user`
+2014/06/25-17:15:46(0.100)[cli/4240]: Querying SQL: SHOW CREATE TABLE `user`
+2014/06/25-17:15:46(0.113)[cli/4240]: Querying SQL: SELECT 1 FROM `user` `t` WHERE `t`.`email`=:ycp0 LIMIT 1
+2014/06/25-17:16:01(0.003)[cli/4242]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/25-17:16:01(0.055)[cli/4242]: Querying SQL: SHOW FULL COLUMNS FROM `user`
+2014/06/25-17:16:01(0.058)[cli/4242]: Querying SQL: SHOW CREATE TABLE `user`
+2014/06/25-17:16:17(0.003)[cli/4244]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/25-17:16:17(0.055)[cli/4244]: Querying SQL: SHOW FULL COLUMNS FROM `user`
+2014/06/25-17:16:17(0.058)[cli/4244]: Querying SQL: SHOW CREATE TABLE `user`
+2014/06/25-17:17:24(0.003)[cli/4249]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/25-17:17:24(0.056)[cli/4249]: Querying SQL: SHOW FULL COLUMNS FROM `project`
+2014/06/25-17:17:24(0.059)[cli/4249]: Querying SQL: SHOW CREATE TABLE `project`
+2014/06/25-17:17:25(0.063)[cli/4249]: Querying SQL: SHOW FULL COLUMNS FROM `user`
+2014/06/25-17:17:25(0.065)[cli/4249]: Querying SQL: SHOW CREATE TABLE `user`
+2014/06/25-17:17:57(0.003)[cli/4251]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/25-17:17:57(0.054)[cli/4251]: Querying SQL: SHOW FULL COLUMNS FROM `project`
+2014/06/25-17:17:57(0.056)[cli/4251]: Querying SQL: SHOW CREATE TABLE `project`
+2014/06/25-17:17:57(0.060)[cli/4251]: Querying SQL: SHOW FULL COLUMNS FROM `user`
+2014/06/25-17:17:57(0.062)[cli/4251]: Querying SQL: SHOW CREATE TABLE `user`
+2014/06/25-17:18:44(0.003)[cli/4273]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/25-17:18:44(0.071)[cli/4273]: Querying SQL: SHOW FULL COLUMNS FROM `project`
+2014/06/25-17:18:44(0.073)[cli/4273]: Querying SQL: SHOW CREATE TABLE `project`
+2014/06/25-17:19:04(0.003)[cli/4275]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/25-17:19:04(0.049)[cli/4275]: Querying SQL: SHOW FULL COLUMNS FROM `project`
+2014/06/25-17:19:04(0.051)[cli/4275]: Querying SQL: SHOW CREATE TABLE `project`
+2014/06/25-17:19:08(0.003)[cli/4277]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/25-17:19:08(0.047)[cli/4277]: Querying SQL: SHOW FULL COLUMNS FROM `project`
+2014/06/25-17:19:08(0.049)[cli/4277]: Querying SQL: SHOW CREATE TABLE `project`
+2014/06/25-17:19:19(0.003)[cli/4279]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/25-17:19:19(0.050)[cli/4279]: Querying SQL: SHOW FULL COLUMNS FROM `project`
+2014/06/25-17:19:19(0.052)[cli/4279]: Querying SQL: SHOW CREATE TABLE `project`
+2014/06/25-17:19:31(0.003)[cli/4281]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/25-17:19:31(0.050)[cli/4281]: Querying SQL: SHOW FULL COLUMNS FROM `project`
+2014/06/25-17:19:31(0.052)[cli/4281]: Querying SQL: SHOW CREATE TABLE `project`
+2014/06/25-17:20:04(0.003)[cli/4283]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/25-17:21:13(0.003)[cli/4285]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/25-17:21:32(0.003)[cli/4287]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/25-17:21:32(0.047)[cli/4287]: Querying SQL: SHOW FULL COLUMNS FROM `project`
+2014/06/25-17:21:32(0.049)[cli/4287]: Querying SQL: SHOW CREATE TABLE `project`
+2014/06/25-17:21:42(0.003)[cli/4289]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/25-17:21:42(0.049)[cli/4289]: Querying SQL: SHOW FULL COLUMNS FROM `project`
+2014/06/25-17:21:42(0.051)[cli/4289]: Querying SQL: SHOW CREATE TABLE `project`
+2014/06/25-17:21:56(0.003)[cli/4291]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/25-17:21:56(0.048)[cli/4291]: Querying SQL: SHOW FULL COLUMNS FROM `project`
+2014/06/25-17:21:56(0.050)[cli/4291]: Querying SQL: SHOW CREATE TABLE `project`
+2014/06/25-17:22:16(0.003)[cli/4293]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/25-17:22:16(0.047)[cli/4293]: Querying SQL: SHOW FULL COLUMNS FROM `project`
+2014/06/25-17:22:16(0.050)[cli/4293]: Querying SQL: SHOW CREATE TABLE `project`
+2014/06/25-17:22:44(0.003)[cli/4295]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/25-17:22:44(0.049)[cli/4295]: Querying SQL: SHOW FULL COLUMNS FROM `project`
+2014/06/25-17:22:44(0.051)[cli/4295]: Querying SQL: SHOW CREATE TABLE `project`
+2014/06/25-17:23:29(0.003)[cli/4297]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/25-17:23:29(0.061)[cli/4297]: Querying SQL: SHOW FULL COLUMNS FROM `project`
+2014/06/25-17:23:29(0.064)[cli/4297]: Querying SQL: SHOW CREATE TABLE `project`
+2014/06/25-17:24:05(0.003)[cli/4299]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/25-17:24:05(0.050)[cli/4299]: Querying SQL: SHOW FULL COLUMNS FROM `project`
+2014/06/25-17:24:05(0.052)[cli/4299]: Querying SQL: SHOW CREATE TABLE `project`
+2014/06/25-17:28:09(0.003)[cli/4332]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/25-17:28:09(0.050)[cli/4332]: Querying SQL: SHOW FULL COLUMNS FROM `project`
+2014/06/25-17:28:09(0.052)[cli/4332]: Querying SQL: SHOW CREATE TABLE `project`
+2014/06/25-17:28:34(0.003)[cli/4334]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/25-17:28:34(0.050)[cli/4334]: Querying SQL: SHOW FULL COLUMNS FROM `project`
+2014/06/25-17:28:34(0.052)[cli/4334]: Querying SQL: SHOW CREATE TABLE `project`
+2014/06/25-17:29:00(0.003)[cli/4336]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/25-17:29:10(0.003)[cli/4338]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/25-17:29:10(0.047)[cli/4338]: Querying SQL: SHOW FULL COLUMNS FROM `project`
+2014/06/25-17:29:10(0.049)[cli/4338]: Querying SQL: SHOW CREATE TABLE `project`
+2014/06/25-17:31:48(0.003)[cli/4340]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/25-17:33:43(0.003)[cli/4342]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/25-17:33:43(0.048)[cli/4342]: Querying SQL: SHOW FULL COLUMNS FROM `project`
+2014/06/25-17:33:43(0.050)[cli/4342]: Querying SQL: SHOW CREATE TABLE `project`
+2014/06/25-17:34:19(0.003)[cli/4344]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/25-17:34:19(0.047)[cli/4344]: Querying SQL: SHOW FULL COLUMNS FROM `project`
+2014/06/25-17:34:19(0.049)[cli/4344]: Querying SQL: SHOW CREATE TABLE `project`
+2014/06/25-17:34:33(0.003)[cli/4346]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/25-17:34:33(0.048)[cli/4346]: Querying SQL: SHOW FULL COLUMNS FROM `project`
+2014/06/25-17:34:33(0.051)[cli/4346]: Querying SQL: SHOW CREATE TABLE `project`
+2014/06/25-17:36:25(0.003)[cli/4348]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/25-17:36:44(0.003)[cli/4350]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/25-17:37:00(0.003)[cli/4352]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/25-17:37:49(0.003)[cli/4354]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/25-17:37:55(0.003)[cli/4357]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/25-17:38:10(0.003)[cli/4359]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/25-17:38:24(0.003)[cli/4361]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/25-17:38:24(0.046)[cli/4361]: Querying SQL: SHOW FULL COLUMNS FROM `project`
+2014/06/25-17:38:24(0.048)[cli/4361]: Querying SQL: SHOW CREATE TABLE `project`
+2014/06/25-17:38:36(0.003)[cli/4363]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/25-17:38:36(0.054)[cli/4363]: Querying SQL: SHOW FULL COLUMNS FROM `project`
+2014/06/25-17:38:36(0.056)[cli/4363]: Querying SQL: SHOW CREATE TABLE `project`
+2014/06/25-17:38:51(0.003)[cli/4365]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/25-17:38:51(0.049)[cli/4365]: Querying SQL: SHOW FULL COLUMNS FROM `project`
+2014/06/25-17:38:51(0.051)[cli/4365]: Querying SQL: SHOW CREATE TABLE `project`
+2014/06/25-17:38:51(0.063)[cli/4365]: Querying SQL: SELECT * FROM `project` `t` WHERE id = :id LIMIT 1
+2014/06/25-17:39:42(0.003)[cli/4374]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/25-17:39:42(0.048)[cli/4374]: Querying SQL: SHOW FULL COLUMNS FROM `project`
+2014/06/25-17:39:42(0.050)[cli/4374]: Querying SQL: SHOW CREATE TABLE `project`
+2014/06/25-17:43:50(0.003)[cli/4376]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/25-17:43:50(0.048)[cli/4376]: Querying SQL: SHOW FULL COLUMNS FROM `project`
+2014/06/25-17:43:50(0.050)[cli/4376]: Querying SQL: SHOW CREATE TABLE `project`
+2014/06/25-17:44:55(0.003)[cli/4378]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/25-17:45:24(0.003)[cli/4380]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/25-17:45:34(0.003)[cli/4382]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/25-17:46:41(0.003)[cli/4415]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/25-17:46:56(0.003)[cli/4417]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/25-17:47:07(0.003)[cli/4419]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/25-17:47:44(0.003)[cli/4421]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/25-17:47:44(0.050)[cli/4421]: Querying SQL: SHOW FULL COLUMNS FROM `project`
+2014/06/25-17:47:44(0.052)[cli/4421]: Querying SQL: SHOW CREATE TABLE `project`
+2014/06/25-17:53:43(0.003)[cli/4423]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/25-17:54:11(0.003)[cli/4425]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/25-17:58:29(0.003)[cli/4427]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/25-17:58:29(0.047)[cli/4427]: Querying SQL: SHOW FULL COLUMNS FROM `project`
+2014/06/25-17:58:30(0.050)[cli/4427]: Querying SQL: SHOW CREATE TABLE `project`
+2014/06/25-17:59:17(0.003)[cli/4429]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/25-17:59:17(0.049)[cli/4429]: Querying SQL: SHOW FULL COLUMNS FROM `project`
+2014/06/25-17:59:17(0.051)[cli/4429]: Querying SQL: SHOW CREATE TABLE `project`
+2014/06/25-18:00:40(0.003)[cli/4434]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/25-18:00:40(0.052)[cli/4434]: Querying SQL: SHOW FULL COLUMNS FROM `project`
+2014/06/25-18:00:40(0.054)[cli/4434]: Querying SQL: SHOW CREATE TABLE `project`
+2014/06/25-18:01:34(0.003)[cli/4436]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/25-18:01:49(0.003)[cli/4438]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/25-18:02:14(0.003)[cli/4447]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/25-18:02:14(0.048)[cli/4447]: Querying SQL: SHOW FULL COLUMNS FROM `user`
+2014/06/25-18:02:14(0.050)[cli/4447]: Querying SQL: SHOW CREATE TABLE `user`
+2014/06/25-18:03:11(0.003)[cli/4449]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/25-18:03:11(0.047)[cli/4449]: Querying SQL: SHOW FULL COLUMNS FROM `user`
+2014/06/25-18:03:11(0.050)[cli/4449]: Querying SQL: SHOW CREATE TABLE `user`
+2014/06/25-18:03:29(0.003)[cli/4451]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/25-18:03:29(0.048)[cli/4451]: Querying SQL: SHOW FULL COLUMNS FROM `user`
+2014/06/25-18:03:29(0.051)[cli/4451]: Querying SQL: SHOW CREATE TABLE `user`
+2014/06/25-18:03:45(0.003)[cli/4453]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/25-18:03:45(0.048)[cli/4453]: Querying SQL: SHOW FULL COLUMNS FROM `user`
+2014/06/25-18:03:45(0.050)[cli/4453]: Querying SQL: SHOW CREATE TABLE `user`
+2014/06/25-18:04:30(0.003)[cli/4455]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/25-18:04:30(0.048)[cli/4455]: Querying SQL: SHOW FULL COLUMNS FROM `user`
+2014/06/25-18:04:30(0.051)[cli/4455]: Querying SQL: SHOW CREATE TABLE `user`
+2014/06/25-18:04:30(0.064)[cli/4455]: Querying SQL: SELECT 1 FROM `user` `t` WHERE `t`.`email`=:ycp0 LIMIT 1
+2014/06/25-18:05:04(0.003)[cli/4457]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/25-18:05:05(0.047)[cli/4457]: Querying SQL: SHOW FULL COLUMNS FROM `user`
+2014/06/25-18:05:05(0.050)[cli/4457]: Querying SQL: SHOW CREATE TABLE `user`
+2014/06/25-18:05:05(0.062)[cli/4457]: Querying SQL: SELECT 1 FROM `user` `t` WHERE `t`.`email`=:ycp0 LIMIT 1
+2014/06/25-18:06:10(0.003)[cli/4459]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/25-18:06:27(0.004)[cli/4461]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/25-18:06:27(0.051)[cli/4461]: Querying SQL: SHOW FULL COLUMNS FROM `user`
+2014/06/25-18:06:27(0.054)[cli/4461]: Querying SQL: SHOW CREATE TABLE `user`
+2014/06/25-18:10:28(0.003)[cli/4501]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/25-18:10:28(0.047)[cli/4501]: Querying SQL: SHOW FULL COLUMNS FROM `user`
+2014/06/25-18:10:28(0.050)[cli/4501]: Querying SQL: SHOW CREATE TABLE `user`
+2014/06/25-18:10:48(0.003)[cli/4503]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/25-18:10:48(0.050)[cli/4503]: Querying SQL: SHOW FULL COLUMNS FROM `user`
+2014/06/25-18:10:48(0.053)[cli/4503]: Querying SQL: SHOW CREATE TABLE `user`
+2014/06/25-18:10:48(0.068)[cli/4503]: Querying SQL: SELECT 1 FROM `user` `t` WHERE `t`.`email`=:ycp0 LIMIT 1
+2014/06/25-18:11:04(0.003)[cli/4505]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/25-18:11:04(0.048)[cli/4505]: Querying SQL: SHOW FULL COLUMNS FROM `user`
+2014/06/25-18:11:04(0.050)[cli/4505]: Querying SQL: SHOW CREATE TABLE `user`
+2014/06/25-18:11:04(0.065)[cli/4505]: Querying SQL: SELECT 1 FROM `user` `t` WHERE `t`.`email`=:ycp0 LIMIT 1
+2014/06/25-18:11:04(0.068)[cli/4505]: Querying SQL: SELECT 1 FROM `user` `t` WHERE `t`.`email`=:ycp1 LIMIT 1
+2014/06/25-18:11:19(0.003)[cli/4507]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/25-18:11:19(0.051)[cli/4507]: Querying SQL: SHOW FULL COLUMNS FROM `user`
+2014/06/25-18:11:19(0.054)[cli/4507]: Querying SQL: SHOW CREATE TABLE `user`
+2014/06/25-18:11:19(0.067)[cli/4507]: Querying SQL: SELECT 1 FROM `user` `t` WHERE `t`.`email`=:ycp0 LIMIT 1
+2014/06/25-18:12:05(0.003)[cli/4509]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/25-18:12:05(0.047)[cli/4509]: Querying SQL: SHOW FULL COLUMNS FROM `user`
+2014/06/25-18:12:05(0.049)[cli/4509]: Querying SQL: SHOW CREATE TABLE `user`
+2014/06/25-18:12:05(0.062)[cli/4509]: Querying SQL: SELECT 1 FROM `user` `t` WHERE `t`.`email`=:ycp0 LIMIT 1
+2014/06/25-18:12:27(0.003)[cli/4511]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/25-18:12:27(0.065)[cli/4511]: Querying SQL: SHOW FULL COLUMNS FROM `user`
+2014/06/25-18:12:27(0.069)[cli/4511]: Querying SQL: SHOW CREATE TABLE `user`
+2014/06/25-18:12:27(0.084)[cli/4511]: Querying SQL: SELECT 1 FROM `user` `t` WHERE `t`.`email`=:ycp0 LIMIT 1
+2014/06/25-18:12:52(0.003)[cli/4513]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/25-18:12:52(0.048)[cli/4513]: Querying SQL: SHOW FULL COLUMNS FROM `user`
+2014/06/25-18:12:52(0.050)[cli/4513]: Querying SQL: SHOW CREATE TABLE `user`
+2014/06/25-18:12:52(0.063)[cli/4513]: Querying SQL: SELECT 1 FROM `user` `t` WHERE `t`.`email`=:ycp0 LIMIT 1
+2014/06/25-18:13:05(0.003)[cli/4515]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/25-18:13:05(0.047)[cli/4515]: Querying SQL: SHOW FULL COLUMNS FROM `user`
+2014/06/25-18:13:05(0.050)[cli/4515]: Querying SQL: SHOW CREATE TABLE `user`
+2014/06/25-18:13:39(0.003)[cli/4517]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/25-18:13:39(0.048)[cli/4517]: Querying SQL: SHOW FULL COLUMNS FROM `user`
+2014/06/25-18:13:39(0.051)[cli/4517]: Querying SQL: SHOW CREATE TABLE `user`
+2014/06/25-18:14:20(0.003)[cli/4519]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/25-18:14:20(0.047)[cli/4519]: Querying SQL: SHOW FULL COLUMNS FROM `user`
+2014/06/25-18:14:20(0.050)[cli/4519]: Querying SQL: SHOW CREATE TABLE `user`
+2014/06/25-18:14:20(0.062)[cli/4519]: Querying SQL: SELECT 1 FROM `user` `t` WHERE `t`.`email`=:ycp0 LIMIT 1
+2014/06/25-18:14:43(0.003)[cli/4521]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/25-18:14:43(0.053)[cli/4521]: Querying SQL: SHOW FULL COLUMNS FROM `user`
+2014/06/25-18:14:43(0.056)[cli/4521]: Querying SQL: SHOW CREATE TABLE `user`
+2014/06/25-18:14:43(0.073)[cli/4521]: Querying SQL: SELECT 1 FROM `user` `t` WHERE `t`.`email`=:ycp0 LIMIT 1
+2014/06/25-18:15:44(0.003)[cli/4523]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/25-18:15:44(0.047)[cli/4523]: Querying SQL: SHOW FULL COLUMNS FROM `user`
+2014/06/25-18:15:44(0.050)[cli/4523]: Querying SQL: SHOW CREATE TABLE `user`
+2014/06/25-18:15:44(0.064)[cli/4523]: Querying SQL: SELECT 1 FROM `user` `t` WHERE `t`.`email`=:ycp0 LIMIT 1
+2014/06/25-18:16:19(0.003)[cli/4525]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/25-18:16:27(0.003)[cli/4527]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/25-18:16:27(0.056)[cli/4527]: Querying SQL: SHOW FULL COLUMNS FROM `user`
+2014/06/25-18:16:27(0.058)[cli/4527]: Querying SQL: SHOW CREATE TABLE `user`
+2014/06/25-18:16:58(0.003)[cli/4529]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/25-18:16:58(0.048)[cli/4529]: Querying SQL: SHOW FULL COLUMNS FROM `user`
+2014/06/25-18:16:58(0.051)[cli/4529]: Querying SQL: SHOW CREATE TABLE `user`
+2014/06/25-18:17:22(0.003)[cli/4534]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/25-18:17:22(0.047)[cli/4534]: Querying SQL: SHOW FULL COLUMNS FROM `user`
+2014/06/25-18:17:22(0.050)[cli/4534]: Querying SQL: SHOW CREATE TABLE `user`
+2014/06/25-18:17:22(0.062)[cli/4534]: Querying SQL: SELECT 1 FROM `user` `t` WHERE `t`.`email`=:ycp0 LIMIT 1
+2014/06/25-18:17:40(0.003)[cli/4536]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/25-18:17:40(0.047)[cli/4536]: Querying SQL: SHOW FULL COLUMNS FROM `user`
+2014/06/25-18:17:40(0.050)[cli/4536]: Querying SQL: SHOW CREATE TABLE `user`
+2014/06/25-18:17:40(0.062)[cli/4536]: Querying SQL: SELECT 1 FROM `user` `t` WHERE `t`.`email`=:ycp0 LIMIT 1
+2014/06/25-18:19:38(0.003)[cli/4538]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/25-18:19:38(0.047)[cli/4538]: Querying SQL: SHOW FULL COLUMNS FROM `user`
+2014/06/25-18:19:38(0.050)[cli/4538]: Querying SQL: SHOW CREATE TABLE `user`
+2014/06/25-18:19:38(0.062)[cli/4538]: Querying SQL: SELECT 1 FROM `user` `t` WHERE `t`.`email`=:ycp0 LIMIT 1
+2014/06/25-18:20:21(0.003)[cli/4540]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/25-18:20:21(0.051)[cli/4540]: Querying SQL: SHOW FULL COLUMNS FROM `user`
+2014/06/25-18:20:21(0.053)[cli/4540]: Querying SQL: SHOW CREATE TABLE `user`
+2014/06/25-18:20:21(0.067)[cli/4540]: Querying SQL: SELECT 1 FROM `user` `t` WHERE `t`.`email`=:ycp0 LIMIT 1
+2014/06/25-18:21:35(0.003)[cli/4542]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/25-18:21:50(0.003)[cli/4544]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/25-18:21:50(0.047)[cli/4544]: Querying SQL: SHOW FULL COLUMNS FROM `user`
+2014/06/25-18:21:50(0.050)[cli/4544]: Querying SQL: SHOW CREATE TABLE `user`
+2014/06/25-18:21:50(0.064)[cli/4544]: Querying SQL: SELECT 1 FROM `user` `t` WHERE `t`.`email`=:ycp0 LIMIT 1
+2014/06/25-18:22:00(0.003)[cli/4546]: ------------------------ : [CLI] '/usr/bin/phpunit'
+2014/06/25-18:22:00(0.048)[cli/4546]: Querying SQL: SHOW FULL COLUMNS FROM `user`
+2014/06/25-18:22:00(0.051)[cli/4546]: Querying SQL: SHOW CREATE TABLE `user`
+2014/06/25-18:22:00(0.066)[cli/4546]: Querying SQL: SELECT 1 FROM `user` `t` WHERE `t`.`email`=:ycp0 LIMIT 1

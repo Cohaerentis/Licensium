@@ -194,7 +194,7 @@ class User extends CActiveRecord {
         }
         return false;
     }
-
+    
     public function emailChange($newemail) {
         $emailvalidator = new CEmailValidator();
         if ( ($this->email != $newemail) && ($emailvalidator->validateValue($newemail)) ) {
